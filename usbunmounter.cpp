@@ -85,8 +85,8 @@ void usbunmounter::start()
         list_item->setData(Qt::UserRole, devicetype);
 
     }
+    this->move(QCursor::pos());
 }
-
 
 
 usbunmounter::~usbunmounter()

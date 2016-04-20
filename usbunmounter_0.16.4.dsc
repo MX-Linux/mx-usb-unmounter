@@ -10,8 +10,8 @@ Build-Depends: qt5-qmake, debhelper (>= 7.0.50~)
 Package-List:
  usbunmounter deb admin optional arch=any
 Checksums-Sha1:
- 15423749671a94020762c56bec3c4ce8444dce79 4304 usbunmounter_0.16.4.tar.xz
+ 461eb063d10115f2adca2e0712d0cc83fb1d2964 37000 usbunmounter_0.16.4.tar.xz
 Checksums-Sha256:
- d1097c437da5f45c3d2ed5da0f4bba6a237ccbc370ec1be14e0c130b5e73352d 4304 usbunmounter_0.16.4.tar.xz
+ 7123a4ff68f20bd1f4e2141b7b007f07800e1e1891d433ced44f19a24f23e632 37000 usbunmounter_0.16.4.tar.xz
 Files:
- 4a11f6852cc4be5c3778841457063f56 4304 usbunmounter_0.16.4.tar.xz
+ bf4c461d46f0991cea31de9b353a874d 37000 usbunmounter_0.16.4.tar.xz
