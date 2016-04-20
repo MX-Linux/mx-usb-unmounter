@@ -1,9 +1,9 @@
 Package: usbunmounter
 Version: 0.16.4
-Architecture: amd64
+Architecture: i386
 Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
-Installed-Size: 78
-Depends: libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libqt5core5a (>= 5.0.2), libqt5gui5 (>= 5.0.2), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 4.1.1), mx-viewer
+Installed-Size: 74
+Depends: libc6 (>= 2.3.6-6~), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libqt5core5a (>= 5.0.2), libqt5gui5 (>= 5.0.2), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 4.1.1), mx-viewer
 Section: admin
 Priority: optional
 Description: usbunmounter
