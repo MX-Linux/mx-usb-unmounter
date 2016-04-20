@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 20 Apr 2016 12:59:55 -0400
+Source: usbunmounter
+Binary: usbunmounter
+Architecture: source amd64
+Version: 0.16.4
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: dolphin_oracle <dolphinoracle@gmai.com>
+Description:
+ usbunmounter - usbunmounter
+Changes:
+ usbunmounter (0.16.4) mx; urgency=medium
+ .
+   * Initial release.
+Checksums-Sha1:
+ 362a1ceb4430f214206039512fa70a9f917c86a8 627 usbunmounter_0.16.4.dsc
+ 15423749671a94020762c56bec3c4ce8444dce79 4304 usbunmounter_0.16.4.tar.xz
+ a5791769aeeef697186cdc0ead7c51f8075dd37a 12594 usbunmounter_0.16.4_amd64.deb
+Checksums-Sha256:
+ 6afee48e1a49334eb1efa2c797828a172808b9a91f0e1cd051795b83f8b9d84d 627 usbunmounter_0.16.4.dsc
+ d1097c437da5f45c3d2ed5da0f4bba6a237ccbc370ec1be14e0c130b5e73352d 4304 usbunmounter_0.16.4.tar.xz
+ 1b126f58562c25e166c9c07fbfcc477466ad956675addb2dad0039c451927f6e 12594 usbunmounter_0.16.4_amd64.deb
+Files:
+ 1cbb3e7b3403f5830d5c9f2fa6adedf8 627 admin optional usbunmounter_0.16.4.dsc
+ 4a11f6852cc4be5c3778841457063f56 4304 admin optional usbunmounter_0.16.4.tar.xz
+ 95d810f45f822e3a134a2b2c8512b14f 12594 admin optional usbunmounter_0.16.4_amd64.deb

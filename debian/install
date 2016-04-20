@@ -1,0 +1,3 @@
+usbunmounter	 		usr/bin
+usbunmounter.desktop 		usr/share/applications/mx
+usbunmounter-start		usr/local/bin

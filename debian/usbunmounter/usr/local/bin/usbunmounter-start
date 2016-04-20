@@ -1,0 +1,5 @@
+#!/bin/bash
+
+yad --notification --image=drive-removable-media \
+--command=usbunmounter --text="Unmount Media" \
+--menu="list devices!usbunmounter!drive-removable-media|help!mx-viewer mepiscommunity.org!gtk-help|quit!quit!gtk-quit"
