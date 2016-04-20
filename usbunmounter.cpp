@@ -34,59 +34,39 @@ void usbunmounter::start()
     QString file_content;
     file_content = runCmd("df --local --output=source |grep /dev/").str;
     partitionlist = file_content.split("\n");
-    //  qDebug() << partitionlist;
+    qDebug() << "Partition list: " << partitionlist;
 
     // now check usb status of each item.  if usb is yes, add to usb list, if optical is yes, add to optical list
 
+    bool isUSB;
+    bool isCD;
     QString devicename;
-    QString item;\
-    QStringList mountlist;
-    QStringList mountlistoptical;
+    QString item;
+    QListWidgetItem *list_item;
 
     foreach (item, partitionlist) {
         devicename = item.mid(5,3);  //gives us device designation (sda, sdb, etc..)
-        //   qDebug() << devicename;
-        QString usbcheck = runCmd("udevadm info --query=property --path=/sys/block/" + devicename + " | grep ID_BUS=usb |cut -d '=' -f2").str;
-        //   qDebug() << usbcheck;
-        if ( usbcheck == "usb") {
+        qDebug() << "Device name: " << devicename;
+        isUSB = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -q ID_BUS=usb") == 0;
+        isCD = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
+        qDebug() << "Is USB: " << isUSB;
+        qDebug() << "Is CD: " << isCD;
+        if (isUSB || isCD ) {
             QString item2 = runCmd("df " + item + " --output=target |grep /").str;
-            //     qDebug() << item2;
-            mountlist.append(item2);
+            qDebug() << "widget item: " << item2;
+            list_item = new QListWidgetItem(ui->mountlistview);
+            list_item->setText(item2);
+            if (isUSB) {
+                list_item->setIcon(QIcon::fromTheme("drive-removable-media"));
+                list_item->setData(Qt::UserRole, "usb");
+            }
+            if (isCD) {
+                list_item->setIcon(QIcon::fromTheme("drive-optical"));
+                list_item->setData(Qt::UserRole, "cd");
+            }
         }
-        QString opticalcheck = runCmd("udevadm info --query=property --path=/sys/block/" + devicename + " | grep ID_TYPE=cd |cut -d '=' -f2").str;
-        if ( opticalcheck =="cd") {
-            QString item2 = runCmd("df " + item + " --output=target |grep /").str;
-            mountlistoptical.append(item2);
-        }
-    }
-    //    qDebug() << mountlist;
-    //    qDebug() << mountlistoptical;
-
-    //build list for view , list be mountpoint
-    // use meta data to track device type
-    QVariant devicetype;
-
-    //if device is usb, add to mountlist, create list entry, assing metadata (usb)
-    QListWidgetItem *list_item;
-    foreach (item, mountlist) {
-        devicetype = QString("usb");
-        list_item = new QListWidgetItem(ui->mountlistview);
-        list_item->setText(item);
-        list_item->setIcon(QIcon::fromTheme("drive-removable-media"));
-        list_item->setData(Qt::UserRole, devicetype);
-    }
-
-    //if device is CD/DVD, add to mountlistoptical, create list entry assign metadata (cd)
-    foreach (item, mountlistoptical) {
-        devicetype = QString("cd");
-        list_item = new QListWidgetItem(ui->mountlistview);
-        list_item->setText(item);
-        list_item->setIcon(QIcon::fromTheme("drive-optical"));
-        list_item->setData(Qt::UserRole, devicetype);
-
     }
 }
-
 
 
 usbunmounter::~usbunmounter()
@@ -98,15 +78,15 @@ usbunmounter::~usbunmounter()
 void usbunmounter::on_mountlistview_itemDoubleClicked(QListWidgetItem *item)
 {
     //if device is usb, just unmount. if device is cd/dvd, eject as well, then remove list item
+    QString cmd;
+    QString point = QString(item->text());
+    qDebug() << "clicked mount point" << point;
 
-    if (item->data(Qt::UserRole).toString() == "usb") {
-        QString point = QString(item->text());
-        runCmd("umount " + point);
-        item->~QListWidgetItem();
+    if (item->data(Qt::UserRole).toString() == "usb") {    
+        cmd = "umount";
+    } else {
+        cmd = "eject";
     }
-    if (item->data(Qt::UserRole).toString() == "cd" ) {
-        QString point = QString(item->text());
-        runCmd("eject " + point);
-        item->~QListWidgetItem();
-    }
+    runCmd(cmd + " '" + point + "'");
+    item->~QListWidgetItem();
 }

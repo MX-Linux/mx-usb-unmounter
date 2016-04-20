@@ -18,3 +18,5 @@ SOURCES += main.cpp\
 HEADERS  += usbunmounter.h
 
 FORMS    += usbunmounter.ui
+
+#DEFINES += QT_NO_WARNING_OUTPUT QT_NO_DEBUG_OUTPUT

@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QProcess>
 #include <QListWidgetItem>
+
 namespace Ui {
 class usbunmounter;
 }
@@ -25,9 +26,8 @@ public:
     Output runCmd(QString cmd);
 
 
+
 private slots:
-
-
     void on_mountlistview_itemDoubleClicked(QListWidgetItem *item);
 
 private:
