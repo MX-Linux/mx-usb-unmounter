@@ -9,6 +9,7 @@ namespace Ui {
 class usbunmounter;
 }
 
+
 // struct for outputing both the exit code and the strings when running a command
 struct Output {
     int exit_code;
@@ -25,20 +26,15 @@ public:
     void start();
     Output runCmd(QString cmd);
 
-
-
 private slots:
-
-    void on_mountlistview_itemActivated(QListWidgetItem *item);
-
+    void on_mountlistview_itemActivated(QListWidgetItem *item);    
+    void keyPressEvent(QKeyEvent *event);
+    void changeEvent(QEvent *event);
     void on_cancel_pressed();
 
-    void keyPressEvent(QKeyEvent *event);
-
-
-
 private:
-    Ui::usbunmounter *ui;
+    Ui::usbunmounter *ui;   
+
 };
 
 #endif // USBUNMOUNTER_H

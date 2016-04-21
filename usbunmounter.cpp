@@ -110,6 +110,21 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
         }
     }
 }
+
+// implement change event that closes app when window loses focus
+void usbunmounter::changeEvent(QEvent *event)
+{
+    QWidget::changeEvent(event);
+    if (event->type() == QEvent::ActivationChange) {
+        if(this->isActiveWindow()) {
+            qDebug() << "focusinEvent";
+        } else {
+            qDebug() << "focusOutEvent";
+            exit(0);
+        }
+    }
+}
+
 void usbunmounter::on_cancel_pressed()
 {
     exit(0);
