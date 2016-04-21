@@ -1,5 +1,18 @@
 #!/bin/bash
 
+display_en()
+{
 yad --notification --image=drive-removable-media \
 --command=usbunmounter --text="Unmount Media" \
---menu="list devices!usbunmounter!drive-removable-media|help!mx-viewer mepiscommunity.org!gtk-help|quit!quit!gtk-quit"
+--menu="List Devices!usbunmounter!drive-removable-media|Help!mx-viewer mepiscommunity.org!gtk-help|Quit!quit!gtk-quit"
+}
+
+LNG=$(locale|grep ^LANG=|cut -f2 -d=|cut -f1 -d_)
+
+case $LNG in
+
+	en) display_en
+	;;
+
+esac
+

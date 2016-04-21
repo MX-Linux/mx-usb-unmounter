@@ -109,6 +109,7 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
             this->setVisible(true);
         }
     }
+    this->setFocus();
 }
 
 // implement change event that closes app when window loses focus
@@ -137,4 +138,5 @@ void usbunmounter::keyPressEvent(QKeyEvent *event)
         exit(0);
     }
 }
+
 
