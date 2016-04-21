@@ -15,14 +15,14 @@ Changes:
  .
    * Initial release.
 Checksums-Sha1:
- 6fcd28df9c563866d096f0cb58470a42f8a3137c 630 usbunmounter_0.16.4.dsc
- 461eb063d10115f2adca2e0712d0cc83fb1d2964 37000 usbunmounter_0.16.4.tar.xz
- 6339249271008a85aa9ec01fc0b95c422b425abc 12612 usbunmounter_0.16.4_amd64.deb
+ dd7522065f357de42b81f91b5f927da1647ae0da 630 usbunmounter_0.16.4.dsc
+ b4dbba045d91ba4fe95fdf6a73b22b9fe5b41a06 70816 usbunmounter_0.16.4.tar.xz
+ 9f8f74c4aa773458b35eec2ced85e21947d66262 17172 usbunmounter_0.16.4_amd64.deb
 Checksums-Sha256:
- 74586bb3778711ea462cad82c8a41bb78f56f43232a348b3595d87b4b571e534 630 usbunmounter_0.16.4.dsc
- 7123a4ff68f20bd1f4e2141b7b007f07800e1e1891d433ced44f19a24f23e632 37000 usbunmounter_0.16.4.tar.xz
- d3f7f580323c595093b436d78276f0f800b730cdb06eb255835a87d65117c47c 12612 usbunmounter_0.16.4_amd64.deb
+ 85307440caf3ff8da701d662fab983b5023465dd849078a1f7327190ee81a2ba 630 usbunmounter_0.16.4.dsc
+ 56919e3431eb3b248ada8b301f100b1d92a6a7483833b702618eb5ef29ffd920 70816 usbunmounter_0.16.4.tar.xz
+ f772c4a3c1f111757312a548be6470fb039426577211c2a2fdcf4e4ffc6d47d9 17172 usbunmounter_0.16.4_amd64.deb
 Files:
- dfb87c0e77365f4bdfa906ab9069d69f 630 admin optional usbunmounter_0.16.4.dsc
- bf4c461d46f0991cea31de9b353a874d 37000 admin optional usbunmounter_0.16.4.tar.xz
- 7c7b5acd4c1389a88b7a0f9801965a49 12612 admin optional usbunmounter_0.16.4_amd64.deb
+ 3d3859c44c77019b9ee3bfc4286edfe5 630 admin optional usbunmounter_0.16.4.dsc
+ bb74e545217b94827ae7a922268307b3 70816 admin optional usbunmounter_0.16.4.tar.xz
+ 033283d2da8a9e2526af5e9fbbf421a0 17172 admin optional usbunmounter_0.16.4_amd64.deb

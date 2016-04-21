@@ -28,7 +28,14 @@ public:
 
 
 private slots:
-    void on_mountlistview_itemDoubleClicked(QListWidgetItem *item);
+
+    void on_mountlistview_itemActivated(QListWidgetItem *item);
+
+    void on_cancel_pressed();
+
+    void keyPressEvent(QKeyEvent *event);
+
+
 
 private:
     Ui::usbunmounter *ui;

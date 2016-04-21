@@ -1,12 +1,15 @@
 #include "usbunmounter.h"
 #include "ui_usbunmounter.h"
 #include <QDebug>
+#include <QKeyEvent>
+#include <QMessageBox>
 
 usbunmounter::usbunmounter(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::usbunmounter)
 {
     ui->setupUi(this);
+    this->setWindowIcon(QIcon::fromTheme("drive-removable-media"));
     start();
 }
 
@@ -67,8 +70,10 @@ void usbunmounter::start()
         }
     }
     this->move(QCursor::pos());
+    if ( ui->mountlistview->count() > 0 ) {
+        ui->mountlistview->item(0)->setSelected(true);
+    }
 }
-
 
 usbunmounter::~usbunmounter()
 {
@@ -76,18 +81,44 @@ usbunmounter::~usbunmounter()
 }
 
 
-void usbunmounter::on_mountlistview_itemDoubleClicked(QListWidgetItem *item)
+void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
 {
     //if device is usb, just unmount. if device is cd/dvd, eject as well, then remove list item
     QString cmd;
     QString point = QString(item->text());
     qDebug() << "clicked mount point" << point;
 
-    if (item->data(Qt::UserRole).toString() == "usb") {    
+    if (item->data(Qt::UserRole).toString() == "usb") {
         cmd = "umount";
     } else {
         cmd = "eject";
     }
-    runCmd(cmd + " '" + point + "'");
-    item->~QListWidgetItem();
+
+    // run operation.  if exit is unsuccessful, state device is busy
+    int out = runCmd(cmd + " '" + point + "'").exit_code;
+    qDebug() << out;
+    if (out == 0) {
+        item->~QListWidgetItem();
+    } else {
+        this->setVisible(false);
+        qDebug() << "Warning";
+        QMessageBox msgBox(QMessageBox::Warning,
+                           tr("Warning"), "<p align=\"center\"><h3>" + tr("Device Busy:") + " " + point + "</h4></p><p align=\"center\">", 0, this);
+        msgBox.addButton(tr("OK"), QMessageBox::AcceptRole);
+        if (msgBox.exec() == QMessageBox::AcceptRole) {
+            this->setVisible(true);
+        }
+    }
 }
+void usbunmounter::on_cancel_pressed()
+{
+    exit(0);
+}
+
+// process keystrokes
+void usbunmounter::keyPressEvent(QKeyEvent *event)
+{
+    if (event->key() == Qt::Key_Escape)
+        exit(0);
+}
+
