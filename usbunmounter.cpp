@@ -109,6 +109,7 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
             this->setVisible(true);
         }
     }
+    this->setFocus();
 }
 void usbunmounter::on_cancel_pressed()
 {
@@ -122,4 +123,5 @@ void usbunmounter::keyPressEvent(QKeyEvent *event)
         exit(0);
     }
 }
+
 

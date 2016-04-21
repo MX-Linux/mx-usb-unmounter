@@ -35,8 +35,6 @@ private slots:
 
     void keyPressEvent(QKeyEvent *event);
 
-
-
 private:
     Ui::usbunmounter *ui;
 };
