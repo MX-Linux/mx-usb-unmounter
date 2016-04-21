@@ -118,7 +118,8 @@ void usbunmounter::on_cancel_pressed()
 // process keystrokes
 void usbunmounter::keyPressEvent(QKeyEvent *event)
 {
-    if (event->key() == Qt::Key_Escape)
+    if (event->key() == Qt::Key_Escape) {
         exit(0);
+    }
 }
 
