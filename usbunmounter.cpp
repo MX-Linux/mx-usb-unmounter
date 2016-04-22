@@ -10,6 +10,7 @@ usbunmounter::usbunmounter(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setWindowIcon(QIcon::fromTheme("drive-removable-media"));
+    this->setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint);
     start();
 }
 
@@ -121,21 +122,21 @@ void usbunmounter::changeEvent(QEvent *event)
             qDebug() << "focusinEvent";
         } else {
             qDebug() << "focusOutEvent";
-            exit(0);
+            qApp->quit();
         }
     }
 }
 
 void usbunmounter::on_cancel_pressed()
 {
-    exit(0);
+    qApp->quit();
 }
 
 // process keystrokes
 void usbunmounter::keyPressEvent(QKeyEvent *event)
 {
     if (event->key() == Qt::Key_Escape) {
-        exit(0);
+        qApp->quit();
     }
 }
 

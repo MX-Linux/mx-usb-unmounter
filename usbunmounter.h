@@ -26,13 +26,13 @@ public:
     Output runCmd(QString cmd);
 
 private slots:
-    void on_mountlistview_itemActivated(QListWidgetItem *item);    
+    void on_mountlistview_itemActivated(QListWidgetItem *item);
     void keyPressEvent(QKeyEvent *event);
     void changeEvent(QEvent *event);
     void on_cancel_pressed();
 
 private:
-    Ui::usbunmounter *ui;   
+    Ui::usbunmounter *ui;
 
 };
 
