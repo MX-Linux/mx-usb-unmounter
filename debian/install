@@ -3,3 +3,4 @@ mx-usb-unmounter.desktop 	usr/share/applications
 translations/*.qm	        usr/share/mx-usb-unmounter
 license.html			usr/share/doc/mx-usb-unmounter
 usb-unmounter-start		usr/local/bin
+mx-usb-unmounter.desktop 	/etc/xdg/autostart
