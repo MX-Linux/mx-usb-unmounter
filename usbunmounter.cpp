@@ -11,6 +11,7 @@ usbunmounter::usbunmounter(QWidget *parent) :
     ui->setupUi(this);
     this->setWindowIcon(QIcon::fromTheme("drive-removable-media"));
     this->setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint);
+    this->setWindowFlags(Qt::Tool | Qt::FramelessWindowHint);
     start();
 }
 
@@ -95,23 +96,21 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
         cmd = "eject";
     }
 
-    // run operation.  if exit is unsuccessful, state device is busy
+    // run operation.  if exit is unsuccessful, state device is busy via notify-send
     int out = runCmd(cmd + " '" + point + "'").exit_code;
     qDebug() << out;
     if (out == 0) {
         item->~QListWidgetItem();
     } else {
-        this->setVisible(false);
         qDebug() << "Warning";
-        QMessageBox msgBox(QMessageBox::Warning,
-                           tr("Warning"), "<p align=\"center\"><h3>" + tr("Device Busy:") + " " + point + "</h4></p><p align=\"center\">", 0, this);
-        msgBox.addButton(tr("OK"), QMessageBox::AcceptRole);
-        if (msgBox.exec() == QMessageBox::AcceptRole) {
-            this->setVisible(true);
-        }
+        QString cmd;
+        cmd = tr("Unable to  Unmount, Device in Use");
+        QString title;
+        title = tr("MX USB Unmounter");
+        system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd.toUtf8() + "'");
     }
-    this->setFocus();
 }
+
 
 // implement change event that closes app when window loses focus
 void usbunmounter::changeEvent(QEvent *event)
