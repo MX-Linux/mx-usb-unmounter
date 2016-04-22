@@ -77,6 +77,7 @@ void usbunmounter::start()
     } else {
         list_item = new QListWidgetItem(ui->mountlistview);
         list_item->setText(tr("No Removable Device"));
+        list_item->setIcon(QIcon::fromTheme("gtk-cancel"));
         list_item->setData(Qt::UserRole, "none");
     }
 }
