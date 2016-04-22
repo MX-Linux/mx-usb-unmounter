@@ -77,6 +77,7 @@ void usbunmounter::start()
     } else {
         list_item = new QListWidgetItem(ui->mountlistview);
         list_item->setText(tr("No Removable Device"));
+        list_item->setIcon(QIcon::fromTheme("gtk-cancel"));
         list_item->setData(Qt::UserRole, "none");
     }
 }
@@ -94,6 +95,7 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     QString cmd;
     QString point = QString(item->text());
     qDebug() << "clicked mount point" << point;
+    QString title = tr("MX USB Unmounter");
 
 
     if (item->data(Qt::UserRole).toString() == "none") {
@@ -111,14 +113,17 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
         qDebug() << out;
         if (out == 0) {
             item->~QListWidgetItem();
+            cmd = tr("Unmounting " + point.toUtf8());
+            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd.toUtf8() + "'");
+
         } else {
             qDebug() << "Warning";
-            QString cmd;
             cmd = tr("Unable to  Unmount, Device in Use");
-            QString title;
-            title = tr("MX USB Unmounter");
             system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd.toUtf8() + "'");
         }
+    }
+    if (ui->mountlistview->count() == 0) {
+            qApp->quit();
     }
 }
 
