@@ -74,6 +74,10 @@ void usbunmounter::start()
     this->move(QCursor::pos());
     if ( ui->mountlistview->count() > 0 ) {
         ui->mountlistview->item(0)->setSelected(true);
+    } else {
+        list_item = new QListWidgetItem(ui->mountlistview);
+        list_item->setText(tr("No Removable Device"));
+        list_item->setData(Qt::UserRole, "none");
     }
 }
 
@@ -86,31 +90,37 @@ usbunmounter::~usbunmounter()
 void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
 {
     //if device is usb, just unmount. if device is cd/dvd, eject as well, then remove list item
+    //if no device, then exit
     QString cmd;
     QString point = QString(item->text());
     qDebug() << "clicked mount point" << point;
 
-    if (item->data(Qt::UserRole).toString() == "usb") {
-        cmd = "umount";
-    } else {
-        cmd = "eject";
-    }
 
-    // run operation.  if exit is unsuccessful, state device is busy via notify-send
-    int out = runCmd(cmd + " '" + point + "'").exit_code;
-    qDebug() << out;
-    if (out == 0) {
-        item->~QListWidgetItem();
+    if (item->data(Qt::UserRole).toString() == "none") {
+        qApp->quit();
     } else {
-        qDebug() << "Warning";
-        QString cmd;
-        cmd = tr("Unable to  Unmount, Device in Use");
-        QString title;
-        title = tr("MX USB Unmounter");
-        system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd.toUtf8() + "'");
+        if (item->data(Qt::UserRole).toString() == "usb") {
+            cmd = "umount";
+        } else {
+            cmd = "eject";
+        }
+
+        // run operation.  if exit is unsuccessful, state device is busy via notify-send
+
+        int out = runCmd(cmd + " '" + point + "'").exit_code;
+        qDebug() << out;
+        if (out == 0) {
+            item->~QListWidgetItem();
+        } else {
+            qDebug() << "Warning";
+            QString cmd;
+            cmd = tr("Unable to  Unmount, Device in Use");
+            QString title;
+            title = tr("MX USB Unmounter");
+            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd.toUtf8() + "'");
+        }
     }
 }
-
 
 // implement change event that closes app when window loses focus
 void usbunmounter::changeEvent(QEvent *event)
