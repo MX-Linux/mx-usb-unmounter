@@ -1,11 +1,8 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
-
 Format: 1.8
 Date: Thu, 21 Apr 2016 19:58:01 -0400
 Source: mx-usb-unmounter
 Binary: mx-usb-unmounter
-Architecture: i386
+Architecture: source i386
 Version: 0.16.4mx15+nmu1
 Distribution: mx
 Urgency: medium
@@ -18,20 +15,14 @@ Changes:
  .
    * changed name
 Checksums-Sha1:
- 067fc8fbf39c95d1259a0f5c9968210c1217c2e6 20170 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
+ 2478e6c278cb7c2ebd397d394fb9283ac2c09674 689 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ 676b91cae14fca05ee90ac602b701da3bdd24e4f 84492 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ f4461eea22888952f51af9f402e5c4ca6c7732e3 20476 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
 Checksums-Sha256:
- 3966cc36c824fca248d7d29dc125b198042db1fe9eb358d8a20ea42598cfddc4 20170 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
+ 6efa4069a1211d7dee0ca2a2a0c3282b37b31142aff73caf97f9e5a8185086ef 689 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ 286e4f98651db899f460228f6f18fc08c4ff8f43bc9f24ec62ca42ce0a757d9b 84492 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 022c7e684838a7d774ee5d86ae54bf802561a2a4d8588f19d8e6d589c26526ca 20476 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
 Files:
- 5895f64ca3bd4966b170a83a2519889b 20170 admin optional mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
-
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1
-
-iQEcBAEBAgAGBQJXGWopAAoJEHCTjHgGee6YgH8H/1Hw0ae4gW4Lm7WXw3bu48j9
-3hpTrvoAKnuJhI6TNy6h0CH+1zcdN3rHrrR3yEaduIRd9zGSez/napxm21CFKhr3
-8HPjuJhqdOfmrHkNfN8R1MMwe7kbMecBLKgRy7319Tv53LNvw6FysKb2ZoOJI6Ck
-GTFtv6brH6H2+sOjLlKIv8oJowC+s451wde2uoaUP6WuVsDLPNNjqfQ8Z//lEMGp
-o2PYev1b0JnOsKMI8IT7sFjpyxk5vCB+bkY5bZqCC8lOWH6lz6nrtMTeMZ48votf
-BdpqneGeTVtQ86yqJ/zC85JeRbkFbqJ7CJ8qmrfZAmTckf7c6rr3Dmt0v86dCkI=
-=BH1Z
------END PGP SIGNATURE-----
+ d94d282dc27d77858b57034140e29544 689 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ 7946a0d8babe56d813531257514ef835 84492 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 9d168c966f95a4f287721c7fa79e5ecc 20476 admin optional mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
