@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 21 Apr 2016 19:58:01 -0400
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: source amd64
+Version: 0.16.4mx15+nmu1
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (0.16.4mx15+nmu1) mx; urgency=medium
+ .
+   * changed name
+Checksums-Sha1:
+ 86976ba6a61e1e311739c971bba06597fbaa1033 689 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ dbf1b555e44f7ad92b6f72ef884c61cff45838b7 38076 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 72a4e91a5a862c5823f5ec37c94f2680d5f54741 20938 mx-usb-unmounter_0.16.4mx15+nmu1_amd64.deb
+Checksums-Sha256:
+ 4a120d8b8fa41c5bcbe45d690dbd694e01ea788a673269586a4b639aab179ff0 689 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ be5d7ffc0ae54de9468081d133494ac9892d456e1fd46ea09d81d5bf3f1f98da 38076 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ b3c4e00143ddf9672e4833a724ca82d8c835eaa8308728aabb95014ea31da334 20938 mx-usb-unmounter_0.16.4mx15+nmu1_amd64.deb
+Files:
+ 52e5e801b41154c2dabafce6e2fb632e 689 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ a4b8db53476a8cd880fe615f0cb8b8d1 38076 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ a4cf0c784ab994da870ca854dab090cf 20938 admin optional mx-usb-unmounter_0.16.4mx15+nmu1_amd64.deb
