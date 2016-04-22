@@ -1,3 +1,3 @@
-# usbunmounter
+# mx-usb-unmounter
 
-tray app for unmounting removable usb devices and optical discs.
+Tray app for unmounting removable usb devices and optical discs.

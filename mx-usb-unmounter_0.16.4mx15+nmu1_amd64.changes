@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 21 Apr 2016 19:58:01 -0400
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: source amd64
+Version: 0.16.4mx15+nmu1
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (0.16.4mx15+nmu1) mx; urgency=medium
+ .
+   * changed name
+Checksums-Sha1:
+ 46d93ada5671ccc588529891a253346937983db8 1210 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ 0a25f913333c1eb595c92cddb02d1ed483ef1a6c 34100 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 93e1bb48fb5d0327175e25442e46c4c70fe4eee3 20008 mx-usb-unmounter_0.16.4mx15+nmu1_amd64.deb
+Checksums-Sha256:
+ a3dd04e40dafc0df36703f5867754c161bcd45e0cb25a767e8f417b1ba9ce00c 1210 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ 1b47aaf668610424509e1aac296771d8a87efb35c848c7e30671e72cf9a30b54 34100 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ b5ff556a7441a3752f2719ce61636c6dd19dc8fb5d961831929fd1d5f31fad28 20008 mx-usb-unmounter_0.16.4mx15+nmu1_amd64.deb
+Files:
+ 63b731f838bf5932429eac2cd8461740 1210 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ 3b8e3541f1d7c83ece5940089b33aa4d 34100 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ c9ea4659075ed977414efaf105a63226 20008 admin optional mx-usb-unmounter_0.16.4mx15+nmu1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJXGWlXAAoJEHCTjHgGee6YS7UIAK0nQrWcBlDg+5N+odGmDXWi
+9roqQUbHW1C/YuZmVzYm+7RGLs/JZa5lAMCc0lp0OCsGh0jb0otWTD7/Hc9TgNom
+cF4WqPM8TU5vXwJIRfOE4i92u0ct7898k7J5kmh8EkXf/ZPRFZUkURQhMSnnBUQR
+49XzLaKHO8V8BDGvJ/R4DEf9Y1wyQvSgP+GsOKHG3sj/uADcqNU1glxVYtT7ov1N
+oDaFrzAB39j1Oposphk/gcOMY81UEk85ZgnPip8C2xcx7IgPeCWAkCIQlTCqv3V+
+QWdqW//XdD7FUU8Ds/cwY3fIk+YEGDPYbMZYuKauDbcMnEXQ4meZMWoU87lUz0E=
+=cIqV
+-----END PGP SIGNATURE-----

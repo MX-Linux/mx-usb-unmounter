@@ -1,4 +1,10 @@
-usbunmounter (0.16.4) mx; urgency=medium
+mx-usb-unmounter (0.16.4mx15+nmu1) mx; urgency=medium
+
+  * changed name
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 21 Apr 2016 19:58:01 -0400
+
+usbunmounter (0.16.4mx15) mx; urgency=medium
 
   * Initial release.
 

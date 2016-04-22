@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 21 Apr 2016 19:58:01 -0400
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: i386
+Version: 0.16.4mx15+nmu1
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (0.16.4mx15+nmu1) mx; urgency=medium
+ .
+   * changed name
+Checksums-Sha1:
+ 067fc8fbf39c95d1259a0f5c9968210c1217c2e6 20170 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
+Checksums-Sha256:
+ 3966cc36c824fca248d7d29dc125b198042db1fe9eb358d8a20ea42598cfddc4 20170 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
+Files:
+ 5895f64ca3bd4966b170a83a2519889b 20170 admin optional mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJXGWopAAoJEHCTjHgGee6YgH8H/1Hw0ae4gW4Lm7WXw3bu48j9
+3hpTrvoAKnuJhI6TNy6h0CH+1zcdN3rHrrR3yEaduIRd9zGSez/napxm21CFKhr3
+8HPjuJhqdOfmrHkNfN8R1MMwe7kbMecBLKgRy7319Tv53LNvw6FysKb2ZoOJI6Ck
+GTFtv6brH6H2+sOjLlKIv8oJowC+s451wde2uoaUP6WuVsDLPNNjqfQ8Z//lEMGp
+o2PYev1b0JnOsKMI8IT7sFjpyxk5vCB+bkY5bZqCC8lOWH6lz6nrtMTeMZ48votf
+BdpqneGeTVtQ86yqJ/zC85JeRbkFbqJ7CJ8qmrfZAmTckf7c6rr3Dmt0v86dCkI=
+=BH1Z
+-----END PGP SIGNATURE-----
