@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=USB Unmounter
+Name=MX USB Unmounter
 Comment=Unmount USB and Optical removable media
 Exec=usb-unmounter-start
 Icon=drive-removable-media

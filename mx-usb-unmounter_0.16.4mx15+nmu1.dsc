@@ -10,8 +10,8 @@ Build-Depends: qt5-qmake, debhelper (>= 7.0.50~)
 Package-List:
  mx-usb-unmounter deb admin optional arch=any
 Checksums-Sha1:
- 30ac615651918132fc4ac8ea8a8a651d6bac81cb 59392 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 99662123fc313a2440e7822436b718c2c771df2c 8072 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
 Checksums-Sha256:
- edca5ffa3082c57b71c15266b50a8399e93cd67e6cf53374181088756bd122ac 59392 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 675b04d72c1cbe8d1621e4b9484df25f979afa0380d86abe255ba1a48fbe83b6 8072 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
 Files:
- 0fde00ae88eb1485801254153e589dc1 59392 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 9822abf8e0a3df03ae65e0dfd13724c4 8072 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz

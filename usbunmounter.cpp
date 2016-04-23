@@ -12,6 +12,7 @@ usbunmounter::usbunmounter(QWidget *parent) :
     this->setWindowIcon(QIcon::fromTheme("drive-removable-media"));
     this->setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint);
     this->setWindowFlags(Qt::Tool | Qt::FramelessWindowHint);
+    this->move(QCursor::pos());
     start();
 }
 
@@ -32,6 +33,9 @@ Output usbunmounter::runCmd(QString cmd)
 
 void usbunmounter::start()
 {
+    //clearlist
+    ui->mountlistview->clear();
+
     //get list of usb storage devices
 
     //first get list of mounted devices
@@ -71,7 +75,7 @@ void usbunmounter::start()
             }
         }
     }
-    this->move(QCursor::pos());
+
     if ( ui->mountlistview->count() > 0 ) {
         ui->mountlistview->item(0)->setSelected(true);
     } else {
@@ -93,6 +97,8 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     //if device is usb, just unmount. if device is cd/dvd, eject as well, then remove list item
     //if no device, then exit
     QString cmd;
+    QString cmd2;
+    QString cmd3;
     QString point = QString(item->text());
     qDebug() << "clicked mount point" << point;
     QString title = tr("MX USB Unmounter");
@@ -108,25 +114,31 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
         }
 
         // run operation.  if exit is unsuccessful, state device is busy via notify-send
-
-        int out = runCmd(cmd + " '" + point + "'").exit_code;
+        QString mountdevice =runCmd("df '" + point + "'|grep /dev/").str.mid(5,3);
+        qDebug() << mountdevice;
+        int out = runCmd(cmd + " /dev/" + mountdevice + "?*").exit_code;
         qDebug() << out;
         if (out == 0) {
-            item->~QListWidgetItem();
-            cmd = tr("Unmounting " + point.toUtf8());
-            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd.toUtf8() + "'");
-
+            //item->~QListWidgetItem();
+            cmd2 = tr("Unmounting " + point.toUtf8());
+            cmd3 = tr("Your Device is Safe to Remove");
+            if ( cmd == "umount" ) {
+                system("udisksctl power-off -b /dev/" + mountdevice.toUtf8());
+            }
+            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
+            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
         } else {
             qDebug() << "Warning";
-            cmd = tr("Unable to  Unmount, Device in Use");
-            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd.toUtf8() + "'");
+            cmd3 = tr("Unable to  Unmount, Device in Use");
+            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
         }
-    }
-    if (ui->mountlistview->count() == 0) {
+
+        if (ui->mountlistview->count() == 0) {
             qApp->quit();
+        }
+        start();
     }
 }
-
 // implement change event that closes app when window loses focus
 void usbunmounter::changeEvent(QEvent *event)
 {

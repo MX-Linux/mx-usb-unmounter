@@ -1,13 +1,27 @@
 #!/bin/bash
 
-display_en()
-{
+on_click() {
+check=$(ps -C mx-usb-unmounter | grep mx-usb-unmount | cut -d " " -f1)
+echo $check
+
+if [ "$check" = "" ]; then
+	mx-usb-unmounter
+else
+	kill "$check"
+fi
+
+}
+
+display_en() {
 yad --notification --image=drive-removable-media \
---command=mx-usb-unmounter --text="Unmount Media" \
+--command="bash -c on_click" \
+--text="Unmount Media" \
 --menu="List Devices!mx-usb-unmounter!drive-removable-media|Help!mx-viewer mepiscommunity.org!gtk-help|Quit!quit!gtk-quit"
 }
 
 LNG=$(locale|grep ^LANG=|cut -f2 -d=|cut -f1 -d_)
+
+export -f on_click
 
 case $LNG in
 
@@ -15,4 +29,3 @@ case $LNG in
 	;;
 
 esac
-
