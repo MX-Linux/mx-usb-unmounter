@@ -24,6 +24,7 @@ public:
     ~usbunmounter();
     void start();
     Output runCmd(QString cmd);
+    bool is_start;
 
 private slots:
     void on_mountlistview_itemActivated(QListWidgetItem *item);
