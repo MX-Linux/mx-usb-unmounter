@@ -41,7 +41,7 @@ void usbunmounter::start()
     //first get list of mounted devices
     QStringList partitionlist;
     QString file_content;
-    file_content = runCmd("df --local --output=source |grep /dev/").str;
+    file_content = runCmd("df --local --output=source,target,size -H | grep /dev/").str;
     partitionlist = file_content.split("\n");
     qDebug() << "Partition list: " << partitionlist;
 
@@ -52,26 +52,46 @@ void usbunmounter::start()
     QString devicename;
     QString item;
     QListWidgetItem *list_item;
+    QString point;
+    QString size;
+    QString label;
+    QString partition;
+    QString model;
 
     foreach (item, partitionlist) {
         devicename = item.mid(5,3);  //gives us device designation (sda, sdb, etc..)
+        point = item.simplified().section(' ', 1, 1);
+        size = item.simplified().section(' ', 2, 2);
+        partition = item.simplified().section(' ', 0, 0);
+        label = runCmd("/sbin/blkid -o value -s LABEL " + partition).str;
+        qDebug() << "Mountpoint: " << point;
         qDebug() << "Device name: " << devicename;
+        qDebug() << "Size: " << size;
+        qDebug() << "Partition: " << partition;
+        qDebug() << "Label: " << label;
         isUSB = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -q ID_BUS=usb") == 0;
         isCD = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
+        model = runCmd("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep ID_MODEL=").str.section('=',1,1);
+        qDebug() << "Model: " << model;
         qDebug() << "Is USB: " << isUSB;
         qDebug() << "Is CD: " << isCD;
+        QString data;
+
         if (isUSB || isCD ) {
-            QString item2 = runCmd("df " + item + " --output=target |grep /").str;
-            qDebug() << "widget item: " << item2;
             list_item = new QListWidgetItem(ui->mountlistview);
+            QString item2 = QString(model + ": " + size + ": " + point);
             list_item->setText(item2);
+            qDebug() << "widget item: " << item2;
+            QString data;
             if (isUSB) {
                 list_item->setIcon(QIcon::fromTheme("drive-removable-media"));
-                list_item->setData(Qt::UserRole, "usb");
+                data = QString("usb:" + partition + ":" + devicename);
+                list_item->setData(Qt::UserRole, data);
             }
             if (isCD) {
                 list_item->setIcon(QIcon::fromTheme("drive-optical"));
-                list_item->setData(Qt::UserRole, "cd");
+                data = QString("cd:" + partition + ":" + devicename);
+                list_item->setData(Qt::UserRole, data);
             }
         }
     }
@@ -107,14 +127,14 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     if (item->data(Qt::UserRole).toString() == "none") {
         qApp->quit();
     } else {
-        if (item->data(Qt::UserRole).toString() == "usb") {
+        if (item->data(Qt::UserRole).toString().section(":", 0, 0) == "usb") {
             cmd = "umount";
         } else {
             cmd = "eject";
         }
 
         // run operation.  if exit is unsuccessful, state device is busy via notify-send
-        QString mountdevice =runCmd("df '" + point + "'|grep /dev/").str.mid(5,3);
+        QString mountdevice = item->data(Qt::UserRole).toString().section(":", 2, 2);
         qDebug() << mountdevice;
         int out = runCmd(cmd + " /dev/" + mountdevice + "?*").exit_code;
         qDebug() << out;
