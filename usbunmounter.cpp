@@ -85,7 +85,7 @@ void usbunmounter::start()
         qDebug() << "Is MMC: " << isMMC;
         QString data;
 
-        if (isUSB || isCD ) {
+        if (isUSB || isCD || isMMC) {
             list_item = new QListWidgetItem(ui->mountlistview);
             QString item2 = QString(model + ": " + size + ": " + label);
             list_item->setText(item2);
