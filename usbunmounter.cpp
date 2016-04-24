@@ -156,11 +156,12 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
         QString partitiondevice = item->data(Qt::UserRole).toString().section(":", 1, 1);
         qDebug() << mountdevice;
         qDebug() << "Partion device is" << partitiondevice;
+        qDebug() << type;
         int out;
 
         // if item is mmc, unmount only, don't "eject"
         if (type == "mmc") {
-            out = runCmd(cmd + partitiondevice).exit_code;
+            out = runCmd(cmd + " " + partitiondevice).exit_code;
         } else {
             out = runCmd(cmd + " /dev/" + mountdevice + "?*").exit_code;
         }
