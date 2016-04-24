@@ -15,14 +15,14 @@ Changes:
  .
    * changed name
 Checksums-Sha1:
- 1199d4d6cf1443fe435189eebc8ec5684f65f375 689 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
- cd15c715e2261233d12eb37989cbe5dd72a3f21d 41128 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
- e7ed53071241788736fcdcb48d0c2d04f10b3082 25470 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
+ 1dff145db0903090ef3c2335094fb2554ae5eebc 692 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ a7748c040c0f158f5a47f988048a0a371a311e9b 186552 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ f2b1705f89527d25bddcafe07ee8d1a40dfb53b3 25732 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
 Checksums-Sha256:
- 5eadda519ae77a04da5add965f9c564f7478ca4b6cfae2a2fbbe5d1a65182459 689 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
- 0490bd8631a4059e0c8e5658b28f897059f978d82322c6712cc8f7fb9518ae04 41128 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
- de42a4d83d2cf2b307c1be6baaaaf90feaf044d5cd8698afb6530ff93527ea26 25470 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
+ 7483cb6c5e972c39728274e991cb733f0e339630143e9857843705af194745dd 692 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ ad11733ccb68c9324ddf53e2d6195ae8480b2f2f936a420ea605d9734cbcf0a5 186552 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 8ef6d02eff01032b4742528d975ad3e07a6eab9da404992561deb18ca182e29f 25732 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
 Files:
- 350a50d422ea797f15456408a539cfa7 689 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.dsc
- b02e6b78679441da5ffbb56c918cd751 41128 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
- a6ca038ad6bbd8456eb53e94f7abdd89 25470 admin optional mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
+ 56d275fbf4d556ce71824c60ab29bd90 692 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ 5cdc09ee1003c46f9114e6cde2832795 186552 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 0ff15ed1b8d541a965a129e5c08b5115 25732 admin optional mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
