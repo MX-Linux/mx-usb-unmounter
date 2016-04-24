@@ -160,7 +160,6 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     QString mountdevice = item->data(Qt::UserRole).toString().section(":", 2, 2);
     QString partitiondevice = item->data(Qt::UserRole).toString().section(":", 1, 1);
     QString model = item->data(Qt::UserRole).toString().section(":", 3, 3);
-    QString file_content;
     qDebug() << "Mount device is" << mountdevice;
     qDebug() << "Partion device is" << partitiondevice;
     qDebug() << type;
@@ -193,10 +192,9 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
 
         // if device is mmc, check for additional mounted partitions.  If none, say safe to eject.  If more found, say so.
         if ( type == "mmc") {
-            QStringList mmc_check;
-            file_content = runCmd("df --local --output=source,target,size -H | grep " + mountdevice).str;
-            mmc_check = file_content.split("\n");
-            if (mmc_check.count() ==  0 ) {
+            QString mmc_check;
+            mmc_check = runCmd("df --local --output=source,target,size -H | grep " + mountdevice).str;
+            if (mmc_check ==  "" ) {
                 system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
                 system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
             } else {
