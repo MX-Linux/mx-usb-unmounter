@@ -28,4 +28,7 @@ case $LNG in
 	en) display_en
 	;;
 
+	*) display_en
+	;;
+
 esac
