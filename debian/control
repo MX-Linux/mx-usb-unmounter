@@ -9,6 +9,6 @@ Vcs-Git: https://github.com/mx-linux/mx-usb-unmounter
 
 Package: mx-usb-unmounter
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, mx-viewer
+Depends: ${misc:Depends}, ${shlibs:Depends}, mx-viewer, gvfs-bin
 Description: mx-usb-unmounter
  Tray app for unmounting removable media (usb and optical)
