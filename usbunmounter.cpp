@@ -41,18 +41,43 @@ void usbunmounter::start()
 
     //first get list of mounted devices
     QStringList partitionlist;
+    QStringList gvfslist;
     QString file_content;
+    QString item;
     file_content = runCmd("df --local --output=source,target,size -H | grep /dev/").str;
     partitionlist = file_content.split("\n");
     qDebug() << "Partition list: " << partitionlist;
+    //now build list for gvfs devices mtp and gphoto
+    file_content = runCmd("ls -1 --color=never /run/user/$UID/gvfs |grep mtp").str;
+    file_content.append(runCmd("ls -1 --color=never /run/user/$UID/gvfs |grep gphoto").str);
+    gvfslist = file_content.split("\n");
+    foreach (item, gvfslist) {
+        QString dev = item.section("A",1,1).section('%', 0, 0);
+        if ( dev == "") {
+            qDebug() << "Dev" << dev;
+        } else {
+            qDebug() << "Dev" << dev;
+            QString dev2 = item.section("C",1,1).section('%',0,0);
+            qDebug() << "Dev2" << dev2;
+            QString devpath = QString("/dev/bus/usb/"+ dev + "/" + dev2);
+            qDebug() << "DevPath" << devpath;
+            QString addtopartitionlist = QString(devpath + " " + item + " ");
+            partitionlist << addtopartitionlist;
+        }
+    }
+
+    qDebug() << "Partition list: " << partitionlist;
+
+
 
     // now check usb status of each item.  if usb is yes, add to usb list, if optical is yes, add to optical list
 
     bool isUSB;
     bool isCD;
     bool isMMC;
+    bool isGPHOTO;
+    bool isMTP;
     QString devicename;
-    QString item;
     QListWidgetItem *list_item;
     QString point;
     QString size;
@@ -75,6 +100,13 @@ void usbunmounter::start()
         //isCD = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
         isCD = system("udevadm info --query=property " + partition.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
         isMMC = system("udevadm info --query=property " + partition.toUtf8() + " | grep -q ID_DRIVE_FLASH_SD=") == 0;
+        if (point.section(':', 0, 0) == "gphoto2") {
+            isGPHOTO=true;
+        }
+        if (point.section(':', 0, 0) == "mtp") {
+            isMTP=true;
+        }
+
         //model = runCmd("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep ID_MODEL=").str.section('=',1,1);
         model = runCmd("udevadm info --query=property " + partition.toUtf8() + " | grep ID_MODEL=").str.section('=',1,1);
         devicename = runCmd("udevadm info --query=property " + partition.toUtf8() + " |grep DEVPATH=").str.section("/", -2, -2);
@@ -95,20 +127,32 @@ void usbunmounter::start()
             qDebug() << "widget item: " << item2;
             QString data;
             if (isUSB) {
-                list_item->setIcon(QIcon::fromTheme("drive-removable-media"));
-                data = QString("usb:" + partition + ":" + devicename + ":" + model);
-                list_item->setData(Qt::UserRole, data);
-                list_item->setToolTip(point);
+                if (isMTP) {
+                    list_item->setIcon(QIcon::fromTheme("multimedia-player"));
+                    data = QString("mtp;" + partition + ";" + point + ";" + model);
+                    list_item->setData(Qt::UserRole, data);
+                    list_item->setToolTip(point);
+                } else if (isGPHOTO) {
+                    list_item->setIcon(QIcon::fromTheme("camera-photo"));
+                    data = QString("gphoto2;" + partition + ";" + point + ";" + model);
+                    list_item->setData(Qt::UserRole, data);
+                    list_item->setToolTip(point);
+                } else {
+                    list_item->setIcon(QIcon::fromTheme("drive-removable-media"));
+                    data = QString("usb;" + partition + ";" + devicename + ";" + model);
+                    list_item->setData(Qt::UserRole, data);
+                    list_item->setToolTip(point);
+                }
             }
             if (isCD) {
-                list_item->setIcon(QIcon::fromTheme("drive-optical"));
-                data = QString("cd:" + partition + ":" + devicename + ":" + model);
+                list_item->setIcon(QIcon::fromTheme("media-optical"));
+                data = QString("cd;" + partition + ";" + devicename + ";" + model);
                 list_item->setData(Qt::UserRole, data);
                 list_item->setToolTip(point);
             }
             if (isMMC) {
                 list_item->setIcon(QIcon::fromTheme("media-flash"));
-                data = QString("mmc:" + partition + ":" + devicename + ":" + model);
+                data = QString("mmc;" + partition + ";" + devicename + ";" + model);
                 list_item->setData(Qt::UserRole, data);
                 list_item->setToolTip(point);
             }
@@ -145,21 +189,21 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     QString point = QString(item->text());
     qDebug() << "clicked mount point" << point;
     cmd2 = tr("Unmounting " + point.toUtf8());
-    cmd3 = tr("Your Device is Safe to Remove");
+    cmd3 = tr(point.toUtf8() + " is Safe to Remove");
     cmd4 = tr("Other partitions still mounted on device");
     QString title = tr("MX USB Unmounter");
-    QString type = item->data(Qt::UserRole).toString().section(":", 0, 0);
+    QString type = item->data(Qt::UserRole).toString().section(";", 0, 0);
     qDebug() << item->data(Qt::UserRole).toString();
     qDebug() << "type is" << type;
 
     if (item->data(Qt::UserRole).toString() == "none") {
         qApp->quit();
     }
-    // run operation.  if exit is unsuccessful, state device is busy via notify-send
+    // run operation on selected device
 
-    QString mountdevice = item->data(Qt::UserRole).toString().section(":", 2, 2);
-    QString partitiondevice = item->data(Qt::UserRole).toString().section(":", 1, 1);
-    QString model = item->data(Qt::UserRole).toString().section(":", 3, 3);
+    QString mountdevice = item->data(Qt::UserRole).toString().section(";", 2, 2);
+    QString partitiondevice = item->data(Qt::UserRole).toString().section(";", 1, 1);
+    QString model = item->data(Qt::UserRole).toString().section(";", 3, 3);
     qDebug() << "Mount device is" << mountdevice;
     qDebug() << "Partion device is" << partitiondevice;
     qDebug() << type;
@@ -175,12 +219,21 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     if (type == "cd") {
         out = runCmd("eject " + partitiondevice).exit_code;
     }
+    // if type is gphoto or mtp, use gvfs-mount -u to unmount
+    if (type == "mtp" || type == "gphoto2") {
+        out = runCmd("gvfs-mount -u /run/user/$UID/gvfs/" + mountdevice).exit_code;
+    }
 
     qDebug() << out;
     if (out == 0) {
         // if device is usb, go ahead and power off "eject" and notify user
         if ( type == "usb" ) {
             system("udisksctl power-off -b /dev/" + mountdevice.toUtf8());
+            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
+            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
+        }
+        // if device is mtp or gphoto2, say unmount was a success
+        if (type == "mtp" || type  == "gphoto2") {
             system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
             system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
         }
