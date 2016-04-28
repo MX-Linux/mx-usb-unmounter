@@ -51,6 +51,7 @@ void usbunmounter::start()
     file_content = runCmd("ls -1 --color=never /run/user/$UID/gvfs |grep mtp").str;
     file_content.append(runCmd("ls -1 --color=never /run/user/$UID/gvfs |grep gphoto").str);
     gvfslist = file_content.split("\n");
+    qDebug() << gvfslist;
     foreach (item, gvfslist) {
         QString dev = item.section("A",1,1).section('%', 0, 0);
         if ( dev == "") {
@@ -102,9 +103,13 @@ void usbunmounter::start()
         isMMC = system("udevadm info --query=property " + partition.toUtf8() + " | grep -q ID_DRIVE_FLASH_SD=") == 0;
         if (point.section(':', 0, 0) == "gphoto2") {
             isGPHOTO=true;
+        } else {
+            isGPHOTO=false;
         }
         if (point.section(':', 0, 0) == "mtp") {
             isMTP=true;
+        } else {
+            isMTP=false;
         }
 
         //model = runCmd("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep ID_MODEL=").str.section('=',1,1);
@@ -116,6 +121,8 @@ void usbunmounter::start()
         qDebug() << "Is USB: " << isUSB;
         qDebug() << "Is CD: " << isCD;
         qDebug() << "Is MMC: " << isMMC;
+        qDebug() << "Is MTP: " << isMTP;
+        qDebug() << "Is GPHOTO: " << isGPHOTO;
 
 
         QString data;
@@ -156,6 +163,7 @@ void usbunmounter::start()
                 list_item->setData(Qt::UserRole, data);
                 list_item->setToolTip(point);
             }
+            qDebug() << "Data list: " << data;
         }
     }
 
