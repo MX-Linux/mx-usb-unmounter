@@ -26,7 +26,6 @@ public:
     int about();
     Output runCmd(QString cmd);
     bool is_start;
-    QString arg1;
 
 private slots:
     void on_mountlistview_itemActivated(QListWidgetItem *item);

@@ -9,10 +9,8 @@ usbunmounter::usbunmounter(QString arg1, QWidget *parent) :
     ui(new Ui::usbunmounter)
 {
     if ( arg1 == "--help" or arg1 == "-h" ) {
-        int exit = about();
-        qDebug() << exit;
-        if (exit == 1) {
-            qApp->quit();
+        if (about() == 1) {
+            exit(0);
         }
     } else {
         ui->setupUi(this);
