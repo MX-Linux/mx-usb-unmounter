@@ -4,17 +4,25 @@
 #include <QKeyEvent>
 #include <QMessageBox>
 
-usbunmounter::usbunmounter(QWidget *parent) :
+usbunmounter::usbunmounter(QString arg1, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::usbunmounter)
 {
-    ui->setupUi(this);
-    this->setWindowIcon(QIcon::fromTheme("drive-removable-media"));
-    this->setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint);
-    this->setWindowFlags(Qt::Tool | Qt::FramelessWindowHint);
-    this->move(QCursor::pos());
-    is_start = true;
-    start();
+    if ( arg1 == "--help" or arg1 == "-h" ) {
+        int exit = about();
+        qDebug() << exit;
+        if (exit == 1) {
+            qApp->quit();
+        }
+    } else {
+        ui->setupUi(this);
+        this->setWindowIcon(QIcon::fromTheme("drive-removable-media"));
+        this->setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint);
+        this->setWindowFlags(Qt::Tool | Qt::FramelessWindowHint);
+        this->move(QCursor::pos());
+        is_start = true;
+        start();
+    }
 }
 
 // util function for getting bash command output and error code
@@ -301,4 +309,20 @@ void usbunmounter::keyPressEvent(QKeyEvent *event)
     }
 }
 
-
+// About mx-usb-unmounter
+int usbunmounter::about()
+{
+    QString version = runCmd("dpkg-query --show mx-usb-unmounter").str.simplified().section(' ',1,1);
+    QMessageBox msgBox(QMessageBox::NoIcon,
+                       tr("About MX USB Unmounter"), "<p align=\"center\"><b><h2>" +
+                       tr("MX USB Unmounter") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
+                       tr("Quickly Unmount Removable Media") +
+                       "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
+    msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
+    msgBox.addButton(tr("License"), QMessageBox::RejectRole);
+    if (msgBox.exec() == QMessageBox::RejectRole) {
+        system("mx-viewer file:///usr/share/doc/mx-usb-unmounter/license.html '" + tr("MX USB Unmounter").toUtf8() + " " + tr("License").toUtf8() + "'");
+    }
+    return 1;
+}

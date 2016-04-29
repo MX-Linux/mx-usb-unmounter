@@ -20,11 +20,13 @@ class usbunmounter : public QDialog
     Q_OBJECT
 
 public:
-    explicit usbunmounter(QWidget *parent = 0);
+    usbunmounter(QString(arg1), QWidget *parent = 0);
     ~usbunmounter();
     void start();
+    int about();
     Output runCmd(QString cmd);
     bool is_start;
+    QString arg1;
 
 private slots:
     void on_mountlistview_itemActivated(QListWidgetItem *item);
