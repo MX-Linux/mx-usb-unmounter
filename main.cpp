@@ -15,7 +15,11 @@ int main(int argc, char *argv[])
     appTran.load(QString("mx-usb-unmounter_") + QLocale::system().name(), "/usr/share/mx-usb-unmounter/locale");
     a.installTranslator(&appTran);
 
-    usbunmounter w;
+    QString arg1;
+    arg1 = argv[1];
+    arg1 = "--help";
+
+    usbunmounter w(arg1);
     w.show();
 
     return a.exec();
