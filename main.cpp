@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
     QString arg1;
     arg1 = argv[1];
-    arg1 = "--help";
+    //arg1 = "--help";
 
     usbunmounter w(arg1);
     w.show();

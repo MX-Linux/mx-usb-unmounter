@@ -16,7 +16,7 @@ display_en() {
 yad --notification --image=media-eject \
 --command="bash -c on_click" \
 --text="Unmount Media" \
---menu="List Devices!mx-usb-unmounter!drive-removable-media|Help!mx-viewer mepiscommunity.org!gtk-help|About!mx-usb-unmounter -h!help-about|Quit!quit!gtk-quit"
+--menu="List Devices!mx-usb-unmounter!drive-removable-media|Help!mx-viewer mepiscommunity.org!help-browser|About!mx-usb-unmounter -h!help-about|Quit!quit!process-stop"
 }
 
 LNG=$(locale|grep ^LANG=|cut -f2 -d=|cut -f1 -d_)
