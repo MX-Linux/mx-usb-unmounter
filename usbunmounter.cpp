@@ -212,6 +212,7 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
 
     if (item->data(Qt::UserRole).toString() == "none") {
         qApp->quit();
+        return;
     }
     // run operation on selected device
 
