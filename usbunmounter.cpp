@@ -212,6 +212,7 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
 
     if (item->data(Qt::UserRole).toString() == "none") {
         qApp->quit();
+        return;
     }
     // run operation on selected device
 
@@ -316,7 +317,7 @@ int usbunmounter::about()
                        tr("MX USB Unmounter") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
                        tr("Quickly Unmount Removable Media") +
                        "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, 0);
     msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
     msgBox.addButton(tr("License"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::RejectRole) {
