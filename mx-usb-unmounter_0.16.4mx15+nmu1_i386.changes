@@ -1,11 +1,8 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
-
 Format: 1.8
 Date: Thu, 21 Apr 2016 19:58:01 -0400
 Source: mx-usb-unmounter
 Binary: mx-usb-unmounter
-Architecture: i386
+Architecture: source i386
 Version: 0.16.4mx15+nmu1
 Distribution: mx
 Urgency: medium
@@ -18,20 +15,14 @@ Changes:
  .
    * changed name
 Checksums-Sha1:
- 697745102814505b30fcd034f1d403828e5b2de7 32644 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
+ c9bc883ab8ca8fc11ab0f4ce528acec225d39b15 686 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ 0f02a0b4d01324b3f9d2e41b8e3a904c27631c71 7744 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 840494b9906fb7517f4d53dbd23125c82c853d61 32558 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
 Checksums-Sha256:
- a08c3fad25eb920024c92972cde7c601480244c76613c1885fb0228494c197f3 32644 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
+ b8ef0654f2991cfb572510359e23f81afa3a04b4067a03b19963183e0562a544 686 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ b2d8f16e60e06719936eabe36e029732e8b1e35541378024d24d94788cc92a3d 7744 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 4a4b9819579cbe3638d11c3fe76d8d1d0f051f8769d7a0b311482c0d442b38d3 32558 mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
 Files:
- f7ab8fd0e80ca0b09a7a0f09cfc34d80 32644 admin optional mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb
-
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1
-
-iQEcBAEBAgAGBQJXJPUPAAoJEHCTjHgGee6Yfz8IAL1xu48hQbP/1lODTHq6KBfU
-/X7QxoXKEp9os/x7bhEwCAHo+QJDUKVa3/8lYyInUUkOzNQgezPKWGI0NJL/RMPj
-lpDc6Ko0PFyCsLN3tSaupyvzxIXyJM9G+3xziDQ3vKFYK8XBNgvaY5ohz9a0YD85
-8NB4jbAbBM/Eob7JPsHexHVqDXgk3mpLsDrJv+dst/eaaqt7ULJtY7pooPLPlt3y
-93WBkE1CQ/Fet+IPqWxUdtlpzKIGpJaqh30T2lkPF0KMVbKlNKCeXlfYaLlHXjpY
-5gb3tqqsKAuR1ipKbQWtIzbV9GbI/XPeqgbyouDjvc2mBF8tziTDYN97IB3/9Mk=
-=qCV6
------END PGP SIGNATURE-----
+ b9cd09ccd9879676388ebbdcff748dfa 686 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ 084baec69e7dd32a6d7366752702d89c 7744 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 06aeb6470d0865da0f4e9fa688c4b58c 32558 admin optional mx-usb-unmounter_0.16.4mx15+nmu1_i386.deb

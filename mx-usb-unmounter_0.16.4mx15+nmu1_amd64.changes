@@ -1,6 +1,3 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
-
 Format: 1.8
 Date: Thu, 21 Apr 2016 19:58:01 -0400
 Source: mx-usb-unmounter
@@ -18,26 +15,14 @@ Changes:
  .
    * changed name
 Checksums-Sha1:
- 6e380b871c99bfabcf60a7e480c8913c662e9e78 1210 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
- c62863f4c0a70015c6af31ac0113452b3f70255e 46720 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
- 0b382f9daf91f879211a8f7be5934de1e7dbc039 31616 mx-usb-unmounter_0.16.4mx15+nmu1_amd64.deb
+ a28b06104ca2dba7d20c51ef43172b73f9294578 686 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ 06712d257479f7572ab2d889d605c2ff30708d56 7756 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 9ecfea4f8cc984cc16dbd6ef918fb4f9daa8a395 31440 mx-usb-unmounter_0.16.4mx15+nmu1_amd64.deb
 Checksums-Sha256:
- 293d5b9f95015624d14a3ed19e7dbcefb725373a2d8b1bcfa1f92d1d07ea2b11 1210 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
- 6d86ff034eff96a7c82e6addc935593862e04a00908bf4aaa0033cbb57bf67ff 46720 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
- 53cbaf4d7dee8d54e507f94e0b4e05b511ec8095dc44db649a269a4e603362db 31616 mx-usb-unmounter_0.16.4mx15+nmu1_amd64.deb
+ bf8a7cef192a9c4cd52a06eb3d343960a5fbe698a5f3be08e9d6aa226e5982f0 686 mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ 90bc7adce4815b8033a1727b9035e360fab5cea66bed57c2554e1df08045ab50 7756 mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ 8dee1eaa2b708c13cd8b1a1a4dcb5cbbda10dda42688a37288b365affcfbba7e 31440 mx-usb-unmounter_0.16.4mx15+nmu1_amd64.deb
 Files:
- 9bb53d535b2c8f57cc2ebcb1251129c0 1210 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.dsc
- f6da8d431bd51b029412a9fa29f64ff0 46720 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
- 19a92fb8c6b8ea3e30a2012d41fccde7 31616 admin optional mx-usb-unmounter_0.16.4mx15+nmu1_amd64.deb
-
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1
-
-iQEcBAEBAgAGBQJXJPMhAAoJEHCTjHgGee6YUaMH/iuTGe52o8AENbt9TaTFbYCc
-OHuX7ntvRyFfcg1kWiAlRHu19MkvWU2FFJ4iiZYzU91rqadzvsrzm+Llz1EXLko9
-EmPeohntkSg5RebS11VFMqlox7zjXz2NsfrryC3cubPmxqFXWleLkmXcoz4NRDF9
-slB9un4sw3COwt4vvlGdsDtOaCFhp0CBK0gOCNfDja91yOuAZRuTTjZ7FuWO5wMK
-xe16gfkv/QUNmEJqe/Cwd4EaLfnUUvGVtNE1Uv9q0AGjpz/opu5OOdLXtKuKscB2
-yR+hx06UvuwpbEo+mdHZk44HEoplYuWYy+0rx1xkrnMOfG+LMiuzS5kkh6AjrfM=
-=RRpk
------END PGP SIGNATURE-----
+ 6e2a94c96f0b0431e6fae0d07d4fd68a 686 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.dsc
+ 44fc12e729b615f00d0bd067eda88de8 7756 admin optional mx-usb-unmounter_0.16.4mx15+nmu1.tar.xz
+ b67dc0e590b1e5fb8f24fa2274b22a24 31440 admin optional mx-usb-unmounter_0.16.4mx15+nmu1_amd64.deb

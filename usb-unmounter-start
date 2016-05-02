@@ -1,34 +1,18 @@
 #!/bin/bash
 
-on_click() {
-check=$(ps -C mx-usb-unmounter | grep mx-usb-unmount | cut -d " " -f1)
-echo $check
+TEXTDOMAINDIR=/usr/share/locale 
+TEXTDOMAIN=mx-usb-unmounter
 
-if [ "$check" = "" ]; then
-	mx-usb-unmounter
-else
-	kill "$check"
-fi
+TITLE=$"Unmount Media"
+LIST=$"List Devices"
+HELP=$"Help"
+ABOUT=$"About"
+QUIT=$"Quit"
 
-}
 
-display_en() {
 yad --notification --image=media-eject \
---command="bash -c on_click" \
---text="Unmount Media" \
---menu="List Devices!mx-usb-unmounter!drive-removable-media|Help!mx-viewer mepiscommunity.org!help-browser|About!mx-usb-unmounter -h!help-about|Quit!quit!process-stop"
-}
+--command=mx-usb-unmounter \
+--text=$TITLE \
+--menu="$LIST!mx-usb-unmounter!drive-removable-media|$HELP!mx-viewer http://www.mepiscommunity.org/wiki/help-files/help-mx-usb-unmounter!help-browser|$ABOUT!mx-usb-unmounter -h!help-about|$QUIT!quit!process-stop"
 
-LNG=$(locale|grep ^LANG=|cut -f2 -d=|cut -f1 -d_)
-
-export -f on_click
-
-case $LNG in
-
-	en) display_en
-	;;
-
-	*) display_en
-	;;
-
-esac
+exit 0
