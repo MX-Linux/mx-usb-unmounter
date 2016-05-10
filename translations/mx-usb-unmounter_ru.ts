@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="es" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.1">
 <context>
     <name>usbunmounter</name>
     <message>
@@ -7,68 +7,68 @@
         <location filename="../usbunmounter.cpp" line="317"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
-        <translation>MX Desmontar USB</translation>
+        <translation>MX USB безопасное извлечение</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation>Doble clic para desmontar</translation>
+        <translation>Двойной щелчок для размонтирования</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="138"/>
         <source>Volume</source>
-        <translation>Volumen</translation>
+        <translation>Том</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation>No es un dispositivo removible</translation>
+        <translation>Нет извлекаемых устройств</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation>Desmontando</translation>
+        <translation>Размонтирование</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Otras particiones aún están montadas en el dispositivo</translation>
+        <translation>Другие разделы устройства по-прежнему смонтированы</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>No se pudo desmontar. Dispositivo en uso</translation>
+        <translation>Невозможно отмонтировать, устройство используется</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation>Acerca de MX Desmontar USB</translation>
+        <translation>О программе MX USB безопасное извлечение</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
         <source>Version: </source>
-        <translation>Versión:</translation>
+        <translation>Версия:</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="318"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Desmontar rápidamente medios removibles</translation>
+        <translation>Быстрое отмонтирование извлекаемых устройств</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="320"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>Авторское право (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="321"/>
         <source>Cancel</source>
-        <translation>Cancelar</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="322"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>License</source>
-        <translation>Licencia</translation>
+        <translation>Лицензия</translation>
     </message>
 </context>
 </TS>
