@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sv_SE">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.1">
 <context>
     <name>usbunmounter</name>
     <message>
@@ -9,68 +7,68 @@
         <location filename="../usbunmounter.cpp" line="317"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
-        <translation type="unfinished"></translation>
+        <translation>MX USB Unmounter</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation type="unfinished"></translation>
+        <translation>Dubbel-klicka för att Avmontera</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="138"/>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>Volym</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen Flyttbar Enhet</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation type="unfinished"></translation>
+        <translation>Avmonterar</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation type="unfinished"></translation>
+        <translation>Andra partitioner är fortfarande monterade på enheten</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte avmontera, enheten används</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation type="unfinished"></translation>
+        <translation>Om MX USB Unmounter</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
         <source>Version: </source>
-        <translation type="unfinished"></translation>
+        <translation>Version</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="318"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="unfinished"></translation>
+        <translation>Avmontera snabbt  flyttbara media</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="320"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="321"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="322"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licens</translation>
     </message>
 </context>
 </TS>
