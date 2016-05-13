@@ -1,3 +1,10 @@
+mx-usb-unmounter (16.5.1mx15) mx; urgency=medium
+
+  * intial public release
+  * translations added
+
+ -- dolphin_oracle <dolphinoracle@gmail.com>  Fri, 13 May 2016 14:23:16 -0400
+
 mx-usb-unmounter (0.16.4mx15+nmu1) mx; urgency=medium
 
   * changed name

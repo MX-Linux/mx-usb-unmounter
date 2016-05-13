@@ -4,3 +4,16 @@ translations/*.qm	        usr/share/mx-usb-unmounter
 license.html			usr/share/doc/mx-usb-unmounter
 usb-unmounter-start		usr/local/bin
 mx-usb-unmounter.desktop 	etc/xdg/autostart
+translations_script/ca/mx-usb-unmounter-start.mo     /usr/share/locale/ca/LC_MESSAGES
+translations_script/de/mx-usb-unmounter-start.mo     /usr/share/locale/de/LC_MESSAGES
+translations_script/el/mx-usb-unmounter-start.mo     /usr/share/locale/el/LC_MESSAGES
+translations_script/en/mx-usb-unmounter-start.mo     /usr/share/locale/en/LC_MESSAGES
+translations_script/es/mx-usb-unmounter-start.mo     /usr/share/locale/es/LC_MESSAGES
+translations_script/fr/mx-usb-unmounter-start.mo     /usr/share/locale/fr/LC_MESSAGES
+translations_script/it/mx-usb-unmounter-start.mo     /usr/share/locale/it/LC_MESSAGES
+translations_script/ja/mx-usb-unmounter-start.mo     /usr/share/locale/ja/LC_MESSAGES
+translations_script/nl/mx-usb-unmounter-start.mo     /usr/share/locale/nl/LC_MESSAGES
+translations_script/pl/mx-usb-unmounter-start.mo     /usr/share/locale/pl/LC_MESSAGES
+translations_script/ro/mx-usb-unmounter-start.mo     /usr/share/locale/ro/LC_MESSAGES
+translations_script/ru/mx-usb-unmounter-start.mo     /usr/share/locale/ru/LC_MESSAGES
+translations_script/sv/mx-usb-unmounter-start.mo     /usr/share/locale/sv/LC_MESSAGES
