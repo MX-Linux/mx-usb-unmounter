@@ -1,3 +1,9 @@
+mx-usb-unmounter (16.5.2mx15) mx; urgency=medium
+
+  * new desktop file
+
+ -- dolphin_oracle <dolphin@littlebyte>  Mon, 23 May 2016 13:18:31 -0400
+
 mx-usb-unmounter (16.5.1mx15) mx; urgency=medium
 
   * intial public release
