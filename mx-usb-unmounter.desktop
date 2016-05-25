@@ -33,4 +33,5 @@ Path=
 Terminal=false
 StartupNotify=false
 Type=Application
-Categories=SystemName[en_US.UTF-8]=MX USB Unmounter
+Categories=System;MX-Utilities;
+Name[en_US.UTF-8]=MX USB Unmounter
