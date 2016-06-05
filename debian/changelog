@@ -1,3 +1,9 @@
+mx-usb-unmounter (16.6.1mx16) mx; urgency=medium
+
+  * added check for running process to ensure only one instance
+
+ -- dolphin_oracle <dolphinoracle@gmail.com>  Sun, 05 Jun 2016 17:45:00 -0400
+
 mx-usb-unmounter (16.5.2mx15) mx; urgency=medium
 
   * new desktop file
