@@ -15,14 +15,14 @@ Changes:
  .
    * added check for running process to ensure only one instance
 Checksums-Sha1:
- c72c00f447a4fba9b204a216b907b0481d5c7013 669 mx-usb-unmounter_16.6.1mx16.dsc
- e80886b35d82a3554fba65647a7ee2fa60f10a04 14928 mx-usb-unmounter_16.6.1mx16.tar.xz
- cd6250b2acd54a8e58ba22e5df3c0ba7640c2b60 36502 mx-usb-unmounter_16.6.1mx16_amd64.deb
+ 3aebbfc46bb7f84858421145f18eb0f457dcedc9 672 mx-usb-unmounter_16.6.1mx16.dsc
+ f4a0a68c2287418cae6bdb352d7619c1c8622770 106096 mx-usb-unmounter_16.6.1mx16.tar.xz
+ 0c22cd140a22ce0755e89215df32abe3ed04d5c3 36520 mx-usb-unmounter_16.6.1mx16_amd64.deb
 Checksums-Sha256:
- 61c537977afef888fc1c86ae7518ad6fd3e48bea2d1b69ab221b6b17d642c4ea 669 mx-usb-unmounter_16.6.1mx16.dsc
- 929642ffcc2fc0470c7dce7e8836f7dcc4089e39a5bec327d75f5d905fd4a695 14928 mx-usb-unmounter_16.6.1mx16.tar.xz
- 82e2c993bb0523716b7c1af0da308276c2d47d9fc08338e9e9196ffe32d0f9ae 36502 mx-usb-unmounter_16.6.1mx16_amd64.deb
+ 4df0eee61418db22a00a68a4970ce37ef4da110a7704fa7ffbf1e5e50b80c4bd 672 mx-usb-unmounter_16.6.1mx16.dsc
+ bf6f7ee92e620e95dcc5aec16232466d7349e0b8f8ef833bee3f1d18c121ab6e 106096 mx-usb-unmounter_16.6.1mx16.tar.xz
+ 2e95679ba2c18c91051295159a410d24ad1452427359633d8e40d15eb1b83f76 36520 mx-usb-unmounter_16.6.1mx16_amd64.deb
 Files:
- 4d49f212854643feaa9744c441961c1c 669 admin optional mx-usb-unmounter_16.6.1mx16.dsc
- 2b400914497391d674107241aeb92bcb 14928 admin optional mx-usb-unmounter_16.6.1mx16.tar.xz
- e7ce9f9a32a2739c9809871664c62bae 36502 admin optional mx-usb-unmounter_16.6.1mx16_amd64.deb
+ afbd03e2ecaf56edadad6172427cfe48 672 admin optional mx-usb-unmounter_16.6.1mx16.dsc
+ 61dd46b14e4d47c51d7a3f0405c6024c 106096 admin optional mx-usb-unmounter_16.6.1mx16.tar.xz
+ 36f344f803e2d4e54a1cabcddc12673b 36520 admin optional mx-usb-unmounter_16.6.1mx16_amd64.deb

@@ -4,6 +4,7 @@ TEXTDOMAINDIR=/usr/share/locale
 TEXTDOMAIN=mx-usb-unmounter-start
 
 if [ -e /tmp/usb-unmounter-$USER-lockfile ]; then
+	mx-usb-unmounter &
 	exit 0
 	else
 	touch /tmp/usb-unmounter-$USER-lockfile
