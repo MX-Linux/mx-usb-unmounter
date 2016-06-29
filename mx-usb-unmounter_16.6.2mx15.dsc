@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: mx-usb-unmounter
 Binary: mx-usb-unmounter
 Architecture: any
-Version: 16.6.1mx16
+Version: 16.6.2mx15
 Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
 Standards-Version: 3.9.5
 Vcs-Git: https://github.com/mx-linux/mx-usb-unmounter
@@ -10,8 +10,8 @@ Build-Depends: qt5-qmake, debhelper (>= 7.0.50~)
 Package-List:
  mx-usb-unmounter deb admin optional arch=any
 Checksums-Sha1:
- f4a0a68c2287418cae6bdb352d7619c1c8622770 106096 mx-usb-unmounter_16.6.1mx16.tar.xz
+ 857495edd106b0c5f739e41eac1d165716a3349a 16652 mx-usb-unmounter_16.6.2mx15.tar.xz
 Checksums-Sha256:
- bf6f7ee92e620e95dcc5aec16232466d7349e0b8f8ef833bee3f1d18c121ab6e 106096 mx-usb-unmounter_16.6.1mx16.tar.xz
+ 6df1b57092c5c3a8ecfc194eb105afc516187f381d59e2ffbfeb91d0d3a8b8b3 16652 mx-usb-unmounter_16.6.2mx15.tar.xz
 Files:
- 61dd46b14e4d47c51d7a3f0405c6024c 106096 mx-usb-unmounter_16.6.1mx16.tar.xz
+ 2c382096017179a16cb4e70a742ffdb3 16652 mx-usb-unmounter_16.6.2mx15.tar.xz

@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 29 Jun 2016 08:55:00 -0400
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: source amd64
+Version: 16.6.2mx15
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: dolphin_oracle <dolphinoracle@gmail.com>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (16.6.2mx15) mx; urgency=medium
+ .
+   * fixed missing icon issue
+Checksums-Sha1:
+ 37d662d7c76bb119763e91596841d1c0ca7ddf89 669 mx-usb-unmounter_16.6.2mx15.dsc
+ 857495edd106b0c5f739e41eac1d165716a3349a 16652 mx-usb-unmounter_16.6.2mx15.tar.xz
+ f8ea2f3b95ab8b59dac77bf8dc0825ad8abd3037 36592 mx-usb-unmounter_16.6.2mx15_amd64.deb
+Checksums-Sha256:
+ ced0c5557f2606dd8291c90b633b613b8056222e0cf3d29d52cdd0617e7e0136 669 mx-usb-unmounter_16.6.2mx15.dsc
+ 6df1b57092c5c3a8ecfc194eb105afc516187f381d59e2ffbfeb91d0d3a8b8b3 16652 mx-usb-unmounter_16.6.2mx15.tar.xz
+ c0d647706a0337851024973dc7d067d5d4b2c3da82ff32de100faafe30625f68 36592 mx-usb-unmounter_16.6.2mx15_amd64.deb
+Files:
+ 83761dcb6bea27f1b9d5d938c235602f 669 admin optional mx-usb-unmounter_16.6.2mx15.dsc
+ 2c382096017179a16cb4e70a742ffdb3 16652 admin optional mx-usb-unmounter_16.6.2mx15.tar.xz
+ c2b4f22b5b6260119338092c08e70ea8 36592 admin optional mx-usb-unmounter_16.6.2mx15_amd64.deb
