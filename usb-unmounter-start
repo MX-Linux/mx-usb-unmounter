@@ -20,7 +20,7 @@ QUIT=$"Quit"
 yad --notification --image=media-eject \
 --command=mx-usb-unmounter \
 --text=$TITLE \
---menu="$LIST!mx-usb-unmounter!drive-removable-media|$HELP!mx-viewer http://www.mepiscommunity.org/wiki/help-files/help-mx-usb-unmounter!help-browser|$ABOUT!mx-usb-unmounter -h!help-about|$QUIT!quit!process-stop"
+--menu="$LIST!mx-usb-unmounter!drive-removable-media|$HELP!mx-viewer https://mxlinux.org/wiki/help-files/help-mx-usb-unmounter!help-browser|$ABOUT!mx-usb-unmounter -h!help-about|$QUIT!quit!process-stop"
 
 rm  /tmp/usb-unmounter-$USER-lockfile
 
