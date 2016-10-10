@@ -18,26 +18,26 @@ Changes:
  .
    * changed URLs
 Checksums-Sha1:
- a931622269bf68b22470fde0160ec2039018a923 1186 mx-usb-unmounter_16.10mx16.dsc
- cc100ce7b2c2e331203ee34d1caf230bc4d9b6b1 14960 mx-usb-unmounter_16.10mx16.tar.xz
- e8c54cd14b8af5ea8aeb91d06e940c6159847c1e 36690 mx-usb-unmounter_16.10mx16_amd64.deb
+ 891e892656a9197b441711cfc23786e2602d33dc 1186 mx-usb-unmounter_16.10mx16.dsc
+ 5ab96a86f44a804a4afe3e87bc5c45118009fb10 15016 mx-usb-unmounter_16.10mx16.tar.xz
+ 108066e87f2f5eb1bf85600e5bcc39222941e92f 36706 mx-usb-unmounter_16.10mx16_amd64.deb
 Checksums-Sha256:
- 10ba36ae821c04585e9197452819a71d39e32dcff9b397e94e542b01621545dd 1186 mx-usb-unmounter_16.10mx16.dsc
- 793c0d2bf4fc0fd0f598265348b234cb5a3a6589d6924a88a6e51380129d1788 14960 mx-usb-unmounter_16.10mx16.tar.xz
- 659e0ba2d1a39ae59e9410c80600a9f6f81540f5e1f1b5466c317ca2996a8123 36690 mx-usb-unmounter_16.10mx16_amd64.deb
+ 87fb5169dc102897855a0f71250475db3bcbba14f2e53f8b35d0b3be6ebba590 1186 mx-usb-unmounter_16.10mx16.dsc
+ 7ea887fa28092c1985ae0b738da05b62376be42fe5b5edd55da42eac71826340 15016 mx-usb-unmounter_16.10mx16.tar.xz
+ f147ee205762a192019666158a7e1f13a8024e0c0d4fab3630d33abc1dca747a 36706 mx-usb-unmounter_16.10mx16_amd64.deb
 Files:
- d6cbc3355543435e0aa6b0dc5d5a4371 1186 admin optional mx-usb-unmounter_16.10mx16.dsc
- b450ed51c8fed3c8affbc3f4a5b32082 14960 admin optional mx-usb-unmounter_16.10mx16.tar.xz
- 7a807f0f654f81dee8877c45da19531b 36690 admin optional mx-usb-unmounter_16.10mx16_amd64.deb
+ ccc2ad9c3f35b1e465371705151c5655 1186 admin optional mx-usb-unmounter_16.10mx16.dsc
+ 73c4343a408ddcaf7d2a8e040c76b456 15016 admin optional mx-usb-unmounter_16.10mx16.tar.xz
+ 250600c7fd0a76421b84866b6484903d 36706 admin optional mx-usb-unmounter_16.10mx16_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJX++HsAAoJEHCTjHgGee6YqYEH/ifCj24YmzZVz2kgrFHrTvrU
-Igs/2ABbbBAVYiPbnjAcOcwdy1NRjM1dpMd3SAwLKlp6t10nZsKSgg7mKHKZhHcs
-SOT8cTA93DtBNWBC3jLX/ZbKgSTh02xq+BGveRoVdKXoDVTK6ICUoc436yvvWOKS
-pgFptLsWM4NdU67IIbltxbgAR9uWRcdtQH9zqd5Ci9U8smKYzJ1uJHgKx0vSPrnC
-ktlh8sBl+kCmh6zPO86QTBaurjr+rekRhMIdmn/m1g4/CVTW2fl7vjd3rcI0ejwz
-35oBTQvSNYkntKAE4M1spBWDQ3vpno3tXBGKyHAvy+CTwpbq4OzdX+zZVwlrg/k=
-=AN0d
+iQEcBAEBAgAGBQJX++R5AAoJEHCTjHgGee6YIWMH/0ShwOQppE8rER4W4UsHZWGd
+VBg56J9p/S2632p3onh5ZZ2n9qTJgYOockN4GfcpB2dsbh2FFLVnwOOG6X8ygbSM
+8JgWAQjMe2wSaSKG94VfLxy8U0oLeSojDdHDa1IzDJitvFaC4g2qJriD0/wwDpaA
+PgHQATJ3/VsbMwL0Ty/tD/+T/BI/YGvU2fVidpxpj+pOo82oUGv+t6/h4sknOKQX
+T+baiHsOGoR0Q6stNriSyeL+BjPnmXyr6qB7vl2Dg6T4S9NhdVzsmDYRGLV+aL0N
+TbtQUY3a8bIN0o9QUxPc6ZMOWa9kQ3dezxdqlOu+fkLNW9C0qosgRNdaSxHdxCM=
+=ZRdC
 -----END PGP SIGNATURE-----
