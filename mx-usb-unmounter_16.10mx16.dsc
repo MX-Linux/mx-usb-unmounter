@@ -13,20 +13,20 @@ Build-Depends: qt5-qmake, debhelper (>= 7.0.50~)
 Package-List:
  mx-usb-unmounter deb admin optional arch=any
 Checksums-Sha1:
- 5ab96a86f44a804a4afe3e87bc5c45118009fb10 15016 mx-usb-unmounter_16.10mx16.tar.xz
+ a11c0f308d1b8fce6dea790985ed857c3acc46f1 94044 mx-usb-unmounter_16.10mx16.tar.xz
 Checksums-Sha256:
- 7ea887fa28092c1985ae0b738da05b62376be42fe5b5edd55da42eac71826340 15016 mx-usb-unmounter_16.10mx16.tar.xz
+ 6f9bb3343501ec57ca2f9e8b3b8ef5c8ca2d2c66efa4703f74f2b2fb775fa873 94044 mx-usb-unmounter_16.10mx16.tar.xz
 Files:
- 73c4343a408ddcaf7d2a8e040c76b456 15016 mx-usb-unmounter_16.10mx16.tar.xz
+ 349896db10c1f5b95eeab1c8a7b46830 94044 mx-usb-unmounter_16.10mx16.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJX++R1AAoJEHCTjHgGee6Y7hcH/jpe0cSGqRkslDwwslqyW8Ks
-0Qo8zgysc7zqRL9uy+5NCtiOK25IfYGGs+2wL2KSnOBusyQ/PQOInQaNkNgosRg7
-+KzDM+fORY80AnKoS3+zJDDnGvzF0cwbX79mZ93hPsruhDAkcFRDXhZH7Y2dQcRW
-+H3IDvp1uzs2B4ijUDyswDzFyHorV5EeoWjYxMxkYe4uIP6mATP9YLZBxZXOPtXB
-WC3lxznaqV5lkcTuMAsN1h1ok0fzGDhXna3mgG8azhuDdRJXbcRuqQx5FMsZEpbi
-azr5tzufQ7QKTLLUKgSvzw9/B+IjgaoHAFplN2hqRWS1nLdT9cH10utuqcO1FtE=
-=LkBq
+iQEcBAEBAgAGBQJX/OMVAAoJEHCTjHgGee6Y7KQH+gKaMtquWrFXH9hwLdgyHSva
+rskZa9fQ8jWaBh2iFPsvYRFajPQxiz3NWcS5SdderYnpMMhsvqxfYZRHjj48m9aU
+z1MjrWpTi3j7+l+6BWVSyAVxZHK+mnitNa1natxpXid5jTftdt1s6y8BUC/m/r1S
+qibRM6Gjor4yh8oez+7pM6CVPR6VrFgE0aiKPVqwowngN2Th/Y9Ko0BMaO74u50L
+vB8yux1nT2BA0dNkGh80ccagmjb9iYwB9mE+bLwEt1XnQtqZOxWzqT2dFGqg76do
+1IDCu/QMZcWwQdFdLyu7wNMWC50IOpSsRhfAFO9ppiJh4L6hu0g8uol/gZHaUUo=
+=/ll9
 -----END PGP SIGNATURE-----
