@@ -1,0 +1,22 @@
+Format: 1.8
+Date: Thu, 20 Oct 2016 15:30:00 -0400
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: i386
+Version: 16.10mx16+1
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: dolphin_oracle <dolphinoracle@gmail.com>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (16.10mx16+1) mx; urgency=medium
+ .
+   * new tray icon
+Checksums-Sha1:
+ 74fe91412f205e6ef7b1f20d2513882b9f699e5d 38528 mx-usb-unmounter_16.10mx16+1_i386.deb
+Checksums-Sha256:
+ e33f71417cd540a81521352c1381927a4fcf52959eb51e5fd20aa3a6655844d5 38528 mx-usb-unmounter_16.10mx16+1_i386.deb
+Files:
+ b7c78a3e8c19cc48920eb6bb145c9564 38528 admin optional mx-usb-unmounter_16.10mx16+1_i386.deb
