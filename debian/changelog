@@ -1,3 +1,9 @@
+mx-usb-unmounter (16.11mx16) mx; urgency=medium
+
+  * fix 32 bit deb, bump revision number
+
+ -- dolphin_oracle <dolphinoracle@gmail.com>  Tue, 01 Nov 2016 10:30:00 -0400
+
 mx-usb-unmounter (16.10mx16+1) mx; urgency=medium
 
   * new tray icon

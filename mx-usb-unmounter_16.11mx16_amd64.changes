@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 01 Nov 2016 10:30:00 -0400
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: source amd64
+Version: 16.11mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: dolphin_oracle <dolphinoracle@gmail.com>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (16.11mx16) mx; urgency=medium
+ .
+   * fix 32 bit deb, bump revision number
+Checksums-Sha1:
+ 3fd553d52ababbaf8b2ef9fb59b7d3373799a68a 665 mx-usb-unmounter_16.11mx16.dsc
+ 5643e7f653ab4d9b41cd1bc7ed4e353fca08fb76 15744 mx-usb-unmounter_16.11mx16.tar.xz
+ 584e48ba0b72fd96fa4c1f032982263954eaa17d 37532 mx-usb-unmounter_16.11mx16_amd64.deb
+Checksums-Sha256:
+ 8aa1f07ac38f6ff3bcfc1cf808f01f44c112ba994f7974e56b0ba99ed3d1b14b 665 mx-usb-unmounter_16.11mx16.dsc
+ aabf364bdf7c64e6bc74f3af0c29b2c0071548c4a820d256ea816b25a2b78f60 15744 mx-usb-unmounter_16.11mx16.tar.xz
+ 9203dc91a451e97714ac8b42f59375e660f370db94688455f419ac31ec6acd55 37532 mx-usb-unmounter_16.11mx16_amd64.deb
+Files:
+ 0fe44b3177efafa7678476e06ecebeee 665 admin optional mx-usb-unmounter_16.11mx16.dsc
+ 023c6d5fe7d6d6011c7c0ec70870799b 15744 admin optional mx-usb-unmounter_16.11mx16.tar.xz
+ 361b2860e349d9479305a5f3fdd74a66 37532 admin optional mx-usb-unmounter_16.11mx16_amd64.deb
