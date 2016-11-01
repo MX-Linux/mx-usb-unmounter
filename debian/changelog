@@ -1,3 +1,33 @@
+mx-usb-unmounter (16.10mx16+1) mx; urgency=medium
+
+  * new tray icon
+
+ -- dolphin_oracle <dolphinoracle@gmail.com>  Thu, 20 Oct 2016 15:30:00 -0400
+
+mx-usb-unmounter (16.10mx16) mx; urgency=medium
+
+  * changed URLs
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 10 Oct 2016 14:43:56 -0400
+
+mx-usb-unmounter (16.8mx15) mx; urgency=medium
+
+  * fixed .desktop 
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 09 Aug 2016 22:06:41 -0400
+
+mx-usb-unmounter (16.6.2mx15) mx; urgency=medium
+
+  * fixed missing icon issue
+
+ -- dolphin_oracle <dolphinoracle@gmail.com>  Wed, 29 Jun 2016 08:55:00 -0400
+
+mx-usb-unmounter (16.6.1mx15) mx; urgency=medium
+
+  * added check for running process to ensure only one instance
+
+ -- dolphin_oracle <dolphinoracle@gmail.com>  Sun, 05 Jun 2016 17:45:00 -0400
+
 mx-usb-unmounter (16.5.2mx15) mx; urgency=medium
 
   * new desktop file
