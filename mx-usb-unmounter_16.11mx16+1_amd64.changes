@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 16 Nov 2016 13:52:33 -0500
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: source amd64
+Version: 16.11mx16+1
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (16.11mx16+1) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ 8d2d36ed9af2e64ea43a2e58601690e36c5323e9 1194 mx-usb-unmounter_16.11mx16+1.dsc
+ 7a622bc2f4eff5eeeecf2bcb56673be59f70d7d9 14872 mx-usb-unmounter_16.11mx16+1.tar.xz
+ 8d4d9ec4820be00c0aba55233e5ec1f118490f7c 38662 mx-usb-unmounter_16.11mx16+1_amd64.deb
+Checksums-Sha256:
+ dada1b306f7c8bd6a611361dbf582a24beea0a0ee08e38ec2422abe8fd20cb31 1194 mx-usb-unmounter_16.11mx16+1.dsc
+ 842db9354ffbdaa876a8b8db6b3cf8b8c1d885d3eb9c14646c794a9361a3e80d 14872 mx-usb-unmounter_16.11mx16+1.tar.xz
+ 743d49b8ccddc794cc8b874254363e2c2b65ec6edbc886002a5e1c6c37d3d207 38662 mx-usb-unmounter_16.11mx16+1_amd64.deb
+Files:
+ 32730f3a2ed99411056369f845e7ae18 1194 admin optional mx-usb-unmounter_16.11mx16+1.dsc
+ e5ee2fffc40e4d84ee704cf44b09c7cd 14872 admin optional mx-usb-unmounter_16.11mx16+1.tar.xz
+ 84e61857ea4151137e74ff52fb53193d 38662 admin optional mx-usb-unmounter_16.11mx16+1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJYLKsSAAoJEHCTjHgGee6YDW0IAMAhCtSo4j7SRSKyzyzanC+m
+lnQIs6LFfeMj1KL8HnBbqNp54x/2xIUCw9V0ArxczQMtNIkinbFhQWEXJr+IKyvJ
+U6XU/w8M25OhH0Nl27cxWI5dBQvCX/G4vhVVfeIIbYO8bXM+1mXKlnQKHgVZnSLy
+9jzoip2Nqy5KE98XW0Du2nmJ0fuDut+pbRjovzbh7MHdWrhp4IelFFUYZ/8zMhzy
+n4c5WBkiufeCZToo+NWpiCbP0p/z/F6WFXOUjsLcBFtHibiwcZDgjliPqNkVlD3+
+nBLrysxNfWmseyoydZG7AwYVfYCobmZxJhuvBcJBeQbOLkbigJXvfmX6IzVdqvc=
+=0DzO
+-----END PGP SIGNATURE-----
