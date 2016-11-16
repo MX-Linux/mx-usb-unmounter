@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-03 09:55-0400\n"
+"POT-Creation-Date: 2016-11-16 10:13-0500\n"
 "PO-Revision-Date: 2016-05-07 02:01+0000\n"
 "Last-Translator: Roberto Saravia <jratlsv2@racsa.co.cr>\n"
 "Language-Team: Spanish (http://www.transifex.com/anticapitalista/antix-development/language/es/)\n"
@@ -18,22 +18,22 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: usb-unmounter-start:6
+#: usb-unmounter-start:13
 msgid "Unmount Media"
 msgstr "Desmontar medios"
 
-#: usb-unmounter-start:7
+#: usb-unmounter-start:14
 msgid "List Devices"
 msgstr "Listar dispositivos"
 
-#: usb-unmounter-start:8
+#: usb-unmounter-start:15
 msgid "Help"
 msgstr "Ayuda"
 
-#: usb-unmounter-start:9
+#: usb-unmounter-start:16
 msgid "About"
 msgstr "Acerca de"
 
-#: usb-unmounter-start:10
+#: usb-unmounter-start:17
 msgid "Quit"
 msgstr "Terminar"

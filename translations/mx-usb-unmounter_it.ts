@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="it">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.1">
 <context>
     <name>usbunmounter</name>
     <message>
@@ -9,7 +7,7 @@
         <location filename="../usbunmounter.cpp" line="317"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
-        <translation>MX Smontare USB</translation>
+        <translation>MX Smonta USB</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
@@ -24,7 +22,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation>Nessun dispositivo Rimovibile</translation>
+        <translation>Nessun Dispositivo Rimovibile</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
@@ -34,7 +32,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Altre partizioni ancora montate sul ispositivo</translation>
+        <translation>Altre partizioni ancora montate sul dispositivo</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
@@ -44,7 +42,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation>Informazioni su MX Smontare USB</translation>
+        <translation>Informazioni su MX Smonta USB</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>

@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ro" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
 <context>
     <name>usbunmounter</name>
     <message>
@@ -47,7 +47,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
         <source>Version: </source>
-        <translation>Versiune:</translation>
+        <translation>Sürüm</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="318"/>
@@ -62,13 +62,13 @@
     <message>
         <location filename="../usbunmounter.cpp" line="321"/>
         <source>Cancel</source>
-        <translation>Anulează</translation>
+        <translation>İptal</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="322"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>License</source>
-        <translation>Licență</translation>
+        <translation>Ruhsat</translation>
     </message>
 </context>
 </TS>
