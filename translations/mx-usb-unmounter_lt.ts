@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="lt" version="2.1">
 <context>
     <name>usbunmounter</name>
     <message>
@@ -7,68 +7,68 @@
         <location filename="../usbunmounter.cpp" line="317"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
-        <translation>MX USB Ayırıcı</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation>Ayırmak için çift tıklayın</translation>
+        <translation>Norėdami atjungti, sputelėkite du kartus</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="138"/>
         <source>Volume</source>
-        <translation>Hacim</translation>
+        <translation>Tomas</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation>Kaldırılabilir Aygıt Yok</translation>
+        <translation>Nėra keičiamųjų įrenginių</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation>Ayrılıyor</translation>
+        <translation>Atjungiama</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation type="unfinished"/>
+        <translation>Kiti, vis dar įrenginyje prijungti skaidiniai</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>Aygıt kullanımda, Bağ kaldırılamaz</translation>
+        <translation>Nepavyko atjungti, įrenginys yra naudojamas</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation>MX USB Ayırıcı Hakkında</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
         <source>Version: </source>
-        <translation>Sürüm</translation>
+        <translation>Versija: </translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="318"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Kaldırılabilir ortamı Çabuk Ayırma</translation>
+        <translation>Greitai atjungti keičiamąsias laikmenas</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="320"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>Autorių teisės (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="321"/>
         <source>Cancel</source>
-        <translation>İptal</translation>
+        <translation>Atsisakyti</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="322"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>License</source>
-        <translation>Ruhsat</translation>
+        <translation>Licencija</translation>
     </message>
 </context>
 </TS>
