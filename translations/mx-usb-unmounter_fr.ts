@@ -9,7 +9,7 @@
         <location filename="../usbunmounter.cpp" line="317"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
-        <translation>MX Démonte-USB</translation>
+        <translation>Outil MX Démonte-USB</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
@@ -29,17 +29,17 @@
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation>On démonte</translation>
+        <translation>Démontage</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Autres partitions encore montées sur l&apos;unité</translation>
+        <translation>Autres partitions encore montées sur le périphérique</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>On ne peut pas démonter, l&apos;unité toujours utilisée</translation>
+        <translation>Impossible de démonter, le périphérique est en cours d&apos;utilisation</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>

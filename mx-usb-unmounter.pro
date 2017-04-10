@@ -22,14 +22,18 @@ HEADERS  += usbunmounter.h
 FORMS    += usbunmounter.ui
 
 TRANSLATIONS += translations/mx-usb-unmounter_ca.ts \
+                translations/mx-usb-unmounter_cs.ts \
                 translations/mx-usb-unmounter_de.ts \
                 translations/mx-usb-unmounter_el.ts \
                 translations/mx-usb-unmounter_es.ts \
                 translations/mx-usb-unmounter_fr.ts \
                 translations/mx-usb-unmounter_it.ts \
                 translations/mx-usb-unmounter_ja.ts \
+                translations/mx-usb-unmounter_lt.ts \
                 translations/mx-usb-unmounter_nl.ts \
                 translations/mx-usb-unmounter_pl.ts \
+                translations/mx-usb-unmounter_pt.ts \
                 translations/mx-usb-unmounter_ro.ts \
                 translations/mx-usb-unmounter_ru.ts \
-                translations/mx-usb-unmounter_sv.ts
+                translations/mx-usb-unmounter_sv.ts \
+                translations/mx-usb-unmounter_tr.ts

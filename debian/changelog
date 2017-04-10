@@ -1,3 +1,15 @@
+mx-usb-unmounter (16.11mx16+2) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 30 Nov 2016 12:59:07 -0500
+
+mx-usb-unmounter (16.11mx16+1) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 16 Nov 2016 13:52:33 -0500
+
 mx-usb-unmounter (16.11mx16) mx; urgency=medium
 
   * fix 32 bit deb, bump revision number

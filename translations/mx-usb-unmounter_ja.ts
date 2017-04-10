@@ -9,42 +9,42 @@
         <location filename="../usbunmounter.cpp" line="317"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
-        <translation type="unfinished"></translation>
+        <translation>MX USB アンマウンター</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation type="unfinished"></translation>
+        <translation>ダブルクリックでアンマウントします</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="138"/>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>ボリューム名</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation>リムーバブルデバイスなし</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation type="unfinished"></translation>
+        <translation>アンマウント</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation type="unfinished"></translation>
+        <translation>他のパーティションがまだデバイスマウントしています</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation type="unfinished"></translation>
+        <translation>アンマウントできません。デバイスは使用中です</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation type="unfinished"></translation>
+        <translation>MX USB アンマウンターについて</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
@@ -54,7 +54,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="318"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="unfinished"></translation>
+        <translation>素早くリムーバブルメディアをアンマウント</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="320"/>

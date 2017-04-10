@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="el">
+<TS version="2.1" language="pt">
 <context>
     <name>usbunmounter</name>
     <message>
@@ -9,68 +9,68 @@
         <location filename="../usbunmounter.cpp" line="317"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
-        <translation>MX USB Unmounter</translation>
+        <translation>MX_Desmontador de dispositivos USB</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation>Κάντε διπλό κλικ στην Αποσύνδεση</translation>
+        <translation>Duplo clique para desmontar</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="138"/>
         <source>Volume</source>
-        <translation>Τόμος</translation>
+        <translation>Volume</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation>Δεν υπάρχει αφαιρούμενη συσκευή</translation>
+        <translation>Nenhum dispositivo amovível</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation>αποπροσάρτηση</translation>
+        <translation>A desmontar</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Χωρίσματα ακόμη τοποθετηθεί στη συσκευή</translation>
+        <translation>Ainda estão montadas outras partições no dispositivo</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>Δεν είναι δυνατή η umount, Η συσκευή είναι σε χρήση</translation>
+        <translation>Não foi possível desmontar. O dispositivo está em uso</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation>περί </translation>
+        <translation>Sobre o MX_Desmontador de dispositivos USB</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
         <source>Version: </source>
-        <translation>Έκδοση:</translation>
+        <translation>Versão:</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="318"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Γρήγορα Unmount αφαιρούμενα μέσα</translation>
+        <translation>Desmontar o dispositivo amovível rapidamente</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="320"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c)  MX Linux </translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="321"/>
         <source>Cancel</source>
-        <translation>Ακύρωση</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="322"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>License</source>
-        <translation>Άδεια</translation>
+        <translation>Licença</translation>
     </message>
 </context>
 </TS>
