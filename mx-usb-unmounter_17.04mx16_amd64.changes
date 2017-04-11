@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Mon, 10 Apr 2017 12:59:07 -0500
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: source amd64
+Version: 17.04mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: dolphinoracle <dolphinoracle@gmail.com>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (17.04mx16) mx; urgency=medium
+ .
+   * refresed translations
+Checksums-Sha1:
+ 89670ad359efbba9dbf74cab1b7859044f6a374e 665 mx-usb-unmounter_17.04mx16.dsc
+ f844ce6348edb5338760955427293b47d59063b8 16584 mx-usb-unmounter_17.04mx16.tar.xz
+ eb7d1ae77472301f41c2a3f0838a862db1e866cb 39488 mx-usb-unmounter_17.04mx16_amd64.deb
+Checksums-Sha256:
+ 7db6d6281165b6b2edb403e0c9b6d4f3f3202e1a997e926ebad90f33959db212 665 mx-usb-unmounter_17.04mx16.dsc
+ 734a0daf865341117f79f302f111baf22f9263e8f0f34ef575ecc07e5a73a0a1 16584 mx-usb-unmounter_17.04mx16.tar.xz
+ 6b49d40db7b4b576080fb3bfacf37f097b99d63b90f555d1a4a2ca63a2426288 39488 mx-usb-unmounter_17.04mx16_amd64.deb
+Files:
+ e161b75d5e6889bf8851dd8c6228c207 665 admin optional mx-usb-unmounter_17.04mx16.dsc
+ 1424f1dbf0ac14b5bdccd8eb91d23e19 16584 admin optional mx-usb-unmounter_17.04mx16.tar.xz
+ 13dbaa93f73496ae6732c48df23ca845 39488 admin optional mx-usb-unmounter_17.04mx16_amd64.deb
