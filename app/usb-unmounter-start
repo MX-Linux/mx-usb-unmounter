@@ -17,7 +17,7 @@ ABOUT=$"About"
 QUIT=$"Quit"
 
 
-yad --notification --image="/usr/share/mx-usb-unmounter/images/mx-usbunmouter.png" \
+yad --notification --image=usb-unmounter \
 --command=mx-usb-unmounter \
 --text=$TITLE \
 --menu="$LIST!mx-usb-unmounter!drive-removable-media|$HELP!mx-viewer https://mxlinux.org/wiki/help-files/help-mx-usb-unmounter!help-browser|$ABOUT!mx-usb-unmounter -h!help-about|$QUIT!quit!process-stop"

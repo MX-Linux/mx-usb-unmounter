@@ -17,4 +17,4 @@ translations_script/pl/mx-usb-unmounter-start.mo     /usr/share/locale/pl/LC_MES
 translations_script/ro/mx-usb-unmounter-start.mo     /usr/share/locale/ro/LC_MESSAGES
 translations_script/ru/mx-usb-unmounter-start.mo     /usr/share/locale/ru/LC_MESSAGES
 translations_script/sv/mx-usb-unmounter-start.mo     /usr/share/locale/sv/LC_MESSAGES
-images/*			/usr/share/mx-usb-unmounter/images
+images/*			/usr/share/pixmaps
