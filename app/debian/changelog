@@ -1,3 +1,9 @@
+mx-usb-unmounter (17.06mx16) mx; urgency=medium
+
+  * updated translations
+
+ -- dolphinoracle <dolphin@gmail.com>  Fri, 02 Jun 2017 21:26:46 -0400
+
 mx-usb-unmounter (17.05mx16) mx; urgency=medium
 
   * new tray icon

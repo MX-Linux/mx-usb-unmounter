@@ -1,0 +1,22 @@
+Format: 1.8
+Date: Fri, 02 Jun 2017 21:26:46 -0400
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: i386
+Version: 17.06mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: dolphinoracle <dolphin@gmail.com>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (17.06mx16) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ d4f9c22b9caef79b4bc5f3f53e2e85888106b687 40608 mx-usb-unmounter_17.06mx16_i386.deb
+Checksums-Sha256:
+ e9e38cb04f5a3753c337de3107022cd6c42ab11c70e7f0dfbbdf6571e53c6dee 40608 mx-usb-unmounter_17.06mx16_i386.deb
+Files:
+ e5bf9bbb35b41afcb81f58ddca106a20 40608 admin optional mx-usb-unmounter_17.06mx16_i386.deb
