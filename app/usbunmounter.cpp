@@ -14,7 +14,7 @@ usbunmounter::usbunmounter(QString arg1, QWidget *parent) :
         }
     } else {
         ui->setupUi(this);
-        this->setWindowIcon(QIcon::fromTheme("drive-removable-media"));
+        this->setWindowIcon(QIcon::fromTheme("mx-usb-unmounter"));
         this->setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint);
         this->setWindowFlags(Qt::Tool | Qt::FramelessWindowHint);
         this->move(QCursor::pos());
