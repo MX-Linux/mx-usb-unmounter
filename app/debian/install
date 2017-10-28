@@ -1,5 +1,6 @@
 mx-usb-unmounter	 	usr/bin
 mx-usb-unmounter.desktop 	usr/share/applications
+autostart/*					usr/share/mx-usb-unmounter
 translations/*.qm	        usr/share/mx-usb-unmounter
 license.html			usr/share/doc/mx-usb-unmounter
 usb-unmounter-start		usr/local/bin

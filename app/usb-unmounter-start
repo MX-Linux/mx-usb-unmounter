@@ -3,6 +3,8 @@
 TEXTDOMAINDIR=/usr/share/locale 
 TEXTDOMAIN=mx-usb-unmounter-start
 
+main()
+{
 if [ -e /tmp/usb-unmounter-$USER-lockfile ]; then
 	mx-usb-unmounter &
 	exit 0
@@ -15,13 +17,48 @@ LIST=$"List Devices"
 HELP=$"Help"
 ABOUT=$"About"
 QUIT=$"Quit"
-
+ENABLE=$"Enable Autostart?"
+COMMAND="bash -c autostart"
 
 yad --notification --image=usb-unmounter \
 --command=mx-usb-unmounter \
 --text=$TITLE \
---menu="$LIST!mx-usb-unmounter!drive-removable-media|$HELP!mx-viewer https://mxlinux.org/wiki/help-files/help-mx-usb-unmounter!help-browser|$ABOUT!mx-usb-unmounter -h!help-about|$QUIT!quit!process-stop"
+--menu="$LIST!mx-usb-unmounter!drive-removable-media|$ENABLE!$COMMAND!preferences-system|$HELP!mx-viewer https://mxlinux.org/wiki/help-files/help-mx-usb-unmounter!help-browser|$ABOUT!mx-usb-unmounter -h!help-about|$QUIT!quit!process-stop"
 
 rm  /tmp/usb-unmounter-$USER-lockfile
 
-exit 0
+}
+
+autostart()
+{
+	TITLE2=$"Autostart Settings"
+    ENABLE=$"Enable Autostart?"
+	YES=$"Enable"
+	NO=$"Disable"
+	TEXTDOMAINDIR=/usr/share/locale 
+	TEXTDOMAIN=mx-usb-unmounter-start
+	
+	yad --window-icon=/usr/share/pixmaps/mx-usb-unmounter.png --form --buttons-layout=center --center --button=$YES!gtk-ok!:0 --button=$NO!gtk-close!:1 --width=300 --title="$TITLE2" \
+            --align=center \
+            --field="$ENABLE":LBL "" \
+            --field="":LBL ""
+	
+	status=$?
+	echo $status
+
+    case $status in
+
+        0) echo "enabling autostart" 
+		   rm -f ~/.config/autostart/mx-usb-unmounter.desktop;;
+        1) echo "disabling autostart"
+           cp /usr/share/mx-usb-unmounter/mx-usb-unmounter.desktop ~/.config/autostart        ;;
+	252)     return    ;;
+    esac
+    
+}
+	
+
+##action starts here
+
+export -f autostart
+main

@@ -1,3 +1,10 @@
+mx-usb-unmounter (17.10mx17) mx; urgency=medium
+
+  * added autostart config
+  * checks mtab before declaring usb safe to unmount
+
+ -- dolphinoracle <dolphin@gmail.com>  Sat, 28 Oct 2017 15:24:08 -0400
+
 mx-usb-unmounter (17.09mx17) mx; urgency=medium
 
   * update for mx17

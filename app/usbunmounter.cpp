@@ -223,6 +223,7 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     qDebug() << "Partion device is" << partitiondevice;
     qDebug() << type;
     int out;
+    QString out2;
 
     // if item is mmc, unmount only, don't "eject"
     if (type == "mmc") {
@@ -230,7 +231,15 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     }
     if (type == "usb") {
         out = runCmd("umount /dev/" + mountdevice + "?*").exit_code;
+        if (out != 0 ) {
+            out2 = runCmd("cat /etc/mtab | grep -q " + mountdevice + " && echo $?").str;
+            qDebug() << "out2 is " << out2;
+            if (out2 == "") {
+                out = 0;
+            }
+        }
     }
+
     if (type == "cd") {
         out = runCmd("eject " + partitiondevice).exit_code;
     }
@@ -240,7 +249,8 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     }
 
     qDebug() << out;
-    if (out == 0) {
+
+        if (out == 0) {
         // if device is usb, go ahead and power off "eject" and notify user
         if ( type == "usb" ) {
             system("udisksctl power-off -b /dev/" + mountdevice.toUtf8());
