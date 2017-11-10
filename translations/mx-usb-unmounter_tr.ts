@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<TS version="2.1" language="tr">
 <context>
     <name>usbunmounter</name>
     <message>
         <location filename="../usbunmounter.ui" line="27"/>
         <location filename="../usbunmounter.cpp" line="208"/>
-        <location filename="../usbunmounter.cpp" line="317"/>
-        <location filename="../usbunmounter.cpp" line="324"/>
+        <location filename="../usbunmounter.cpp" line="327"/>
+        <location filename="../usbunmounter.cpp" line="334"/>
         <source>MX USB Unmounter</source>
-        <translation>MX USB Ontkoppelaar</translation>
+        <translation>MX USB Ayırıcı</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation>Dubbel-Klik om te Ontkoppelen</translation>
+        <translation>Ayırmak için çift tıklayın</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="138"/>
         <source>Volume</source>
-        <translation>Deel</translation>
+        <translation>Hacim</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation>Geen Verwijderbaar Apparaat</translation>
+        <translation>Kaldırılabilir Aygıt Yok</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation>Ontkoppelen</translation>
+        <translation>Ayrılıyor</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Andere partities nog gekoppeld aan apparaat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="276"/>
+        <location filename="../usbunmounter.cpp" line="286"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>Niet in staat af te koppelen, Apparaat in gebruik</translation>
+        <translation>Aygıt kullanımda, Bağ kaldırılamaz</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="316"/>
+        <location filename="../usbunmounter.cpp" line="326"/>
         <source>About MX USB Unmounter</source>
-        <translation>Over MX Ontkoppelaar</translation>
+        <translation>MX USB Ayırıcı Hakkında</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="317"/>
+        <location filename="../usbunmounter.cpp" line="327"/>
         <source>Version: </source>
-        <translation>Versie:</translation>
+        <translation>Sürüm</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="318"/>
+        <location filename="../usbunmounter.cpp" line="328"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Verwijderbare Media Snel Ontkoppelen</translation>
+        <translation>Kaldırılabilir ortamı Çabuk Ayırma</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="320"/>
+        <location filename="../usbunmounter.cpp" line="330"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="321"/>
+        <location filename="../usbunmounter.cpp" line="331"/>
         <source>Cancel</source>
-        <translation>Cancel</translation>
+        <translation>İptal</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="322"/>
-        <location filename="../usbunmounter.cpp" line="324"/>
+        <location filename="../usbunmounter.cpp" line="332"/>
+        <location filename="../usbunmounter.cpp" line="334"/>
         <source>License</source>
-        <translation>Licentie</translation>
+        <translation>Ruhsat</translation>
     </message>
 </context>
 </TS>

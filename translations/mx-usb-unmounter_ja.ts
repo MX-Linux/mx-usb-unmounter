@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="pt">
+<TS version="2.1" language="ja">
 <context>
     <name>usbunmounter</name>
     <message>
         <location filename="../usbunmounter.ui" line="27"/>
         <location filename="../usbunmounter.cpp" line="208"/>
-        <location filename="../usbunmounter.cpp" line="317"/>
-        <location filename="../usbunmounter.cpp" line="324"/>
+        <location filename="../usbunmounter.cpp" line="327"/>
+        <location filename="../usbunmounter.cpp" line="334"/>
         <source>MX USB Unmounter</source>
-        <translation>MX_Desmontador de dispositivos USB</translation>
+        <translation>MX USB アンマウンター</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation>Duplo clique para desmontar</translation>
+        <translation>ダブルクリックでアンマウントします</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="138"/>
         <source>Volume</source>
-        <translation>Volume</translation>
+        <translation>ボリューム名</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation>Nenhum dispositivo amovível</translation>
+        <translation>リムーバブルデバイスなし</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation>A desmontar</translation>
+        <translation>アンマウント</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Ainda estão montadas outras partições no dispositivo</translation>
+        <translation>他のパーティションがまだデバイスマウントしています</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="276"/>
+        <location filename="../usbunmounter.cpp" line="286"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>Não foi possível desmontar. O dispositivo está em uso</translation>
+        <translation>アンマウントできません。デバイスは使用中です</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="316"/>
+        <location filename="../usbunmounter.cpp" line="326"/>
         <source>About MX USB Unmounter</source>
-        <translation>Sobre o MX_Desmontador de dispositivos USB</translation>
+        <translation>MX USB アンマウンターについて</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="317"/>
+        <location filename="../usbunmounter.cpp" line="327"/>
         <source>Version: </source>
-        <translation>Versão:</translation>
+        <translation>Version: </translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="318"/>
+        <location filename="../usbunmounter.cpp" line="328"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Desmontar o dispositivo amovível rapidamente</translation>
+        <translation>素早くリムーバブルメディアをアンマウント</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="320"/>
+        <location filename="../usbunmounter.cpp" line="330"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="321"/>
+        <location filename="../usbunmounter.cpp" line="331"/>
         <source>Cancel</source>
-        <translation>Cancelar</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="322"/>
-        <location filename="../usbunmounter.cpp" line="324"/>
+        <location filename="../usbunmounter.cpp" line="332"/>
+        <location filename="../usbunmounter.cpp" line="334"/>
         <source>License</source>
-        <translation>Licença</translation>
+        <translation>ライセンス</translation>
     </message>
 </context>
 </TS>

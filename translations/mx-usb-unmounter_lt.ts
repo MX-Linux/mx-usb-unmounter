@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<TS version="2.1" language="lt">
 <context>
     <name>usbunmounter</name>
     <message>
         <location filename="../usbunmounter.ui" line="27"/>
         <location filename="../usbunmounter.cpp" line="208"/>
-        <location filename="../usbunmounter.cpp" line="317"/>
-        <location filename="../usbunmounter.cpp" line="324"/>
+        <location filename="../usbunmounter.cpp" line="327"/>
+        <location filename="../usbunmounter.cpp" line="334"/>
         <source>MX USB Unmounter</source>
-        <translation>MX USB Unmounter</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation>Dubbel-klicka för att Avmontera</translation>
+        <translation>Norėdami atjungti, sputelėkite du kartus</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="138"/>
         <source>Volume</source>
-        <translation>Volym</translation>
+        <translation>Tomas</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation>Ingen Flyttbar Enhet</translation>
+        <translation>Nėra keičiamųjų įrenginių</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation>Avmonterar</translation>
+        <translation>Atjungiama</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Andra partitioner är fortfarande monterade på enheten</translation>
+        <translation>Kiti, vis dar įrenginyje prijungti skaidiniai</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="276"/>
+        <location filename="../usbunmounter.cpp" line="286"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>Kan inte avmontera, enheten används</translation>
+        <translation>Nepavyko atjungti, įrenginys yra naudojamas</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="316"/>
+        <location filename="../usbunmounter.cpp" line="326"/>
         <source>About MX USB Unmounter</source>
-        <translation>Om MX USB Unmounter</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="317"/>
+        <location filename="../usbunmounter.cpp" line="327"/>
         <source>Version: </source>
-        <translation>Version</translation>
+        <translation>Versija: </translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="318"/>
+        <location filename="../usbunmounter.cpp" line="328"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Avmontera snabbt  flyttbara media</translation>
+        <translation>Greitai atjungti keičiamąsias laikmenas</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="320"/>
+        <location filename="../usbunmounter.cpp" line="330"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>Autorių teisės (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="321"/>
+        <location filename="../usbunmounter.cpp" line="331"/>
         <source>Cancel</source>
-        <translation>Avbryt</translation>
+        <translation>Atsisakyti</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="322"/>
-        <location filename="../usbunmounter.cpp" line="324"/>
+        <location filename="../usbunmounter.cpp" line="332"/>
+        <location filename="../usbunmounter.cpp" line="334"/>
         <source>License</source>
-        <translation>Licens</translation>
+        <translation>Licencija</translation>
     </message>
 </context>
 </TS>

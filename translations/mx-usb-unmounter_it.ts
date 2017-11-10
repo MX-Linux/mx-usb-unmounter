@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ja">
+<TS version="2.1" language="it">
 <context>
     <name>usbunmounter</name>
     <message>
         <location filename="../usbunmounter.ui" line="27"/>
         <location filename="../usbunmounter.cpp" line="208"/>
-        <location filename="../usbunmounter.cpp" line="317"/>
-        <location filename="../usbunmounter.cpp" line="324"/>
+        <location filename="../usbunmounter.cpp" line="327"/>
+        <location filename="../usbunmounter.cpp" line="334"/>
         <source>MX USB Unmounter</source>
-        <translation>MX USB アンマウンター</translation>
+        <translation>MX Smonta USB</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation>ダブルクリックでアンマウントします</translation>
+        <translation>Doppio-Click per smontare</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="138"/>
         <source>Volume</source>
-        <translation>ボリューム名</translation>
+        <translation>Unità</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation>リムーバブルデバイスなし</translation>
+        <translation>Nessun Dispositivo Rimovibile</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation>アンマウント</translation>
+        <translation>Smontaggio</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation>他のパーティションがまだデバイスマウントしています</translation>
+        <translation>Altre partizioni ancora montate sul dispositivo</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="276"/>
+        <location filename="../usbunmounter.cpp" line="286"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>アンマウントできません。デバイスは使用中です</translation>
+        <translation>Non è possibile smontare, dispositivo in uso</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="316"/>
+        <location filename="../usbunmounter.cpp" line="326"/>
         <source>About MX USB Unmounter</source>
-        <translation>MX USB アンマウンターについて</translation>
+        <translation>Informazioni su MX Smonta USB</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="317"/>
+        <location filename="../usbunmounter.cpp" line="327"/>
         <source>Version: </source>
-        <translation>Version: </translation>
+        <translation>Versione:</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="318"/>
+        <location filename="../usbunmounter.cpp" line="328"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>素早くリムーバブルメディアをアンマウント</translation>
+        <translation>Smontaggio rapido di unità rimovibili</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="320"/>
+        <location filename="../usbunmounter.cpp" line="330"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="321"/>
+        <location filename="../usbunmounter.cpp" line="331"/>
         <source>Cancel</source>
-        <translation>キャンセル</translation>
+        <translation>Annulla</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="322"/>
-        <location filename="../usbunmounter.cpp" line="324"/>
+        <location filename="../usbunmounter.cpp" line="332"/>
+        <location filename="../usbunmounter.cpp" line="334"/>
         <source>License</source>
-        <translation>ライセンス</translation>
+        <translation>Licenza</translation>
     </message>
 </context>
 </TS>
