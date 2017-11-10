@@ -1,3 +1,9 @@
+mx-usb-unmounter (17.11) mx; urgency=medium
+
+  * add FR help 
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 10 Nov 2017 10:10:13 -0500
+
 mx-usb-unmounter (17.10mx17) mx; urgency=medium
 
   * added autostart config

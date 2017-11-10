@@ -19,11 +19,13 @@ ABOUT=$"About"
 QUIT=$"Quit"
 ENABLE=$"Enable Autostart?"
 COMMAND="bash -c autostart"
+URL="https://mxlinux.org/wiki/help-files/help-mx-usb-unmounter"
+[[ $LANG == fr* ]] && URL="https://mxlinux.org/wiki/help-files/help-mx-d%C3%A9monte-usb"
 
 yad --notification --image=usb-unmounter \
 --command=mx-usb-unmounter \
 --text=$TITLE \
---menu="$LIST!mx-usb-unmounter!drive-removable-media|$ENABLE!$COMMAND!preferences-system|$HELP!mx-viewer https://mxlinux.org/wiki/help-files/help-mx-usb-unmounter!help-browser|$ABOUT!mx-usb-unmounter -h!help-about|$QUIT!quit!process-stop"
+--menu="$LIST!mx-usb-unmounter!drive-removable-media|$ENABLE!$COMMAND!preferences-system|$HELP!mx-viewer $URL!help-browser|$ABOUT!mx-usb-unmounter -h!help-about|$QUIT!quit!process-stop"
 
 rm  /tmp/usb-unmounter-$USER-lockfile
 
