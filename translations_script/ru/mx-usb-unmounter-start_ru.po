@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-16 10:13-0500\n"
-"PO-Revision-Date: 2016-05-03 14:24+0000\n"
-"Last-Translator: Вячеслав Волошин <vol_vel@mail.ru>\n"
+"POT-Creation-Date: 2017-11-29 09:40-0500\n"
+"PO-Revision-Date: 2017-11-03 15:29+0000\n"
+"Last-Translator: Geoff Gigg <geoffgigg@hotmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/anticapitalista/antix-development/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,22 +18,38 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: usb-unmounter-start:13
+#: usb-unmounter-start:15
 msgid "Unmount Media"
 msgstr "Отмонтировать съемные носители"
 
-#: usb-unmounter-start:14
+#: usb-unmounter-start:16
 msgid "List Devices"
 msgstr "Список устройств"
 
-#: usb-unmounter-start:15
+#: usb-unmounter-start:17
 msgid "Help"
 msgstr "Справка"
 
-#: usb-unmounter-start:16
+#: usb-unmounter-start:18
 msgid "About"
 msgstr "О программе"
 
-#: usb-unmounter-start:17
+#: usb-unmounter-start:19
 msgid "Quit"
 msgstr "Выход"
+
+#: usb-unmounter-start:20 usb-unmounter-start:37
+msgid "Enable Autostart?"
+msgstr ""
+
+#: usb-unmounter-start:36
+msgid "Autostart Settings"
+msgstr ""
+
+#: usb-unmounter-start:38
+msgid "Enable"
+msgstr ""
+
+#: usb-unmounter-start:39
+msgid "Disable"
+msgstr ""

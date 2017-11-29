@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Geoff Gigg <geoffgigg@hotmail.com>, 2017
 # Roberto Saravia <jratlsv2@racsa.co.cr>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-16 10:13-0500\n"
-"PO-Revision-Date: 2016-05-07 02:01+0000\n"
-"Last-Translator: Roberto Saravia <jratlsv2@racsa.co.cr>\n"
+"POT-Creation-Date: 2017-11-29 09:40-0500\n"
+"PO-Revision-Date: 2017-11-21 00:55+0000\n"
+"Last-Translator: Geoff Gigg <geoffgigg@hotmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/anticapitalista/antix-development/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,22 +19,38 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: usb-unmounter-start:13
+#: usb-unmounter-start:15
 msgid "Unmount Media"
 msgstr "Desmontar medios"
 
-#: usb-unmounter-start:14
+#: usb-unmounter-start:16
 msgid "List Devices"
 msgstr "Listar dispositivos"
 
-#: usb-unmounter-start:15
+#: usb-unmounter-start:17
 msgid "Help"
 msgstr "Ayuda"
 
-#: usb-unmounter-start:16
+#: usb-unmounter-start:18
 msgid "About"
 msgstr "Acerca de"
 
-#: usb-unmounter-start:17
+#: usb-unmounter-start:19
 msgid "Quit"
 msgstr "Terminar"
+
+#: usb-unmounter-start:20 usb-unmounter-start:37
+msgid "Enable Autostart?"
+msgstr "Activar Autoinicio?"
+
+#: usb-unmounter-start:36
+msgid "Autostart Settings"
+msgstr "Ajustes de Autoinicio"
+
+#: usb-unmounter-start:38
+msgid "Enable"
+msgstr "Activar"
+
+#: usb-unmounter-start:39
+msgid "Disable"
+msgstr "Desactivar"

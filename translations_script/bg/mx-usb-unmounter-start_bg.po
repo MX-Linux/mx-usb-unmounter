@@ -3,53 +3,53 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# joyinko <joyinko@azet.sk>, 2017
+# Tony Ivanov <duskull88@fastmail.fm>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-29 09:40-0500\n"
-"PO-Revision-Date: 2017-11-03 15:29+0000\n"
-"Last-Translator: Geoff Gigg <geoffgigg@hotmail.com>\n"
-"Language-Team: Slovak (http://www.transifex.com/anticapitalista/antix-development/language/sk/)\n"
+"PO-Revision-Date: 2017-11-05 02:22+0000\n"
+"Last-Translator: Tony Ivanov <duskull88@fastmail.fm>\n"
+"Language-Team: Bulgarian (http://www.transifex.com/anticapitalista/antix-development/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sk\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: usb-unmounter-start:15
 msgid "Unmount Media"
-msgstr "Odpojiť jednotky"
+msgstr "Отмонтиране на медия"
 
 #: usb-unmounter-start:16
 msgid "List Devices"
-msgstr "Zobraziť zariadenia"
+msgstr "Показване на устройства"
 
 #: usb-unmounter-start:17
 msgid "Help"
-msgstr "Pomoc"
+msgstr "Помощ"
 
 #: usb-unmounter-start:18
 msgid "About"
-msgstr "O Programe"
+msgstr "Относно"
 
 #: usb-unmounter-start:19
 msgid "Quit"
-msgstr "Zatvoriť"
+msgstr "Изход"
 
 #: usb-unmounter-start:20 usb-unmounter-start:37
 msgid "Enable Autostart?"
-msgstr ""
+msgstr "Включване на Автостартиране?"
 
 #: usb-unmounter-start:36
 msgid "Autostart Settings"
-msgstr ""
+msgstr "Настройки на Автостартиране"
 
 #: usb-unmounter-start:38
 msgid "Enable"
-msgstr ""
+msgstr "Включване"
 
 #: usb-unmounter-start:39
 msgid "Disable"
-msgstr ""
+msgstr "Изключване"

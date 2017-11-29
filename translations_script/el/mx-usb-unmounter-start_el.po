@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# anticapitalista <antiX@operamail.com>, 2016
+# anticapitalista <anticapitalista@riseup.net>, 2017
+# anticapitalista <anticapitalista@riseup.net>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-16 10:13-0500\n"
-"PO-Revision-Date: 2016-08-19 14:33+0000\n"
-"Last-Translator: anticapitalista <antiX@operamail.com>\n"
+"POT-Creation-Date: 2017-11-29 09:40-0500\n"
+"PO-Revision-Date: 2017-11-17 18:28+0000\n"
+"Last-Translator: anticapitalista <anticapitalista@riseup.net>\n"
 "Language-Team: Greek (http://www.transifex.com/anticapitalista/antix-development/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,22 +19,38 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: usb-unmounter-start:13
+#: usb-unmounter-start:15
 msgid "Unmount Media"
 msgstr "Unmount Media"
 
-#: usb-unmounter-start:14
+#: usb-unmounter-start:16
 msgid "List Devices"
 msgstr "Λίστα Συσκευές"
 
-#: usb-unmounter-start:15
+#: usb-unmounter-start:17
 msgid "Help"
 msgstr "Βοήθεια "
 
-#: usb-unmounter-start:16
+#: usb-unmounter-start:18
 msgid "About"
 msgstr "Περί"
 
-#: usb-unmounter-start:17
+#: usb-unmounter-start:19
 msgid "Quit"
 msgstr "Έξοδος "
+
+#: usb-unmounter-start:20 usb-unmounter-start:37
+msgid "Enable Autostart?"
+msgstr "Ενεργοποίηση αυτόματης εκκίνησης;"
+
+#: usb-unmounter-start:36
+msgid "Autostart Settings"
+msgstr "Ρυθμίσεις αυτόματης εκκίνησης"
+
+#: usb-unmounter-start:38
+msgid "Enable"
+msgstr "Ενεργοποίηση "
+
+#: usb-unmounter-start:39
+msgid "Disable"
+msgstr "Απενεργοποίηση"
