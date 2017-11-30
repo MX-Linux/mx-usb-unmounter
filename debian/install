@@ -15,7 +15,13 @@ translations_script/it/mx-usb-unmounter-start.mo     /usr/share/locale/it/LC_MES
 translations_script/ja/mx-usb-unmounter-start.mo     /usr/share/locale/ja/LC_MESSAGES
 translations_script/nl/mx-usb-unmounter-start.mo     /usr/share/locale/nl/LC_MESSAGES
 translations_script/pl/mx-usb-unmounter-start.mo     /usr/share/locale/pl/LC_MESSAGES
+translations_script/pt/mx-usb-unmounter-start.mo     /usr/share/locale/pt/LC_MESSAGES
 translations_script/ro/mx-usb-unmounter-start.mo     /usr/share/locale/ro/LC_MESSAGES
 translations_script/ru/mx-usb-unmounter-start.mo     /usr/share/locale/ru/LC_MESSAGES
 translations_script/sv/mx-usb-unmounter-start.mo     /usr/share/locale/sv/LC_MESSAGES
+translations_script/bg/mx-usb-unmounter-start.mo     /usr/share/locale/bg/LC_MESSAGES
+translations_script/sk/mx-usb-unmounter-start.mo     /usr/share/locale/sk/LC_MESSAGES
+translations_script/cs/mx-usb-unmounter-start.mo     /usr/share/locale/cs/LC_MESSAGES
+translations_script/lt/mx-usb-unmounter-start.mo     /usr/share/locale/lt/LC_MESSAGES
+translations_script/tr/mx-usb-unmounter-start.mo     /usr/share/locale/tr/LC_MESSAGES
 images/*			/usr/share/pixmaps

@@ -1,3 +1,9 @@
+mx-usb-unmounter (17.11.01) mx; urgency=medium
+
+  *  updated translations
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Wed, 29 Nov 2017 19:46:00 -0500
+
 mx-usb-unmounter (17.11) mx; urgency=medium
 
   * add FR help 
