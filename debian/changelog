@@ -1,3 +1,9 @@
+mx-usb-unmounter (18.2) mx; urgency=medium
+
+  * new translation
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 10 Feb 2018 02:31:38 -0500
+
 mx-usb-unmounter (17.11.01) mx; urgency=medium
 
   *  updated translations

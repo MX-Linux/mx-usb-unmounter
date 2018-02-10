@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 10 Feb 2018 02:31:38 -0500
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: source amd64
+Version: 18.2
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (18.2) mx; urgency=medium
+ .
+   * new translation
+Checksums-Sha1:
+ 5dfcb3e75c60d3fb23fde0b4e4ace215e213d604 1202 mx-usb-unmounter_18.2.dsc
+ 40cc5b0ebdfc5db96338028f478045107a0a48f7 21384 mx-usb-unmounter_18.2.tar.xz
+ 749eb4fec8b372bdd789a6d688fefe819d5331f4 44852 mx-usb-unmounter_18.2_amd64.deb
+Checksums-Sha256:
+ 898c9a0f39f6831eea9b8dfb6f255ca9bab7c109623906267bc9f4112ed4279c 1202 mx-usb-unmounter_18.2.dsc
+ e4758b53dde55538c4af290bcd829525fb0c416420612a7f2ef94b7bafe7426b 21384 mx-usb-unmounter_18.2.tar.xz
+ cee6d3d899ebbd5fad3e6582c91d92a9c3ddebe6227b3dac44273d6ce1069fd7 44852 mx-usb-unmounter_18.2_amd64.deb
+Files:
+ 098626d39de0c6d8b4b14d09bdc4b63e 1202 admin optional mx-usb-unmounter_18.2.dsc
+ 1d6629d482649a78b60410ddcf5196b8 21384 admin optional mx-usb-unmounter_18.2.tar.xz
+ f8478376d981480597043e01325975f2 44852 admin optional mx-usb-unmounter_18.2_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJafp/9AAoJEHCTjHgGee6YbAIH/Rd3hw9QICVjsmYlGrSba70i
+tia/ogQILnn6TekPbDfbbpXi7ZBEU6craQOnDAFGUndZ1dtChAwSO/VYpQwYoLxu
+We/Ma5P6IBD/PiJSHPeA6cfHYacMKZ/ARrgvZegIWS4BbiBkmq3yunkflEuhEFPo
+46B6qQqwk1N0fle12F/EcdekpmUxAIbhAssOrdIwPqr158W+RXng5q24vZ7AIWpd
+g5BGgXqwznX+uYOxOjMVkVNJxoMpMRz8qwFL8wF/XumjbsUTh8V6ygGkYyur0hVN
+uhHQ5efvf+1cqTQxwJVItq/59ggLfrd6i2PttQgcDEiEXRa8cSmTQ0zLX9kqnBo=
+=9H8+
+-----END PGP SIGNATURE-----
