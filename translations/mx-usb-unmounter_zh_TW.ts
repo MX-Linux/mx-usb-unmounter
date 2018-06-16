@@ -7,42 +7,42 @@
         <location filename="../usbunmounter.cpp" line="317"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
-        <translation type="unfinished"/>
+        <translation>MX USB 卸載工具</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation type="unfinished"/>
+        <translation>游標按兩下即可卸載</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="138"/>
         <source>Volume</source>
-        <translation type="unfinished"/>
+        <translation>儲存設備</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation type="unfinished"/>
+        <translation>沒有任何可移除式設備</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation type="unfinished"/>
+        <translation>正在卸載</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation type="unfinished"/>
+        <translation>該設備的其他磁碟區仍然掛載在本系統上</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation type="unfinished"/>
+        <translation>該設備正在使用中，無法卸載</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation type="unfinished"/>
+        <translation>關於 MX USB 卸載工具</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
@@ -52,7 +52,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="318"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="unfinished"/>
+        <translation>快速卸載可移除式媒體</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="320"/>

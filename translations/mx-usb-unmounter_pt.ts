@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pt">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt" version="2.1">
 <context>
     <name>usbunmounter</name>
     <message>
         <location filename="../usbunmounter.ui" line="27"/>
         <location filename="../usbunmounter.cpp" line="208"/>
-        <location filename="../usbunmounter.cpp" line="327"/>
-        <location filename="../usbunmounter.cpp" line="334"/>
+        <location filename="../usbunmounter.cpp" line="317"/>
+        <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
         <translation>MX_Desmontador de dispositivos USB</translation>
     </message>
@@ -37,38 +35,38 @@
         <translation>Ainda estão montadas outras partições no dispositivo</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="286"/>
+        <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
         <translation>Não foi possível desmontar. O dispositivo está em uso</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="326"/>
+        <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
         <translation>Sobre o MX_Desmontador de dispositivos USB</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="327"/>
+        <location filename="../usbunmounter.cpp" line="317"/>
         <source>Version: </source>
         <translation>Versão:</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="328"/>
+        <location filename="../usbunmounter.cpp" line="318"/>
         <source>Quickly Unmount Removable Media</source>
         <translation>Desmontar o dispositivo amovível rapidamente</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="330"/>
+        <location filename="../usbunmounter.cpp" line="320"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="331"/>
+        <location filename="../usbunmounter.cpp" line="321"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="332"/>
-        <location filename="../usbunmounter.cpp" line="334"/>
+        <location filename="../usbunmounter.cpp" line="322"/>
+        <location filename="../usbunmounter.cpp" line="324"/>
         <source>License</source>
         <translation>Licença</translation>
     </message>

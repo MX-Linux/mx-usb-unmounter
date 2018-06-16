@@ -27,7 +27,10 @@ TRANSLATIONS += translations/mx-usb-unmounter_am.ts \
                 translations/mx-usb-unmounter_de.ts \
                 translations/mx-usb-unmounter_el.ts \
                 translations/mx-usb-unmounter_es.ts \
+                translations/mx-usb-unmounter_fi.ts \
                 translations/mx-usb-unmounter_fr.ts \
+                translations/mx-usb-unmounter_hi.ts \
+                translations/mx-usb-unmounter_hr.ts \
                 translations/mx-usb-unmounter_hu.ts \
                 translations/mx-usb-unmounter_it.ts \
                 translations/mx-usb-unmounter_ja.ts \
