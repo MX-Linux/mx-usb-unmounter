@@ -63,3 +63,4 @@ StartupNotify=false
 Type=Application
 Categories=System
 Name[en_US.UTF-8]=MX USB Unmounter
+NotShowIn=LXQt
