@@ -7,57 +7,57 @@
         <location filename="../usbunmounter.cpp" line="317"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
-        <translation>Desmontador USB do MX</translation>
+        <translation>MX_Desmontador de dispositivos USB</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation type="unfinished"/>
+        <translation>Duplo clique para desmontar</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="138"/>
         <source>Volume</source>
-        <translation type="unfinished"/>
+        <translation>Volume</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation type="unfinished"/>
+        <translation>Nenhum dispositivo amovível</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation type="unfinished"/>
+        <translation>A desmontar</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation type="unfinished"/>
+        <translation>Ainda estão montadas outras partições no dispositivo</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation type="unfinished"/>
+        <translation>Não foi possível desmontar. O dispositivo está em uso</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation type="unfinished"/>
+        <translation>Sobre o MX_Desmontador de dispositivos USB</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
         <source>Version: </source>
-        <translation type="unfinished"/>
+        <translation>Versão:</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="318"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="unfinished"/>
+        <translation>Desmontar o dispositivo amovível rapidamente</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="320"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="321"/>
@@ -68,7 +68,7 @@
         <location filename="../usbunmounter.cpp" line="322"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>License</source>
-        <translation>licença</translation>
+        <translation>Licença</translation>
     </message>
 </context>
 </TS>
