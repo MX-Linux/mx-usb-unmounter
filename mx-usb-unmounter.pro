@@ -24,6 +24,7 @@ FORMS    += usbunmounter.ui
 TRANSLATIONS += translations/mx-usb-unmounter_am.ts \
                 translations/mx-usb-unmounter_ca.ts \
                 translations/mx-usb-unmounter_cs.ts \
+                translations/mx-usb-unmounter_da.ts \
                 translations/mx-usb-unmounter_de.ts \
                 translations/mx-usb-unmounter_el.ts \
                 translations/mx-usb-unmounter_es.ts \
@@ -32,6 +33,7 @@ TRANSLATIONS += translations/mx-usb-unmounter_am.ts \
                 translations/mx-usb-unmounter_hi.ts \
                 translations/mx-usb-unmounter_hr.ts \
                 translations/mx-usb-unmounter_hu.ts \
+                translations/mx-usb-unmounter_is.ts \
                 translations/mx-usb-unmounter_it.ts \
                 translations/mx-usb-unmounter_ja.ts \
                 translations/mx-usb-unmounter_kk.ts \
@@ -43,6 +45,7 @@ TRANSLATIONS += translations/mx-usb-unmounter_am.ts \
                 translations/mx-usb-unmounter_ro.ts \
                 translations/mx-usb-unmounter_ru.ts \
                 translations/mx-usb-unmounter_sk.ts \
+                translations/mx-usb-unmounter_sq.ts \
                 translations/mx-usb-unmounter_sv.ts \
                 translations/mx-usb-unmounter_tr.ts \
                 translations/mx-usb-unmounter_uk.ts \
