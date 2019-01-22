@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-29 09:40-0500\n"
-"PO-Revision-Date: 2019-01-03 14:20+0000\n"
-"Last-Translator: Filip Bog <mxlinuxpl@gmail.com>\n"
-"Language-Team: Polish (http://www.transifex.com/anticapitalista/antix-development/language/pl/)\n"
+"PO-Revision-Date: 2017-11-03 15:29+0000\n"
+"Last-Translator: Geoff Gigg <geoffgigg@hotmail.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/anticapitalista/antix-development/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: usb-unmounter-start:15
 msgid "Unmount Media"
@@ -27,15 +27,15 @@ msgstr ""
 
 #: usb-unmounter-start:17
 msgid "Help"
-msgstr "Pomoc"
+msgstr "帮助(_H)"
 
 #: usb-unmounter-start:18
 msgid "About"
-msgstr "O"
+msgstr ""
 
 #: usb-unmounter-start:19
 msgid "Quit"
-msgstr "Wyjście"
+msgstr "退出"
 
 #: usb-unmounter-start:20 usb-unmounter-start:37
 msgid "Enable Autostart?"

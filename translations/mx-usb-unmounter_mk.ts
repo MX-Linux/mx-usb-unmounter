@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="uk" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="mk" version="2.1">
 <context>
     <name>usbunmounter</name>
     <message>
@@ -47,7 +47,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
         <source>Version: </source>
-        <translation>Версія:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="318"/>
@@ -57,18 +57,18 @@
     <message>
         <location filename="../usbunmounter.cpp" line="320"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="321"/>
         <source>Cancel</source>
-        <translation>Скасувати</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="322"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>License</source>
-        <translation>Ліцензія</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>

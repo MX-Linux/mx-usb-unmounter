@@ -32,7 +32,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation type="unfinished"/>
+        <translation>Laitteeseen on yhä liitettynä muita osioita</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
@@ -42,7 +42,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation type="unfinished"/>
+        <translation>Tietoja MX USB Irrottajasta</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
