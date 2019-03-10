@@ -49,7 +49,7 @@ void usbunmounter::start()
     QStringList partitionlist;
     QStringList gvfslist;
     QString file_content;
-    QString item;
+
     file_content = runCmd("df --local --output=source,target,size -H | grep /dev/").str;
     partitionlist = file_content.split("\n");
     qDebug() << "Partition list: " << partitionlist;
@@ -58,7 +58,7 @@ void usbunmounter::start()
     file_content.append(runCmd("ls -1 --color=never /run/user/$UID/gvfs |grep gphoto").str);
     gvfslist = file_content.split("\n");
     qDebug() << gvfslist;
-    for (const &item : gvfslist) {
+    for (const QString &item : gvfslist) {
         QString dev = item.section("A",1,1).section('%', 0, 0);
         if ( dev == "") {
             qDebug() << "Dev" << dev;
@@ -92,7 +92,7 @@ void usbunmounter::start()
     QString partition;
     QString model;
 
-    for (const &item : partitionlist) {
+    for (const QString &item : partitionlist) {
         //devicename = item.simplified().section(' ', 0 ,0).section('/', 2, 2);  //gives us device designation (sda, sdb, etc..)
         point = item.simplified().section(' ', 1, 1);
         size = item.simplified().section(' ', 2, 2);
