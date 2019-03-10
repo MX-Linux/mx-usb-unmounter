@@ -64,3 +64,5 @@ TRANSLATIONS += translations/mx-usb-unmounter_am.ts \
                 translations/mx-usb-unmounter_uk.ts \
                 translations/mx-usb-unmounter_zh_CN.ts \
                 translations/mx-usb-unmounter_zh_TW.ts
+
+CONFIG += release warn_on thread qt c++11
