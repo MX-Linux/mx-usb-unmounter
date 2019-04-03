@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Filip Bog <mxlinuxpl@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-29 09:40-0500\n"
-"PO-Revision-Date: 2019-01-03 14:20+0000\n"
+"PO-Revision-Date: 2019-02-05 20:26+0000\n"
 "Last-Translator: Filip Bog <mxlinuxpl@gmail.com>\n"
 "Language-Team: Polish (http://www.transifex.com/anticapitalista/antix-development/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -19,11 +20,11 @@ msgstr ""
 
 #: usb-unmounter-start:15
 msgid "Unmount Media"
-msgstr ""
+msgstr "Odmontuj nośnik"
 
 #: usb-unmounter-start:16
 msgid "List Devices"
-msgstr ""
+msgstr "Wyświetl urządzenia"
 
 #: usb-unmounter-start:17
 msgid "Help"
@@ -31,24 +32,24 @@ msgstr "Pomoc"
 
 #: usb-unmounter-start:18
 msgid "About"
-msgstr "O"
+msgstr "O programie"
 
 #: usb-unmounter-start:19
 msgid "Quit"
-msgstr "Wyjście"
+msgstr "Zakończ"
 
 #: usb-unmounter-start:20 usb-unmounter-start:37
 msgid "Enable Autostart?"
-msgstr ""
+msgstr "Włączyć Autostart?"
 
 #: usb-unmounter-start:36
 msgid "Autostart Settings"
-msgstr ""
+msgstr "Ustawienia Autostartu"
 
 #: usb-unmounter-start:38
 msgid "Enable"
-msgstr ""
+msgstr "Włącz"
 
 #: usb-unmounter-start:39
 msgid "Disable"
-msgstr ""
+msgstr "Wyłącz"
