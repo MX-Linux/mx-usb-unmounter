@@ -3,6 +3,7 @@ mx-usb-unmounter.desktop 	usr/share/applications
 autostart/*					usr/share/mx-usb-unmounter
 translations/*.qm	        usr/share/mx-usb-unmounter
 license.html			usr/share/doc/mx-usb-unmounter
+help/*					usr/share/doc/mx-usb-unmounter/help
 usb-unmounter-start		usr/local/bin
 mx-usb-unmounter.desktop 	etc/xdg/autostart
 translations_script/mo/am/mx-usb-unmounter-start.mo     /usr/share/locale/am/LC_MESSAGES

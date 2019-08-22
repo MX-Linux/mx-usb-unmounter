@@ -19,7 +19,7 @@ ABOUT=$"About"
 QUIT=$"Quit"
 ENABLE=$"Enable Autostart?"
 COMMAND="bash -c autostart"
-URL="https://mxlinux.org/wiki/help-files/help-mx-usb-unmounter"
+URL="file:///usr/share/doc/mx-usb-unmounter/help/mx-usb-unmounter.html"
 [[ $LANG == fr* ]] && URL="https://mxlinux.org/wiki/help-files/help-mx-d%C3%A9monte-usb"
 
 yad --notification --image=usb-unmounter \
