@@ -47,7 +47,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
         <source>Version: </source>
-        <translation type="unfinished"/>
+        <translation>גרסה:</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="318"/>
@@ -57,18 +57,18 @@
     <message>
         <location filename="../usbunmounter.cpp" line="320"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>זכויות שמורות MX Linux</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="321"/>
         <source>Cancel</source>
-        <translation type="unfinished"/>
+        <translation>ביטול</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="322"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>רשיון</translation>
     </message>
 </context>
 </TS>
