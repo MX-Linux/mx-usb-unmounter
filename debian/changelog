@@ -1,3 +1,9 @@
+mx-usb-unmounter (19.08.01) mx; urgency=medium
+
+  * translation refresh
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 27 Aug 2019 21:34:19 -0400
+
 mx-usb-unmounter (19.08) mx; urgency=medium
 
   * local help files 
