@@ -2,15 +2,12 @@ Source: mx-usb-unmounter
 Section: admin
 Priority: optional
 Maintainer: Steven Pusser (Stevo) <stevep@mxlinux.org>
-Build-Depends: qt5-qmake,
-	qt5-default,
-	qttools5-dev-tools,
-	debhelper (>= 9.20120115)
+Build-Depends: debhelper (>= 9.20120115), qtbase5-dev, qttools5-dev-tools
 Standards-Version: 3.9.5
 Vcs-Git: https://github.com/mx-linux/mx-usb-unmounter
 
 Package: mx-usb-unmounter
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, mx-viewer, gvfs-bin
+Depends: gvfs-bin, mx-viewer, ${misc:Depends}, ${shlibs:Depends}
 Description: mx-usb-unmounter
  Tray app for unmounting removable media (usb and optical)

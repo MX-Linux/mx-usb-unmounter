@@ -1,11 +1,11 @@
-mx-usb-unmounter	 	usr/bin
-mx-usb-unmounter.desktop 	usr/share/applications
 autostart/*					usr/share/mx-usb-unmounter
-translations/*.qm	        usr/share/mx-usb-unmounter
-license.html			usr/share/doc/mx-usb-unmounter
 help/*					usr/share/doc/mx-usb-unmounter/help
-usb-unmounter-start		usr/local/bin
+images/*			/usr/share/pixmaps
+license.html			usr/share/doc/mx-usb-unmounter
+mx-usb-unmounter	 	usr/bin
 mx-usb-unmounter.desktop 	etc/xdg/autostart
+mx-usb-unmounter.desktop 	usr/share/applications
+translations/*.qm	        usr/share/mx-usb-unmounter
 translations_script/mo/am/mx-usb-unmounter-start.mo     /usr/share/locale/am/LC_MESSAGES
 translations_script/mo/ar/mx-usb-unmounter-start.mo     /usr/share/locale/ar/LC_MESSAGES
 translations_script/mo/bg/mx-usb-unmounter-start.mo     /usr/share/locale/bg/LC_MESSAGES
@@ -25,8 +25,8 @@ translations_script/mo/hi/mx-usb-unmounter-start.mo     /usr/share/locale/hi/LC_
 translations_script/mo/hr/mx-usb-unmounter-start.mo     /usr/share/locale/hr/LC_MESSAGES
 translations_script/mo/hu/mx-usb-unmounter-start.mo     /usr/share/locale/hu/LC_MESSAGES
 translations_script/mo/id/mx-usb-unmounter-start.mo     /usr/share/locale/id/LC_MESSAGES
-translations_script/mo/it/mx-usb-unmounter-start.mo     /usr/share/locale/it/LC_MESSAGES
 translations_script/mo/is/mx-usb-unmounter-start.mo     /usr/share/locale/is/LC_MESSAGES
+translations_script/mo/it/mx-usb-unmounter-start.mo     /usr/share/locale/it/LC_MESSAGES
 translations_script/mo/ja/mx-usb-unmounter-start.mo     /usr/share/locale/ja/LC_MESSAGES
 translations_script/mo/ja_JP/mx-usb-unmounter-start.mo     /usr/share/locale/ja_JP/LC_MESSAGES
 translations_script/mo/kk/mx-usb-unmounter-start.mo     /usr/share/locale/kk/LC_MESSAGES
@@ -49,4 +49,4 @@ translations_script/mo/tr/mx-usb-unmounter-start.mo     /usr/share/locale/tr/LC_
 translations_script/mo/uk/mx-usb-unmounter-start.mo     /usr/share/locale/uk/LC_MESSAGES
 translations_script/mo/zh_CN/mx-usb-unmounter-start.mo     /usr/share/locale/zh_CN/LC_MESSAGES
 translations_script/mo/zh_TW/mx-usb-unmounter-start.mo     /usr/share/locale/zh_TW/LC_MESSAGES
-images/*			/usr/share/pixmaps
+usb-unmounter-start		usr/local/bin
