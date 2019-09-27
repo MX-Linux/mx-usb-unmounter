@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Emin Huckleberry, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-29 09:40-0500\n"
-"PO-Revision-Date: 2019-01-01 10:42+0000\n"
-"Last-Translator: mahmut özcan <mahmutozcan65@yahoo.com>\n"
+"PO-Revision-Date: 2019-09-08 19:54+0000\n"
+"Last-Translator: Emin Huckleberry\n"
 "Language-Team: Turkish (http://www.transifex.com/anticapitalista/antix-development/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,11 +20,11 @@ msgstr ""
 
 #: usb-unmounter-start:15
 msgid "Unmount Media"
-msgstr ""
+msgstr "Medyayı Çıkar"
 
 #: usb-unmounter-start:16
 msgid "List Devices"
-msgstr ""
+msgstr "Cihazları Listele"
 
 #: usb-unmounter-start:17
 msgid "Help"
@@ -39,16 +40,16 @@ msgstr "Çıkış"
 
 #: usb-unmounter-start:20 usb-unmounter-start:37
 msgid "Enable Autostart?"
-msgstr ""
+msgstr "Otomatik Başlatma Etkinleştirilsin mi?"
 
 #: usb-unmounter-start:36
 msgid "Autostart Settings"
-msgstr ""
+msgstr "Otomatik Başlatma Ayarları"
 
 #: usb-unmounter-start:38
 msgid "Enable"
-msgstr "Etkin"
+msgstr "Etkinleştir"
 
 #: usb-unmounter-start:39
 msgid "Disable"
-msgstr "Devre dışı"
+msgstr "Devre dışı bırak"

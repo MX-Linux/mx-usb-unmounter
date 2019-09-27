@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: antix-development\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-11-29 09:40-0500\n"
-"PO-Revision-Date: 2019-08-14 19:30+0000\n"
+"PO-Revision-Date: 2019-09-21 19:42+0000\n"
 "Last-Translator: Arnold Marko <arnold.marko@gmail.com>\n"
 "Language-Team: Slovenian (http://www.transifex.com/anticapitalista/antix-development/language/sl/)\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "Odstrani medij"
 
 #: usb-unmounter-start:16
 msgid "List Devices"
-msgstr ""
+msgstr "Seznam naprav"
 
 #: usb-unmounter-start:17
 msgid "Help"
@@ -40,16 +40,16 @@ msgstr "Končaj"
 
 #: usb-unmounter-start:20 usb-unmounter-start:37
 msgid "Enable Autostart?"
-msgstr ""
+msgstr "Vklopim samodejni zagon?"
 
 #: usb-unmounter-start:36
 msgid "Autostart Settings"
-msgstr ""
+msgstr "Nastavitve samodejnega zagona"
 
 #: usb-unmounter-start:38
 msgid "Enable"
-msgstr ""
+msgstr "Vključi"
 
 #: usb-unmounter-start:39
 msgid "Disable"
-msgstr ""
+msgstr "Izključi"

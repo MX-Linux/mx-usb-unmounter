@@ -32,12 +32,12 @@
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation type="unfinished"/>
+        <translation>Diğer bölümler hala cihaza bağlı</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>Aygıt kullanımda, Bağ kaldırılamaz</translation>
+        <translation>Aygıt kullanımda olduğu için kaldırılamadı</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
@@ -47,12 +47,12 @@
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
         <source>Version: </source>
-        <translation>Sürüm</translation>
+        <translation>Sürüm:</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="318"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Kaldırılabilir ortamı Çabuk Ayırma</translation>
+        <translation>Kaldırılabilir Ortamı Çabuk Ayır</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="320"/>
