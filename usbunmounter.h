@@ -20,7 +20,7 @@ class usbunmounter : public QDialog
     Q_OBJECT
 
 public:
-    usbunmounter(QString(arg1), QWidget *parent = 0);
+    usbunmounter(QString arg1, QWidget *parent = nullptr);
     ~usbunmounter();
     void start();
     int about();
