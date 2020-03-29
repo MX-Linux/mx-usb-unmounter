@@ -43,6 +43,9 @@ void usbunmounter::start()
     //clearlist
     ui->mountlistview->clear();
 
+    UID = runCmd("echo $UID").str;
+    qDebug() << "UID is "<< UID;
+
     //get list of usb storage devices
 
     //first get list of mounted devices
@@ -54,19 +57,17 @@ void usbunmounter::start()
     partitionlist = file_content.split("\n");
     qDebug() << "Partition list: " << partitionlist;
     //now build list for gvfs devices mtp and gphoto
-    file_content = runCmd("ls -1 --color=never /run/user/$UID/gvfs |grep mtp").str;
-    file_content.append(runCmd("ls -1 --color=never /run/user/$UID/gvfs |grep gphoto").str);
+    file_content = runCmd("ls -1 --color=never /run/user/" + UID +"/gvfs |grep mtp").str;
+    file_content.append(runCmd("ls -1 --color=never /run/user/" + UID + "/gvfs |grep gphoto").str);
     gvfslist = file_content.split("\n");
     qDebug() << gvfslist;
     for (const QString &item : gvfslist) {
-        QString dev = item.section("A",1,1).section('%', 0, 0);
+        QString dev = item;
         if ( dev == "") {
             qDebug() << "Dev" << dev;
         } else {
             qDebug() << "Dev" << dev;
-            QString dev2 = item.section("C",1,1).section('%',0,0);
-            qDebug() << "Dev2" << dev2;
-            QString devpath = QString("/dev/bus/usb/"+ dev + "/" + dev2);
+            QString devpath = QString("/run/user/" + UID + "/"+ dev);
             qDebug() << "DevPath" << devpath;
             QString addtopartitionlist = QString(devpath + " " + item + " ");
             partitionlist << addtopartitionlist;
@@ -119,8 +120,23 @@ void usbunmounter::start()
         }
 
         //model = runCmd("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep ID_MODEL=").str.section('=',1,1);
+
         model = runCmd("udevadm info --query=property " + partition.toUtf8() + " | grep ID_MODEL=").str.section('=',1,1);
-        devicename = runCmd("udevadm info --query=property " + partition.toUtf8() + " |grep DEVPATH=").str.section("/", -2, -2);
+        QString DEVTYPE = runCmd("udevadm info --query=property " + partition.toUtf8() + " |grep DEVTYPE=").str.section("/", -1, -1);
+        //correction for partitionless disks, some devices like ereaders and some usb sticks don't have partitions
+        if (DEVTYPE == "DEVTYPE=disk"){
+            devicename = runCmd("udevadm info --query=property " + partition.toUtf8() + " |grep DEVPATH=").str.section("/", -1, -1);
+        } else {
+            devicename = runCmd("udevadm info --query=property " + partition.toUtf8() + " |grep DEVPATH=").str.section("/", -2, -2);
+        }
+
+        if (isGPHOTO || isMTP){
+            model = point.section("=",1,1);
+            devicename=model;
+            isUSB=true;
+            label="";
+        }
+
 
         qDebug() << "Device name: " << devicename;
         qDebug() << "Model: " << model;
@@ -231,11 +247,17 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     }
     if (type == "usb") {
         out = runCmd("umount /dev/" + mountdevice + "?*").exit_code;
+        qDebug() << "unmount paritions exit code" << out;
         if (out != 0 ) {
-            out2 = runCmd("cat /etc/mtab | grep -q " + mountdevice + " && echo $?").str;
-            qDebug() << "out2 is " << out2;
-            if (out2 == "") {
-                out = 0;
+            //try just unmounting the device
+            out = runCmd("umount /dev/" + mountdevice).exit_code;
+            qDebug() << "unmount device exit code" << out;
+            if (out != 0 ) {
+                out2 = runCmd("cat /etc/mtab | grep -q " + mountdevice + " && echo $?").str;
+                qDebug() << "out2 is " << out2;
+                if (out2 == "") {
+                    out = 0;
+                }
             }
         }
     }
@@ -248,7 +270,7 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
         out = runCmd("gvfs-mount -u /run/user/$UID/gvfs/" + mountdevice).exit_code;
     }
 
-    qDebug() << out;
+    qDebug() << "out is "<< out;
 
         if (out == 0) {
         // if device is usb, go ahead and power off "eject" and notify user

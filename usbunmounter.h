@@ -26,12 +26,14 @@ public:
     int about();
     Output runCmd(QString cmd);
     bool is_start;
+    QString UID;
 
 private slots:
     void on_mountlistview_itemActivated(QListWidgetItem *item);
     void keyPressEvent(QKeyEvent *event);
     void changeEvent(QEvent *event);
     void on_cancel_pressed();
+
 
 private:
     Ui::usbunmounter *ui;

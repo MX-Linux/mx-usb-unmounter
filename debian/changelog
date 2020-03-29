@@ -1,3 +1,10 @@
+mx-usb-unmounter (20.01.01) mx; urgency=medium
+
+  * update for modern listing of mtp/gphoto2 devices
+  * update to unmount partitionless disks (certain embedded devices) 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 20 Jan 2020 19:54:17 -0500
+
 mx-usb-unmounter (19.09.01) mx; urgency=medium
 
   * translation refresh
