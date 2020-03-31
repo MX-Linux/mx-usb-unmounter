@@ -1,3 +1,9 @@
+mx-usb-unmounter (20.03.01) mx; urgency=medium
+
+  * update control file
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 30 Mar 2020 23:02:35 -0400
+
 mx-usb-unmounter (20.01.01) mx; urgency=medium
 
   * update for modern listing of mtp/gphoto2 devices
