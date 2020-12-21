@@ -1,7 +1,6 @@
-autostart/*					usr/share/mx-usb-unmounter
-help/*					usr/share/doc/mx-usb-unmounter/help
-images/*			/usr/share/pixmaps
-license.html			usr/share/doc/mx-usb-unmounter
+autostart/*			usr/share/mx-usb-unmounter
+help/*				usr/share/doc/mx-usb-unmounter
+images/*			usr/share/pixmaps
 mx-usb-unmounter	 	usr/bin
 mx-usb-unmounter.desktop 	etc/xdg/autostart
 mx-usb-unmounter.desktop 	usr/share/applications
