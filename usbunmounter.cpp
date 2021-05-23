@@ -103,8 +103,8 @@ void usbunmounter::start()
         qDebug() << "Size: " << size;
         qDebug() << "Partition: " << partition;
         qDebug() << "Label: " << label;
-        //isUSB = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -q ID_BUS=usb") == 0;
-        isUSB = system("udevadm info --query=property " + partition.toUtf8() + " | grep -q ID_BUS=usb") == 0;
+        //isUSB = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -qE '^DEVPATH=.*/usb[0-9]+/'") == 0;
+        isUSB = system("udevadm info --query=property " + partition.toUtf8() + " | grep -qE '^DEVPATH=.*/usb[0-9]+/'") == 0;
         //isCD = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
         isCD = system("udevadm info --query=property " + partition.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
         isMMC = system("udevadm info --query=property " + partition.toUtf8() + " | grep -q ID_DRIVE_FLASH_SD=") == 0;

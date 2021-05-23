@@ -1,3 +1,9 @@
+mx-usb-unmounter (21.05.01) mx; urgency=medium
+
+  * change usb device detection 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 23 May 2021 08:52:56 -0400
+
 mx-usb-unmounter (20.03.01) mx; urgency=medium
 
   * update control file
