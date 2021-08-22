@@ -225,6 +225,10 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     QString type = item->data(Qt::UserRole).toString().section(";", 0, 0);
     qDebug() << item->data(Qt::UserRole).toString();
     qDebug() << "type is" << type;
+    QString pattern("compact_flash|CF|sd|sdhc|MMC|ms|sdxc|xD");
+    QRegularExpression re(pattern,QRegularExpression::CaseInsensitiveOption);
+
+    bool poweroff = true;
 
     if (item->data(Qt::UserRole).toString() == "none") {
         qApp->quit();
@@ -240,6 +244,14 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     qDebug() << type;
     int out;
     QString out2;
+
+    QString powertest = runCmd("udevadm info --query=property /dev/" + mountdevice + " |grep DEVLINKS").str;
+    QRegularExpressionMatch match = re.match(powertest,0);
+    if ( match.hasMatch()){
+        poweroff = false;
+    }
+
+    qDebug() << "power off is " << poweroff;
 
     // if item is mmc, unmount only, don't "eject"
     if (type == "mmc") {
@@ -275,7 +287,9 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
         if (out == 0) {
         // if device is usb, go ahead and power off "eject" and notify user
         if ( type == "usb" ) {
-            system("udisksctl power-off -b /dev/" + mountdevice.toUtf8());
+            if (poweroff){
+                system("udisksctl power-off -b /dev/" + mountdevice.toUtf8());
+            }
             system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
             system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
         }
@@ -293,7 +307,7 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
         // if device is mmc, check for additional mounted partitions.  If none, say safe to eject.  If more found, say so.
         if ( type == "mmc") {
             QString mmc_check;
-            mmc_check = runCmd("df --local --output=source,target,size -H | grep " + mountdevice).str;
+            mmc_check = runCmd("df --local --output=source,target,size -H 2>/dev/null| grep " + mountdevice).str;
             if (mmc_check ==  "" ) {
                 system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
                 system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");

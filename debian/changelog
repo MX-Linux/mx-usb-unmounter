@@ -1,3 +1,9 @@
+mx-usb-unmounter (21.08.01) mx; urgency=medium
+
+  * try to not power down internal card readers 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 22 Aug 2021 15:49:05 -0400
+
 mx-usb-unmounter (21.05.01) mx; urgency=medium
 
   * change usb device detection 
