@@ -12,14 +12,14 @@ Changes:
  .
    * Use native Qt to display tray icon and menu; remove yad dependency
 Checksums-Sha1:
- 623d009cde1789d14b30b95b3d8759bcb498b6af 672 mx-usb-unmounter_21.09.02.dsc
- 4bcab0a2d189a8e8d6e58b8af50698f59c6005aa 64260 mx-usb-unmounter_21.09.02.tar.xz
- 495df00d0f93f5c0b85ca5a734b9f848cb71a7d9 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
+ 1f384711afd41fc62c81243ce8fc377d9ecf82c1 672 mx-usb-unmounter_21.09.02.dsc
+ cf69949686cd0a4632d598b51ce08a914f9d8a05 64248 mx-usb-unmounter_21.09.02.tar.xz
+ 1a375944ef12f364fdb93cdd1d1a1b76ef97efeb 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
 Checksums-Sha256:
- 1b0f7233e612e5a8366b2319a9ff77c9b2d67ca5c7ff1b22702fb34e9dcb6123 672 mx-usb-unmounter_21.09.02.dsc
- 4ef697da0f94392dacb83f03d50a526bfaf2423c6c804113817c00394b05ebd7 64260 mx-usb-unmounter_21.09.02.tar.xz
- e406dbf78c69e73271ed5c0b01457c998b8579442d7588d7442ee142aed08cda 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
+ f030b69474c8beff37ce9db35a1439a5eef94e5108180954685ebb8453e21009 672 mx-usb-unmounter_21.09.02.dsc
+ 6c11082c0c920edc0a5e238fa8fc996b4613c7bf2ea41f01ff609c84ecc48936 64248 mx-usb-unmounter_21.09.02.tar.xz
+ 4eaccd0ce7f0fb9912c64d3f445882bc2c93ae281ebcc29e33efbeb33176c863 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
 Files:
- 5bd6c4a0609f393917e613b8e78fc680 672 admin optional mx-usb-unmounter_21.09.02.dsc
- 230a9fb4d33daa3f98ba18dbe7e2048b 64260 admin optional mx-usb-unmounter_21.09.02.tar.xz
- 1288aa05d9e280a61f127608ae82c3eb 10299 admin optional mx-usb-unmounter_21.09.02_i386.buildinfo
+ 949bf2c4657b07bb22e1dc1d1795adaa 672 admin optional mx-usb-unmounter_21.09.02.dsc
+ 6077d7e072112b2e7b5451ba731b8f08 64248 admin optional mx-usb-unmounter_21.09.02.tar.xz
+ 0ed5491ab715aac644954cc0bd3aef84 10299 admin optional mx-usb-unmounter_21.09.02_i386.buildinfo
