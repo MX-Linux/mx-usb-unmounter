@@ -1,6 +1,8 @@
 #include "usbunmounter.h"
 #include "ui_usbunmounter.h"
+
 #include <QDebug>
+#include <QDir>
 #include <QKeyEvent>
 #include <QMessageBox>
 
@@ -8,18 +10,17 @@ usbunmounter::usbunmounter(QString arg1, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::usbunmounter)
 {
-    if ( arg1 == "--help" or arg1 == "-h" ) {
-        if (about() == 1) {
-            exit(0);
-        }
+    qApp->setQuitOnLastWindowClosed(false);
+    if (arg1 == "--help" || arg1 == "-h") {
+        about();
+        exit(0);
     } else {
         ui->setupUi(this);
-        this->setWindowIcon(QIcon::fromTheme("mx-usb-unmounter"));
-        this->setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint);
-        this->setWindowFlags(Qt::Tool | Qt::FramelessWindowHint);
-        this->move(QCursor::pos());
-        is_start = true;
-        start();
+        createActions();
+        createMenu();
+        connect(trayIcon, &QSystemTrayIcon::activated, this, &usbunmounter::iconActivated);
+        trayIcon->show();
+        this->setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);
     }
 }
 
@@ -189,18 +190,16 @@ void usbunmounter::start()
         }
     }
 
-    if ( ui->mountlistview->count() > 0 ) {
+    if (ui->mountlistview->count() > 0) {
         ui->mountlistview->item(0)->setSelected(true);
     } else {
-        if (is_start) {
-            list_item = new QListWidgetItem(ui->mountlistview);
-            list_item->setText(tr("No Removable Device"));
-            list_item->setIcon(QIcon::fromTheme("process-stop"));
-            list_item->setData(Qt::UserRole, "none");
-        } else {
-            qApp->quit();
-        }
+        list_item = new QListWidgetItem(ui->mountlistview);
+        list_item->setText(tr("No Removable Device"));
+        list_item->setIcon(QIcon::fromTheme("process-stop"));
+        list_item->setData(Qt::UserRole, "none");
     }
+    this->show();
+    this->raise();
 }
 usbunmounter::~usbunmounter()
 {
@@ -231,7 +230,7 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     bool poweroff = true;
 
     if (item->data(Qt::UserRole).toString() == "none") {
-        qApp->quit();
+        this->hide();
         return;
     }
     // run operation on selected device

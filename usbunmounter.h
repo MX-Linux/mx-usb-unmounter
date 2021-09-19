@@ -2,8 +2,10 @@
 #define USBUNMOUNTER_H
 
 #include <QDialog>
-#include <QProcess>
 #include <QListWidgetItem>
+#include <QMenu>
+#include <QProcess>
+#include <QSystemTrayIcon>
 
 namespace Ui {
 class usbunmounter;
@@ -23,20 +25,32 @@ public:
     usbunmounter(QString arg1, QWidget *parent = nullptr);
     ~usbunmounter();
     void start();
-    int about();
+    void about();
     Output runCmd(QString cmd);
-    bool is_start;
     QString UID;
 
 private slots:
-    void on_mountlistview_itemActivated(QListWidgetItem *item);
-    void keyPressEvent(QKeyEvent *event);
     void changeEvent(QEvent *event);
+    void keyPressEvent(QKeyEvent *event);
     void on_cancel_pressed();
+    void on_mountlistview_itemActivated(QListWidgetItem *item);
+    void iconActivated(QSystemTrayIcon::ActivationReason reason);
 
 
 private:
     Ui::usbunmounter *ui;
+    QAction *aboutAction;
+    QAction *helpAction;
+    QAction *listDevicesAction;
+    QAction *quitAction;
+    QAction *toggleAutostartAction;
+    QMenu *menu;
+    QSystemTrayIcon *trayIcon;
+
+    void createActions();
+    void createMenu();
+    void help();
+    void toggleAutostart();
 
 };
 
