@@ -30,7 +30,7 @@ Output usbunmounter::runCmd(QString cmd)
     QProcess *proc = new QProcess();
     QEventLoop loop;
     connect(proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
-    proc->setReadChannelMode(QProcess::MergedChannels);
+    proc->setProcessChannelMode(QProcess::MergedChannels);
     proc->start("/bin/bash", QStringList() << "-c" << cmd);
     loop.exec();
     Output out = {proc->exitCode(), proc->readAll().trimmed()};
@@ -41,15 +41,14 @@ Output usbunmounter::runCmd(QString cmd)
 
 void usbunmounter::start()
 {
-    //clearlist
     ui->mountlistview->clear();
 
     UID = runCmd("echo $UID").str;
     qDebug() << "UID is "<< UID;
 
-    //get list of usb storage devices
+    // get list of usb storage devices
 
-    //first get list of mounted devices
+    // first get list of mounted devices
     QStringList partitionlist;
     QStringList gvfslist;
     QString file_content;
@@ -57,14 +56,14 @@ void usbunmounter::start()
     file_content = runCmd("df --local --output=source,target,size -H | grep /dev/").str;
     partitionlist = file_content.split("\n");
     qDebug() << "Partition list: " << partitionlist;
-    //now build list for gvfs devices mtp and gphoto
+    // now build list for gvfs devices mtp and gphoto
     file_content = runCmd("ls -1 --color=never /run/user/" + UID +"/gvfs |grep mtp").str;
     file_content.append(runCmd("ls -1 --color=never /run/user/" + UID + "/gvfs |grep gphoto").str);
     gvfslist = file_content.split("\n");
     qDebug() << gvfslist;
     for (const QString &item : gvfslist) {
         QString dev = item;
-        if ( dev == "") {
+        if (dev.isEmpty()) {
             qDebug() << "Dev" << dev;
         } else {
             qDebug() << "Dev" << dev;
@@ -95,7 +94,7 @@ void usbunmounter::start()
     QString model;
 
     for (const QString &item : partitionlist) {
-        //devicename = item.simplified().section(' ', 0 ,0).section('/', 2, 2);  //gives us device designation (sda, sdb, etc..)
+        // devicename = item.simplified().section(' ', 0 ,0).section('/', 2, 2);  //gives us device designation (sda, sdb, etc..)
         point = item.simplified().section(' ', 1, 1);
         size = item.simplified().section(' ', 2, 2);
         partition = item.simplified().section(' ', 0, 0);
@@ -104,38 +103,28 @@ void usbunmounter::start()
         qDebug() << "Size: " << size;
         qDebug() << "Partition: " << partition;
         qDebug() << "Label: " << label;
-        //isUSB = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -qE '^DEVPATH=.*/usb[0-9]+/'") == 0;
+        // isUSB = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -qE '^DEVPATH=.*/usb[0-9]+/'") == 0;
         isUSB = system("udevadm info --query=property " + partition.toUtf8() + " | grep -qE '^DEVPATH=.*/usb[0-9]+/'") == 0;
-        //isCD = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
+        // isCD = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
         isCD = system("udevadm info --query=property " + partition.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
         isMMC = system("udevadm info --query=property " + partition.toUtf8() + " | grep -q ID_DRIVE_FLASH_SD=") == 0;
-        if (point.section(':', 0, 0) == "gphoto2") {
-            isGPHOTO=true;
-        } else {
-            isGPHOTO=false;
-        }
-        if (point.section(':', 0, 0) == "mtp") {
-            isMTP=true;
-        } else {
-            isMTP=false;
-        }
-
-        //model = runCmd("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep ID_MODEL=").str.section('=',1,1);
+        isGPHOTO = (point.section(':', 0, 0) == "gphoto2") ? true : false;
+        isMTP = (point.section(':', 0, 0) == "mtp") ? true : false;
+        // model = runCmd("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep ID_MODEL=").str.section('=',1,1);
 
         model = runCmd("udevadm info --query=property " + partition.toUtf8() + " | grep ID_MODEL=").str.section('=',1,1);
         QString DEVTYPE = runCmd("udevadm info --query=property " + partition.toUtf8() + " |grep DEVTYPE=").str.section("/", -1, -1);
-        //correction for partitionless disks, some devices like ereaders and some usb sticks don't have partitions
-        if (DEVTYPE == "DEVTYPE=disk"){
+        // correction for partitionless disks, some devices like ereaders and some usb sticks don't have partitions
+        if (DEVTYPE == "DEVTYPE=disk")
             devicename = runCmd("udevadm info --query=property " + partition.toUtf8() + " |grep DEVPATH=").str.section("/", -1, -1);
-        } else {
+        else
             devicename = runCmd("udevadm info --query=property " + partition.toUtf8() + " |grep DEVPATH=").str.section("/", -2, -2);
-        }
 
-        if (isGPHOTO || isMTP){
-            model = point.section("=",1,1);
-            devicename=model;
-            isUSB=true;
-            label="";
+        if (isGPHOTO || isMTP) {
+            model = point.section("=", 1, 1);
+            devicename = model;
+            isUSB = true;
+            label = "";
         }
 
 
@@ -209,8 +198,8 @@ usbunmounter::~usbunmounter()
 
 void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
 {
-    //if device is mmc, just unmount.if usb, also poweroff. if device is cd/dvd, eject as well, then remove list item
-    //if no device, then exit
+    // if device is mmc, just unmount. if usb, also poweroff. if device is cd/dvd, eject as well, then remove list item
+    // if no device, then exit
     QString cmd;
     QString cmd2;
     QString cmd3;
@@ -246,16 +235,14 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
 
     QString powertest = runCmd("udevadm info --query=property /dev/" + mountdevice + " |grep DEVLINKS").str;
     QRegularExpressionMatch match = re.match(powertest,0);
-    if ( match.hasMatch()){
+    if (match.hasMatch())
         poweroff = false;
-    }
 
     qDebug() << "power off is " << poweroff;
 
     // if item is mmc, unmount only, don't "eject"
-    if (type == "mmc") {
+    if (type == "mmc")
         out = runCmd("umount " + partitiondevice).exit_code;
-    }
     if (type == "usb") {
         out = runCmd("umount /dev/" + mountdevice + "?*").exit_code;
         qDebug() << "unmount paritions exit code" << out;
@@ -266,29 +253,26 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
             if (out != 0 ) {
                 out2 = runCmd("cat /etc/mtab | grep -q " + mountdevice + " && echo $?").str;
                 qDebug() << "out2 is " << out2;
-                if (out2 == "") {
+                if (out2.isEmpty())
                     out = 0;
-                }
             }
         }
     }
 
-    if (type == "cd") {
+    if (type == "cd")
         out = runCmd("eject " + partitiondevice).exit_code;
-    }
-    // if type is gphoto or mtp, use gvfs-mount -u to unmount
-    if (type == "mtp" || type == "gphoto2") {
-        out = runCmd("gvfs-mount -u /run/user/$UID/gvfs/" + mountdevice).exit_code;
-    }
 
-    qDebug() << "out is "<< out;
+    // if type is gphoto or mtp, use gvfs-mount -u to unmount
+    if (type == "mtp" || type == "gphoto2")
+        out = runCmd("gvfs-mount -u /run/user/$UID/gvfs/" + mountdevice).exit_code;
+
+    qDebug() << "out is " << out;
 
         if (out == 0) {
         // if device is usb, go ahead and power off "eject" and notify user
-        if ( type == "usb" ) {
-            if (poweroff){
+        if (type == "usb") {
+            if (poweroff)
                 system("udisksctl power-off -b /dev/" + mountdevice.toUtf8());
-            }
             system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
             system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
         }
@@ -298,16 +282,16 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
             system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
         }
         // if device is CD, done, and notify user of success
-        if ( type == "cd" ) {
+        if (type == "cd") {
             system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
             system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
         }
 
         // if device is mmc, check for additional mounted partitions.  If none, say safe to eject.  If more found, say so.
-        if ( type == "mmc") {
+        if (type == "mmc") {
             QString mmc_check;
             mmc_check = runCmd("df --local --output=source,target,size -H 2>/dev/null| grep " + mountdevice).str;
-            if (mmc_check ==  "" ) {
+            if (mmc_check.isEmpty()) {
                 system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
                 system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
             } else {
@@ -321,9 +305,72 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
         cmd3 = tr("Unable to  Unmount, Device in Use");
         system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
     }
-    //flag for first time run
-    is_start = false;
     start();
+}
+
+void usbunmounter::iconActivated(QSystemTrayIcon::ActivationReason reason)
+{
+    this->move(QCursor::pos());
+    switch (reason) {
+    case QSystemTrayIcon::DoubleClick:
+    case QSystemTrayIcon::MiddleClick:
+    case QSystemTrayIcon::Trigger:
+        start();
+        break;
+    default:
+        break;
+    }
+}
+
+void usbunmounter::createActions()
+{
+    aboutAction = new QAction(QIcon::fromTheme("help-about"), tr("About"), this);
+    helpAction = new QAction(QIcon::fromTheme("help-browser"), tr("Help"), this);
+    listDevicesAction = new QAction(QIcon::fromTheme("drive-removable-media"), tr("List Devices"), this);
+    quitAction = new QAction(QIcon::fromTheme("gtk-quit"), tr("Quit"), this);
+    toggleAutostartAction = new QAction(QIcon::fromTheme("preferences-system"), tr("Enable Autostart?"), this);
+
+    connect(aboutAction, &QAction::triggered, this, &usbunmounter::about);
+    connect(helpAction, &QAction::triggered, this, &usbunmounter::help);
+    connect(listDevicesAction, &QAction::triggered, this, &usbunmounter::start);
+    connect(quitAction, &QAction::triggered, qApp, &QGuiApplication::quit);
+    connect(toggleAutostartAction, &QAction::triggered, this, &usbunmounter::toggleAutostart);
+}
+
+void usbunmounter::createMenu()
+{
+    menu = new QMenu(this);
+    menu->addAction(listDevicesAction);
+    menu->addAction(toggleAutostartAction);
+    menu->addAction(helpAction);
+    menu->addAction(aboutAction);
+    menu->addAction(quitAction);
+
+    trayIcon = new QSystemTrayIcon(this);
+    trayIcon->setIcon(QIcon::fromTheme("mx-usb-unmounter"));
+    trayIcon->setContextMenu(menu);
+}
+
+void usbunmounter::help()
+{
+    QString url = "file:///usr/share/doc/mx-usb-unmounter/mx-usb-unmounter.html";
+    QLocale locale;
+    QString lang = locale.bcp47Name();
+    if (lang.startsWith("fr"))
+        url = "https://mxlinux.org/wiki/help-files/help-mx-d%C3%A9monte-usb";
+    if (system("command -v mx-viewer >/dev/null") == 0)
+        system("mx-viewer " + url.toUtf8() + " \"" + tr("MX USB Unmounter").toUtf8() + "\"&");
+    else
+        system("xdg-open " + url.toUtf8() + "\"&");
+}
+
+void usbunmounter::toggleAutostart()
+{
+    QString local_file = QDir::homePath() + "/.config/autostart/mx-usb-unmounter.desktop";
+    if (QMessageBox::Yes == QMessageBox::question(nullptr, tr("Autostart Settings"), tr("Enable Autostart?")))
+        QFile::copy("/usr/share/mx-usb-unmounter/mx-usb-unmounter.desktop", local_file);
+    else
+        QFile::remove(local_file);
 }
 
 // implement change event that closes app when window loses focus
@@ -331,42 +378,40 @@ void usbunmounter::changeEvent(QEvent *event)
 {
     QWidget::changeEvent(event);
     if (event->type() == QEvent::ActivationChange) {
-        if(this->isActiveWindow()) {
+        if (this->isActiveWindow()) {
             qDebug() << "focusinEvent";
         } else {
             qDebug() << "focusOutEvent";
-            qApp->quit();
+            this->hide();
         }
     }
 }
 
 void usbunmounter::on_cancel_pressed()
 {
-    qApp->quit();
+    this->hide();
 }
 
 // process keystrokes
 void usbunmounter::keyPressEvent(QKeyEvent *event)
 {
-    if (event->key() == Qt::Key_Escape) {
-        qApp->quit();
-    }
+    if (event->key() == Qt::Key_Escape)
+        this->hide();
 }
 
 // About mx-usb-unmounter
-int usbunmounter::about()
+void usbunmounter::about()
 {
-    QString version = runCmd("dpkg-query --show mx-usb-unmounter").str.simplified().section(' ',1,1);
+    QString version = runCmd("dpkg-query --show mx-usb-unmounter").str.simplified().section(' ', 1, 1);
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX USB Unmounter"), "<p align=\"center\"><b><h2>" +
-                       tr("MX USB Unmounter") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
-                       tr("Quickly Unmount Removable Media") +
+                       tr("MX USB Unmounter") + "</h2></b></p><p align=\"center\">" + tr("Version: ")
+                       + version + "</p><p align=\"center\"><h3>" + tr("Quickly Unmount Removable Media") +
                        "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, 0);
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>");
     msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
     msgBox.addButton(tr("License"), QMessageBox::RejectRole);
-    if (msgBox.exec() == QMessageBox::RejectRole) {
-        system("mx-viewer file:///usr/share/doc/mx-usb-unmounter/license.html '" + tr("MX USB Unmounter").toUtf8() + " " + tr("License").toUtf8() + "'");
-    }
-    return 1;
+    if (msgBox.exec() == QMessageBox::RejectRole)
+        system("mx-viewer file:///usr/share/doc/mx-usb-unmounter/license.html '" + tr("MX USB Unmounter").toUtf8()
+               + " " + tr("License").toUtf8() + "'");
 }
