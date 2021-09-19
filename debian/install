@@ -47,4 +47,3 @@ translations_script/mo/tr/mx-usb-unmounter-start.mo     /usr/share/locale/tr/LC_
 translations_script/mo/uk/mx-usb-unmounter-start.mo     /usr/share/locale/uk/LC_MESSAGES
 translations_script/mo/zh_CN/mx-usb-unmounter-start.mo     /usr/share/locale/zh_CN/LC_MESSAGES
 translations_script/mo/zh_TW/mx-usb-unmounter-start.mo     /usr/share/locale/zh_TW/LC_MESSAGES
-usb-unmounter-start		usr/bin

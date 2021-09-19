@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Sun, 19 Sep 2021 01:16:32 -0400
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter mx-usb-unmounter-dbgsym
+Architecture: source amd64
+Version: 21.09.02
+Distribution: mx
+Urgency: medium
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (21.09.02) mx; urgency=medium
+ .
+   * Use native Qt to display tray icon and menu; remove yad dependency
+Checksums-Sha1:
+ c531da3c65ba97f80e9f19f2751f9350b7066cc0 672 mx-usb-unmounter_21.09.02.dsc
+ 40223a7070db7149c3cb2c591b5c07d2b73a9ea0 64176 mx-usb-unmounter_21.09.02.tar.xz
+ 727c83f700d845d81757730cb3739870128be925 6352 mx-usb-unmounter-dbgsym_21.09.02_amd64.deb
+ 9d08bebae933cdab5adfda8b853fcc9a59c2fe1a 10526 mx-usb-unmounter_21.09.02_amd64.buildinfo
+ af73c7a19435babea16d4cb3d1692daf4d010c00 75384 mx-usb-unmounter_21.09.02_amd64.deb
+Checksums-Sha256:
+ 1a78172e25c587743867afcfc7a3bef79e80bd42f16355d7bb6e9cfa0c0b1ce2 672 mx-usb-unmounter_21.09.02.dsc
+ 4ed59b2bbbd10e4706e694f12e235dfc529747c63a4563187698ae2be5f55c3e 64176 mx-usb-unmounter_21.09.02.tar.xz
+ 6da2e35410270505281d2db353aa22a52a0641e2dcafd0bd4cf5df9688495450 6352 mx-usb-unmounter-dbgsym_21.09.02_amd64.deb
+ 09f0e221391840275de1df95bd70e9b398558e4d9f34205f8fb1309859430362 10526 mx-usb-unmounter_21.09.02_amd64.buildinfo
+ 100de7f12ad4c6278f6ca063914b9b44e0ae4ec5b48e53b5f56b839853d07649 75384 mx-usb-unmounter_21.09.02_amd64.deb
+Files:
+ 4755312ef2078c9696e4e309462de379 672 admin optional mx-usb-unmounter_21.09.02.dsc
+ c84af1cf07dd7e2f4ac785b4eb9525c8 64176 admin optional mx-usb-unmounter_21.09.02.tar.xz
+ 6fb0f0a8e0abc40522e1c43cb90e85fe 6352 debug optional mx-usb-unmounter-dbgsym_21.09.02_amd64.deb
+ adc48f7355ea66a923fca9ec632338b1 10526 admin optional mx-usb-unmounter_21.09.02_amd64.buildinfo
+ 80c680c5452597b8722b0df14c291f05 75384 admin optional mx-usb-unmounter_21.09.02_amd64.deb

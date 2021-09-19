@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Sun, 19 Sep 2021 01:16:32 -0400
+Source: mx-usb-unmounter
+Architecture: source
+Version: 21.09.02
+Distribution: mx
+Urgency: medium
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-usb-unmounter (21.09.02) mx; urgency=medium
+ .
+   * Use native Qt to display tray icon and menu; remove yad dependency
+Checksums-Sha1:
+ 623d009cde1789d14b30b95b3d8759bcb498b6af 672 mx-usb-unmounter_21.09.02.dsc
+ 4bcab0a2d189a8e8d6e58b8af50698f59c6005aa 64260 mx-usb-unmounter_21.09.02.tar.xz
+ 495df00d0f93f5c0b85ca5a734b9f848cb71a7d9 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
+Checksums-Sha256:
+ 1b0f7233e612e5a8366b2319a9ff77c9b2d67ca5c7ff1b22702fb34e9dcb6123 672 mx-usb-unmounter_21.09.02.dsc
+ 4ef697da0f94392dacb83f03d50a526bfaf2423c6c804113817c00394b05ebd7 64260 mx-usb-unmounter_21.09.02.tar.xz
+ e406dbf78c69e73271ed5c0b01457c998b8579442d7588d7442ee142aed08cda 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
+Files:
+ 5bd6c4a0609f393917e613b8e78fc680 672 admin optional mx-usb-unmounter_21.09.02.dsc
+ 230a9fb4d33daa3f98ba18dbe7e2048b 64260 admin optional mx-usb-unmounter_21.09.02.tar.xz
+ 1288aa05d9e280a61f127608ae82c3eb 10299 admin optional mx-usb-unmounter_21.09.02_i386.buildinfo
