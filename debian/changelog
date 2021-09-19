@@ -1,3 +1,9 @@
+mx-usb-unmounter (21.09.01mx21) mx; urgency=medium
+
+  * move usb-unmounter-start to /usr/bin
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 18 Sep 2021 21:44:41 -0400
+
 mx-usb-unmounter (21.08.01) mx; urgency=medium
 
   * try to not power down internal card readers 
