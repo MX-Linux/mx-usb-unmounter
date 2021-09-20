@@ -51,6 +51,7 @@ private:
     void createActions();
     void createMenu();
     void help();
+    void setPosition();
     void toggleAutostart();
 
 };

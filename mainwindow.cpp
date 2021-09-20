@@ -5,6 +5,7 @@
 #include <QDir>
 #include <QKeyEvent>
 #include <QMessageBox>
+#include <QScreen>
 
 MainWindow::MainWindow(QString arg1, QWidget *parent) :
     QDialog(parent),
@@ -313,7 +314,7 @@ void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
 
 void MainWindow::iconActivated(QSystemTrayIcon::ActivationReason reason)
 {
-    this->move(QCursor::pos());
+    setPosition();
     switch (reason) {
     case QSystemTrayIcon::DoubleClick:
     case QSystemTrayIcon::MiddleClick:
@@ -365,6 +366,16 @@ void MainWindow::help()
         system("mx-viewer " + url.toUtf8() + " \"" + tr("MX USB Unmounter").toUtf8() + "\"&");
     else
         system("xdg-open " + url.toUtf8() + "\"&");
+}
+
+void MainWindow::setPosition()
+{
+    QPoint pos = QCursor::pos();
+    if (pos.y() + this->size().height() > QGuiApplication::primaryScreen()->geometry().height())
+        pos.setY(QGuiApplication::primaryScreen()->geometry().height() - this->size().height());
+    if (pos.x() + this->size().width() > QGuiApplication::primaryScreen()->geometry().width())
+        pos.setX(QGuiApplication::primaryScreen()->geometry().width() - this->size().width());
+    this->move(pos);
 }
 
 void MainWindow::toggleAutostart()
