@@ -27,20 +27,23 @@ MainWindow::MainWindow(QString arg1, QWidget *parent) :
 // util function for getting bash command output and error code
 Output MainWindow::runCmd(QString cmd)
 {
-    QProcess *proc = new QProcess();
+    if (proc.state() != QProcess::NotRunning) {
+        qDebug() << "Process already running:" << proc.program() << proc.arguments();
+        return Output();
+    }
     QEventLoop loop;
-    connect(proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
-    proc->setProcessChannelMode(QProcess::MergedChannels);
-    proc->start("/bin/bash", QStringList() << "-c" << cmd);
+    connect(&proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
+    proc.setProcessChannelMode(QProcess::MergedChannels);
+    proc.start("/bin/bash", QStringList() << "-c" << cmd);
     loop.exec();
-    Output out = {proc->exitCode(), proc->readAll().trimmed()};
-    delete proc;
-    return out;
+    return {proc.exitCode(), proc.readAll().trimmed()};
 }
 
 
 void MainWindow::start()
 {
+    if (proc.state() != QProcess::NotRunning)
+        return;
     ui->mountlistview->clear();
 
     UID = runCmd("echo $UID").str;
@@ -230,7 +233,7 @@ void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
     qDebug() << "Mount device is" << mountdevice;
     qDebug() << "Partion device is" << partitiondevice;
     qDebug() << type;
-    int out;
+    int out = 0;
     QString out2;
 
     QString powertest = runCmd("udevadm info --query=property /dev/" + mountdevice + " |grep DEVLINKS").str;

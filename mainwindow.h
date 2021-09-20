@@ -45,6 +45,7 @@ private:
     QAction *quitAction;
     QAction *toggleAutostartAction;
     QMenu *menu;
+    QProcess proc;
     QSystemTrayIcon *trayIcon;
 
     void createActions();
