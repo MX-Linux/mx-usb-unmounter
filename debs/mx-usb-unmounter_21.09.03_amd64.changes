@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 20 Sep 2021 11:14:17 -0400
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: source amd64
+Version: 21.09.03
+Distribution: mx
+Urgency: medium
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (21.09.03) mx; urgency=medium
+ .
+   * Fix: hide window after unmount
+   * Performance improvements
+Checksums-Sha1:
+ f3a58d74a43033390db21e48717b96dd9e1b34f2 1234 mx-usb-unmounter_21.09.03.dsc
+ 82232ef806b80c926a87727d4109e2e7ce3d1bf2 68716 mx-usb-unmounter_21.09.03.tar.xz
+ a905e5d9f59cf2ba5659aceb0b3929c75d7d8b86 10570 mx-usb-unmounter_21.09.03_amd64.buildinfo
+ 7b38da91d8f59d5f2d8cd3c3d6c10cdb857610d9 68300 mx-usb-unmounter_21.09.03_amd64.deb
+Checksums-Sha256:
+ e3a11c1189fb4d73588c64a4442ffea1ff18065851b6245fe6f51e17c1b3b611 1234 mx-usb-unmounter_21.09.03.dsc
+ d2d56dfdf20e1a409e52dc0ffcdac4699b9519728c361569999e317e34fd5123 68716 mx-usb-unmounter_21.09.03.tar.xz
+ f1a14d64e2df0bed64b18a184d6ef8d9bb5a21a788a177a36aa0a139cc0ccf61 10570 mx-usb-unmounter_21.09.03_amd64.buildinfo
+ 5bafd376bb98734f665c73c8f86518d02678ff572af48f5ecfff9fee5c94ae5f 68300 mx-usb-unmounter_21.09.03_amd64.deb
+Files:
+ 237dad08a86f3430fb4a8df4f79a370f 1234 admin optional mx-usb-unmounter_21.09.03.dsc
+ e1181447ac1ef3e4b230f9739c152476 68716 admin optional mx-usb-unmounter_21.09.03.tar.xz
+ f61b5ea8245130eb2a4bfc042c86cd85 10570 admin optional mx-usb-unmounter_21.09.03_amd64.buildinfo
+ 0c3459c76a5bfcf26198639e4f1a66e7 68300 admin optional mx-usb-unmounter_21.09.03_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmFIpokTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumOYgB/0ZqWCqHM4Hkz8IjkD61YQ+nflBYmNi
+sy3zeBrGDlFhkfrTUrF3+jKXxifAapduDP/jHm824wYK/hMkkYxKRPYnkn9ihM+e
+CaOAdCwYhX6d5CJ1YLYnlWu8pCEiA4vkutaoxZt1InDpGL0IxLSYJ8++nWVSaaxa
+ulbXjbSXPdn2MFgyrB0q+YjnEQ5ZpMAM0ZGwH53CxDRAH1YOblv3l4AGuPqjjY8J
+v+miNqcqcho7JKenB2fWDzkNpf0Ub05K2K0vS42zuqRMBpWYuZJo3nPyYkeQPmjn
+qVkovvS5G4xzIAR/5x/sJZJSPCrqPx7kvtl1lmt9Z2Yicdez86nF3UmK
+=jh2+
+-----END PGP SIGNATURE-----
