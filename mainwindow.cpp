@@ -351,7 +351,7 @@ void MainWindow::createMenu()
     menu->addAction(quitAction);
 
     trayIcon = new QSystemTrayIcon(this);
-    trayIcon->setIcon(QIcon::fromTheme("mx-usb-unmounter"));
+    trayIcon->setIcon(QIcon("/usr/share/pixmaps/usb-unmounter.svg"));
     trayIcon->setContextMenu(menu);
 }
 
