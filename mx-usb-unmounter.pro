@@ -14,12 +14,14 @@ TARGET = mx-usb-unmounter
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        usbunmounter.cpp
+SOURCES += main.cpp \
+    mainwindow.cpp
 
-HEADERS  += usbunmounter.h
+HEADERS  += \
+    mainwindow.h
 
-FORMS    += usbunmounter.ui
+FORMS    += \
+    mainwindow.ui
 
 TRANSLATIONS += translations/mx-usb-unmounter_am.ts \
                 translations/mx-usb-unmounter_ar.ts \

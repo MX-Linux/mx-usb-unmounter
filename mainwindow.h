@@ -1,5 +1,5 @@
-#ifndef USBUNMOUNTER_H
-#define USBUNMOUNTER_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
 #include <QDialog>
 #include <QListWidgetItem>
@@ -8,7 +8,7 @@
 #include <QSystemTrayIcon>
 
 namespace Ui {
-class usbunmounter;
+class MainWindow;
 }
 
 // struct for outputing both the exit code and the strings when running a command
@@ -17,13 +17,13 @@ struct Output {
     QString str;
 };
 
-class usbunmounter : public QDialog
+class MainWindow : public QDialog
 {
     Q_OBJECT
 
 public:
-    usbunmounter(QString arg1, QWidget *parent = nullptr);
-    ~usbunmounter();
+    MainWindow(QString arg1, QWidget *parent = nullptr);
+    ~MainWindow();
     void start();
     void about();
     Output runCmd(QString cmd);
@@ -38,7 +38,7 @@ private slots:
 
 
 private:
-    Ui::usbunmounter *ui;
+    Ui::MainWindow *ui;
     QAction *aboutAction;
     QAction *helpAction;
     QAction *listDevicesAction;
@@ -54,4 +54,4 @@ private:
 
 };
 
-#endif // USBUNMOUNTER_H
+#endif // MAINWINDOW_H

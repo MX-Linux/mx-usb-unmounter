@@ -1,14 +1,14 @@
-#include "usbunmounter.h"
-#include "ui_usbunmounter.h"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 
 #include <QDebug>
 #include <QDir>
 #include <QKeyEvent>
 #include <QMessageBox>
 
-usbunmounter::usbunmounter(QString arg1, QWidget *parent) :
+MainWindow::MainWindow(QString arg1, QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::usbunmounter)
+    ui(new Ui::MainWindow)
 {
     qApp->setQuitOnLastWindowClosed(false);
     if (arg1 == "--help" || arg1 == "-h") {
@@ -18,14 +18,14 @@ usbunmounter::usbunmounter(QString arg1, QWidget *parent) :
         ui->setupUi(this);
         createActions();
         createMenu();
-        connect(trayIcon, &QSystemTrayIcon::activated, this, &usbunmounter::iconActivated);
+        connect(trayIcon, &QSystemTrayIcon::activated, this, &MainWindow::iconActivated);
         trayIcon->show();
         this->setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);
     }
 }
 
 // util function for getting bash command output and error code
-Output usbunmounter::runCmd(QString cmd)
+Output MainWindow::runCmd(QString cmd)
 {
     QProcess *proc = new QProcess();
     QEventLoop loop;
@@ -39,7 +39,7 @@ Output usbunmounter::runCmd(QString cmd)
 }
 
 
-void usbunmounter::start()
+void MainWindow::start()
 {
     ui->mountlistview->clear();
 
@@ -190,13 +190,13 @@ void usbunmounter::start()
     this->show();
     this->raise();
 }
-usbunmounter::~usbunmounter()
+MainWindow::~MainWindow()
 {
     delete ui;
 }
 
 
-void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
+void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
 {
     // if device is mmc, just unmount. if usb, also poweroff. if device is cd/dvd, eject as well, then remove list item
     // if no device, then exit
@@ -308,7 +308,7 @@ void usbunmounter::on_mountlistview_itemActivated(QListWidgetItem *item)
     start();
 }
 
-void usbunmounter::iconActivated(QSystemTrayIcon::ActivationReason reason)
+void MainWindow::iconActivated(QSystemTrayIcon::ActivationReason reason)
 {
     this->move(QCursor::pos());
     switch (reason) {
@@ -322,7 +322,7 @@ void usbunmounter::iconActivated(QSystemTrayIcon::ActivationReason reason)
     }
 }
 
-void usbunmounter::createActions()
+void MainWindow::createActions()
 {
     aboutAction = new QAction(QIcon::fromTheme("help-about"), tr("About"), this);
     helpAction = new QAction(QIcon::fromTheme("help-browser"), tr("Help"), this);
@@ -330,14 +330,14 @@ void usbunmounter::createActions()
     quitAction = new QAction(QIcon::fromTheme("gtk-quit"), tr("Quit"), this);
     toggleAutostartAction = new QAction(QIcon::fromTheme("preferences-system"), tr("Enable Autostart?"), this);
 
-    connect(aboutAction, &QAction::triggered, this, &usbunmounter::about);
-    connect(helpAction, &QAction::triggered, this, &usbunmounter::help);
-    connect(listDevicesAction, &QAction::triggered, this, &usbunmounter::start);
+    connect(aboutAction, &QAction::triggered, this, &MainWindow::about);
+    connect(helpAction, &QAction::triggered, this, &MainWindow::help);
+    connect(listDevicesAction, &QAction::triggered, this, &MainWindow::start);
     connect(quitAction, &QAction::triggered, qApp, &QGuiApplication::quit);
-    connect(toggleAutostartAction, &QAction::triggered, this, &usbunmounter::toggleAutostart);
+    connect(toggleAutostartAction, &QAction::triggered, this, &MainWindow::toggleAutostart);
 }
 
-void usbunmounter::createMenu()
+void MainWindow::createMenu()
 {
     menu = new QMenu(this);
     menu->addAction(listDevicesAction);
@@ -351,7 +351,7 @@ void usbunmounter::createMenu()
     trayIcon->setContextMenu(menu);
 }
 
-void usbunmounter::help()
+void MainWindow::help()
 {
     QString url = "file:///usr/share/doc/mx-usb-unmounter/mx-usb-unmounter.html";
     QLocale locale;
@@ -364,7 +364,7 @@ void usbunmounter::help()
         system("xdg-open " + url.toUtf8() + "\"&");
 }
 
-void usbunmounter::toggleAutostart()
+void MainWindow::toggleAutostart()
 {
     QString local_file = QDir::homePath() + "/.config/autostart/mx-usb-unmounter.desktop";
     if (QMessageBox::Yes == QMessageBox::question(nullptr, tr("Autostart Settings"), tr("Enable Autostart?")))
@@ -374,7 +374,7 @@ void usbunmounter::toggleAutostart()
 }
 
 // implement change event that closes app when window loses focus
-void usbunmounter::changeEvent(QEvent *event)
+void MainWindow::changeEvent(QEvent *event)
 {
     QWidget::changeEvent(event);
     if (event->type() == QEvent::ActivationChange) {
@@ -387,20 +387,20 @@ void usbunmounter::changeEvent(QEvent *event)
     }
 }
 
-void usbunmounter::on_cancel_pressed()
+void MainWindow::on_cancel_pressed()
 {
     this->hide();
 }
 
 // process keystrokes
-void usbunmounter::keyPressEvent(QKeyEvent *event)
+void MainWindow::keyPressEvent(QKeyEvent *event)
 {
     if (event->key() == Qt::Key_Escape)
         this->hide();
 }
 
 // About mx-usb-unmounter
-void usbunmounter::about()
+void MainWindow::about()
 {
     QString version = runCmd("dpkg-query --show mx-usb-unmounter").str.simplified().section(' ', 1, 1);
     QMessageBox msgBox(QMessageBox::NoIcon,

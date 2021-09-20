@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>usbunmounter</class>
- <widget class="QDialog" name="usbunmounter">
+ <class>MainWindow</class>
+ <widget class="QDialog" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -44,7 +44,10 @@
     <widget class="QLabel" name="label">
      <property name="font">
       <font>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
        <italic>true</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="text">
@@ -71,7 +74,8 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset theme="process-stop"/>
+      <iconset theme="process-stop">
+       <normaloff>.</normaloff>.</iconset>
      </property>
      <property name="autoDefault">
       <bool>false</bool>

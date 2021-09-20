@@ -1,4 +1,4 @@
-#include "usbunmounter.h"
+#include "mainwindow.h"
 #include <QApplication>
 #include <QTranslator>
 #include <QLocale>
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     appTran.load(QString("mx-usb-unmounter_") + QLocale::system().name(), "/usr/share/mx-usb-unmounter/locale");
     a.installTranslator(&appTran);
 
-    usbunmounter w(argv[1]);
+    MainWindow w(argv[1]);
     w.hide();
     return a.exec();
 }
