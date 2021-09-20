@@ -48,7 +48,7 @@ void MainWindow::start()
     ui->mountlistview->clear();
 
     UID = runCmd("echo $UID").str;
-    qDebug() << "UID is "<< UID;
+//    qDebug() << "UID is "<< UID;
 
     // get list of usb storage devices
 
@@ -59,26 +59,23 @@ void MainWindow::start()
 
     file_content = runCmd("df --local --output=source,target,size -H | grep /dev/").str;
     partitionlist = file_content.split("\n");
-    qDebug() << "Partition list: " << partitionlist;
+//    qDebug() << "Partition list: " << partitionlist;
     // now build list for gvfs devices mtp and gphoto
     file_content = runCmd("ls -1 --color=never /run/user/" + UID +"/gvfs |grep mtp").str;
     file_content.append(runCmd("ls -1 --color=never /run/user/" + UID + "/gvfs |grep gphoto").str);
     gvfslist = file_content.split("\n");
-    qDebug() << gvfslist;
+//    qDebug() << gvfslist;
     for (const QString &item : gvfslist) {
-        QString dev = item;
-        if (dev.isEmpty()) {
-            qDebug() << "Dev" << dev;
-        } else {
-            qDebug() << "Dev" << dev;
-            QString devpath = QString("/run/user/" + UID + "/"+ dev);
-            qDebug() << "DevPath" << devpath;
+        if (!item.isEmpty()) {
+//            qDebug() << "Dev" << dev;
+            QString devpath = QString("/run/user/" + UID + "/"+ item);
+//            qDebug() << "DevPath" << devpath;
             QString addtopartitionlist = QString(devpath + " " + item + " ");
             partitionlist << addtopartitionlist;
         }
     }
 
-    qDebug() << "Partition list: " << partitionlist;
+//    qDebug() << "Partition list: " << partitionlist;
 
 
 
@@ -98,15 +95,17 @@ void MainWindow::start()
     QString model;
 
     for (const QString &item : partitionlist) {
+        if (item.startsWith("/dev/mapper/rootfs") || item.startsWith("tmpfs") || item.startsWith("df: "))
+            continue;
         // devicename = item.simplified().section(' ', 0 ,0).section('/', 2, 2);  //gives us device designation (sda, sdb, etc..)
         point = item.simplified().section(' ', 1, 1);
         size = item.simplified().section(' ', 2, 2);
         partition = item.simplified().section(' ', 0, 0);
         label = runCmd("udevadm info --query=property " + partition + " |grep ID_FS_LABEL=").str.section('=',1,1);
-        qDebug() << "Mountpoint: " << point;
-        qDebug() << "Size: " << size;
-        qDebug() << "Partition: " << partition;
-        qDebug() << "Label: " << label;
+//        qDebug() << "Mountpoint: " << point;
+//        qDebug() << "Size: " << size;
+//        qDebug() << "Partition: " << partition;
+//        qDebug() << "Label: " << label;
         // isUSB = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -qE '^DEVPATH=.*/usb[0-9]+/'") == 0;
         isUSB = system("udevadm info --query=property " + partition.toUtf8() + " | grep -qE '^DEVPATH=.*/usb[0-9]+/'") == 0;
         // isCD = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
@@ -132,13 +131,13 @@ void MainWindow::start()
         }
 
 
-        qDebug() << "Device name: " << devicename;
-        qDebug() << "Model: " << model;
-        qDebug() << "Is USB: " << isUSB;
-        qDebug() << "Is CD: " << isCD;
-        qDebug() << "Is MMC: " << isMMC;
-        qDebug() << "Is MTP: " << isMTP;
-        qDebug() << "Is GPHOTO: " << isGPHOTO;
+//        qDebug() << "Device name: " << devicename;
+//        qDebug() << "Model: " << model;
+//        qDebug() << "Is USB: " << isUSB;
+//        qDebug() << "Is CD: " << isCD;
+//        qDebug() << "Is MMC: " << isMMC;
+//        qDebug() << "Is MTP: " << isMTP;
+//        qDebug() << "Is GPHOTO: " << isGPHOTO;
 
 
         QString data;
@@ -147,7 +146,7 @@ void MainWindow::start()
             list_item = new QListWidgetItem(ui->mountlistview);
             QString item2 = QString(model + " " + size + " " + tr("Volume").toUtf8() + " " + label);
             list_item->setText(item2);
-            qDebug() << "widget item: " << item2;
+//            qDebug() << "widget item: " << item2;
             QString data;
             if (isUSB) {
                 if (isMTP) {
@@ -179,7 +178,7 @@ void MainWindow::start()
                 list_item->setData(Qt::UserRole, data);
                 list_item->setToolTip(point);
             }
-            qDebug() << "Data list: " << data;
+//            qDebug() << "Data list: " << data;
         }
     }
 
@@ -209,14 +208,14 @@ void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
     QString cmd3;
     QString cmd4;
     QString point = QString(item->text());
-    qDebug() << "clicked mount point" << point;
+//    qDebug() << "clicked mount point" << point;
     cmd2 = tr("Unmounting " + point.toUtf8());
     cmd3 = tr(point.toUtf8() + " is Safe to Remove");
     cmd4 = tr("Other partitions still mounted on device");
     QString title = tr("MX USB Unmounter");
     QString type = item->data(Qt::UserRole).toString().section(";", 0, 0);
-    qDebug() << item->data(Qt::UserRole).toString();
-    qDebug() << "type is" << type;
+//    qDebug() << item->data(Qt::UserRole).toString();
+//    qDebug() << "type is" << type;
     QString pattern("compact_flash|CF|sd|sdhc|MMC|ms|sdxc|xD");
     QRegularExpression re(pattern,QRegularExpression::CaseInsensitiveOption);
 
@@ -231,9 +230,9 @@ void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
     QString mountdevice = item->data(Qt::UserRole).toString().section(";", 2, 2);
     QString partitiondevice = item->data(Qt::UserRole).toString().section(";", 1, 1);
     QString model = item->data(Qt::UserRole).toString().section(";", 3, 3);
-    qDebug() << "Mount device is" << mountdevice;
-    qDebug() << "Partion device is" << partitiondevice;
-    qDebug() << type;
+//    qDebug() << "Mount device is" << mountdevice;
+//    qDebug() << "Partion device is" << partitiondevice;
+//    qDebug() << type;
     int out = 0;
     QString out2;
 
@@ -242,21 +241,21 @@ void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
     if (match.hasMatch())
         poweroff = false;
 
-    qDebug() << "power off is " << poweroff;
+//    qDebug() << "power off is " << poweroff;
 
     // if item is mmc, unmount only, don't "eject"
     if (type == "mmc")
         out = runCmd("umount " + partitiondevice).exit_code;
     if (type == "usb") {
         out = runCmd("umount /dev/" + mountdevice + "?*").exit_code;
-        qDebug() << "unmount paritions exit code" << out;
+//        qDebug() << "unmount paritions exit code" << out;
         if (out != 0 ) {
             //try just unmounting the device
             out = runCmd("umount /dev/" + mountdevice).exit_code;
-            qDebug() << "unmount device exit code" << out;
+//            qDebug() << "unmount device exit code" << out;
             if (out != 0 ) {
                 out2 = runCmd("cat /etc/mtab | grep -q " + mountdevice + " && echo $?").str;
-                qDebug() << "out2 is " << out2;
+//                qDebug() << "out2 is " << out2;
                 if (out2.isEmpty())
                     out = 0;
             }
@@ -270,9 +269,9 @@ void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
     if (type == "mtp" || type == "gphoto2")
         out = runCmd("gvfs-mount -u /run/user/$UID/gvfs/" + mountdevice).exit_code;
 
-    qDebug() << "out is " << out;
+//    qDebug() << "out is " << out;
 
-        if (out == 0) {
+    if (out == 0) {
         // if device is usb, go ahead and power off "eject" and notify user
         if (type == "usb") {
             if (poweroff)
@@ -305,11 +304,11 @@ void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
         }
 
     } else {  //if umount operation failed, say so
-        qDebug() << "Warning";
+//        qDebug() << "Warning";
         cmd3 = tr("Unable to  Unmount, Device in Use");
         system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
     }
-    start();
+    this->hide();
 }
 
 void MainWindow::iconActivated(QSystemTrayIcon::ActivationReason reason)
@@ -392,12 +391,8 @@ void MainWindow::changeEvent(QEvent *event)
 {
     QWidget::changeEvent(event);
     if (event->type() == QEvent::ActivationChange) {
-        if (this->isActiveWindow()) {
-            qDebug() << "focusinEvent";
-        } else {
-            qDebug() << "focusOutEvent";
+        if (!this->isActiveWindow())
             this->hide();
-        }
     }
 }
 
