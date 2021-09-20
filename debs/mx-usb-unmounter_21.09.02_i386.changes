@@ -14,15 +14,16 @@ Changes:
  mx-usb-unmounter (21.09.02) mx; urgency=medium
  .
    * Use native Qt to display tray icon and menu; remove yad dependency
+   * Move dialog to fit the main screen
 Checksums-Sha1:
- 94dbe878f361b9213530596e0ae6a21faaae9278 6404 mx-usb-unmounter-dbgsym_21.09.02_i386.deb
- 1a375944ef12f364fdb93cdd1d1a1b76ef97efeb 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
- 3b6684a55b526117383cf20cde37be021c13be91 77232 mx-usb-unmounter_21.09.02_i386.deb
+ 12545c26de98de72a88ea344008914cf7efe45be 6536 mx-usb-unmounter-dbgsym_21.09.02_i386.deb
+ 35d84e706f87ee6a1a02d0c836410b594b546cda 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
+ 8ccbb44aed743b30bf64a69afd6528d0080adc79 72836 mx-usb-unmounter_21.09.02_i386.deb
 Checksums-Sha256:
- 605543249452b6041dd47683416a0d9c69e9340731e807d3aeeb18bdbf2a3e03 6404 mx-usb-unmounter-dbgsym_21.09.02_i386.deb
- 4eaccd0ce7f0fb9912c64d3f445882bc2c93ae281ebcc29e33efbeb33176c863 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
- 9a96cf395cf8aa745c52c75e3c63c8046db40cbc3b4ee120167d6b67e0f60b40 77232 mx-usb-unmounter_21.09.02_i386.deb
+ ac772801b9b8e087376aebd5add08753f605b1dae43db6bd2e91c91c2ccfdf51 6536 mx-usb-unmounter-dbgsym_21.09.02_i386.deb
+ 4fb95ef99299a76d0b74bae3ea284c1b4aff15ed6775d2fdf0fdd9d1ec0a8c3c 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
+ e62083251a52b72e99b9f5a7849dce9bc8c59e0a17dd5148723322a411798dcc 72836 mx-usb-unmounter_21.09.02_i386.deb
 Files:
- 4b541c60fe62724485b11f999817752a 6404 debug optional mx-usb-unmounter-dbgsym_21.09.02_i386.deb
- 0ed5491ab715aac644954cc0bd3aef84 10299 admin optional mx-usb-unmounter_21.09.02_i386.buildinfo
- 58edc21fd82e0b9cd6b34965345a3729 77232 admin optional mx-usb-unmounter_21.09.02_i386.deb
+ e3c60dccb2cb0251d273e6ae8253a683 6536 debug optional mx-usb-unmounter-dbgsym_21.09.02_i386.deb
+ 742af651387df8b87f8926d690b77f43 10299 admin optional mx-usb-unmounter_21.09.02_i386.buildinfo
+ c5b261a73681abad0c92fc93eaf5dff0 72836 admin optional mx-usb-unmounter_21.09.02_i386.deb

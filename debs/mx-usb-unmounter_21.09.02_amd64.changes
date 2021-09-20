@@ -17,33 +17,34 @@ Changes:
  mx-usb-unmounter (21.09.02) mx; urgency=medium
  .
    * Use native Qt to display tray icon and menu; remove yad dependency
+   * Move dialog to fit the main screen
 Checksums-Sha1:
- 2f8cfb61b001677445d956466c612d349ddd703f 1234 mx-usb-unmounter_21.09.02.dsc
- f06cdae3a74a456b3e6f0c70d47860b85b4d2d19 64168 mx-usb-unmounter_21.09.02.tar.xz
- 727c83f700d845d81757730cb3739870128be925 6352 mx-usb-unmounter-dbgsym_21.09.02_amd64.deb
- b9c974989798bd2b9588d048a5c7204782958dc0 11091 mx-usb-unmounter_21.09.02_amd64.buildinfo
- f29c506d6045ed6ffe65dc1dd541a0a8103ab05f 75444 mx-usb-unmounter_21.09.02_amd64.deb
+ fe7564b5f95eebd80ba733ae66ec76c5b2df5c79 1234 mx-usb-unmounter_21.09.02.dsc
+ c7872f671c1043ed44904c0f6f6a25c89380403c 68660 mx-usb-unmounter_21.09.02.tar.xz
+ 36696685e73ee4d4f9c59c4d976b6b11efc91d03 6476 mx-usb-unmounter-dbgsym_21.09.02_amd64.deb
+ c5f3d48046270ceda62bbc6a74be6da83df27b47 11091 mx-usb-unmounter_21.09.02_amd64.buildinfo
+ c58a2f297ed9d67edc6f8f2e857473d1c4a16cd8 70720 mx-usb-unmounter_21.09.02_amd64.deb
 Checksums-Sha256:
- 3cdf2f5f695593825c44a1c080a788b0e35bbd5a9b30cdaff812c53208dd661e 1234 mx-usb-unmounter_21.09.02.dsc
- 5ff623a867d1274ecd626836daffa64cae4343f55828dfd41b6da4686312c211 64168 mx-usb-unmounter_21.09.02.tar.xz
- 6da2e35410270505281d2db353aa22a52a0641e2dcafd0bd4cf5df9688495450 6352 mx-usb-unmounter-dbgsym_21.09.02_amd64.deb
- e6498d77b6f15b857fecf3703831577ab23f5c414b158fb77a56684072d55380 11091 mx-usb-unmounter_21.09.02_amd64.buildinfo
- 3e30a2f140adb4c84c17129ea17ece413e4e558f0a2b972893d1d1158fb8d3b9 75444 mx-usb-unmounter_21.09.02_amd64.deb
+ 8b94b0bcce6db1b6053ef118e8af11b7e59f2afb6815332387da2b854cdc2c14 1234 mx-usb-unmounter_21.09.02.dsc
+ fcf17dbcc70c71bce0bf720277dac9430f70517051c780ed7c4d490bd6ea9efa 68660 mx-usb-unmounter_21.09.02.tar.xz
+ 1c2da1c77d940948984f72b382d77c56e814ecfd4450011feb50f8ea8572ee55 6476 mx-usb-unmounter-dbgsym_21.09.02_amd64.deb
+ f1b6cf67c293498f07ebf2b404de643460ef19ec3accd1f1d83172b2ca037dc7 11091 mx-usb-unmounter_21.09.02_amd64.buildinfo
+ e85de4ab621fecc84dcf0986288bcf09565628870ef9ac68149bf66d0135d2c3 70720 mx-usb-unmounter_21.09.02_amd64.deb
 Files:
- e8b0e933f9720238fa3c91df5af87d6d 1234 admin optional mx-usb-unmounter_21.09.02.dsc
- 9d8240e3ce694f81c88d7cb8256f4533 64168 admin optional mx-usb-unmounter_21.09.02.tar.xz
- 6fb0f0a8e0abc40522e1c43cb90e85fe 6352 debug optional mx-usb-unmounter-dbgsym_21.09.02_amd64.deb
- be7b7404bce2fdc3bd936c113e48586e 11091 admin optional mx-usb-unmounter_21.09.02_amd64.buildinfo
- 41290b3b444d49864ea41b98621fe753 75444 admin optional mx-usb-unmounter_21.09.02_amd64.deb
+ c266877c1380149ff1c5228c18c03da6 1234 admin optional mx-usb-unmounter_21.09.02.dsc
+ ee4c110fa1f8a86a769738f49edd33a9 68660 admin optional mx-usb-unmounter_21.09.02.tar.xz
+ 8670648ed02b9df31ef1ad7c3f9f0f3a 6476 debug optional mx-usb-unmounter-dbgsym_21.09.02_amd64.deb
+ 0dbe46b7c14860eb715485eb4030292f 11091 admin optional mx-usb-unmounter_21.09.02_amd64.buildinfo
+ bf7d9017829f7505caf6909de8fcdde9 70720 admin optional mx-usb-unmounter_21.09.02_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmFGywoTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumDRzCACpr4jN49wUv66ooO/WrEtYOkh7QgJ3
-W4HRmEu+hB9LoCMCqz00hbNGivFR2FndbPgrlz5LUhkHoq4gqCKg5rJv9+glfI5g
-eA6x8ISWNn/SCVJBwcbuULWJnTP2p6TUrqgHpCtMvU4yGTfmOksXWa8EMlI03T8T
-sezuPVjkVdfwG6sSSzAMtay7iP5pKZhjha9EG93XNf9oclmCsgfw1R8d5v5BgMth
-+95OdyXDIlQOa0tQ1hnsK7JkKGu7kH5w/vngNCvzD0d/6RKjwK+oMVNdhRKmgbUw
-IpSLu9qYRrfRkbE20IIWgktFBi4HOpy80678Xp0h8DLx+zOxHlV9wpMT
-=a6TY
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmFH9McTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumIv5B/96bx/ORftk8GzmjW36VLI5jGAoUOKZ
+Hx8LllcPV/3ArS5gZKxrIYWAwOC+pLu5PBcqc1fGBQGdKvr+Wu0GHt7nIP3zlTfe
+zGHlLgfRYlHKDUL4hMb7BFbqsVwrF07zFygWfWsc3J9AtHeUPobWDG4rpXHpz6N0
++4tDfisolts8Tw4R3Jg4sGFQVnFNxUS/Bn6JeV84QR9BI1jEo0+peG05XLHFvPXh
+lY5y/Hmk2CBQL1AUlNz2h8Ak9ROpbtld5aKh5snFeP/CsK6GcMXdFxHc/GYSnPbD
+z9G4xH7bgaV8lPPYYEZtdahI3/duodw7xHc2Ek/LtloRhkpG8IWdnH2U
+=g9gY
 -----END PGP SIGNATURE-----

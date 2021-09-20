@@ -1,6 +1,7 @@
 mx-usb-unmounter (21.09.02) mx; urgency=medium
 
   * Use native Qt to display tray icon and menu; remove yad dependency
+  * Move dialog to fit the main screen
 
  -- Adrian <adrian@mxlinux.org>  Sun, 19 Sep 2021 01:16:32 -0400
 

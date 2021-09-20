@@ -11,15 +11,16 @@ Changes:
  mx-usb-unmounter (21.09.02) mx; urgency=medium
  .
    * Use native Qt to display tray icon and menu; remove yad dependency
+   * Move dialog to fit the main screen
 Checksums-Sha1:
- 1f384711afd41fc62c81243ce8fc377d9ecf82c1 672 mx-usb-unmounter_21.09.02.dsc
- cf69949686cd0a4632d598b51ce08a914f9d8a05 64248 mx-usb-unmounter_21.09.02.tar.xz
- 1a375944ef12f364fdb93cdd1d1a1b76ef97efeb 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
+ b245ae604c8b0de483ca54d5eb6d422291d35b04 672 mx-usb-unmounter_21.09.02.dsc
+ 6427586de6cae7cf27750d5546f86d0d4266d49e 68760 mx-usb-unmounter_21.09.02.tar.xz
+ 35d84e706f87ee6a1a02d0c836410b594b546cda 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
 Checksums-Sha256:
- f030b69474c8beff37ce9db35a1439a5eef94e5108180954685ebb8453e21009 672 mx-usb-unmounter_21.09.02.dsc
- 6c11082c0c920edc0a5e238fa8fc996b4613c7bf2ea41f01ff609c84ecc48936 64248 mx-usb-unmounter_21.09.02.tar.xz
- 4eaccd0ce7f0fb9912c64d3f445882bc2c93ae281ebcc29e33efbeb33176c863 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
+ c93b4c105198ec57813b92dee6f11a4d20a6f8aab172c1b23ea7dc7a715e788f 672 mx-usb-unmounter_21.09.02.dsc
+ 59d0df34bf63f0a6a8615a8577aaf30f40db0c599ceee77ef82971b1c579ba44 68760 mx-usb-unmounter_21.09.02.tar.xz
+ 4fb95ef99299a76d0b74bae3ea284c1b4aff15ed6775d2fdf0fdd9d1ec0a8c3c 10299 mx-usb-unmounter_21.09.02_i386.buildinfo
 Files:
- 949bf2c4657b07bb22e1dc1d1795adaa 672 admin optional mx-usb-unmounter_21.09.02.dsc
- 6077d7e072112b2e7b5451ba731b8f08 64248 admin optional mx-usb-unmounter_21.09.02.tar.xz
- 0ed5491ab715aac644954cc0bd3aef84 10299 admin optional mx-usb-unmounter_21.09.02_i386.buildinfo
+ a4c6fc39f9416ce37600613b25216542 672 admin optional mx-usb-unmounter_21.09.02.dsc
+ 97c7d0af8deab41ff487a9950d0ba4e8 68760 admin optional mx-usb-unmounter_21.09.02.tar.xz
+ 742af651387df8b87f8926d690b77f43 10299 admin optional mx-usb-unmounter_21.09.02_i386.buildinfo
