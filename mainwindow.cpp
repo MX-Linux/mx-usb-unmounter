@@ -369,11 +369,12 @@ void MainWindow::help()
 
 void MainWindow::setPosition()
 {
-    QPoint pos = QCursor::pos(QGuiApplication::screenAt(this->mapFromGlobal(QCursor::pos())));
-    if (pos.y() + this->size().height() > QGuiApplication::screenAt(pos)->geometry().height())
-        pos.setY(QGuiApplication::screenAt(pos)->geometry().height() - this->size().height());
-    if (pos.x() + this->size().width() > QGuiApplication::screenAt(pos)->geometry().width())
-        pos.setX(QGuiApplication::screenAt(pos)->geometry().width() - this->size().width());
+    QPoint pos = QCursor::pos();
+    QScreen *screen = QGuiApplication::screenAt(pos);
+    if (pos.y() + this->size().height() > screen->availableVirtualGeometry().height())
+        pos.setY(screen->availableVirtualGeometry().height() - this->size().height());
+    if (pos.x() + this->size().width() > screen->availableVirtualGeometry().width())
+        pos.setX(screen->availableVirtualGeometry().width() - this->size().width());
     this->move(pos);
 }
 
