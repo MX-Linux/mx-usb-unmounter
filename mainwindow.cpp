@@ -370,10 +370,10 @@ void MainWindow::help()
 void MainWindow::setPosition()
 {
     QPoint pos = QCursor::pos();
-    if (pos.y() + this->size().height() > QGuiApplication::primaryScreen()->geometry().height())
-        pos.setY(QGuiApplication::primaryScreen()->geometry().height() - this->size().height());
-    if (pos.x() + this->size().width() > QGuiApplication::primaryScreen()->geometry().width())
-        pos.setX(QGuiApplication::primaryScreen()->geometry().width() - this->size().width());
+    if (pos.y() + this->size().height() > QGuiApplication::screenAt(pos)->geometry().height())
+        pos.setY(QGuiApplication::screenAt(pos)->geometry().height() - this->size().height());
+    if (pos.x() + this->size().width() > QGuiApplication::screenAt(pos)->geometry().width())
+        pos.setX(QGuiApplication::screenAt(pos)->geometry().width() - this->size().width());
     this->move(pos);
 }
 
