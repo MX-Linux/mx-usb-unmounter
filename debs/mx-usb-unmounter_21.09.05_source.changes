@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Sat, 25 Sep 2021 14:20:49 -0400
+Source: mx-usb-unmounter
+Architecture: source
+Version: 21.09.05
+Distribution: mx
+Urgency: medium
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-usb-unmounter (21.09.05) mx; urgency=medium
+ .
+   * Fix: pop window on the current screen
+Checksums-Sha1:
+ c146d832d506d8f5cc974fec178b6f87f6162100 672 mx-usb-unmounter_21.09.05.dsc
+ e8e47f44648c891d3598e1299c810b8f96b7d5c7 68892 mx-usb-unmounter_21.09.05.tar.xz
+ 338a437f89da79900a545c82ae4284b01dca056d 10016 mx-usb-unmounter_21.09.05_i386.buildinfo
+Checksums-Sha256:
+ 3245a2a6d7035aded197cc69975f00d2228487725dd3ea5b0008ef28775a7500 672 mx-usb-unmounter_21.09.05.dsc
+ 6d5f8ba3f818539183facd8dbca746c78a19792e6aaf551bf5244686e433d18a 68892 mx-usb-unmounter_21.09.05.tar.xz
+ a8bd0bfa79f51b3c476732afbfe68a19e571e7b3cc8252b8849fd9ebb84c35e2 10016 mx-usb-unmounter_21.09.05_i386.buildinfo
+Files:
+ 0880b5bcc1a8b52a291d9ed5d31fd89a 672 admin optional mx-usb-unmounter_21.09.05.dsc
+ c0b53c937481724cd4b41d1570dcb1f8 68892 admin optional mx-usb-unmounter_21.09.05.tar.xz
+ c60909a8324ac0e23b2690c4f2236405 10016 admin optional mx-usb-unmounter_21.09.05_i386.buildinfo
