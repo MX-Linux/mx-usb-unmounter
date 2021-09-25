@@ -12,14 +12,14 @@ Changes:
  .
    * Fix: pop window on the current screen
 Checksums-Sha1:
- c146d832d506d8f5cc974fec178b6f87f6162100 672 mx-usb-unmounter_21.09.05.dsc
- e8e47f44648c891d3598e1299c810b8f96b7d5c7 68892 mx-usb-unmounter_21.09.05.tar.xz
- 338a437f89da79900a545c82ae4284b01dca056d 10016 mx-usb-unmounter_21.09.05_i386.buildinfo
+ 6a541f23bb145e9d106cef50ab883fd343c2b804 672 mx-usb-unmounter_21.09.05.dsc
+ 076a326b6c670ea0c9905da7a870f73742eed78e 68856 mx-usb-unmounter_21.09.05.tar.xz
+ 375d8f259c9b53cadb7928f0ea5b40f0acac2bea 10016 mx-usb-unmounter_21.09.05_i386.buildinfo
 Checksums-Sha256:
- 3245a2a6d7035aded197cc69975f00d2228487725dd3ea5b0008ef28775a7500 672 mx-usb-unmounter_21.09.05.dsc
- 6d5f8ba3f818539183facd8dbca746c78a19792e6aaf551bf5244686e433d18a 68892 mx-usb-unmounter_21.09.05.tar.xz
- a8bd0bfa79f51b3c476732afbfe68a19e571e7b3cc8252b8849fd9ebb84c35e2 10016 mx-usb-unmounter_21.09.05_i386.buildinfo
+ c77515ebbd1c52af50d71cacd3e51277de7e2aea1520a2a40ec41d9db60467bd 672 mx-usb-unmounter_21.09.05.dsc
+ ff3ccb1ebafc730d032194e92de016bfd231875625467e73dea6b722bb9884a0 68856 mx-usb-unmounter_21.09.05.tar.xz
+ 51d17e9cd4cd9d8802468201b665d792297353c0245b76d872cf63f6208898f6 10016 mx-usb-unmounter_21.09.05_i386.buildinfo
 Files:
- 0880b5bcc1a8b52a291d9ed5d31fd89a 672 admin optional mx-usb-unmounter_21.09.05.dsc
- c0b53c937481724cd4b41d1570dcb1f8 68892 admin optional mx-usb-unmounter_21.09.05.tar.xz
- c60909a8324ac0e23b2690c4f2236405 10016 admin optional mx-usb-unmounter_21.09.05_i386.buildinfo
+ cecfafa1945bc441677fa53e31dd5215 672 admin optional mx-usb-unmounter_21.09.05.dsc
+ f5188cb624e96afa1210db5bbeb740e2 68856 admin optional mx-usb-unmounter_21.09.05.tar.xz
+ 49800c84ef52a65211403dc7d68568ef 10016 admin optional mx-usb-unmounter_21.09.05_i386.buildinfo

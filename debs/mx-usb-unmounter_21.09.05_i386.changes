@@ -15,11 +15,11 @@ Changes:
  .
    * Fix: pop window on the current screen
 Checksums-Sha1:
- 338a437f89da79900a545c82ae4284b01dca056d 10016 mx-usb-unmounter_21.09.05_i386.buildinfo
- 56b093a721283da27f10ef23bc226d3d12ea23d7 70232 mx-usb-unmounter_21.09.05_i386.deb
+ 375d8f259c9b53cadb7928f0ea5b40f0acac2bea 10016 mx-usb-unmounter_21.09.05_i386.buildinfo
+ 45cefd8e1d7bb8938f509b190e7a6de7732f4174 70164 mx-usb-unmounter_21.09.05_i386.deb
 Checksums-Sha256:
- a8bd0bfa79f51b3c476732afbfe68a19e571e7b3cc8252b8849fd9ebb84c35e2 10016 mx-usb-unmounter_21.09.05_i386.buildinfo
- fb737df89e0b5b6689fbf1703f740148d4236611d4a356c42fa6dbbeb4dc1c24 70232 mx-usb-unmounter_21.09.05_i386.deb
+ 51d17e9cd4cd9d8802468201b665d792297353c0245b76d872cf63f6208898f6 10016 mx-usb-unmounter_21.09.05_i386.buildinfo
+ 63590524538215da9ef285b5ef117dcc9260dcf1bb3df7546bda5c8631268af3 70164 mx-usb-unmounter_21.09.05_i386.deb
 Files:
- c60909a8324ac0e23b2690c4f2236405 10016 admin optional mx-usb-unmounter_21.09.05_i386.buildinfo
- 62ce1583e554de54a884c63374bc811b 70232 admin optional mx-usb-unmounter_21.09.05_i386.deb
+ 49800c84ef52a65211403dc7d68568ef 10016 admin optional mx-usb-unmounter_21.09.05_i386.buildinfo
+ 80a4a9029dd55615b41140c8a07585cb 70164 admin optional mx-usb-unmounter_21.09.05_i386.deb
