@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     QString user = QProcessEnvironment::systemEnvironment().value("USER");
     QLockFile lockfile("/var/lock/mx-usb-unmounter_" + user + ".lock");
     if (!lockfile.tryLock())
-        return 0;
+        return EXIT_FAILURE;
 
     QTranslator qtTran;
     qtTran.load(QString("qt_") + QLocale::system().name());
