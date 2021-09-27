@@ -10,20 +10,12 @@
 MainWindow::MainWindow(QString arg1, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MainWindow)
-{   
+{
     qApp->setQuitOnLastWindowClosed(false);
     if (arg1 == "--help" || arg1 == "-h") {
         about();
         exit(0);
     } else {
-        user = runCmd("echo $USER").str;
-        lockfile = "/tmp/mx-usb-unmounter-" + user + "-lockfile";
-        if ( lockfile.exists()){
-            exit(1);
-        } else {
-            QString cmd = "touch " + lockfile.absoluteFilePath();
-            system(cmd.toUtf8());
-        }
         ui->setupUi(this);
         createActions();
         createMenu();
@@ -203,8 +195,6 @@ void MainWindow::start()
 }
 MainWindow::~MainWindow()
 {
-    QString cmd = "rm " + lockfile.absoluteFilePath();
-    system(cmd.toUtf8());
     delete ui;
 }
 

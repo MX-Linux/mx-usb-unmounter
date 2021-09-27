@@ -2,10 +2,16 @@
 #include <QApplication>
 #include <QTranslator>
 #include <QLocale>
+#include <QLockFile>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
+    QString user = QProcessEnvironment::systemEnvironment().value("USER");
+    QLockFile lockfile("/var/lock/mx-usb-unmounter_" + user + ".lock");
+    if (!lockfile.tryLock())
+        return 0;
 
     QTranslator qtTran;
     qtTran.load(QString("qt_") + QLocale::system().name());
