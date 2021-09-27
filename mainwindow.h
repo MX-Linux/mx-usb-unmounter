@@ -6,6 +6,7 @@
 #include <QMenu>
 #include <QProcess>
 #include <QSystemTrayIcon>
+#include <QFileInfo>
 
 namespace Ui {
 class MainWindow;
@@ -28,6 +29,8 @@ public:
     void about();
     Output runCmd(QString cmd);
     QString UID;
+    QString user;
+    QFileInfo lockfile;
 
 private slots:
     void changeEvent(QEvent *event);

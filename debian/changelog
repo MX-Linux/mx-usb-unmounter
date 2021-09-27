@@ -1,3 +1,9 @@
+mx-usb-unmounter (21.09.06) mx; urgency=medium
+
+  * ensure only once instance runs per user 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 26 Sep 2021 20:42:42 -0400
+
 mx-usb-unmounter (21.09.05) mx; urgency=medium
 
   * Fix: pop window on the current screen 
