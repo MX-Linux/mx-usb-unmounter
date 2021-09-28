@@ -1,3 +1,9 @@
+mx-usb-unmounter (21.09.07) mx; urgency=medium
+
+  * Use QLockFile to check if already running
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 28 Sep 2021 12:21:44 -0400
+
 mx-usb-unmounter (21.09.06) mx; urgency=medium
 
   * ensure only once instance runs per user 

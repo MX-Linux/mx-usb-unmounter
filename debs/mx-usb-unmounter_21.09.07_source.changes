@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Tue, 28 Sep 2021 12:21:44 -0400
+Source: mx-usb-unmounter
+Architecture: source
+Version: 21.09.07
+Distribution: mx
+Urgency: medium
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-usb-unmounter (21.09.07) mx; urgency=medium
+ .
+   * Use QLockFile to check if already running
+Checksums-Sha1:
+ 7a3570f9bc5483534ba81c9641d97f5cf0bb2373 672 mx-usb-unmounter_21.09.07.dsc
+ 8caacf2be21043bb3fb35152aeb73eecda38ae81 68984 mx-usb-unmounter_21.09.07.tar.xz
+ da49763a9c6bf29c851aca538cd7be3a94a90128 10016 mx-usb-unmounter_21.09.07_i386.buildinfo
+Checksums-Sha256:
+ 98552f9a1fd1ee24b609573ee4570604cda5b52a21fcc20d396b024fbbe73aa4 672 mx-usb-unmounter_21.09.07.dsc
+ 2cae45f14e473b9ff3709125d4c582e3c6bbef91630495dcc273198abc6d08a8 68984 mx-usb-unmounter_21.09.07.tar.xz
+ 7ccbfd95f6da5ef004316ba647d594d0acea2d65b7b312ba1ed28adc0ee0ce5c 10016 mx-usb-unmounter_21.09.07_i386.buildinfo
+Files:
+ d812a0fcce2ce2fff76959a2fac23eb1 672 admin optional mx-usb-unmounter_21.09.07.dsc
+ 7d96307639b39dd7744bb47f4d1cbc41 68984 admin optional mx-usb-unmounter_21.09.07.tar.xz
+ 59a8a285f8856a295ccdb78bdccfca01 10016 admin optional mx-usb-unmounter_21.09.07_i386.buildinfo

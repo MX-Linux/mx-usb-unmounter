@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Tue, 28 Sep 2021 12:21:44 -0400
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: i386
+Version: 21.09.07
+Distribution: mx
+Urgency: medium
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (21.09.07) mx; urgency=medium
+ .
+   * Use QLockFile to check if already running
+Checksums-Sha1:
+ da49763a9c6bf29c851aca538cd7be3a94a90128 10016 mx-usb-unmounter_21.09.07_i386.buildinfo
+ 09db5151ba2f7e17b1dfd9b0a64969cf85a69436 70572 mx-usb-unmounter_21.09.07_i386.deb
+Checksums-Sha256:
+ 7ccbfd95f6da5ef004316ba647d594d0acea2d65b7b312ba1ed28adc0ee0ce5c 10016 mx-usb-unmounter_21.09.07_i386.buildinfo
+ 377f8741acf9b3c0b85d3f156b003525e49e4c56bf74fc72907b5de9c7c2fea7 70572 mx-usb-unmounter_21.09.07_i386.deb
+Files:
+ 59a8a285f8856a295ccdb78bdccfca01 10016 admin optional mx-usb-unmounter_21.09.07_i386.buildinfo
+ 39f7a4e293cca99513c008c9c2c7be81 70572 admin optional mx-usb-unmounter_21.09.07_i386.deb
