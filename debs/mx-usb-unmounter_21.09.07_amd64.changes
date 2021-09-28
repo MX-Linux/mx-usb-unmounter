@@ -15,17 +15,17 @@ Changes:
  .
    * Use QLockFile to check if already running
 Checksums-Sha1:
- 4cb1c5464755b759b290b327ac370f82fcf436f6 672 mx-usb-unmounter_21.09.07.dsc
- 1da7a2418fa92e4cc829696fbbb5d3afe8895e05 68940 mx-usb-unmounter_21.09.07.tar.xz
- 1ffd532cd0ee0e47a8f39504f16338ac63636e00 10320 mx-usb-unmounter_21.09.07_amd64.buildinfo
- 5628b87c53b26ba991d708c1fbbc307bd55b32d3 68740 mx-usb-unmounter_21.09.07_amd64.deb
+ 622c8f044ed70d9eabaa5531689b58fa8d576fcf 672 mx-usb-unmounter_21.09.07.dsc
+ 5fdfa622b3c60d31311c22c73c365162f7734b1e 68952 mx-usb-unmounter_21.09.07.tar.xz
+ 1d05a5b5a4350289c7d3b86bbaa76b051e379409 10320 mx-usb-unmounter_21.09.07_amd64.buildinfo
+ 1507848a972a6d7f5b38ad4d40236bae728643a0 68880 mx-usb-unmounter_21.09.07_amd64.deb
 Checksums-Sha256:
- f3f4e868c6ef4472e61d966366badac250b58212d84d56ad2ad3ad839d2fb920 672 mx-usb-unmounter_21.09.07.dsc
- d72d1fc39d197c6fcdff398f18ad453d54da16ef9823f30b533d207172442a27 68940 mx-usb-unmounter_21.09.07.tar.xz
- 893ab2e9eb7ae3fa593b1f5ae2df22b16010eefb76a35e131c995e56658f1e0d 10320 mx-usb-unmounter_21.09.07_amd64.buildinfo
- d10c6da460e61afe45e0a1f0bdb6a5fd362e5b8c2c6dc8210cd61310d84aec94 68740 mx-usb-unmounter_21.09.07_amd64.deb
+ dc7a8050e876e57d47eac9d1a24ee0a3397676303ff2be6ca6c7e8e4e30b080f 672 mx-usb-unmounter_21.09.07.dsc
+ af17e70aae97588b2e597ed4207d2a142bfe02efb03126ddfebcc20e8e3010bf 68952 mx-usb-unmounter_21.09.07.tar.xz
+ f6ce64b593f82528713e42e69e7f3ec11cd64f81c322865d1d8f20ce6b8a273a 10320 mx-usb-unmounter_21.09.07_amd64.buildinfo
+ cc5ff260d49f269ce4d5937ef0b978866da57f0a45267190a31093344a15938c 68880 mx-usb-unmounter_21.09.07_amd64.deb
 Files:
- a013f760ba9334f78ed10f560c8098ee 672 admin optional mx-usb-unmounter_21.09.07.dsc
- 712d417cedeb67aa58bcfd6173824b7a 68940 admin optional mx-usb-unmounter_21.09.07.tar.xz
- aab4349e7097a623f02d5f047eca2fd5 10320 admin optional mx-usb-unmounter_21.09.07_amd64.buildinfo
- 9505db1600aaedf24d7d66221a3fe7e4 68740 admin optional mx-usb-unmounter_21.09.07_amd64.deb
+ 927d174e118d7dd1d64fb42bda513597 672 admin optional mx-usb-unmounter_21.09.07.dsc
+ 13fb666d9644a00ed4b9178858aa86ce 68952 admin optional mx-usb-unmounter_21.09.07.tar.xz
+ 34998ab628659e466b4ac22d0add9388 10320 admin optional mx-usb-unmounter_21.09.07_amd64.buildinfo
+ 4afcca88014a9cccbc477605a3a31c0a 68880 admin optional mx-usb-unmounter_21.09.07_amd64.deb

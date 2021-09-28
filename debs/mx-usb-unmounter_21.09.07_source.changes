@@ -12,14 +12,14 @@ Changes:
  .
    * Use QLockFile to check if already running
 Checksums-Sha1:
- 7a3570f9bc5483534ba81c9641d97f5cf0bb2373 672 mx-usb-unmounter_21.09.07.dsc
- 8caacf2be21043bb3fb35152aeb73eecda38ae81 68984 mx-usb-unmounter_21.09.07.tar.xz
- da49763a9c6bf29c851aca538cd7be3a94a90128 10016 mx-usb-unmounter_21.09.07_i386.buildinfo
+ cb213d92d385e5f9662d37524ded6c2c06fd8778 672 mx-usb-unmounter_21.09.07.dsc
+ fb5e23079371cf854f7892358c58b693b4578c4a 69000 mx-usb-unmounter_21.09.07.tar.xz
+ 1a76cec3ccbcf0c3d8da21444125d0db31ffcb7c 10016 mx-usb-unmounter_21.09.07_i386.buildinfo
 Checksums-Sha256:
- 98552f9a1fd1ee24b609573ee4570604cda5b52a21fcc20d396b024fbbe73aa4 672 mx-usb-unmounter_21.09.07.dsc
- 2cae45f14e473b9ff3709125d4c582e3c6bbef91630495dcc273198abc6d08a8 68984 mx-usb-unmounter_21.09.07.tar.xz
- 7ccbfd95f6da5ef004316ba647d594d0acea2d65b7b312ba1ed28adc0ee0ce5c 10016 mx-usb-unmounter_21.09.07_i386.buildinfo
+ 716c115874e719686ad92413d2171eabac3f8603f2d73d4d20b10894689c87cd 672 mx-usb-unmounter_21.09.07.dsc
+ 753a56e6da34a89415473cba972f4577e9495c33288a60be76e5208059933b2b 69000 mx-usb-unmounter_21.09.07.tar.xz
+ a4f115b9555dfc81f0333c1f1f358ce5f0aafb9b458a5c915f64a6fa3527446c 10016 mx-usb-unmounter_21.09.07_i386.buildinfo
 Files:
- d812a0fcce2ce2fff76959a2fac23eb1 672 admin optional mx-usb-unmounter_21.09.07.dsc
- 7d96307639b39dd7744bb47f4d1cbc41 68984 admin optional mx-usb-unmounter_21.09.07.tar.xz
- 59a8a285f8856a295ccdb78bdccfca01 10016 admin optional mx-usb-unmounter_21.09.07_i386.buildinfo
+ a1524f9a7280226b5700c7dd511af6b2 672 admin optional mx-usb-unmounter_21.09.07.dsc
+ c745fd737662cc7069f8d3ff4b35e4a0 69000 admin optional mx-usb-unmounter_21.09.07.tar.xz
+ dc04ecd419a2bcc3630ab46487718118 10016 admin optional mx-usb-unmounter_21.09.07_i386.buildinfo

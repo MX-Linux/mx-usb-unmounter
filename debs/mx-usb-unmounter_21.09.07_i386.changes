@@ -15,11 +15,11 @@ Changes:
  .
    * Use QLockFile to check if already running
 Checksums-Sha1:
- da49763a9c6bf29c851aca538cd7be3a94a90128 10016 mx-usb-unmounter_21.09.07_i386.buildinfo
- 09db5151ba2f7e17b1dfd9b0a64969cf85a69436 70572 mx-usb-unmounter_21.09.07_i386.deb
+ 1a76cec3ccbcf0c3d8da21444125d0db31ffcb7c 10016 mx-usb-unmounter_21.09.07_i386.buildinfo
+ 4815fd07dc442efc7286b976b08a25950a51c776 70668 mx-usb-unmounter_21.09.07_i386.deb
 Checksums-Sha256:
- 7ccbfd95f6da5ef004316ba647d594d0acea2d65b7b312ba1ed28adc0ee0ce5c 10016 mx-usb-unmounter_21.09.07_i386.buildinfo
- 377f8741acf9b3c0b85d3f156b003525e49e4c56bf74fc72907b5de9c7c2fea7 70572 mx-usb-unmounter_21.09.07_i386.deb
+ a4f115b9555dfc81f0333c1f1f358ce5f0aafb9b458a5c915f64a6fa3527446c 10016 mx-usb-unmounter_21.09.07_i386.buildinfo
+ d42cb2f0a56f751a5ee7c719ed929082f4d1468d62690df33ede290358d862b1 70668 mx-usb-unmounter_21.09.07_i386.deb
 Files:
- 59a8a285f8856a295ccdb78bdccfca01 10016 admin optional mx-usb-unmounter_21.09.07_i386.buildinfo
- 39f7a4e293cca99513c008c9c2c7be81 70572 admin optional mx-usb-unmounter_21.09.07_i386.deb
+ dc04ecd419a2bcc3630ab46487718118 10016 admin optional mx-usb-unmounter_21.09.07_i386.buildinfo
+ 5ed3827ed616a6cca6d1eb8ef8b692a4 70668 admin optional mx-usb-unmounter_21.09.07_i386.deb
