@@ -352,6 +352,7 @@ void MainWindow::createMenu()
     trayIcon = new QSystemTrayIcon(this);
     trayIcon->setIcon(QIcon("/usr/share/pixmaps/usb-unmounter.svg"));
     trayIcon->setContextMenu(menu);
+    trayIcon->setToolTip(tr("Unmount"));
 }
 
 void MainWindow::help()
