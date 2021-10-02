@@ -383,9 +383,10 @@ void MainWindow::toggleAutostart()
 {
     QString local_file = QDir::homePath() + "/.config/autostart/mx-usb-unmounter.desktop";
     if (QMessageBox::Yes == QMessageBox::question(nullptr, tr("Autostart Settings"), tr("Enable Autostart?")))
-        QFile::copy("/usr/share/mx-usb-unmounter/mx-usb-unmounter.desktop", local_file);
-    else
         QFile::remove(local_file);
+    else
+        QFile::copy("/usr/share/mx-usb-unmounter/mx-usb-unmounter.desktop", local_file);
+
 }
 
 // implement change event that closes app when window loses focus
