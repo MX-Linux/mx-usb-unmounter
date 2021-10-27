@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Tue, 26 Oct 2021 18:25:32 -0400
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: i386
+Version: 21.10.02
+Distribution: mx
+Urgency: medium
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (21.10.02) mx; urgency=medium
+ .
+   * update icon
+Checksums-Sha1:
+ 8e5b684d65851096502e2ea6dcc89fd5bfc93374 10224 mx-usb-unmounter_21.10.02_i386.buildinfo
+ 5e3517758be14260f53ee80b70434dd36fc8213e 71064 mx-usb-unmounter_21.10.02_i386.deb
+Checksums-Sha256:
+ 8a2093a8fe5b7d45785599f800c247eeafaa3b09edfb8de82e78ea27ae7afce2 10224 mx-usb-unmounter_21.10.02_i386.buildinfo
+ fbd9245e1468049ea23991245e181c28db839e8598cf0978326369a78d60657d 71064 mx-usb-unmounter_21.10.02_i386.deb
+Files:
+ 51f5629655c2ebe4866ddef44d2c3d83 10224 admin optional mx-usb-unmounter_21.10.02_i386.buildinfo
+ 27eab23ef7f603c82d02586dd2e2048c 71064 admin optional mx-usb-unmounter_21.10.02_i386.deb

@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: mx-usb-unmounter
 Binary: mx-usb-unmounter
 Architecture: any
-Version: 21.09.07
+Version: 21.10.02
 Maintainer: dolphinoracle <dolphinoracle@gmail.com>
 Standards-Version: 3.9.5
 Vcs-Git: https://github.com/mx-linux/mx-usb-unmounter
@@ -10,8 +10,8 @@ Build-Depends: debhelper (>= 9.20120115), qtbase5-dev, qttools5-dev-tools
 Package-List:
  mx-usb-unmounter deb admin optional arch=any
 Checksums-Sha1:
- 5fdfa622b3c60d31311c22c73c365162f7734b1e 68952 mx-usb-unmounter_21.09.07.tar.xz
+ 6f2d7ad76bd335834d0d8ec1a9b07ff639649bae 284428 mx-usb-unmounter_21.10.02.tar.xz
 Checksums-Sha256:
- af17e70aae97588b2e597ed4207d2a142bfe02efb03126ddfebcc20e8e3010bf 68952 mx-usb-unmounter_21.09.07.tar.xz
+ d57fe3d285e8fc1453eb7251b5cc8d0536b7bf30cdd855586da6e310aae35bd5 284428 mx-usb-unmounter_21.10.02.tar.xz
 Files:
- 13fb666d9644a00ed4b9178858aa86ce 68952 mx-usb-unmounter_21.09.07.tar.xz
+ c65029c4cd0e9a1ffdde888c5dc1d177 284428 mx-usb-unmounter_21.10.02.tar.xz
