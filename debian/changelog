@@ -1,3 +1,9 @@
+mx-usb-unmounter (21.10.02) mx; urgency=medium
+
+  * update icon 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 26 Oct 2021 18:25:32 -0400
+
 mx-usb-unmounter (21.10.01) mx; urgency=medium
 
   * reverse autostart toggle actions 
