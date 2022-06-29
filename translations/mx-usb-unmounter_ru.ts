@@ -33,107 +33,183 @@
     </message>
 </context>
 <context>
-    <name>usbunmounter</name>
+    <name>MainWindow</name>
     <message>
-        <location filename="../usbunmounter.ui" line="27"/>
-        <location filename="../usbunmounter.cpp" line="212"/>
-        <location filename="../usbunmounter.cpp" line="362"/>
-        <location filename="../usbunmounter.cpp" line="408"/>
-        <location filename="../usbunmounter.cpp" line="415"/>
+        <location filename="../mainwindow.ui" line="27"/>
+        <location filename="../mainwindow.cpp" line="215"/>
+        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="427"/>
         <source>MX USB Unmounter</source>
-        <translation>MX USB безопасное извлечение</translation>
+        <translation type="unfinished">MX USB безопасное извлечение</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.ui" line="51"/>
+        <location filename="../mainwindow.ui" line="54"/>
         <source>Double-Click to Unmount</source>
-        <translation>Двойной щелчок для размонтирования</translation>
+        <translation type="unfinished">Двойной щелчок для размонтирования</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="144"/>
+        <location filename="../mainwindow.cpp" line="147"/>
         <source>Volume</source>
-        <translation>Том</translation>
+        <translation type="unfinished">Том</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="186"/>
+        <location filename="../mainwindow.cpp" line="189"/>
         <source>No Removable Device</source>
-        <translation>Нет извлекаемых устройств</translation>
+        <translation type="unfinished">Нет извлекаемых устройств</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="209"/>
+        <location filename="../mainwindow.cpp" line="212"/>
         <source>Unmounting </source>
-        <translation>Размонтирование</translation>
+        <translation type="unfinished">Размонтирование</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="211"/>
+        <location filename="../mainwindow.cpp" line="214"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Другие разделы устройства по-прежнему смонтированы</translation>
+        <translation type="unfinished">Другие разделы устройства по-прежнему смонтированы</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>Невозможно отмонтировать, устройство используется</translation>
+        <translation type="unfinished">Невозможно отмонтировать, устройство используется</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="330"/>
         <source>About</source>
         <translation type="unfinished">О программе</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>Help</source>
         <translation type="unfinished">Справка</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>List Devices</source>
         <translation type="unfinished">Список устройств</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="333"/>
         <source>Quit</source>
         <translation type="unfinished">Выход</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="331"/>
-        <location filename="../usbunmounter.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>Enable Autostart?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="355"/>
+        <source>Unmount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>Autostart Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="407"/>
+        <location filename="../mainwindow.cpp" line="419"/>
         <source>About MX USB Unmounter</source>
-        <translation>О программе MX USB безопасное извлечение</translation>
+        <translation type="unfinished">О программе MX USB безопасное извлечение</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Version: </source>
-        <translation>Версия:</translation>
+        <translation type="unfinished">Версия:</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="409"/>
+        <location filename="../mainwindow.cpp" line="421"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Быстрое отмонтирование извлекаемых устройств</translation>
+        <translation type="unfinished">Быстрое отмонтирование извлекаемых устройств</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="423"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Авторское право (c) MX Linux</translation>
+        <translation type="unfinished">Авторское право (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="424"/>
         <source>Cancel</source>
-        <translation>Отмена</translation>
+        <translation type="unfinished">Отмена</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="413"/>
-        <location filename="../usbunmounter.cpp" line="416"/>
+        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>License</source>
-        <translation>Лицензия</translation>
+        <translation type="unfinished">Лицензия</translation>
+    </message>
+</context>
+<context>
+    <name>usbunmounter</name>
+    <message>
+        <source>MX USB Unmounter</source>
+        <translation type="vanished">MX USB безопасное извлечение</translation>
+    </message>
+    <message>
+        <source>Double-Click to Unmount</source>
+        <translation type="vanished">Двойной щелчок для размонтирования</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation type="vanished">Том</translation>
+    </message>
+    <message>
+        <source>No Removable Device</source>
+        <translation type="vanished">Нет извлекаемых устройств</translation>
+    </message>
+    <message>
+        <source>Unmounting </source>
+        <translation type="vanished">Размонтирование</translation>
+    </message>
+    <message>
+        <source>Other partitions still mounted on device</source>
+        <translation type="vanished">Другие разделы устройства по-прежнему смонтированы</translation>
+    </message>
+    <message>
+        <source>Unable to  Unmount, Device in Use</source>
+        <translation type="vanished">Невозможно отмонтировать, устройство используется</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="obsolete">О программе</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation type="obsolete">Справка</translation>
+    </message>
+    <message>
+        <source>List Devices</source>
+        <translation type="obsolete">Список устройств</translation>
+    </message>
+    <message>
+        <source>Quit</source>
+        <translation type="obsolete">Выход</translation>
+    </message>
+    <message>
+        <source>About MX USB Unmounter</source>
+        <translation type="vanished">О программе MX USB безопасное извлечение</translation>
+    </message>
+    <message>
+        <source>Version: </source>
+        <translation type="vanished">Версия:</translation>
+    </message>
+    <message>
+        <source>Quickly Unmount Removable Media</source>
+        <translation type="vanished">Быстрое отмонтирование извлекаемых устройств</translation>
+    </message>
+    <message>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="vanished">Авторское право (c) MX Linux</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="vanished">Отмена</translation>
+    </message>
+    <message>
+        <source>License</source>
+        <translation type="vanished">Лицензия</translation>
     </message>
 </context>
 </TS>

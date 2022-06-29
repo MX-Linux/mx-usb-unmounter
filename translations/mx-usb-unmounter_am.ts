@@ -17,107 +17,179 @@
     </message>
 </context>
 <context>
-    <name>usbunmounter</name>
+    <name>MainWindow</name>
     <message>
-        <location filename="../usbunmounter.ui" line="27"/>
-        <location filename="../usbunmounter.cpp" line="212"/>
-        <location filename="../usbunmounter.cpp" line="362"/>
-        <location filename="../usbunmounter.cpp" line="408"/>
-        <location filename="../usbunmounter.cpp" line="415"/>
+        <location filename="../mainwindow.ui" line="27"/>
+        <location filename="../mainwindow.cpp" line="215"/>
+        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="427"/>
         <source>MX USB Unmounter</source>
-        <translation>MX USB ማውረጃ</translation>
+        <translation type="unfinished">MX USB ማውረጃ</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.ui" line="51"/>
+        <location filename="../mainwindow.ui" line="54"/>
         <source>Double-Click to Unmount</source>
-        <translation>ሁለት ጊዜ-ይጫኑ ለማውረድ</translation>
+        <translation type="unfinished">ሁለት ጊዜ-ይጫኑ ለማውረድ</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="144"/>
+        <location filename="../mainwindow.cpp" line="147"/>
         <source>Volume</source>
-        <translation>መጠን</translation>
+        <translation type="unfinished">መጠን</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="186"/>
+        <location filename="../mainwindow.cpp" line="189"/>
         <source>No Removable Device</source>
-        <translation>የሚወልቅ አካል የለም</translation>
+        <translation type="unfinished">የሚወልቅ አካል የለም</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="209"/>
+        <location filename="../mainwindow.cpp" line="212"/>
         <source>Unmounting </source>
-        <translation>በ ማውረድ ላይ</translation>
+        <translation type="unfinished">በ ማውረድ ላይ</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="211"/>
+        <location filename="../mainwindow.cpp" line="214"/>
         <source>Other partitions still mounted on device</source>
-        <translation>በ አካሉ ላይ የ ተጫነ ሌላ ክፍልፋይ</translation>
+        <translation type="unfinished">በ አካሉ ላይ የ ተጫነ ሌላ ክፍልፋይ</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>አካሉን ማውረድ አልተቻለም: አካሉ በ ስራ ላይ ነው</translation>
+        <translation type="unfinished">አካሉን ማውረድ አልተቻለም: አካሉ በ ስራ ላይ ነው</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="330"/>
         <source>About</source>
         <translation type="unfinished">ስለ</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>Help</source>
         <translation type="unfinished">እርዳታ</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>List Devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="333"/>
         <source>Quit</source>
         <translation type="unfinished">ማጥፊያ</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="331"/>
-        <location filename="../usbunmounter.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>Enable Autostart?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="355"/>
+        <source>Unmount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>Autostart Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="407"/>
+        <location filename="../mainwindow.cpp" line="419"/>
         <source>About MX USB Unmounter</source>
-        <translation>ስለ MX USB ማውረጃ</translation>
+        <translation type="unfinished">ስለ MX USB ማውረጃ</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Version: </source>
-        <translation>እትም</translation>
+        <translation type="unfinished">እትም</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="409"/>
+        <location filename="../mainwindow.cpp" line="421"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>የሚወልቅ መገናኛ በፍጥነት ማውረጃ</translation>
+        <translation type="unfinished">የሚወልቅ መገናኛ በፍጥነት ማውረጃ</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="423"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>የ ቅጂ መብት (c) MX Linux</translation>
+        <translation type="unfinished">የ ቅጂ መብት (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="424"/>
         <source>Cancel</source>
-        <translation>መሰረዣ</translation>
+        <translation type="unfinished">መሰረዣ</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="413"/>
-        <location filename="../usbunmounter.cpp" line="416"/>
+        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>License</source>
-        <translation>ፍቃድ</translation>
+        <translation type="unfinished">ፍቃድ</translation>
+    </message>
+</context>
+<context>
+    <name>usbunmounter</name>
+    <message>
+        <source>MX USB Unmounter</source>
+        <translation type="vanished">MX USB ማውረጃ</translation>
+    </message>
+    <message>
+        <source>Double-Click to Unmount</source>
+        <translation type="vanished">ሁለት ጊዜ-ይጫኑ ለማውረድ</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation type="vanished">መጠን</translation>
+    </message>
+    <message>
+        <source>No Removable Device</source>
+        <translation type="vanished">የሚወልቅ አካል የለም</translation>
+    </message>
+    <message>
+        <source>Unmounting </source>
+        <translation type="vanished">በ ማውረድ ላይ</translation>
+    </message>
+    <message>
+        <source>Other partitions still mounted on device</source>
+        <translation type="vanished">በ አካሉ ላይ የ ተጫነ ሌላ ክፍልፋይ</translation>
+    </message>
+    <message>
+        <source>Unable to  Unmount, Device in Use</source>
+        <translation type="vanished">አካሉን ማውረድ አልተቻለም: አካሉ በ ስራ ላይ ነው</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="obsolete">ስለ</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation type="obsolete">እርዳታ</translation>
+    </message>
+    <message>
+        <source>Quit</source>
+        <translation type="obsolete">ማጥፊያ</translation>
+    </message>
+    <message>
+        <source>About MX USB Unmounter</source>
+        <translation type="vanished">ስለ MX USB ማውረጃ</translation>
+    </message>
+    <message>
+        <source>Version: </source>
+        <translation type="vanished">እትም</translation>
+    </message>
+    <message>
+        <source>Quickly Unmount Removable Media</source>
+        <translation type="vanished">የሚወልቅ መገናኛ በፍጥነት ማውረጃ</translation>
+    </message>
+    <message>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="vanished">የ ቅጂ መብት (c) MX Linux</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="vanished">መሰረዣ</translation>
+    </message>
+    <message>
+        <source>License</source>
+        <translation type="vanished">ፍቃድ</translation>
     </message>
 </context>
 </TS>

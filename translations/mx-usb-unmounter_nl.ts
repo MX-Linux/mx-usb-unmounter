@@ -41,107 +41,191 @@
     </message>
 </context>
 <context>
-    <name>usbunmounter</name>
+    <name>MainWindow</name>
     <message>
-        <location filename="../usbunmounter.ui" line="27"/>
-        <location filename="../usbunmounter.cpp" line="212"/>
-        <location filename="../usbunmounter.cpp" line="362"/>
-        <location filename="../usbunmounter.cpp" line="408"/>
-        <location filename="../usbunmounter.cpp" line="415"/>
+        <location filename="../mainwindow.ui" line="27"/>
+        <location filename="../mainwindow.cpp" line="215"/>
+        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="427"/>
         <source>MX USB Unmounter</source>
-        <translation>MX USB Ontkoppelaar</translation>
+        <translation type="unfinished">MX USB Ontkoppelaar</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.ui" line="51"/>
+        <location filename="../mainwindow.ui" line="54"/>
         <source>Double-Click to Unmount</source>
-        <translation>Dubbel-Klik om te Ontkoppelen</translation>
+        <translation type="unfinished">Dubbel-Klik om te Ontkoppelen</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="144"/>
+        <location filename="../mainwindow.cpp" line="147"/>
         <source>Volume</source>
-        <translation>Deel</translation>
+        <translation type="unfinished">Deel</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="186"/>
+        <location filename="../mainwindow.cpp" line="189"/>
         <source>No Removable Device</source>
-        <translation>Geen Verwijderbaar Apparaat</translation>
+        <translation type="unfinished">Geen Verwijderbaar Apparaat</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="209"/>
+        <location filename="../mainwindow.cpp" line="212"/>
         <source>Unmounting </source>
-        <translation>Ontkoppelen</translation>
+        <translation type="unfinished">Ontkoppelen</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="211"/>
+        <location filename="../mainwindow.cpp" line="214"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Andere partities nog gekoppeld aan apparaat</translation>
+        <translation type="unfinished">Andere partities nog gekoppeld aan apparaat</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>Niet in staat af te koppelen, Apparaat in gebruik</translation>
+        <translation type="unfinished">Niet in staat af te koppelen, Apparaat in gebruik</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="330"/>
         <source>About</source>
         <translation type="unfinished">Over</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>Help</source>
         <translation type="unfinished">Help</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>List Devices</source>
         <translation type="unfinished">Lijst Apparaten</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="333"/>
         <source>Quit</source>
         <translation type="unfinished">Afmelden</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="331"/>
-        <location filename="../usbunmounter.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>Enable Autostart?</source>
         <translation type="unfinished">Autostart Inschakelen?</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="355"/>
+        <source>Unmount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>Autostart Settings</source>
         <translation type="unfinished">Autostart Instellingen</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="407"/>
+        <location filename="../mainwindow.cpp" line="419"/>
         <source>About MX USB Unmounter</source>
-        <translation>Over MX Ontkoppelaar</translation>
+        <translation type="unfinished">Over MX Ontkoppelaar</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Version: </source>
-        <translation>Versie:</translation>
+        <translation type="unfinished">Versie:</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="409"/>
+        <location filename="../mainwindow.cpp" line="421"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Verwijderbare Media Snel Ontkoppelen</translation>
+        <translation type="unfinished">Verwijderbare Media Snel Ontkoppelen</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="423"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="unfinished">Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="424"/>
         <source>Cancel</source>
-        <translation>Cancel</translation>
+        <translation type="unfinished">Cancel</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="413"/>
-        <location filename="../usbunmounter.cpp" line="416"/>
+        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>License</source>
-        <translation>Licentie</translation>
+        <translation type="unfinished">Licentie</translation>
+    </message>
+</context>
+<context>
+    <name>usbunmounter</name>
+    <message>
+        <source>MX USB Unmounter</source>
+        <translation type="vanished">MX USB Ontkoppelaar</translation>
+    </message>
+    <message>
+        <source>Double-Click to Unmount</source>
+        <translation type="vanished">Dubbel-Klik om te Ontkoppelen</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation type="vanished">Deel</translation>
+    </message>
+    <message>
+        <source>No Removable Device</source>
+        <translation type="vanished">Geen Verwijderbaar Apparaat</translation>
+    </message>
+    <message>
+        <source>Unmounting </source>
+        <translation type="vanished">Ontkoppelen</translation>
+    </message>
+    <message>
+        <source>Other partitions still mounted on device</source>
+        <translation type="vanished">Andere partities nog gekoppeld aan apparaat</translation>
+    </message>
+    <message>
+        <source>Unable to  Unmount, Device in Use</source>
+        <translation type="vanished">Niet in staat af te koppelen, Apparaat in gebruik</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="obsolete">Over</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation type="obsolete">Help</translation>
+    </message>
+    <message>
+        <source>List Devices</source>
+        <translation type="obsolete">Lijst Apparaten</translation>
+    </message>
+    <message>
+        <source>Quit</source>
+        <translation type="obsolete">Afmelden</translation>
+    </message>
+    <message>
+        <source>Enable Autostart?</source>
+        <translation type="obsolete">Autostart Inschakelen?</translation>
+    </message>
+    <message>
+        <source>Autostart Settings</source>
+        <translation type="obsolete">Autostart Instellingen</translation>
+    </message>
+    <message>
+        <source>About MX USB Unmounter</source>
+        <translation type="vanished">Over MX Ontkoppelaar</translation>
+    </message>
+    <message>
+        <source>Version: </source>
+        <translation type="vanished">Versie:</translation>
+    </message>
+    <message>
+        <source>Quickly Unmount Removable Media</source>
+        <translation type="vanished">Verwijderbare Media Snel Ontkoppelen</translation>
+    </message>
+    <message>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="vanished">Copyright (c) MX Linux</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="vanished">Cancel</translation>
+    </message>
+    <message>
+        <source>License</source>
+        <translation type="vanished">Licentie</translation>
     </message>
 </context>
 </TS>

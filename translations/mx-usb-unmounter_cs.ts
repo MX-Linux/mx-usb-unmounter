@@ -25,107 +25,183 @@
     </message>
 </context>
 <context>
-    <name>usbunmounter</name>
+    <name>MainWindow</name>
     <message>
-        <location filename="../usbunmounter.ui" line="27"/>
-        <location filename="../usbunmounter.cpp" line="212"/>
-        <location filename="../usbunmounter.cpp" line="362"/>
-        <location filename="../usbunmounter.cpp" line="408"/>
-        <location filename="../usbunmounter.cpp" line="415"/>
+        <location filename="../mainwindow.ui" line="27"/>
+        <location filename="../mainwindow.cpp" line="215"/>
+        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="427"/>
         <source>MX USB Unmounter</source>
-        <translation>MX odpojovač USB</translation>
+        <translation type="unfinished">MX odpojovač USB</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.ui" line="51"/>
+        <location filename="../mainwindow.ui" line="54"/>
         <source>Double-Click to Unmount</source>
-        <translation>Dvojklik pro odpojení</translation>
+        <translation type="unfinished">Dvojklik pro odpojení</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="144"/>
+        <location filename="../mainwindow.cpp" line="147"/>
         <source>Volume</source>
-        <translation>Jednotka</translation>
+        <translation type="unfinished">Jednotka</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="186"/>
+        <location filename="../mainwindow.cpp" line="189"/>
         <source>No Removable Device</source>
-        <translation>Žádná vyměnitelná jednotka</translation>
+        <translation type="unfinished">Žádná vyměnitelná jednotka</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="209"/>
+        <location filename="../mainwindow.cpp" line="212"/>
         <source>Unmounting </source>
-        <translation>Odpojuji</translation>
+        <translation type="unfinished">Odpojuji</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="211"/>
+        <location filename="../mainwindow.cpp" line="214"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Jiné diskové oddíly jsou pořád připojeny</translation>
+        <translation type="unfinished">Jiné diskové oddíly jsou pořád připojeny</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>Nebylo možné odpojit, disk se používá </translation>
+        <translation type="unfinished">Nebylo možné odpojit, disk se používá </translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="330"/>
         <source>About</source>
         <translation type="unfinished">O aplikaci</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>Help</source>
         <translation type="unfinished">Nápověda</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>List Devices</source>
         <translation type="unfinished">Seznam zařízení</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="333"/>
         <source>Quit</source>
         <translation type="unfinished">Konec</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="331"/>
-        <location filename="../usbunmounter.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>Enable Autostart?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="355"/>
+        <source>Unmount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>Autostart Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="407"/>
+        <location filename="../mainwindow.cpp" line="419"/>
         <source>About MX USB Unmounter</source>
-        <translation>O MX odpojovači USB</translation>
+        <translation type="unfinished">O MX odpojovači USB</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Version: </source>
-        <translation>Verze:</translation>
+        <translation type="unfinished">Verze:</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="409"/>
+        <location filename="../mainwindow.cpp" line="421"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Rychle odpojit vyměnitelná média</translation>
+        <translation type="unfinished">Rychle odpojit vyměnitelná média</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="423"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Vlastnická práva (c) MX Linux</translation>
+        <translation type="unfinished">Vlastnická práva (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="424"/>
         <source>Cancel</source>
-        <translation>Zrušit</translation>
+        <translation type="unfinished">Zrušit</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="413"/>
-        <location filename="../usbunmounter.cpp" line="416"/>
+        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>License</source>
-        <translation>Licence</translation>
+        <translation type="unfinished">Licence</translation>
+    </message>
+</context>
+<context>
+    <name>usbunmounter</name>
+    <message>
+        <source>MX USB Unmounter</source>
+        <translation type="vanished">MX odpojovač USB</translation>
+    </message>
+    <message>
+        <source>Double-Click to Unmount</source>
+        <translation type="vanished">Dvojklik pro odpojení</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation type="vanished">Jednotka</translation>
+    </message>
+    <message>
+        <source>No Removable Device</source>
+        <translation type="vanished">Žádná vyměnitelná jednotka</translation>
+    </message>
+    <message>
+        <source>Unmounting </source>
+        <translation type="vanished">Odpojuji</translation>
+    </message>
+    <message>
+        <source>Other partitions still mounted on device</source>
+        <translation type="vanished">Jiné diskové oddíly jsou pořád připojeny</translation>
+    </message>
+    <message>
+        <source>Unable to  Unmount, Device in Use</source>
+        <translation type="vanished">Nebylo možné odpojit, disk se používá </translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="obsolete">O aplikaci</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation type="obsolete">Nápověda</translation>
+    </message>
+    <message>
+        <source>List Devices</source>
+        <translation type="obsolete">Seznam zařízení</translation>
+    </message>
+    <message>
+        <source>Quit</source>
+        <translation type="obsolete">Konec</translation>
+    </message>
+    <message>
+        <source>About MX USB Unmounter</source>
+        <translation type="vanished">O MX odpojovači USB</translation>
+    </message>
+    <message>
+        <source>Version: </source>
+        <translation type="vanished">Verze:</translation>
+    </message>
+    <message>
+        <source>Quickly Unmount Removable Media</source>
+        <translation type="vanished">Rychle odpojit vyměnitelná média</translation>
+    </message>
+    <message>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="vanished">Vlastnická práva (c) MX Linux</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="vanished">Zrušit</translation>
+    </message>
+    <message>
+        <source>License</source>
+        <translation type="vanished">Licence</translation>
     </message>
 </context>
 </TS>

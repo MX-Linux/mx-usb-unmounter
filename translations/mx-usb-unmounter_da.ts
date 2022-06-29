@@ -41,107 +41,191 @@
     </message>
 </context>
 <context>
-    <name>usbunmounter</name>
+    <name>MainWindow</name>
     <message>
-        <location filename="../usbunmounter.ui" line="27"/>
-        <location filename="../usbunmounter.cpp" line="212"/>
-        <location filename="../usbunmounter.cpp" line="362"/>
-        <location filename="../usbunmounter.cpp" line="408"/>
-        <location filename="../usbunmounter.cpp" line="415"/>
+        <location filename="../mainwindow.ui" line="27"/>
+        <location filename="../mainwindow.cpp" line="215"/>
+        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="427"/>
         <source>MX USB Unmounter</source>
-        <translation>MX USB-afmontør</translation>
+        <translation type="unfinished">MX USB-afmontør</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.ui" line="51"/>
+        <location filename="../mainwindow.ui" line="54"/>
         <source>Double-Click to Unmount</source>
-        <translation>Dobbeltklik for at afmontere</translation>
+        <translation type="unfinished">Dobbeltklik for at afmontere</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="144"/>
+        <location filename="../mainwindow.cpp" line="147"/>
         <source>Volume</source>
-        <translation>Diskområde</translation>
+        <translation type="unfinished">Diskområde</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="186"/>
+        <location filename="../mainwindow.cpp" line="189"/>
         <source>No Removable Device</source>
-        <translation>Ingen flytbar enhed</translation>
+        <translation type="unfinished">Ingen flytbar enhed</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="209"/>
+        <location filename="../mainwindow.cpp" line="212"/>
         <source>Unmounting </source>
-        <translation>Afmonterer</translation>
+        <translation type="unfinished">Afmonterer</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="211"/>
+        <location filename="../mainwindow.cpp" line="214"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Andre partitioner er stadig monteret på enhed</translation>
+        <translation type="unfinished">Andre partitioner er stadig monteret på enhed</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>Kan ikke afmontere - enheden er i brug</translation>
+        <translation type="unfinished">Kan ikke afmontere - enheden er i brug</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="330"/>
         <source>About</source>
         <translation type="unfinished">Om</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>Help</source>
         <translation type="unfinished">Hjælp</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>List Devices</source>
         <translation type="unfinished">Vis enheder</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="333"/>
         <source>Quit</source>
         <translation type="unfinished">Afslut</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="331"/>
-        <location filename="../usbunmounter.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>Enable Autostart?</source>
         <translation type="unfinished">Aktivér automatisk start?</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="355"/>
+        <source>Unmount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>Autostart Settings</source>
         <translation type="unfinished">Indstillinger for automatisk start</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="407"/>
+        <location filename="../mainwindow.cpp" line="419"/>
         <source>About MX USB Unmounter</source>
-        <translation>Om MX USB-afmontør</translation>
+        <translation type="unfinished">Om MX USB-afmontør</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Version: </source>
-        <translation>Version: </translation>
+        <translation type="unfinished">Version: </translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="409"/>
+        <location filename="../mainwindow.cpp" line="421"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Hurtig afmontering af flytbare medier</translation>
+        <translation type="unfinished">Hurtig afmontering af flytbare medier</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="423"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Ophavsret (c) MX Linux</translation>
+        <translation type="unfinished">Ophavsret (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="424"/>
         <source>Cancel</source>
-        <translation>Annuller</translation>
+        <translation type="unfinished">Annuller</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="413"/>
-        <location filename="../usbunmounter.cpp" line="416"/>
+        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>License</source>
-        <translation>Licens</translation>
+        <translation type="unfinished">Licens</translation>
+    </message>
+</context>
+<context>
+    <name>usbunmounter</name>
+    <message>
+        <source>MX USB Unmounter</source>
+        <translation type="vanished">MX USB-afmontør</translation>
+    </message>
+    <message>
+        <source>Double-Click to Unmount</source>
+        <translation type="vanished">Dobbeltklik for at afmontere</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation type="vanished">Diskområde</translation>
+    </message>
+    <message>
+        <source>No Removable Device</source>
+        <translation type="vanished">Ingen flytbar enhed</translation>
+    </message>
+    <message>
+        <source>Unmounting </source>
+        <translation type="vanished">Afmonterer</translation>
+    </message>
+    <message>
+        <source>Other partitions still mounted on device</source>
+        <translation type="vanished">Andre partitioner er stadig monteret på enhed</translation>
+    </message>
+    <message>
+        <source>Unable to  Unmount, Device in Use</source>
+        <translation type="vanished">Kan ikke afmontere - enheden er i brug</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="obsolete">Om</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation type="obsolete">Hjælp</translation>
+    </message>
+    <message>
+        <source>List Devices</source>
+        <translation type="obsolete">Vis enheder</translation>
+    </message>
+    <message>
+        <source>Quit</source>
+        <translation type="obsolete">Afslut</translation>
+    </message>
+    <message>
+        <source>Enable Autostart?</source>
+        <translation type="obsolete">Aktivér automatisk start?</translation>
+    </message>
+    <message>
+        <source>Autostart Settings</source>
+        <translation type="obsolete">Indstillinger for automatisk start</translation>
+    </message>
+    <message>
+        <source>About MX USB Unmounter</source>
+        <translation type="vanished">Om MX USB-afmontør</translation>
+    </message>
+    <message>
+        <source>Version: </source>
+        <translation type="vanished">Version: </translation>
+    </message>
+    <message>
+        <source>Quickly Unmount Removable Media</source>
+        <translation type="vanished">Hurtig afmontering af flytbare medier</translation>
+    </message>
+    <message>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="vanished">Ophavsret (c) MX Linux</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="vanished">Annuller</translation>
+    </message>
+    <message>
+        <source>License</source>
+        <translation type="vanished">Licens</translation>
     </message>
 </context>
 </TS>
