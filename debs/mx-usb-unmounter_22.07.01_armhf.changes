@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Sat, 23 Jul 2022 12:34:06 -0400
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: armhf
+Version: 22.07.01
+Distribution: mx
+Urgency: medium
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (22.07.01) mx; urgency=medium
+ .
+   * translation refresh
+Checksums-Sha1:
+ 0072f526f3a1e8415b980e512942e1cbbe5a0aad 9895 mx-usb-unmounter_22.07.01_armhf.buildinfo
+ 7d52769ad2f448070fa1f558eeb3cd5ba96b5ac5 66224 mx-usb-unmounter_22.07.01_armhf.deb
+Checksums-Sha256:
+ bf6585e4a07ecb06f9382891b0dcc99fc9636a4bd82b36fdaf30a3b54d64cfa5 9895 mx-usb-unmounter_22.07.01_armhf.buildinfo
+ 01d459430fcfeaddbe2e9f89bfc32f523409269d2698a5f41549face1ae0aab2 66224 mx-usb-unmounter_22.07.01_armhf.deb
+Files:
+ 36ba52b4452423c38a87c1d1708bfc9d 9895 admin optional mx-usb-unmounter_22.07.01_armhf.buildinfo
+ c77c1a6e3c00c5bff33d81116762bca3 66224 admin optional mx-usb-unmounter_22.07.01_armhf.deb

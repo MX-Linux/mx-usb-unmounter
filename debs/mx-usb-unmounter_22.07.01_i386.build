@@ -1,0 +1,229 @@
+ dpkg-buildpackage -us -uc -ui -B
+dpkg-buildpackage: info: source package mx-usb-unmounter
+dpkg-buildpackage: info: source version 22.07.01
+dpkg-buildpackage: info: source distribution mx
+dpkg-buildpackage: info: source changed by Dolphin Oracle <dolphinoracle@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture i386
+ fakeroot debian/rules clean
+dh clean --no-automatic-dbgsym --parallel
+dh: Compatibility levels before 9 are deprecated (level 7 in use)
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-usb-unmounter/32'
+dh_auto_clean
+dh_auto_clean: Compatibility levels before 9 are deprecated (level 7 in use)
+rm -f src/translations/*.qm
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-usb-unmounter/32'
+   dh_clean -O--no-automatic-dbgsym -O--parallel
+dh_clean: Compatibility levels before 9 are deprecated (level 7 in use)
+ debian/rules build-arch
+dh build-arch --no-automatic-dbgsym --parallel
+dh: Compatibility levels before 9 are deprecated (level 7 in use)
+   dh_update_autotools_config -a -O--no-automatic-dbgsym -O--parallel
+   dh_auto_configure -a -O--no-automatic-dbgsym -O--parallel
+dh_auto_configure: Compatibility levels before 9 are deprecated (level 7 in use)
+	qmake -makefile QMAKE_STRIP=: PREFIX=/usr
+Info: creating stash file /media/demo/dataext/development/working/mx-usb-unmounter/32/.qmake.stash
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-usb-unmounter/32'
+lrelease mx-usb-unmounter.pro
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_am.qm'...
+    Generated 16 translation(s) (0 finished and 16 unfinished)
+    Ignored 4 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_ar.qm'...
+    Generated 3 translation(s) (0 finished and 3 unfinished)
+    Ignored 17 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_bg.qm'...
+    Generated 7 translation(s) (0 finished and 7 unfinished)
+    Ignored 13 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_ca.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_cs.qm'...
+    Generated 17 translation(s) (0 finished and 17 unfinished)
+    Ignored 3 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_da.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_de.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_el.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_en.qm'...
+    Generated 0 translation(s) (0 finished and 0 unfinished)
+    Ignored 20 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_es.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_et.qm'...
+    Generated 3 translation(s) (0 finished and 3 unfinished)
+    Ignored 17 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_eu.qm'...
+    Generated 2 translation(s) (0 finished and 2 unfinished)
+    Ignored 18 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_fa.qm'...
+    Generated 2 translation(s) (0 finished and 2 unfinished)
+    Ignored 18 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_fi.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_fr.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_he_IL.qm'...
+    Generated 5 translation(s) (0 finished and 5 unfinished)
+    Ignored 15 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_hi.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_hr.qm'...
+    Generated 7 translation(s) (0 finished and 7 unfinished)
+    Ignored 13 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_hu.qm'...
+    Generated 6 translation(s) (0 finished and 6 unfinished)
+    Ignored 14 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_id.qm'...
+    Generated 6 translation(s) (0 finished and 6 unfinished)
+    Ignored 14 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_is.qm'...
+    Generated 7 translation(s) (0 finished and 7 unfinished)
+    Ignored 13 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_it.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_ja.qm'...
+    Generated 17 translation(s) (0 finished and 17 unfinished)
+    Ignored 3 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_kk.qm'...
+    Generated 7 translation(s) (0 finished and 7 unfinished)
+    Ignored 13 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_ko.qm'...
+    Generated 3 translation(s) (0 finished and 3 unfinished)
+    Ignored 17 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_lt.qm'...
+    Generated 18 translation(s) (0 finished and 18 unfinished)
+    Ignored 2 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_mk.qm'...
+    Generated 2 translation(s) (0 finished and 2 unfinished)
+    Ignored 18 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_mr.qm'...
+    Generated 5 translation(s) (0 finished and 5 unfinished)
+    Ignored 15 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_nb.qm'...
+    Generated 6 translation(s) (0 finished and 6 unfinished)
+    Ignored 14 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_nl.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_pl.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_pt.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_pt_BR.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_ro.qm'...
+    Generated 6 translation(s) (0 finished and 6 unfinished)
+    Ignored 14 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_ru.qm'...
+    Generated 17 translation(s) (0 finished and 17 unfinished)
+    Ignored 3 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_sk.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_sl.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_sq.qm'...
+    Generated 6 translation(s) (0 finished and 6 unfinished)
+    Ignored 14 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_sr.qm'...
+    Generated 3 translation(s) (0 finished and 3 unfinished)
+    Ignored 17 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_sv.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_tr.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_uk.qm'...
+    Generated 7 translation(s) (0 finished and 7 unfinished)
+    Ignored 13 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_zh_CN.qm'...
+    Generated 3 translation(s) (0 finished and 3 unfinished)
+    Ignored 17 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-usb-unmounter/32/translations/mx-usb-unmounter_zh_TW.qm'...
+    Generated 19 translation(s) (0 finished and 19 unfinished)
+    Ignored 1 untranslated source text(s)
+dh_auto_build -- QMAKE=qmake-qt5 LRELEASE=lrelease-qt5 QMAKE_OPTS="DEFINES+=NO_DEBUG_ON_CONSOLE"
+dh_auto_build: Compatibility levels before 9 are deprecated (level 7 in use)
+	make -j4 QMAKE=qmake-qt5 LRELEASE=lrelease-qt5 QMAKE_OPTS=DEFINES\+=NO_DEBUG_ON_CONSOLE
+make[2]: Entering directory '/media/demo/dataext/development/working/mx-usb-unmounter/32'
+/usr/lib/qt5/bin/uic mainwindow.ui -o ui_mainwindow.h
+g++ -c -pipe -O2 -std=gnu++11 -D_REENTRANT -Wall -W -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o main.o main.cpp
+g++ -pipe -O2 -std=gnu++11 -dM -E -o moc_predefs.h /usr/lib/i386-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
+g++ -c -pipe -O2 -std=gnu++11 -D_REENTRANT -Wall -W -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o mainwindow.o mainwindow.cpp
+/usr/lib/qt5/bin/moc -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /media/demo/dataext/development/working/mx-usb-unmounter/32/moc_predefs.h -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/media/demo/dataext/development/working/mx-usb-unmounter/32 -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtWidgets -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/8 -I/usr/include/i386-linux-gnu/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/i686-linux-gnu/8/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/8/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include mainwindow.h -o moc_mainwindow.cpp
+g++ -c -pipe -O2 -std=gnu++11 -D_REENTRANT -Wall -W -fPIC -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o moc_mainwindow.o moc_mainwindow.cpp
+g++ -Wl,-O1 -o mx-usb-unmounter main.o mainwindow.o moc_mainwindow.o   -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread 
+make[2]: Leaving directory '/media/demo/dataext/development/working/mx-usb-unmounter/32'
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-usb-unmounter/32'
+   dh_auto_test -a -O--no-automatic-dbgsym -O--parallel
+dh_auto_test: Compatibility levels before 9 are deprecated (level 7 in use)
+ fakeroot debian/rules binary-arch
+dh binary-arch --no-automatic-dbgsym --parallel
+dh: Compatibility levels before 9 are deprecated (level 7 in use)
+   dh_testroot -a -O--no-automatic-dbgsym -O--parallel
+   dh_prep -a -O--no-automatic-dbgsym -O--parallel
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-usb-unmounter/32'
+dh_auto_install -- QMAKE=qmake-qt5 LRELEASE=lrelease-qt5 QMAKE_OPTS="DEFINES+=NO_DEBUG_ON_CONSOLE"
+dh_auto_install: Compatibility levels before 9 are deprecated (level 7 in use)
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-usb-unmounter/32'
+   dh_install -a -O--no-automatic-dbgsym -O--parallel
+dh_install: Compatibility levels before 9 are deprecated (level 7 in use)
+   dh_installdocs -a -O--no-automatic-dbgsym -O--parallel
+dh_installdocs: Compatibility levels before 9 are deprecated (level 7 in use)
+   dh_installchangelogs -a -O--no-automatic-dbgsym -O--parallel
+   dh_installinit -a -O--no-automatic-dbgsym -O--parallel
+dh_installinit: Compatibility levels before 9 are deprecated (level 7 in use)
+   dh_perl -a -O--no-automatic-dbgsym -O--parallel
+   dh_link -a -O--no-automatic-dbgsym -O--parallel
+   dh_strip_nondeterminism -a -O--no-automatic-dbgsym -O--parallel
+   dh_compress -a -O--no-automatic-dbgsym -O--parallel
+dh_compress: Compatibility levels before 9 are deprecated (level 7 in use)
+   dh_fixperms -a -O--no-automatic-dbgsym -O--parallel
+   dh_missing -a -O--no-automatic-dbgsym -O--parallel
+dh_missing: Compatibility levels before 9 are deprecated (level 7 in use)
+   dh_strip -a -O--no-automatic-dbgsym -O--parallel
+dh_strip: Compatibility levels before 9 are deprecated (level 7 in use)
+   dh_makeshlibs -a -O--no-automatic-dbgsym -O--parallel
+   debian/rules override_dh_shlibdeps
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-usb-unmounter/32'
+dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
+dh_shlibdeps: Compatibility levels before 9 are deprecated (level 7 in use)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/mx-usb-unmounter/usr/bin/mx-usb-unmounter was not linked against libGL.so.1 (it uses none of the library's symbols)
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-usb-unmounter/32'
+   dh_installdeb -a -O--no-automatic-dbgsym -O--parallel
+dh_installdeb: Compatibility levels before 9 are deprecated (level 7 in use)
+   dh_gencontrol -a -O--no-automatic-dbgsym -O--parallel
+   dh_md5sums -a -O--no-automatic-dbgsym -O--parallel
+   debian/rules override_dh_builddeb
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-usb-unmounter/32'
+dh_builddeb -- -Z xz
+dpkg-deb: building package 'mx-usb-unmounter' in '../mx-usb-unmounter_22.07.01_i386.deb'.
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-usb-unmounter/32'
+ dpkg-genbuildinfo --build=any
+ dpkg-genchanges --build=any >../mx-usb-unmounter_22.07.01_i386.changes
+dpkg-genchanges: info: binary-only arch-specific upload (source code and arch-indep packages not included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now signing dsc file...
+ signfile dsc mx-usb-unmounter_22.07.01.dsc dolphinoracle <dolphinoracle@gmail.com>
+gpg: skipped "dolphinoracle <dolphinoracle@gmail.com>": No secret key
+gpg: /tmp/debsign.aI3ImX6J/mx-usb-unmounter_22.07.01.dsc: clear-sign failed: No secret key
+debsign: gpg error occurred!  Aborting....

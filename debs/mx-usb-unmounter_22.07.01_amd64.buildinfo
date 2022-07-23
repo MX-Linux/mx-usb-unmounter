@@ -1,17 +1,20 @@
 Format: 1.0
 Source: mx-usb-unmounter
 Binary: mx-usb-unmounter
-Architecture: i386
-Version: 21.10.02
+Architecture: amd64 source
+Version: 22.07.01
 Checksums-Md5:
- 27eab23ef7f603c82d02586dd2e2048c 71064 mx-usb-unmounter_21.10.02_i386.deb
+ be7020228623f91e27732e95462c1ad2 675 mx-usb-unmounter_22.07.01.dsc
+ 76ed86647d954d0b91af5b623e98a674 69304 mx-usb-unmounter_22.07.01_amd64.deb
 Checksums-Sha1:
- 5e3517758be14260f53ee80b70434dd36fc8213e 71064 mx-usb-unmounter_21.10.02_i386.deb
+ 25aef0989a0911ee64549a3c7146d948fc8e06cb 675 mx-usb-unmounter_22.07.01.dsc
+ fc5116c2661359dc5cd51124a9c1fa95003a87cc 69304 mx-usb-unmounter_22.07.01_amd64.deb
 Checksums-Sha256:
- fbd9245e1468049ea23991245e181c28db839e8598cf0978326369a78d60657d 71064 mx-usb-unmounter_21.10.02_i386.deb
+ d1609b6de18ef5ad7994e53df7391bfc0b06ceedeb6c83fa084a39df31346a33 675 mx-usb-unmounter_22.07.01.dsc
+ 0852b31b0876ae4a49dfe14f1b761cb9e4097ab453acc1583b4fa4dcd0b330cd 69304 mx-usb-unmounter_22.07.01_amd64.deb
 Build-Origin: Debian
-Build-Architecture: i386
-Build-Date: Tue, 26 Oct 2021 22:04:29 -0400
+Build-Architecture: amd64
+Build-Date: Sat, 23 Jul 2022 13:11:34 -0400
 Build-Tainted-By:
  merged-usr-via-symlinks
  usr-local-has-libraries
@@ -26,7 +29,7 @@ Installed-Build-Depends:
  bash (= 5.0-4),
  binutils (= 2.31.1-16),
  binutils-common (= 2.31.1-16),
- binutils-i686-linux-gnu (= 2.31.1-16),
+ binutils-x86-64-linux-gnu (= 2.31.1-16),
  bsdmainutils (= 11.1.2+b1),
  bsdutils (= 1:2.33.1-0.1),
  build-essential (= 12.6),
@@ -162,6 +165,7 @@ Installed-Build-Depends:
  libkrb5-3 (= 1.17-3+deb10u1),
  libkrb5support0 (= 1.17-3+deb10u1),
  libllvm7 (= 1:7.0.1-8+deb10u2),
+ liblsan0 (= 8.3.0-6),
  liblz4-1 (= 1.8.3-1),
  liblzma5 (= 5.2.4-1),
  libmagic-mgc (= 1:5.35-4+deb10u2),
@@ -222,13 +226,14 @@ Installed-Build-Depends:
  libssl1.1 (= 1.1.1d-0+deb10u6),
  libstdc++-8-dev (= 8.3.0-6),
  libstdc++6 (= 8.3.0-6),
- libsystemd0 (= 1:241-7~deb10u5+mx19),
+ libsystemd0 (= 1:241-7~deb10u8+mx19+1),
  libtasn1-6 (= 4.13-3),
  libtinfo6 (= 6.1+20181013-2+deb10u2),
  libtool (= 2.4.6-9),
+ libtsan0 (= 8.3.0-6),
  libubsan1 (= 8.3.0-6),
  libuchardet0 (= 0.0.6-3),
- libudev1 (= 1:241-7~deb10u5+mx19),
+ libudev1 (= 1:241-7~deb10u8+mx19+1),
  libunistring2 (= 0.9.10-1),
  libuuid1 (= 2.33.1-0.1),
  libvulkan-dev (= 1.1.97-2),
@@ -339,4 +344,4 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1635287132"
+ SOURCE_DATE_EPOCH="1658594046"
