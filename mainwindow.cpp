@@ -1,11 +1,12 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
-
 #include <QDebug>
 #include <QDir>
 #include <QKeyEvent>
 #include <QMessageBox>
 #include <QScreen>
+
+#include "about.h"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QString arg1, QWidget *parent) :
     QDialog(parent),
@@ -362,10 +363,7 @@ void MainWindow::help()
     QString lang = locale.bcp47Name();
     if (lang.startsWith("fr"))
         url = "https://mxlinux.org/wiki/help-files/help-mx-d%C3%A9monte-usb";
-    if (system("command -v mx-viewer >/dev/null") == 0)
-        system("mx-viewer " + url.toUtf8() + " \"" + tr("MX USB Unmounter").toUtf8() + "\"&");
-    else
-        system("xdg-open " + url.toUtf8() + "\"&");
+    displayDoc(url, tr("%1 Help").arg(tr("MX USB Unmounter")));
 }
 
 void MainWindow::setPosition()
@@ -415,15 +413,11 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
 void MainWindow::about()
 {
     QString version = runCmd("dpkg-query --show mx-usb-unmounter").str.simplified().section(' ', 1, 1);
-    QMessageBox msgBox(QMessageBox::NoIcon,
-                       tr("About MX USB Unmounter"), "<p align=\"center\"><b><h2>" +
-                       tr("MX USB Unmounter") + "</h2></b></p><p align=\"center\">" + tr("Version: ")
-                       + version + "</p><p align=\"center\"><h3>" + tr("Quickly Unmount Removable Media") +
-                       "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>");
-    msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
-    msgBox.addButton(tr("License"), QMessageBox::RejectRole);
-    if (msgBox.exec() == QMessageBox::RejectRole)
-        system("mx-viewer file:///usr/share/doc/mx-usb-unmounter/license.html '" + tr("MX USB Unmounter").toUtf8()
-               + " " + tr("License").toUtf8() + "'");
+    displayAboutMsgBox(tr("About MX USB Unmounter"),
+                       "<p align=\"center\"><b><h2>" + tr("MX USB Unmounter") + "</h2></b></p><p align=\"center\">" +
+                       tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
+                       tr("Quickly Unmount Removable Media") +
+                       "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p>"
+                       "<p align=\"center\">" + tr("Copyright (c) MX Linux") + "<br /><br /></p>",
+                       QStringLiteral("/usr/share/doc/mx-usb-unmounter/license.html"), tr("%1 License").arg(this->windowTitle()));
 }
