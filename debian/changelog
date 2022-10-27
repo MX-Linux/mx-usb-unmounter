@@ -1,3 +1,9 @@
+mx-usb-unmounter (22.10) mx; urgency=medium
+
+  * update translations 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 26 Oct 2022 20:09:12 -0400
+
 mx-usb-unmounter (22.08) mx; urgency=medium
 
   * Remove mx-viewer dependency
