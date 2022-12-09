@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+# The desktop entry name will be displayed within the menu.
+Name=MX USB Unmounter
+# # The desktop entry comment will be shown within the menu.
+Comment=Unmount USB and Optical removable media
+Exec=mx-usb-unmounter
+Icon=mx-usb-unmounter
+Path=
+Terminal=false
+StartupNotify=false
+Type=Application
+Categories=System
+NotShowIn=LXQt

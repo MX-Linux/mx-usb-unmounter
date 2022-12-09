@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[antix-development.mx-usb-unmounter-desktop]
+file_filter = po/mx-usb-unmounter-desktop_<lang>.po
+source_file = mx-usb-unmounter-desktop.pot
+source_lang = en
+type = po
