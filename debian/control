@@ -8,7 +8,7 @@ Vcs-Git: https://github.com/mx-linux/mx-usb-unmounter
 
 Package: mx-usb-unmounter
 Architecture: any
-Depends: gvfs-bin,
+Depends: gio,
         mx-viewer | xdg-utils,
         ${misc:Depends},
         ${shlibs:Depends}

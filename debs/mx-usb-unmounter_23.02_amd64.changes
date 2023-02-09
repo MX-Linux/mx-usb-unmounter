@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Wed, 08 Feb 2023 22:33:05 -0500
+Source: mx-usb-unmounter
+Binary: mx-usb-unmounter
+Architecture: amd64
+Version: 23.02
+Distribution: mx
+Urgency: medium
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-usb-unmounter - mx-usb-unmounter
+Changes:
+ mx-usb-unmounter (23.02) mx; urgency=medium
+ .
+   * remove gvfs-bin depend
+   * add gio depend
+   * update translations
+Checksums-Sha1:
+ 2f6256ea848b1eb5753e6478b584a0496092eee3 10127 mx-usb-unmounter_23.02_amd64.buildinfo
+ fa5dd38e386ee5cbc8b94eadae355e22962176d6 70260 mx-usb-unmounter_23.02_amd64.deb
+Checksums-Sha256:
+ 781e4852251cc1c834600802d4079af6c999f559ec7c7ced810fda40bcf36cbd 10127 mx-usb-unmounter_23.02_amd64.buildinfo
+ f095de22d52e770035f854461721b76da8a07b192daa0907c3642e195a3397c8 70260 mx-usb-unmounter_23.02_amd64.deb
+Files:
+ 1be6e6458963dd35062c766808de57d5 10127 admin optional mx-usb-unmounter_23.02_amd64.buildinfo
+ f0b674b25da62414c11a191ceb0cf66a 70260 admin optional mx-usb-unmounter_23.02_amd64.deb

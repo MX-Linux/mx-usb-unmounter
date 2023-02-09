@@ -7,7 +7,7 @@
         <location filename="../usbunmounter.cpp" line="317"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
-        <translation>MX USB Unmounter</translation>
+        <translation>MX Desmontador USB</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
@@ -42,7 +42,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation>Acerca de MX Desmontar USB</translation>
+        <translation>Acerca de MX Desmontador USB</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>

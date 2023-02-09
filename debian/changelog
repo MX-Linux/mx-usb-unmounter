@@ -1,3 +1,11 @@
+mx-usb-unmounter (23.02) mx; urgency=medium
+
+  * remove gvfs-bin depend
+  * add gio depend 
+  * update translations
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 08 Feb 2023 22:33:05 -0500
+
 mx-usb-unmounter (22.10) mx; urgency=medium
 
   * update translations 

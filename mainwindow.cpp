@@ -268,7 +268,7 @@ void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
 
     // if type is gphoto or mtp, use gvfs-mount -u to unmount
     if (type == "mtp" || type == "gphoto2")
-        out = runCmd("gvfs-mount -u /run/user/$UID/gvfs/" + mountdevice).exit_code;
+        out = runCmd("gio mount -u /run/user/$UID/gvfs/" + mountdevice).exit_code;
 
 //    qDebug() << "out is " << out;
 
