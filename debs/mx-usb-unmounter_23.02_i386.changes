@@ -17,11 +17,11 @@ Changes:
    * add gio depend
    * update translations
 Checksums-Sha1:
- a6035d34b5d09e137c07db4a55069111800d007a 10074 mx-usb-unmounter_23.02_i386.buildinfo
- cf9940eb8eaed7853aabe98db97bf538eb2ae044 72520 mx-usb-unmounter_23.02_i386.deb
+ 905d1c43be81cd9537e8d7bfe123ddf26fc9875c 10074 mx-usb-unmounter_23.02_i386.buildinfo
+ 2986a5523c3d1ecec8fa9f13efd8b2da713b15bb 72520 mx-usb-unmounter_23.02_i386.deb
 Checksums-Sha256:
- ed11b58dc4ebdce0aa5be3b22a821e6d7ba06c24ad7b4f0f029d944c9a7ae89c 10074 mx-usb-unmounter_23.02_i386.buildinfo
- e775628390d6d49455c7d0ed9a1ac81a4e1931607d6c67e04ab2aabefa77e1b5 72520 mx-usb-unmounter_23.02_i386.deb
+ 08243c60a90019dbef1030be19e8e2fab78987881ca5c0c441820260609e07ba 10074 mx-usb-unmounter_23.02_i386.buildinfo
+ 7e50c5201c43056d7a1a283ca9417fa3f2aaf503451052997c5e1bb096adbc32 72520 mx-usb-unmounter_23.02_i386.deb
 Files:
- 26c7a381a405fb0ee96371b8b5572af9 10074 admin optional mx-usb-unmounter_23.02_i386.buildinfo
- 92d76494765c5727ce426eec97b7e886 72520 admin optional mx-usb-unmounter_23.02_i386.deb
+ 0120316b78ea3d794e5359a18b61c132 10074 admin optional mx-usb-unmounter_23.02_i386.buildinfo
+ cfff6db6dce99d02fe71a6c45a092806 72520 admin optional mx-usb-unmounter_23.02_i386.deb

@@ -4,14 +4,14 @@ Binary: mx-usb-unmounter
 Architecture: i386
 Version: 23.02
 Checksums-Md5:
- 92d76494765c5727ce426eec97b7e886 72520 mx-usb-unmounter_23.02_i386.deb
+ cfff6db6dce99d02fe71a6c45a092806 72520 mx-usb-unmounter_23.02_i386.deb
 Checksums-Sha1:
- cf9940eb8eaed7853aabe98db97bf538eb2ae044 72520 mx-usb-unmounter_23.02_i386.deb
+ 2986a5523c3d1ecec8fa9f13efd8b2da713b15bb 72520 mx-usb-unmounter_23.02_i386.deb
 Checksums-Sha256:
- e775628390d6d49455c7d0ed9a1ac81a4e1931607d6c67e04ab2aabefa77e1b5 72520 mx-usb-unmounter_23.02_i386.deb
+ 7e50c5201c43056d7a1a283ca9417fa3f2aaf503451052997c5e1bb096adbc32 72520 mx-usb-unmounter_23.02_i386.deb
 Build-Origin: Debian
 Build-Architecture: i386
-Build-Date: Thu, 09 Feb 2023 03:38:58 +0000
+Build-Date: Thu, 09 Feb 2023 03:48:39 +0000
 Build-Path: /build/mx-usb-unmounter-23.02
 Installed-Build-Depends:
  autoconf (= 2.69-11),

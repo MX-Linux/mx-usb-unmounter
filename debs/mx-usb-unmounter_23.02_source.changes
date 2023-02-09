@@ -14,11 +14,11 @@ Changes:
    * add gio depend
    * update translations
 Checksums-Sha1:
- 403fa93302d6a973c5c7e07328a041e02aadc7ef 655 mx-usb-unmounter_23.02.dsc
- ed7f4615861d9778dc9b5d88aa487ebc00462ae3 592392 mx-usb-unmounter_23.02.tar.xz
+ 9fd6c36c37260efd3d9027880df0faca6ebd72a2 652 mx-usb-unmounter_23.02.dsc
+ 2e2ccbb2a78b399057e123e315a6bdc4d2baa200 79564 mx-usb-unmounter_23.02.tar.xz
 Checksums-Sha256:
- c84a58ca1744668cddebe49e2b31c90487a4fb34ea048f9e29c698b53a2c6e4e 655 mx-usb-unmounter_23.02.dsc
- d29a309c60b17f6e0d4432f39fbf6bcb5c68ae31c849cf3c10e3e3675825da44 592392 mx-usb-unmounter_23.02.tar.xz
+ ec9c0357d71c5e6cf7d300bad4e7d821f628cccf4389176fd79d0664f437072e 652 mx-usb-unmounter_23.02.dsc
+ 88c1a02cde3b073e8bd6be4e99db966a1719652e6c6b6f2bbe30bb321d27b3cd 79564 mx-usb-unmounter_23.02.tar.xz
 Files:
- 28b9f094bf709386921d83d3d26a9288 655 admin optional mx-usb-unmounter_23.02.dsc
- 9c405fe1aa0b9d32e84fac1e6fc0b6d8 592392 admin optional mx-usb-unmounter_23.02.tar.xz
+ 9ee9927407e78d1bf27df4b3d80ac2b3 652 admin optional mx-usb-unmounter_23.02.dsc
+ b0901f72bc5f0413df384ef0ef19167e 79564 admin optional mx-usb-unmounter_23.02.tar.xz

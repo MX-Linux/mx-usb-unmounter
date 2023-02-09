@@ -4,14 +4,14 @@ Binary: mx-usb-unmounter
 Architecture: amd64
 Version: 23.02
 Checksums-Md5:
- f0b674b25da62414c11a191ceb0cf66a 70260 mx-usb-unmounter_23.02_amd64.deb
+ 23bea97c009fe5e6712640ad04cdda06 70264 mx-usb-unmounter_23.02_amd64.deb
 Checksums-Sha1:
- fa5dd38e386ee5cbc8b94eadae355e22962176d6 70260 mx-usb-unmounter_23.02_amd64.deb
+ dd9deca4469c09ce2526d538303ce159162e401d 70264 mx-usb-unmounter_23.02_amd64.deb
 Checksums-Sha256:
- f095de22d52e770035f854461721b76da8a07b192daa0907c3642e195a3397c8 70260 mx-usb-unmounter_23.02_amd64.deb
+ fa3c1c38eaf4b821b1a77d23f9343bd1fe12065540f9da19c747cef4024218b9 70264 mx-usb-unmounter_23.02_amd64.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Thu, 09 Feb 2023 03:39:36 +0000
+Build-Date: Thu, 09 Feb 2023 03:48:27 +0000
 Build-Path: /build/mx-usb-unmounter-23.02
 Installed-Build-Depends:
  autoconf (= 2.69-11),

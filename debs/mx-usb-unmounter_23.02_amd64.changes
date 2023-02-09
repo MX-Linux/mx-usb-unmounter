@@ -17,11 +17,11 @@ Changes:
    * add gio depend
    * update translations
 Checksums-Sha1:
- 2f6256ea848b1eb5753e6478b584a0496092eee3 10127 mx-usb-unmounter_23.02_amd64.buildinfo
- fa5dd38e386ee5cbc8b94eadae355e22962176d6 70260 mx-usb-unmounter_23.02_amd64.deb
+ d87372e424e19253fe9fcecbd3adbd4a7226f829 10127 mx-usb-unmounter_23.02_amd64.buildinfo
+ dd9deca4469c09ce2526d538303ce159162e401d 70264 mx-usb-unmounter_23.02_amd64.deb
 Checksums-Sha256:
- 781e4852251cc1c834600802d4079af6c999f559ec7c7ced810fda40bcf36cbd 10127 mx-usb-unmounter_23.02_amd64.buildinfo
- f095de22d52e770035f854461721b76da8a07b192daa0907c3642e195a3397c8 70260 mx-usb-unmounter_23.02_amd64.deb
+ 8f4ee539f127b6a6371761f41ad4695f96121eac1f8f750423d2e8d5d6bc45ad 10127 mx-usb-unmounter_23.02_amd64.buildinfo
+ fa3c1c38eaf4b821b1a77d23f9343bd1fe12065540f9da19c747cef4024218b9 70264 mx-usb-unmounter_23.02_amd64.deb
 Files:
- 1be6e6458963dd35062c766808de57d5 10127 admin optional mx-usb-unmounter_23.02_amd64.buildinfo
- f0b674b25da62414c11a191ceb0cf66a 70260 admin optional mx-usb-unmounter_23.02_amd64.deb
+ 7407dff27ed4fed36c43c830c6c5b020 10127 admin optional mx-usb-unmounter_23.02_amd64.buildinfo
+ 23bea97c009fe5e6712640ad04cdda06 70264 admin optional mx-usb-unmounter_23.02_amd64.deb

@@ -17,11 +17,11 @@ Changes:
    * add gio depend
    * update translations
 Checksums-Sha1:
- f3c2bf29f84ffcc433ffee83d4119c866f20eac1 9883 mx-usb-unmounter_23.02_armhf.buildinfo
- 351058402a77bbdfd8ec8628ed65f220cb30fe90 66828 mx-usb-unmounter_23.02_armhf.deb
+ a55a6829f1efa9f96d4bdc9c634a8daf07c92499 9883 mx-usb-unmounter_23.02_armhf.buildinfo
+ 3018420716ecb7ef930b5d95a810741e46a3ebcc 66828 mx-usb-unmounter_23.02_armhf.deb
 Checksums-Sha256:
- 5852e0ec4bc68b47e5c2329ef22dcb50e4fb2cf656895c615acf1025a2e85084 9883 mx-usb-unmounter_23.02_armhf.buildinfo
- c4e6450eca5c4641a7e88a7c48014f147c5b91a3f0fbd02b4c2a71895acaefe1 66828 mx-usb-unmounter_23.02_armhf.deb
+ 63e4139cc0bbb5040d3c9b976264b726b19c6ed791baf99e9de0a87f0657ffc8 9883 mx-usb-unmounter_23.02_armhf.buildinfo
+ 92260e14887bedc33f8805b82697cc96900d15dcca505760a9ba839d707723b2 66828 mx-usb-unmounter_23.02_armhf.deb
 Files:
- ed98a3a200169e831a693c3123da63de 9883 admin optional mx-usb-unmounter_23.02_armhf.buildinfo
- c6a219c9bdc497822042d82c3e7d21cc 66828 admin optional mx-usb-unmounter_23.02_armhf.deb
+ c5f38fbe371b178fdbd29d9e99a93d73 9883 admin optional mx-usb-unmounter_23.02_armhf.buildinfo
+ c6c24073d86995ceca0bc7f66548cad1 66828 admin optional mx-usb-unmounter_23.02_armhf.deb
