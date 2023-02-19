@@ -1,8 +1,0 @@
-[main]
-host = https://www.transifex.com
-
-[antix-development.mx-usb-unmounter]
-file_filter = ./mx-usb-unmounter_<lang>.ts
-source_file = mx-usb-unmounter_en.ts
-source_lang = en
-type = ts
