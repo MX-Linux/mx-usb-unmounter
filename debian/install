@@ -4,4 +4,4 @@ images/*			usr/share/pixmaps
 mx-usb-unmounter	 	usr/bin
 mx-usb-unmounter.desktop 	etc/xdg/autostart
 mx-usb-unmounter.desktop 	usr/share/applications
-translations/*.qm	        usr/share/mx-usb-unmounter
+translations/*.qm	        usr/share/mx-usb-unmounter/locale
