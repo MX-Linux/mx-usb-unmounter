@@ -22,16 +22,16 @@ class MainWindow : public QDialog
     Q_OBJECT
 
 public:
-    MainWindow(QString arg1, QWidget *parent = nullptr);
-    ~MainWindow();
+    explicit MainWindow(const QString &arg1, QWidget *parent = nullptr);
+    ~MainWindow() override;
     void start();
     void about();
-    Output runCmd(QString cmd);
+    Output runCmd(const QString &cmd);
     QString UID;
 
 private slots:
-    void changeEvent(QEvent *event);
-    void keyPressEvent(QKeyEvent *event);
+    void changeEvent(QEvent *event) override;
+    void keyPressEvent(QKeyEvent *event) override;
     void on_cancel_pressed();
     void on_mountlistview_itemActivated(QListWidgetItem *item);
     void iconActivated(QSystemTrayIcon::ActivationReason reason);
@@ -39,20 +39,20 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QAction *aboutAction;
-    QAction *helpAction;
-    QAction *listDevicesAction;
-    QAction *quitAction;
-    QAction *toggleAutostartAction;
-    QMenu *menu;
+    QAction *aboutAction{};
+    QAction *helpAction{};
+    QAction *listDevicesAction{};
+    QAction *quitAction{};
+    QAction *toggleAutostartAction{};
+    QMenu *menu{};
     QProcess proc;
-    QSystemTrayIcon *trayIcon;
+    QSystemTrayIcon *trayIcon{};
 
     void createActions();
     void createMenu();
-    void help();
+    static void help();
     void setPosition();
-    void toggleAutostart();
+    static void toggleAutostart();
 
 };
 

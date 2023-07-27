@@ -8,11 +8,11 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-MainWindow::MainWindow(QString arg1, QWidget *parent) :
+MainWindow::MainWindow(const QString &arg1, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MainWindow)
 {
-    qApp->setQuitOnLastWindowClosed(false);
+    QApplication::setQuitOnLastWindowClosed(false);
     if (arg1 == "--help" || arg1 == "-h") {
         about();
         exit(0);
@@ -27,11 +27,11 @@ MainWindow::MainWindow(QString arg1, QWidget *parent) :
 }
 
 // util function for getting bash command output and error code
-Output MainWindow::runCmd(QString cmd)
+Output MainWindow::runCmd(const QString &cmd)
 {
     if (proc.state() != QProcess::NotRunning) {
         qDebug() << "Process already running:" << proc.program() << proc.arguments();
-        return Output();
+        return {};
     }
     QEventLoop loop;
     connect(&proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
@@ -82,13 +82,13 @@ void MainWindow::start()
 
     // now check usb status of each item.  if usb is yes, add to usb list, if optical is yes, add to optical list
 
-    bool isUSB;
-    bool isCD;
-    bool isMMC;
-    bool isGPHOTO;
-    bool isMTP;
+    bool isUSB {};
+    bool isCD {};
+    bool isMMC {};
+    bool isGPHOTO {};
+    bool isMTP {};
     QString devicename;
-    QListWidgetItem *list_item;
+    QListWidgetItem *list_item = nullptr;
     QString point;
     QString size;
     QString label;
@@ -112,8 +112,8 @@ void MainWindow::start()
         // isCD = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
         isCD = system("udevadm info --query=property " + partition.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
         isMMC = system("udevadm info --query=property " + partition.toUtf8() + " | grep -q ID_DRIVE_FLASH_SD=") == 0;
-        isGPHOTO = (point.section(':', 0, 0) == "gphoto2") ? true : false;
-        isMTP = (point.section(':', 0, 0) == "mtp") ? true : false;
+        isGPHOTO = point.section(':', 0, 0) == "gphoto2";
+        isMTP = point.section(':', 0, 0) == "mtp";
         // model = runCmd("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep ID_MODEL=").str.section('=',1,1);
 
         model = runCmd("udevadm info --query=property " + partition.toUtf8() + " | grep ID_MODEL=").str.section('=',1,1);
@@ -140,8 +140,6 @@ void MainWindow::start()
 //        qDebug() << "Is MTP: " << isMTP;
 //        qDebug() << "Is GPHOTO: " << isGPHOTO;
 
-
-        QString data;
 
         if (isUSB || isCD || isMMC) {
             list_item = new QListWidgetItem(ui->mountlistview);
@@ -204,7 +202,6 @@ void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
 {
     // if device is mmc, just unmount. if usb, also poweroff. if device is cd/dvd, eject as well, then remove list item
     // if no device, then exit
-    QString cmd;
     QString cmd2;
     QString cmd3;
     QString cmd4;
@@ -235,7 +232,6 @@ void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
 //    qDebug() << "Partion device is" << partitiondevice;
 //    qDebug() << type;
     int out = 0;
-    QString out2;
 
     QString powertest = runCmd("udevadm info --query=property /dev/" + mountdevice + " |grep DEVLINKS").str;
     QRegularExpressionMatch match = re.match(powertest,0);
@@ -255,7 +251,7 @@ void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
             out = runCmd("umount /dev/" + mountdevice).exit_code;
 //            qDebug() << "unmount device exit code" << out;
             if (out != 0 ) {
-                out2 = runCmd("cat /etc/mtab | grep -q " + mountdevice + " && echo $?").str;
+                QString out2 = runCmd("cat /etc/mtab | grep -q " + mountdevice + " && echo $?").str;
 //                qDebug() << "out2 is " << out2;
                 if (out2.isEmpty())
                     out = 0;
@@ -337,7 +333,7 @@ void MainWindow::createActions()
     connect(aboutAction, &QAction::triggered, this, &MainWindow::about);
     connect(helpAction, &QAction::triggered, this, &MainWindow::help);
     connect(listDevicesAction, &QAction::triggered, this, &MainWindow::start);
-    connect(quitAction, &QAction::triggered, qApp, &QGuiApplication::quit);
+    connect(quitAction, &QAction::triggered, QApplication::instance(), &QGuiApplication::quit);
     connect(toggleAutostartAction, &QAction::triggered, this, &MainWindow::toggleAutostart);
 }
 
