@@ -1,0 +1,10 @@
+
+[main]
+host = https://www.transifex.com
+
+[o:anticapitalista:p:antix-development:r:mx-usb-unmounter]
+file_filter = ./mx-usb-unmounter_<lang>.ts
+source_file = mx-usb-unmounter_en.ts
+source_lang = en
+type = ts
+minimum_perc = 25

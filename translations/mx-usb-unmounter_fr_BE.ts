@@ -37,7 +37,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>Impossible de démonter, le périphérique est en cours d&apos;utilisation</translation>
+        <translation>Impossible de démonter, le périphérique est en cours d’utilisation.</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>

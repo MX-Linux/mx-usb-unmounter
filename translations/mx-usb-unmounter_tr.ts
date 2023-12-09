@@ -68,7 +68,7 @@
         <location filename="../usbunmounter.cpp" line="322"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>License</source>
-        <translation>Ruhsat</translation>
+        <translation>Lisans</translation>
     </message>
 </context>
 </TS>

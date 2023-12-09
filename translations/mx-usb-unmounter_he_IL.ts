@@ -7,7 +7,7 @@
         <location filename="../usbunmounter.cpp" line="317"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
-        <translation type="unfinished"/>
+        <translation>מנתק כונני USB של MX</translation>
     </message>
     <message>
         <location filename="../usbunmounter.ui" line="51"/>

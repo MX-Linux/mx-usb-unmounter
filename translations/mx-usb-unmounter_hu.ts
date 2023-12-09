@@ -12,7 +12,7 @@
     <message>
         <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation type="unfinished"/>
+        <translation>Kattintson duplán a leválasztáshoz</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="138"/>
@@ -22,27 +22,27 @@
     <message>
         <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation type="unfinished"/>
+        <translation>Nincs eltávolítható eszköz</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation type="unfinished"/>
+        <translation>Leválasztás</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation type="unfinished"/>
+        <translation>További partíciók még csatolva vannak az eszközön</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation type="unfinished"/>
+        <translation>Nem választható le. Az eszköz használatban van</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation type="unfinished"/>
+        <translation>Az MX USB leválasztóról</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
@@ -52,7 +52,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="318"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="unfinished"/>
+        <translation>Eltávolítható eszközök gyors leválasztása</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="320"/>
@@ -68,7 +68,7 @@
         <location filename="../usbunmounter.cpp" line="322"/>
         <location filename="../usbunmounter.cpp" line="324"/>
         <source>License</source>
-        <translation>Liszensz</translation>
+        <translation>Licenc</translation>
     </message>
 </context>
 </TS>

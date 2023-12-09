@@ -42,7 +42,7 @@
     <message>
         <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation>Impressum von MX USB Unmounter</translation>
+        <translation>Über MX-USB-Unmounter</translation>
     </message>
     <message>
         <location filename="../usbunmounter.cpp" line="317"/>
