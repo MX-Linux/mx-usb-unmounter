@@ -1,74 +1,190 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ca">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ca">
+<context>
+    <name>MainWindow</name>
+    <message>
+        <location filename="../mainwindow.ui" line="27"/>
+        <location filename="../mainwindow.cpp" line="213"/>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="413"/>
+        <source>MX USB Unmounter</source>
+        <translation type="unfinished">MX USB Unmounter</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="54"/>
+        <source>Double-Click to Unmount</source>
+        <translation type="unfinished">Feu doble clic per desmuntar</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="146"/>
+        <source>Volume</source>
+        <translation type="unfinished">Volum </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="188"/>
+        <source>No Removable Device</source>
+        <translation type="unfinished">Dispositiu no extraïble </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="210"/>
+        <source>Unmounting </source>
+        <translation type="unfinished">Desmuntant </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="212"/>
+        <source>Other partitions still mounted on device</source>
+        <translation type="unfinished">Altres particions del dispositiu encara estan muntades </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="305"/>
+        <source>Unable to  Unmount, Device in Use</source>
+        <translation type="unfinished">No es pot desmuntar, el dispositiu està en ús</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="327"/>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="328"/>
+        <source>Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="329"/>
+        <source>List Devices</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="330"/>
+        <source>Quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="331"/>
+        <location filename="../mainwindow.cpp" line="379"/>
+        <source>Enable Autostart?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="352"/>
+        <source>Unmount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <source>%1 Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="379"/>
+        <source>Autostart Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="412"/>
+        <source>About MX USB Unmounter</source>
+        <translation type="unfinished">Quant a MX USB Unmounter</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="414"/>
+        <source>Version: </source>
+        <translation type="unfinished">Versió: </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="415"/>
+        <source>Quickly Unmount Removable Media</source>
+        <translation type="unfinished">Desmunta ràpidament mitjans extraïbles </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="417"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="unfinished">Copyright (c) MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="418"/>
+        <source>%1 License</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../about.cpp" line="40"/>
+        <source>License</source>
+        <translation type="unfinished">Llicència </translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="41"/>
+        <location filename="../about.cpp" line="51"/>
+        <source>Changelog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="42"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Cancel·la </translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="64"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 <context>
     <name>usbunmounter</name>
     <message>
-        <location filename="../usbunmounter.ui" line="27"/>
-        <location filename="../usbunmounter.cpp" line="208"/>
-        <location filename="../usbunmounter.cpp" line="317"/>
-        <location filename="../usbunmounter.cpp" line="324"/>
         <source>MX USB Unmounter</source>
-        <translation>MX USB Unmounter</translation>
+        <translation type="vanished">MX USB Unmounter</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.ui" line="51"/>
         <source>Double-Click to Unmount</source>
-        <translation>Feu doble clic per desmuntar</translation>
+        <translation type="vanished">Feu doble clic per desmuntar</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="138"/>
         <source>Volume</source>
-        <translation>Volum </translation>
+        <translation type="vanished">Volum </translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="181"/>
         <source>No Removable Device</source>
-        <translation>Dispositiu no extraïble </translation>
+        <translation type="vanished">Dispositiu no extraïble </translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="205"/>
         <source>Unmounting </source>
-        <translation>Desmuntant </translation>
+        <translation type="vanished">Desmuntant </translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="207"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Altres particions del dispositiu encara estan muntades </translation>
+        <translation type="vanished">Altres particions del dispositiu encara estan muntades </translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="276"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation>No es pot desmuntar, el dispositiu està en ús</translation>
+        <translation type="vanished">No es pot desmuntar, el dispositiu està en ús</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="316"/>
         <source>About MX USB Unmounter</source>
-        <translation>Quant a MX USB Unmounter</translation>
+        <translation type="vanished">Quant a MX USB Unmounter</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="317"/>
         <source>Version: </source>
-        <translation>Versió: </translation>
+        <translation type="vanished">Versió: </translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="318"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Desmunta ràpidament mitjans extraïbles </translation>
+        <translation type="vanished">Desmunta ràpidament mitjans extraïbles </translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="320"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="vanished">Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="321"/>
         <source>Cancel</source>
-        <translation>Cancel·la </translation>
+        <translation type="vanished">Cancel·la </translation>
     </message>
     <message>
-        <location filename="../usbunmounter.cpp" line="322"/>
-        <location filename="../usbunmounter.cpp" line="324"/>
         <source>License</source>
-        <translation>Llicència </translation>
+        <translation type="vanished">Llicència </translation>
     </message>
 </context>
 </TS>
