@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ja">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>MainWindow</name>
     <message>
@@ -9,37 +9,37 @@
         <location filename="../mainwindow.cpp" line="362"/>
         <location filename="../mainwindow.cpp" line="413"/>
         <source>MX USB Unmounter</source>
-        <translation type="unfinished">MX USB アンマウンタ</translation>
+        <translation type="unfinished">MX USB безопасное извлечение</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="54"/>
         <source>Double-Click to Unmount</source>
-        <translation type="unfinished">ダブルクリックでアンマウントします</translation>
+        <translation type="unfinished">Двойной щелчок для размонтирования</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="146"/>
         <source>Volume</source>
-        <translation type="unfinished">ボリューム名</translation>
+        <translation type="unfinished">Том</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="188"/>
         <source>No Removable Device</source>
-        <translation type="unfinished">リムーバブルデバイスなし</translation>
+        <translation type="unfinished">Нет извлекаемых устройств</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="210"/>
         <source>Unmounting </source>
-        <translation type="unfinished">アンマウント中</translation>
+        <translation type="unfinished">Размонтирование</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="212"/>
         <source>Other partitions still mounted on device</source>
-        <translation type="unfinished">他のパーティションがまだデバイスマウントしています</translation>
+        <translation type="unfinished">Другие разделы устройства по-прежнему смонтированы</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation type="unfinished">アンマウントできません。デバイスは使用中です</translation>
+        <translation type="unfinished">Невозможно отмонтировать, устройство используется</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="327"/>
@@ -85,17 +85,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="412"/>
         <source>About MX USB Unmounter</source>
-        <translation type="unfinished">MX USB アンマウンタについて</translation>
+        <translation type="unfinished">О программе MX USB безопасное извлечение</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="414"/>
         <source>Version: </source>
-        <translation type="unfinished">バージョン: </translation>
+        <translation type="unfinished">Версия: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="415"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="unfinished">リムーバブルメディアを素早くアンマウントします</translation>
+        <translation type="unfinished">Быстрое отмонтирование извлекаемых устройств</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="417"/>
@@ -113,7 +113,7 @@
     <message>
         <location filename="../about.cpp" line="40"/>
         <source>License</source>
-        <translation type="unfinished">ライセンス</translation>
+        <translation type="unfinished">Лицензия</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="41"/>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../about.cpp" line="42"/>
         <source>Cancel</source>
-        <translation type="unfinished">キャンセル</translation>
+        <translation type="unfinished">Отмена</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="64"/>
@@ -136,43 +136,43 @@
     <name>usbunmounter</name>
     <message>
         <source>MX USB Unmounter</source>
-        <translation type="vanished">MX USB アンマウンタ</translation>
+        <translation type="vanished">MX USB безопасное извлечение</translation>
     </message>
     <message>
         <source>Double-Click to Unmount</source>
-        <translation type="vanished">ダブルクリックでアンマウントします</translation>
+        <translation type="vanished">Двойной щелчок для размонтирования</translation>
     </message>
     <message>
         <source>Volume</source>
-        <translation type="vanished">ボリューム名</translation>
+        <translation type="vanished">Том</translation>
     </message>
     <message>
         <source>No Removable Device</source>
-        <translation type="vanished">リムーバブルデバイスなし</translation>
+        <translation type="vanished">Нет извлекаемых устройств</translation>
     </message>
     <message>
         <source>Unmounting </source>
-        <translation type="vanished">アンマウント中</translation>
+        <translation type="vanished">Размонтирование</translation>
     </message>
     <message>
         <source>Other partitions still mounted on device</source>
-        <translation type="vanished">他のパーティションがまだデバイスマウントしています</translation>
+        <translation type="vanished">Другие разделы устройства по-прежнему смонтированы</translation>
     </message>
     <message>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation type="vanished">アンマウントできません。デバイスは使用中です</translation>
+        <translation type="vanished">Невозможно отмонтировать, устройство используется</translation>
     </message>
     <message>
         <source>About MX USB Unmounter</source>
-        <translation type="vanished">MX USB アンマウンタについて</translation>
+        <translation type="vanished">О программе MX USB безопасное извлечение</translation>
     </message>
     <message>
         <source>Version: </source>
-        <translation type="vanished">バージョン: </translation>
+        <translation type="vanished">Версия: </translation>
     </message>
     <message>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="vanished">リムーバブルメディアを素早くアンマウントします</translation>
+        <translation type="vanished">Быстрое отмонтирование извлекаемых устройств</translation>
     </message>
     <message>
         <source>Copyright (c) MX Linux</source>
@@ -180,11 +180,11 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">キャンセル</translation>
+        <translation type="vanished">Отмена</translation>
     </message>
     <message>
         <source>License</source>
-        <translation type="vanished">ライセンス</translation>
+        <translation type="vanished">Лицензия</translation>
     </message>
 </context>
 </TS>
