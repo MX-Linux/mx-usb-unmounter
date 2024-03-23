@@ -14,7 +14,7 @@
     <message>
         <location filename="../mainwindow.ui" line="54"/>
         <source>Double-Click to Unmount</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">לחיצה כפולה לניתוק העיגון</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="146"/>
@@ -24,22 +24,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="188"/>
         <source>No Removable Device</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">אין התקנים נתיקים</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="210"/>
         <source>Unmounting </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">העיגון מנותק</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="212"/>
         <source>Other partitions still mounted on device</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">מחיצות אחרות שעדיין מעוגנות בהתקן</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>Unable to  Unmount, Device in Use</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">לא ניתן לנתק את העיגון. ההתקן עדיין בשימוש</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="327"/>
@@ -85,17 +85,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="412"/>
         <source>About MX USB Unmounter</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">על מנתק עיגוני USB של MX</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="414"/>
         <source>Version: </source>
-        <translation type="unfinished">גירסה:</translation>
+        <translation type="unfinished">גרסה:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="415"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ניתוק אמצעי אחסון נתיקים במהירות</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="417"/>
@@ -139,12 +139,40 @@
         <translation type="vanished">מנתק כונני USB של MX</translation>
     </message>
     <message>
+        <source>Double-Click to Unmount</source>
+        <translation type="vanished">לחיצה כפולה לניתוק העיגון</translation>
+    </message>
+    <message>
         <source>Volume</source>
         <translation type="vanished">כרך</translation>
     </message>
     <message>
+        <source>No Removable Device</source>
+        <translation type="vanished">אין התקנים נתיקים</translation>
+    </message>
+    <message>
+        <source>Unmounting </source>
+        <translation type="vanished">העיגון מנותק</translation>
+    </message>
+    <message>
+        <source>Other partitions still mounted on device</source>
+        <translation type="vanished">מחיצות אחרות שעדיין מעוגנות בהתקן</translation>
+    </message>
+    <message>
+        <source>Unable to  Unmount, Device in Use</source>
+        <translation type="vanished">לא ניתן לנתק את העיגון. ההתקן עדיין בשימוש</translation>
+    </message>
+    <message>
+        <source>About MX USB Unmounter</source>
+        <translation type="vanished">על מנתק עיגוני USB של MX</translation>
+    </message>
+    <message>
         <source>Version: </source>
-        <translation type="vanished">גירסה:</translation>
+        <translation type="vanished">גרסה:</translation>
+    </message>
+    <message>
+        <source>Quickly Unmount Removable Media</source>
+        <translation type="vanished">ניתוק אמצעי אחסון נתיקים במהירות</translation>
     </message>
     <message>
         <source>Copyright (c) MX Linux</source>

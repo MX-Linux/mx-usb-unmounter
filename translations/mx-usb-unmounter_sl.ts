@@ -100,7 +100,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="417"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Copyright (c) MX Linux</translation>
+        <translation type="unfinished">Avtorska zaščita (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="418"/>
@@ -176,7 +176,7 @@
     </message>
     <message>
         <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Copyright (c) MX Linux</translation>
+        <translation type="vanished">Avtorska zaščita (c) MX Linux</translation>
     </message>
     <message>
         <source>Cancel</source>

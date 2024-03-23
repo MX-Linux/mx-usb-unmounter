@@ -34,7 +34,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="212"/>
         <source>Other partitions still mounted on device</source>
-        <translation type="unfinished">Παραμένουν και άλλες κατατμήσεις προσαρτημένες στη συσκευή</translation>
+        <translation type="unfinished">Παραμένουν και άλλες προσαρτημένες κατατμήσεις στη συσκευή</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -85,7 +85,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="412"/>
         <source>About MX USB Unmounter</source>
-        <translation type="unfinished">Περί του MX Αποπροσάρτηση</translation>
+        <translation type="unfinished">Περί του MX Αποπροσάρτηση USB</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="414"/>
@@ -156,7 +156,7 @@
     </message>
     <message>
         <source>Other partitions still mounted on device</source>
-        <translation type="vanished">Παραμένουν και άλλες κατατμήσεις προσαρτημένες στη συσκευή</translation>
+        <translation type="vanished">Παραμένουν και άλλες προσαρτημένες κατατμήσεις στη συσκευή</translation>
     </message>
     <message>
         <source>Unable to  Unmount, Device in Use</source>
@@ -164,7 +164,7 @@
     </message>
     <message>
         <source>About MX USB Unmounter</source>
-        <translation type="vanished">Περί του MX Αποπροσάρτηση</translation>
+        <translation type="vanished">Περί του MX Αποπροσάρτηση USB</translation>
     </message>
     <message>
         <source>Version: </source>
