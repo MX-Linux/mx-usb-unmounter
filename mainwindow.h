@@ -1,5 +1,4 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include <QDialog>
 #include <QListWidgetItem>
@@ -7,7 +6,8 @@
 #include <QProcess>
 #include <QSystemTrayIcon>
 
-namespace Ui {
+namespace Ui
+{
 class MainWindow;
 }
 
@@ -36,24 +36,20 @@ private slots:
     void on_mountlistview_itemActivated(QListWidgetItem *item);
     void iconActivated(QSystemTrayIcon::ActivationReason reason);
 
-
 private:
     Ui::MainWindow *ui;
-    QAction *aboutAction{};
-    QAction *helpAction{};
-    QAction *listDevicesAction{};
-    QAction *quitAction{};
-    QAction *toggleAutostartAction{};
-    QMenu *menu{};
+    QAction *aboutAction {};
+    QAction *helpAction {};
+    QAction *listDevicesAction {};
+    QAction *quitAction {};
+    QAction *toggleAutostartAction {};
+    QMenu *menu {};
     QProcess proc;
-    QSystemTrayIcon *trayIcon{};
+    QSystemTrayIcon *trayIcon {};
 
     void createActions();
     void createMenu();
     static void help();
     void setPosition();
     static void toggleAutostart();
-
 };
-
-#endif // MAINWINDOW_H
