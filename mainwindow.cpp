@@ -15,12 +15,14 @@ MainWindow::MainWindow(const QString &arg1, QWidget *parent)
     QApplication::setQuitOnLastWindowClosed(false);
     if (arg1 == "--help" || arg1 == "-h") {
         about();
-        exit(0);
+        QCoreApplication::quit();
     } else {
         ui->setupUi(this);
         createActions();
         createMenu();
         connect(trayIcon, &QSystemTrayIcon::activated, this, &MainWindow::iconActivated);
+        connect(ui->mountlistview, &QListWidget::itemActivated, this, &MainWindow::mountlistviewItemActivated);
+        connect(ui->cancel, &QPushButton::clicked, this, &MainWindow::cancelPressed);
         trayIcon->show();
         this->setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);
     }
@@ -205,7 +207,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_mountlistview_itemActivated(QListWidgetItem *item)
+void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
 {
     // if device is mmc, just unmount. if usb, also poweroff. if device is cd/dvd, eject as well, then remove list item
     // if no device, then exit
@@ -412,9 +414,9 @@ void MainWindow::changeEvent(QEvent *event)
     }
 }
 
-void MainWindow::on_cancel_pressed()
+void MainWindow::cancelPressed()
 {
-    this->hide();
+    hide();
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event)

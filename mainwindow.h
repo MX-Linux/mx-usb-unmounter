@@ -30,11 +30,11 @@ public:
     QString UID;
 
 private slots:
+    void cancelPressed();
     void changeEvent(QEvent *event) override;
-    void keyPressEvent(QKeyEvent *event) override;
-    void on_cancel_pressed();
-    void on_mountlistview_itemActivated(QListWidgetItem *item);
     void iconActivated(QSystemTrayIcon::ActivationReason reason);
+    void keyPressEvent(QKeyEvent *event) override;
+    void mountlistviewItemActivated(QListWidgetItem *item);
 
 private:
     Ui::MainWindow *ui;
@@ -47,9 +47,9 @@ private:
     QProcess proc;
     QSystemTrayIcon *trayIcon {};
 
+    static void help();
+    static void toggleAutostart();
     void createActions();
     void createMenu();
-    static void help();
     void setPosition();
-    static void toggleAutostart();
 };
