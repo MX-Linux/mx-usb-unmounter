@@ -219,18 +219,17 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
         if (type == "usb" && powerOff) {
             QProcess::execute("udisksctl", {"power-off", "-b", "/dev/" + mountDevice});
         }
-        if (type == "mtp" || type == "gphoto2" || type == "cd" || type == "usb") {
-            QProcess::execute("notify-send", notifyArgs + QStringList() << safeToRemoveMsg);
-        } else if (type == "mmc") {
+        QString notificationMessage = safeToRemoveMsg;
+        if (type == "mmc") {
             const QString mmcCheckOutput
                 = runCmd(QString("df --local --output=source,target,size -H 2>/dev/null | grep -E '^/dev/%1'")
                              .arg(mountDevice))
                       .str;
             const bool hasOtherPartitions = !mmcCheckOutput.isEmpty();
-            const QString notificationMessage
+            notificationMessage
                 = hasOtherPartitions ? QString("%1 %2").arg(otherPartitionsMountedMsg, model) : safeToRemoveMsg;
-            QProcess::execute("notify-send", notifyArgs + QStringList() << notificationMessage);
         }
+        QProcess::execute("notify-send", notifyArgs + QStringList() << notificationMessage);
     } else {
         const QString errorMsg = tr("Unable to unmount, device in use");
         QProcess::execute("notify-send", {"-i", "drive-removable-media", title, errorMsg});
