@@ -232,7 +232,7 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
             QProcess::execute("notify-send", notifyArgs + QStringList() << notificationMessage);
         }
     } else {
-        const QString errorMsg = tr("Unable to Unmount, Device in Use");
+        const QString errorMsg = tr("Unable to unmount, device in use");
         QProcess::execute("notify-send", {"-i", "drive-removable-media", title, errorMsg});
     }
     hide();
