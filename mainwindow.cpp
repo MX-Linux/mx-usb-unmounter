@@ -28,7 +28,7 @@ MainWindow::MainWindow(const QString &arg1, QWidget *parent)
     }
 }
 
-// util function for getting bash command output and error code
+// Util function for getting bash command output and error code
 Output MainWindow::runCmd(const QString &cmd)
 {
     if (proc.state() != QProcess::NotRunning) {
@@ -165,118 +165,77 @@ MainWindow::~MainWindow()
 
 void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
 {
-    // if device is mmc, just unmount. if usb, also poweroff. if device is cd/dvd, eject as well, then remove list item
-    // if no device, then exit
-    QString cmd2;
-    QString cmd3;
-    QString cmd4;
-    QString point = QString(item->text());
-    // qDebug() << "clicked mount point" << point;
-    cmd2 = tr("Unmounting " + point.toUtf8());
-    cmd3 = tr(point.toUtf8() + " is Safe to Remove");
-    cmd4 = tr("Other partitions still mounted on device");
-    QString title = tr("MX USB Unmounter");
-    QString type = item->data(Qt::UserRole).toString().section(";", 0, 0);
-    // qDebug() << item->data(Qt::UserRole).toString();
-    // qDebug() << "type is" << type;
-    QString pattern("compact_flash|CF|sd|sdhc|MMC|ms|sdxc|xD");
-    QRegularExpression re(pattern, QRegularExpression::CaseInsensitiveOption);
-
-    bool poweroff = true;
-
-    if (item->data(Qt::UserRole).toString().isEmpty()) {
+    const QString itemData = item->data(Qt::UserRole).toString();
+    if (itemData.isEmpty()) {
         hide();
         return;
     }
-    // run operation on selected device
 
-    QString mountdevice = item->data(Qt::UserRole).toString().section(";", 2, 2);
-    QString partitiondevice = item->data(Qt::UserRole).toString().section(";", 1, 1);
-    QString model = item->data(Qt::UserRole).toString().section(";", 3, 3);
-    // qDebug() << "Mount device is" << mountdevice;
-    // qDebug() << "Partion device is" << partitiondevice;
-    // qDebug() << type;
-    int out = 0;
-
-    QString powertest = runCmd("udevadm info --query=property /dev/" + mountdevice + " |grep DEVLINKS").str;
-    QRegularExpressionMatch match = re.match(powertest, 0);
-    if (match.hasMatch()) {
-        poweroff = false;
+    const QStringList itemDataParts = itemData.split(';');
+    if (itemDataParts.size() < 4) {
+        qWarning() << "Invalid item data format:" << itemData;
+        return;
     }
 
-    // qDebug() << "power off is " << poweroff;
+    const QString type = itemDataParts.at(0);
+    const QString partitionDevice = itemDataParts.at(1);
+    const QString mountDevice = itemDataParts.at(2);
+    const QString model = itemDataParts.at(3);
+    const QString point = item->text();
+    const QString title = tr("MX USB Unmounter");
 
-    // if item is mmc, unmount only, don't "eject"
+    const QString unmountingMsg = tr("Unmounting %1").arg(point);
+    const QString safeToRemoveMsg = tr("%1 is Safe to Remove").arg(point);
+    const QString otherPartitionsMountedMsg = tr("Other partitions still mounted on device");
+
+    const QRegularExpression re("compact_flash|CF|sd|sdhc|MMC|ms|sdxc|xD", QRegularExpression::CaseInsensitiveOption);
+    const QString powerTestCmd = QString("udevadm info --query=property /dev/%1 | grep DEVLINKS").arg(mountDevice);
+    const bool powerOff = !re.match(runCmd(powerTestCmd).str).hasMatch();
+
+    int exitCode = 0;
+    auto unmountDevice = [&](const QString &device) { exitCode = runCmd("umount " + device).exitCode; };
+
     if (type == "mmc") {
-        out = runCmd("umount " + partitiondevice).exitCode;
-    }
-    if (type == "usb") {
-        out = runCmd("umount /dev/" + mountdevice + "?*").exitCode;
-        // qDebug() << "unmount paritions exit code" << out;
-        if (out != 0) {
-            // try just unmounting the device
-            out = runCmd("umount /dev/" + mountdevice).exitCode;
-            // qDebug() << "unmount device exit code" << out;
-            if (out != 0) {
-                QString out2 = runCmd("cat /etc/mtab | grep -q " + mountdevice + " && echo $?").str;
-                // qDebug() << "out2 is " << out2;
-                if (out2.isEmpty()) {
-                    out = 0;
-                }
+        unmountDevice(partitionDevice);
+    } else if (type == "usb") {
+        unmountDevice("/dev/" + mountDevice + "?*");
+        if (exitCode != 0) {
+            unmountDevice("/dev/" + mountDevice);
+            if (exitCode != 0 && QProcess::execute("grep", {"-q", mountDevice, "/etc/mtab"}) != 0) {
+                exitCode = 0; // Reset exitCode if device is not in mtab
             }
         }
+    } else if (type == "cd") {
+        exitCode = QProcess::execute("eject", {partitionDevice});
+    } else if (type == "mtp" || type == "gphoto2") {
+        exitCode = QProcess::execute("gio", {"mount", "-u", "/run/user/$UID/gvfs/" + mountDevice});
     }
 
-    if (type == "cd") {
-        out = runCmd("eject " + partitiondevice).exitCode;
-    }
+    // qDebug() << "Exit code is " << exitCode;
 
-    // if type is gphoto or mtp, use gvfs-mount -u to unmount
-    if (type == "mtp" || type == "gphoto2") {
-        out = runCmd("gio mount -u /run/user/$UID/gvfs/" + mountdevice).exitCode;
-    }
+    if (exitCode == 0) {
+        QStringList notifyArgs = {"-i", "drive-removable-media", title};
 
-    // qDebug() << "out is " << out;
-
-    if (out == 0) {
-        // if device is usb, go ahead and power off "eject" and notify user
-        if (type == "usb") {
-            if (poweroff) {
-                system("udisksctl power-off -b /dev/" + mountdevice.toUtf8());
-            }
-            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
-            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
-        }
-        // if device is mtp or gphoto2, say unmount was a success
-        if (type == "mtp" || type == "gphoto2") {
-            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
-            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
-        }
-        // if device is CD, done, and notify user of success
-        if (type == "cd") {
-            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
-            system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
+        if (type == "usb" && powerOff) {
+            QProcess::execute("udisksctl", {"power-off", "-b", "/dev/" + mountDevice});
         }
 
-        // if device is mmc, check for additional mounted partitions.  If none, say safe to eject.  If more found, say
-        // so.
-        if (type == "mmc") {
-            QString mmc_check;
-            mmc_check = runCmd("df --local --output=source,target,size -H 2>/dev/null| grep " + mountdevice).str;
-            if (mmc_check.isEmpty()) {
-                system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
-                system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
-            } else {
-                system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd2.toUtf8() + "'");
-                system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd4.toUtf8() + " "
-                       + model.toUtf8() + "'");
-            }
+        QProcess::execute("notify-send", notifyArgs << unmountingMsg);
+        if (type == "mtp" || type == "gphoto2" || type == "cd" || type == "usb") {
+            QProcess::execute("notify-send", notifyArgs << safeToRemoveMsg);
+        } else if (type == "mmc") {
+            const QString mmcCheckOutput
+                = runCmd(QString("df --local --output=source,target,size -H 2>/dev/null | grep -E '^/dev/%1'")
+                             .arg(mountDevice))
+                      .str;
+            const bool hasOtherPartitions = !mmcCheckOutput.isEmpty();
+            const QString notificationMessage
+                = hasOtherPartitions ? QString("%1 %2").arg(otherPartitionsMountedMsg, model) : safeToRemoveMsg;
+            QProcess::execute("notify-send", notifyArgs << notificationMessage);
         }
-
-    } else { // if umount operation failed, say so
-        // qDebug() << "Warning";
-        cmd3 = tr("Unable to  Unmount, Device in Use");
-        system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
+    } else {
+        const QString errorMsg = tr("Unable to Unmount, Device in Use");
+        QProcess::execute("notify-send", {"-i", "drive-removable-media", title, errorMsg});
     }
     hide();
 }
@@ -284,14 +243,9 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
 void MainWindow::iconActivated(QSystemTrayIcon::ActivationReason reason)
 {
     setPosition();
-    switch (reason) {
-    case QSystemTrayIcon::DoubleClick:
-    case QSystemTrayIcon::MiddleClick:
-    case QSystemTrayIcon::Trigger:
+    if (reason == QSystemTrayIcon::DoubleClick || reason == QSystemTrayIcon::MiddleClick
+        || reason == QSystemTrayIcon::Trigger) {
         start();
-        break;
-    default:
-        break;
     }
 }
 
