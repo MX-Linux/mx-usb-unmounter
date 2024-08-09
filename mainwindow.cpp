@@ -54,10 +54,11 @@ void MainWindow::start()
     // qDebug() << "UID is" << UID;
 
     // Get list of mounted devices
-    QStringList partitionList
-        = runCmd("df --local --output=source,target,size -H 2>/dev/null | grep /dev/").str.split('\n', Qt::SkipEmptyParts);
-    QStringList gvfslist = runCmd(QString("ls -1 --color=never /run/user/%1/gvfs 2>/dev/null | grep -E 'mtp|gphoto'").arg(UID))
-                               .str.split('\n', Qt::SkipEmptyParts);
+    QStringList partitionList = runCmd("df --local --output=source,target,size -H 2>/dev/null | grep /dev/")
+                                    .str.split('\n', Qt::SkipEmptyParts);
+    QStringList gvfslist
+        = runCmd(QString("ls -1 --color=never /run/user/%1/gvfs 2>/dev/null | grep -E 'mtp|gphoto'").arg(UID))
+              .str.split('\n', Qt::SkipEmptyParts);
 
     // Append gvfs devices to partition list
     for (const QString &item : gvfslist) {
@@ -339,12 +340,16 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
 void MainWindow::about()
 {
     QString version = runCmd("dpkg-query --show mx-usb-unmounter").str.simplified().section(' ', 1, 1);
-    displayAboutMsgBox(
-        tr("About MX USB Unmounter"),
-        "<p align=\"center\"><b><h2>" + tr("MX USB Unmounter") + "</h2></b></p><p align=\"center\">" + tr("Version: ")
-            + version + "</p><p align=\"center\"><h3>" + tr("Quickly Unmount Removable Media")
-            + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p>"
-              "<p align=\"center\">"
-            + tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-        QStringLiteral("/usr/share/doc/mx-usb-unmounter/license.html"), tr("%1 License").arg(windowTitle()));
+    QString aboutMessage
+        = QString("<p align=\"center\"><b><h2>%1</h2></b></p>"
+                  "<p align=\"center\">%2: %3</p>"
+                  "<p align=\"center\"><h3>%4</h3></p>"
+                  "<p align=\"center\"><a href=\"%5\">%5</a><br /></p>"
+                  "<p align=\"center\">%6<br /><br /></p>")
+              .arg(tr("MX USB Unmounter"), tr("Version"), version, tr("Quickly Unmount Removable Media"),
+                   "http://mxlinux.org", tr("Copyright (c) MX Linux"));
+
+    displayAboutMsgBox(tr("About MX USB Unmounter"), aboutMessage,
+                       QStringLiteral("/usr/share/doc/mx-usb-unmounter/license.html"),
+                       tr("%1 License").arg(windowTitle()));
 }
