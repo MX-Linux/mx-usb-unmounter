@@ -48,156 +48,112 @@ void MainWindow::start()
     if (proc.state() != QProcess::NotRunning) {
         return;
     }
+
     ui->mountlistview->clear();
-
     UID = runCmd("echo $UID").str;
-    // qDebug() << "UID is "<< UID;
+    // qDebug() << "UID is" << UID;
 
-    // get list of usb storage devices
+    // Get list of mounted devices
+    QStringList partitionList
+        = runCmd("df --local --output=source,target,size -H | grep /dev/").str.split('\n', Qt::SkipEmptyParts);
+    QStringList gvfslist = runCmd(QString("ls -1 --color=never /run/user/%1/gvfs | grep -E 'mtp|gphoto'").arg(UID))
+                               .str.split('\n', Qt::SkipEmptyParts);
 
-    // first get list of mounted devices
-    QStringList partitionlist;
-    QStringList gvfslist;
-    QString file_content;
-
-    file_content = runCmd("df --local --output=source,target,size -H | grep /dev/").str;
-    partitionlist = file_content.split("\n");
-    // qDebug() << "Partition list: " << partitionlist;
-    // now build list for gvfs devices mtp and gphoto
-    file_content = runCmd("ls -1 --color=never /run/user/" + UID + "/gvfs |grep mtp").str;
-    file_content.append(runCmd("ls -1 --color=never /run/user/" + UID + "/gvfs |grep gphoto").str);
-    gvfslist = file_content.split("\n");
-    // qDebug() << gvfslist;
+    // Append gvfs devices to partition list
     for (const QString &item : gvfslist) {
         if (!item.isEmpty()) {
-            //            qDebug() << "Dev" << dev;
-            QString devpath = QString("/run/user/" + UID + "/" + item);
-            //            qDebug() << "DevPath" << devpath;
-            QString addtopartitionlist = QString(devpath + " " + item + " ");
-            partitionlist << addtopartitionlist;
+            partitionList << QString("/run/user/%1/gvfs/%2 %2").arg(UID, item);
         }
     }
 
-    // qDebug() << "Partition list: " << partitionlist;
-
-    // now check usb status of each item.  if usb is yes, add to usb list, if optical is yes, add to optical list
-
-    bool isUSB {};
-    bool isCD {};
-    bool isMMC {};
-    bool isGPHOTO {};
-    bool isMTP {};
-    QString devicename;
-    QListWidgetItem *list_item = nullptr;
-    QString point;
-    QString size;
-    QString label;
-    QString partition;
-    QString model;
-
-    for (const QString &item : partitionlist) {
+    // Process device properties and populate list
+    for (const QString &item : partitionList) {
         if (item.startsWith("/dev/mapper/rootfs") || item.startsWith("tmpfs") || item.startsWith("df: ")) {
             continue;
         }
-        // devicename = item.simplified().section(' ', 0 ,0).section('/', 2, 2);  //gives us device designation (sda,
-        // sdb, etc..)
-        point = item.simplified().section(' ', 1, 1);
-        size = item.simplified().section(' ', 2, 2);
-        partition = item.simplified().section(' ', 0, 0);
-        label = runCmd("udevadm info --query=property " + partition + " |grep ID_FS_LABEL=").str.section('=', 1, 1);
-        // qDebug() << "Mountpoint: " << point;
-        // qDebug() << "Size: " << size;
-        // qDebug() << "Partition: " << partition;
-        // qDebug() << "Label: " << label;
-        // isUSB = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -qE
-        // '^DEVPATH=.*/usb[0-9]+/'") == 0;
-        isUSB = system("udevadm info --query=property " + partition.toUtf8() + " | grep -qE '^DEVPATH=.*/usb[0-9]+/'")
-                == 0;
-        // isCD = system("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep -q
-        // ID_TYPE=cd") == 0;
-        isCD = system("udevadm info --query=property " + partition.toUtf8() + " | grep -q ID_TYPE=cd") == 0;
-        isMMC = system("udevadm info --query=property " + partition.toUtf8() + " | grep -q ID_DRIVE_FLASH_SD=") == 0;
-        isGPHOTO = point.section(':', 0, 0) == "gphoto2";
-        isMTP = point.section(':', 0, 0) == "mtp";
-        // model = runCmd("udevadm info --query=property --path=/sys/block/" + devicename.toUtf8() + " | grep
-        // ID_MODEL=").str.section('=',1,1);
 
-        model = runCmd("udevadm info --query=property " + partition.toUtf8() + " | grep ID_MODEL=")
-                    .str.section('=', 1, 1);
-        QString DEVTYPE = runCmd("udevadm info --query=property " + partition.toUtf8() + " |grep DEVTYPE=")
-                              .str.section("/", -1, -1);
-        // correction for partitionless disks, some devices like ereaders and some usb sticks don't have partitions
-        if (DEVTYPE == "DEVTYPE=disk") {
-            devicename = runCmd("udevadm info --query=property " + partition.toUtf8() + " |grep DEVPATH=")
-                             .str.section("/", -1, -1);
-        } else {
-            devicename = runCmd("udevadm info --query=property " + partition.toUtf8() + " |grep DEVPATH=")
-                             .str.section("/", -2, -2);
+        QStringList itemParts = item.simplified().split(' ', Qt::SkipEmptyParts);
+        if (itemParts.size() < 3) {
+            continue; // Skip incomplete items
         }
 
+        QString partition = itemParts.at(0);
+        QString point = itemParts.at(1);
+        QString size = itemParts.at(2);
+
+        const QString udevInfo = runCmd("udevadm info --query=property " + partition).str;
+        QString label = udevInfo.section("ID_FS_LABEL=", 1, 1).section('\n', 0, 0);
+        QString model = udevInfo.section("ID_MODEL=", 1, 1).section('\n', 0, 0);
+        QString devType = udevInfo.section("DEVTYPE=", 1, 1).section('\n', 0, 0);
+        // Correction for partitionless disks, some devices like ereaders and some usb sticks don't have partitions
+        QString deviceName = (devType == "disk")
+                                 ? udevInfo.section("DEVPATH=", 1, 1).section('\n', 0, 0).section('/', -1)
+                                 : udevInfo.section("DEVPATH=", 1, 1).section('\n', 0, 0).section('/', -2, -2);
+        bool isUSB
+            = udevInfo.contains(QRegularExpression("^DEVPATH=.*/usb[0-9]+/", QRegularExpression::MultilineOption));
+        bool isCD = udevInfo.contains("ID_TYPE=cd");
+        bool isMMC = udevInfo.contains("ID_DRIVE_FLASH_SD=");
+        bool isGPHOTO = point.startsWith("gphoto2:");
+        bool isMTP = point.startsWith("mtp:");
+
+        // Adjust for GPHOTO and MTP devices
         if (isGPHOTO || isMTP) {
-            model = point.section("=", 1, 1);
-            devicename = model;
+            model = point.section('=', 1);
+            deviceName = model;
             isUSB = true;
-            label = "";
+            label.clear();
         }
 
-        // qDebug() << "Device name: " << devicename;
-        // qDebug() << "Model: " << model;
-        // qDebug() << "Is USB: " << isUSB;
-        // qDebug() << "Is CD: " << isCD;
-        // qDebug() << "Is MMC: " << isMMC;
-        // qDebug() << "Is MTP: " << isMTP;
-        // qDebug() << "Is GPHOTO: " << isGPHOTO;
-
+        // qDebug() << "Device name:" << deviceName;
+        // qDebug() << "Model:" << model;
+        // qDebug() << "Mount point:" << point;
+        // qDebug() << "Is USB:" << isUSB;
+        // qDebug() << "Is CD:" << isCD;
+        // qDebug() << "Is MMC:" << isMMC;
+        // qDebug() << "Is MTP:" << isMTP;
+        // qDebug() << "Is GPHOTO:" << isGPHOTO;
         if (isUSB || isCD || isMMC) {
-            list_item = new QListWidgetItem(ui->mountlistview);
-            QString item2 = QString(model + " " + size + " " + tr("Volume").toUtf8() + " " + label);
-            list_item->setText(item2);
-            //            qDebug() << "widget item: " << item2;
+            auto *list_item = new QListWidgetItem(ui->mountlistview);
+            const QString itemText = QString("%1 %2 %3 %4").arg(model, size, tr("Volume"), label);
+            list_item->setText(itemText);
+
             QString data;
+            QString iconName;
             if (isUSB) {
                 if (isMTP) {
-                    list_item->setIcon(QIcon::fromTheme("multimedia-player"));
-                    data = QString("mtp;" + partition + ";" + point + ";" + model);
-                    list_item->setData(Qt::UserRole, data);
-                    list_item->setToolTip(point);
+                    iconName = "multimedia-player";
+                    data = QString("mtp;%1;%2;%3").arg(partition, point, model);
                 } else if (isGPHOTO) {
-                    list_item->setIcon(QIcon::fromTheme("camera-photo"));
-                    data = QString("gphoto2;" + partition + ";" + point + ";" + model);
-                    list_item->setData(Qt::UserRole, data);
-                    list_item->setToolTip(point);
+                    iconName = "camera-photo";
+                    data = QString("gphoto2;%1;%2;%3").arg(partition, point, model);
                 } else {
-                    list_item->setIcon(QIcon::fromTheme("drive-removable-media"));
-                    data = QString("usb;" + partition + ";" + devicename + ";" + model);
-                    list_item->setData(Qt::UserRole, data);
-                    list_item->setToolTip(point);
+                    iconName = "drive-removable-media";
+                    data = QString("usb;%1;%2;%3").arg(partition, deviceName, model);
                 }
+            } else if (isCD) {
+                iconName = "media-optical";
+                data = QString("cd;%1;%2;%3").arg(partition, deviceName, model);
+            } else if (isMMC) {
+                iconName = "media-flash";
+                data = QString("mmc;%1;%2;%3").arg(partition, deviceName, model);
             }
-            if (isCD) {
-                list_item->setIcon(QIcon::fromTheme("media-optical"));
-                data = QString("cd;" + partition + ";" + devicename + ";" + model);
-                list_item->setData(Qt::UserRole, data);
-                list_item->setToolTip(point);
-            }
-            if (isMMC) {
-                list_item->setIcon(QIcon::fromTheme("media-flash"));
-                data = QString("mmc;" + partition + ";" + devicename + ";" + model);
-                list_item->setData(Qt::UserRole, data);
-                list_item->setToolTip(point);
-            }
-            //            qDebug() << "Data list: " << data;
+
+            list_item->setIcon(QIcon::fromTheme(iconName));
+            list_item->setData(Qt::UserRole, data);
+            list_item->setToolTip(point);
         }
     }
 
+    // Update UI with the device list
     if (ui->mountlistview->count() > 0) {
         ui->mountlistview->item(0)->setSelected(true);
     } else {
-        list_item = new QListWidgetItem(ui->mountlistview);
+        auto *list_item = new QListWidgetItem(ui->mountlistview);
         list_item->setText(tr("No Removable Device"));
         list_item->setIcon(QIcon::fromTheme("process-stop"));
         list_item->setData(Qt::UserRole, QString());
     }
+
     show();
     raise();
 }
