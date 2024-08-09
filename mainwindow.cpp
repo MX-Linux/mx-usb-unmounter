@@ -15,7 +15,7 @@ MainWindow::MainWindow(const QString &arg1, QWidget *parent)
     QApplication::setQuitOnLastWindowClosed(false);
     if (arg1 == "--help" || arg1 == "-h") {
         about();
-        QCoreApplication::quit();
+        exit(0);
     } else {
         ui->setupUi(this);
         createActions();
