@@ -55,8 +55,8 @@ void MainWindow::start()
 
     // Get list of mounted devices
     QStringList partitionList
-        = runCmd("df --local --output=source,target,size -H | grep /dev/").str.split('\n', Qt::SkipEmptyParts);
-    QStringList gvfslist = runCmd(QString("ls -1 --color=never /run/user/%1/gvfs | grep -E 'mtp|gphoto'").arg(UID))
+        = runCmd("df --local --output=source,target,size -H 2>/dev/null | grep /dev/").str.split('\n', Qt::SkipEmptyParts);
+    QStringList gvfslist = runCmd(QString("ls -1 --color=never /run/user/%1/gvfs 2>/dev/null | grep -E 'mtp|gphoto'").arg(UID))
                                .str.split('\n', Qt::SkipEmptyParts);
 
     // Append gvfs devices to partition list
