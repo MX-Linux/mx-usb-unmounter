@@ -24,7 +24,7 @@ MainWindow::MainWindow(const QString &arg1, QWidget *parent)
         connect(ui->mountlistview, &QListWidget::itemActivated, this, &MainWindow::mountlistviewItemActivated);
         connect(ui->cancel, &QPushButton::clicked, this, &MainWindow::cancelPressed);
         trayIcon->show();
-        this->setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);
+        setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);
     }
 }
 
@@ -198,8 +198,8 @@ void MainWindow::start()
         list_item->setIcon(QIcon::fromTheme("process-stop"));
         list_item->setData(Qt::UserRole, QString());
     }
-    this->show();
-    this->raise();
+    show();
+    raise();
 }
 
 MainWindow::~MainWindow()
@@ -229,7 +229,7 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
     bool poweroff = true;
 
     if (item->data(Qt::UserRole).toString().isEmpty()) {
-        this->hide();
+        hide();
         return;
     }
     // run operation on selected device
@@ -252,18 +252,18 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
 
     // if item is mmc, unmount only, don't "eject"
     if (type == "mmc") {
-        out = runCmd("umount " + partitiondevice).exit_code;
+        out = runCmd("umount " + partitiondevice).exitCode;
     }
     if (type == "usb") {
-        out = runCmd("umount /dev/" + mountdevice + "?*").exit_code;
-        //        qDebug() << "unmount paritions exit code" << out;
+        out = runCmd("umount /dev/" + mountdevice + "?*").exitCode;
+        // qDebug() << "unmount paritions exit code" << out;
         if (out != 0) {
             // try just unmounting the device
-            out = runCmd("umount /dev/" + mountdevice).exit_code;
-            //            qDebug() << "unmount device exit code" << out;
+            out = runCmd("umount /dev/" + mountdevice).exitCode;
+            // qDebug() << "unmount device exit code" << out;
             if (out != 0) {
                 QString out2 = runCmd("cat /etc/mtab | grep -q " + mountdevice + " && echo $?").str;
-                //                qDebug() << "out2 is " << out2;
+                // qDebug() << "out2 is " << out2;
                 if (out2.isEmpty()) {
                     out = 0;
                 }
@@ -272,12 +272,12 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
     }
 
     if (type == "cd") {
-        out = runCmd("eject " + partitiondevice).exit_code;
+        out = runCmd("eject " + partitiondevice).exitCode;
     }
 
     // if type is gphoto or mtp, use gvfs-mount -u to unmount
     if (type == "mtp" || type == "gphoto2") {
-        out = runCmd("gio mount -u /run/user/$UID/gvfs/" + mountdevice).exit_code;
+        out = runCmd("gio mount -u /run/user/$UID/gvfs/" + mountdevice).exitCode;
     }
 
     // qDebug() << "out is " << out;
@@ -322,7 +322,7 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
         cmd3 = tr("Unable to  Unmount, Device in Use");
         system("notify-send -i drive-removable-media '" + title.toUtf8() + "' '" + cmd3.toUtf8() + "'");
     }
-    this->hide();
+    hide();
 }
 
 void MainWindow::iconActivated(QSystemTrayIcon::ActivationReason reason)
@@ -384,13 +384,13 @@ void MainWindow::setPosition()
 {
     QPoint pos = QCursor::pos();
     QScreen *screen = QGuiApplication::screenAt(pos);
-    if (pos.y() + this->size().height() > screen->availableVirtualGeometry().height()) {
-        pos.setY(screen->availableVirtualGeometry().height() - this->size().height());
+    if (pos.y() + size().height() > screen->availableVirtualGeometry().height()) {
+        pos.setY(screen->availableVirtualGeometry().height() - size().height());
     }
-    if (pos.x() + this->size().width() > screen->availableVirtualGeometry().width()) {
-        pos.setX(screen->availableVirtualGeometry().width() - this->size().width());
+    if (pos.x() + size().width() > screen->availableVirtualGeometry().width()) {
+        pos.setX(screen->availableVirtualGeometry().width() - size().width());
     }
-    this->move(pos);
+    move(pos);
 }
 
 void MainWindow::toggleAutostart()
@@ -408,8 +408,8 @@ void MainWindow::changeEvent(QEvent *event)
 {
     QWidget::changeEvent(event);
     if (event->type() == QEvent::ActivationChange) {
-        if (!this->isActiveWindow()) {
-            this->hide();
+        if (!isActiveWindow()) {
+            hide();
         }
     }
 }
@@ -422,7 +422,7 @@ void MainWindow::cancelPressed()
 void MainWindow::keyPressEvent(QKeyEvent *event)
 {
     if (event->key() == Qt::Key_Escape) {
-        this->hide();
+        hide();
     }
 }
 
@@ -436,5 +436,5 @@ void MainWindow::about()
             + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p>"
               "<p align=\"center\">"
             + tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-        QStringLiteral("/usr/share/doc/mx-usb-unmounter/license.html"), tr("%1 License").arg(this->windowTitle()));
+        QStringLiteral("/usr/share/doc/mx-usb-unmounter/license.html"), tr("%1 License").arg(windowTitle()));
 }

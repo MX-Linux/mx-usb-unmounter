@@ -13,7 +13,7 @@ class MainWindow;
 
 // struct for outputing both the exit code and the strings when running a command
 struct Output {
-    int exit_code;
+    int exitCode;
     QString str;
 };
 
