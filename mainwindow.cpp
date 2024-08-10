@@ -252,7 +252,10 @@ void MainWindow::createActions()
     helpAction = new QAction(QIcon::fromTheme("help-browser"), tr("Help"), this);
     listDevicesAction = new QAction(QIcon::fromTheme("drive-removable-media"), tr("List Devices"), this);
     quitAction = new QAction(QIcon::fromTheme("gtk-quit"), tr("Quit"), this);
-    toggleAutostartAction = new QAction(QIcon::fromTheme("preferences-system"), tr("Enable Autostart?"), this);
+    QString autostartFile = QDir::homePath() + "/.config/autostart/mx-usb-unmounter.desktop";
+    toggleAutostartAction
+        = new QAction(QIcon::fromTheme("preferences-system"),
+                      tr(QFile::exists(autostartFile) ? "Disable Autostart" : "Enable Autostart"), this);
 
     connect(aboutAction, &QAction::triggered, this, &MainWindow::about);
     connect(helpAction, &QAction::triggered, this, &MainWindow::help);
@@ -302,12 +305,26 @@ void MainWindow::setPosition()
 
 void MainWindow::toggleAutostart()
 {
-    QString local_file = QDir::homePath() + "/.config/autostart/mx-usb-unmounter.desktop";
-    if (QMessageBox::Yes == QMessageBox::question(nullptr, tr("Autostart Settings"), tr("Enable Autostart?"))) {
-        QFile::remove(local_file);
+    const QString autostartFile = QDir::homePath() + "/.config/autostart/mx-usb-unmounter.desktop";
+    const bool autostartEnabled = QFile::exists(autostartFile);
+
+    QString message;
+    QString title;
+    bool success = false;
+
+    if (autostartEnabled) {
+        success = QFile::remove(autostartFile);
+        message = success ? tr("Autostart has been disabled.") : tr("Failed to disable autostart.");
+        title = tr("Autostart Disabled");
+        toggleAutostartAction->setText(tr("Enable Autostart"));
     } else {
-        QFile::copy("/usr/share/mx-usb-unmounter/mx-usb-unmounter.desktop", local_file);
+        success = QFile::copy("/usr/share/mx-usb-unmounter/mx-usb-unmounter.desktop", autostartFile);
+        message = success ? tr("Autostart has been enabled.") : tr("Failed to enable autostart.");
+        title = tr("Autostart Enabled");
+        toggleAutostartAction->setText(tr("Disable Autostart"));
     }
+
+    QMessageBox::information(this, title, message);
 }
 
 // implement change event that closes app when window loses focus

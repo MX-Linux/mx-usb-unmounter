@@ -48,8 +48,8 @@ private:
     QSystemTrayIcon *trayIcon {};
 
     static void help();
-    static void toggleAutostart();
     void createActions();
     void createMenu();
     void setPosition();
+    void toggleAutostart();
 };
