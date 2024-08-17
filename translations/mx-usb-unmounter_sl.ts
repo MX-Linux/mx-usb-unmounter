@@ -4,108 +4,147 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.ui" line="27"/>
-        <location filename="../mainwindow.cpp" line="213"/>
+        <location filename="../mainwindow.ui" line="26"/>
+        <location filename="../mainwindow.cpp" line="186"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <location filename="../mainwindow.cpp" line="362"/>
-        <location filename="../mainwindow.cpp" line="413"/>
         <source>MX USB Unmounter</source>
-        <translation type="unfinished">MX USB odklopnik</translation>
+        <translation>MX USB odklopnik</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="54"/>
+        <location filename="../mainwindow.ui" line="52"/>
         <source>Double-Click to Unmount</source>
-        <translation type="unfinished">dvojni klik za odklop</translation>
+        <translation>dvojni klik za odklop</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="146"/>
+        <location filename="../mainwindow.ui" line="72"/>
+        <source>Cancel</source>
+        <translation>Prekliči</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="118"/>
         <source>Volume</source>
-        <translation type="unfinished">Nosilec</translation>
+        <translation>Nosilec</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="153"/>
+        <source>No Removable Device</source>
+        <translation>Ni izmenljivega pogona</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="190"/>
+        <source>Other partitions still mounted on device</source>
+        <translation>Druge particije so še vedno priklopljene na napravo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="188"/>
-        <source>No Removable Device</source>
-        <translation type="unfinished">Ni izmenljivega pogona</translation>
+        <source>Unmounting %1</source>
+        <translation>Odklapljanje %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="210"/>
-        <source>Unmounting </source>
-        <translation type="unfinished">Odklapljanje</translation>
+        <location filename="../mainwindow.cpp" line="189"/>
+        <source>%1 is Safe to Remove</source>
+        <translation>%1 lahko varno odstranite</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="212"/>
-        <source>Other partitions still mounted on device</source>
-        <translation type="unfinished">Druge particije so še vedno priklopljene na napravo</translation>
+        <location filename="../mainwindow.cpp" line="234"/>
+        <source>Unable to unmount, device in use</source>
+        <translation>Naprave ni mogoče odklopiti, ker je v rabi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
-        <source>Unable to  Unmount, Device in Use</source>
-        <translation type="unfinished">Odklop ni uspel, ker se naprava še vedno uporablja</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>O programu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Pomoč</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>List Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Seznam naprav</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="254"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Končaj</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="331"/>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <source>Enable Autostart?</source>
-        <translation type="unfinished"></translation>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <source>Autostart has been disabled.</source>
+        <translation>Samodejni zagon je onemogočen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <source>Failed to disable autostart.</source>
+        <translation>Samodejnega zagona ni bilo mogoče onemogočiti</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="318"/>
+        <source>Autostart Disabled</source>
+        <translation>Samodejni zagon je onemogočen</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="319"/>
+        <source>Enable Autostart</source>
+        <translation>Vklopi samodejni zagon</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <source>Autostart has been enabled.</source>
+        <translation>Samodejni zagon je vklopljen.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <source>Failed to enable autostart.</source>
+        <translation>Samodejnega zagona ni bilo mogoče vklopiti</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="323"/>
+        <source>Autostart Enabled</source>
+        <translation>Samodejni zagon je omogočen</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="324"/>
+        <source>Disable Autostart</source>
+        <translation>Izklopi samodejni zagon</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Unmount</source>
-        <translation type="unfinished"></translation>
+        <translation>Odklop</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="290"/>
+        <source>%1 Help</source>
+        <translation>%1 pomoč</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="365"/>
+        <source>About MX USB Unmounter</source>
+        <translation>O MX USB odklopniku</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="362"/>
-        <source>%1 Help</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <source>Autostart Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="412"/>
-        <source>About MX USB Unmounter</source>
-        <translation type="unfinished">O MX USB odklopniku</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="414"/>
-        <source>Version: </source>
-        <translation type="unfinished">Različica:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="415"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="unfinished">Hitro odklapljanje odstranljivih medijev</translation>
+        <translation>Hitro odklapljanje odstranljivih medijev</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <source>Version</source>
+        <translation>Različica</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="363"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Avtorska zaščita (c) MX Linux</translation>
+        <translation>Avtorska zaščita (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="367"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 licenca</translation>
     </message>
 </context>
 <context>
@@ -113,78 +152,23 @@
     <message>
         <location filename="../about.cpp" line="40"/>
         <source>License</source>
-        <translation type="unfinished">Licenca</translation>
+        <translation>Licenca</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Dnevnik sprememb</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <source>Cancel</source>
-        <translation type="unfinished">Prekini</translation>
+        <translation>Prekliči</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="64"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>usbunmounter</name>
-    <message>
-        <source>MX USB Unmounter</source>
-        <translation type="vanished">MX USB odklopnik</translation>
-    </message>
-    <message>
-        <source>Double-Click to Unmount</source>
-        <translation type="vanished">dvojni klik za odklop</translation>
-    </message>
-    <message>
-        <source>Volume</source>
-        <translation type="vanished">Nosilec</translation>
-    </message>
-    <message>
-        <source>No Removable Device</source>
-        <translation type="vanished">Ni izmenljivega pogona</translation>
-    </message>
-    <message>
-        <source>Unmounting </source>
-        <translation type="vanished">Odklapljanje</translation>
-    </message>
-    <message>
-        <source>Other partitions still mounted on device</source>
-        <translation type="vanished">Druge particije so še vedno priklopljene na napravo</translation>
-    </message>
-    <message>
-        <source>Unable to  Unmount, Device in Use</source>
-        <translation type="vanished">Odklop ni uspel, ker se naprava še vedno uporablja</translation>
-    </message>
-    <message>
-        <source>About MX USB Unmounter</source>
-        <translation type="vanished">O MX USB odklopniku</translation>
-    </message>
-    <message>
-        <source>Version: </source>
-        <translation type="vanished">Različica:</translation>
-    </message>
-    <message>
-        <source>Quickly Unmount Removable Media</source>
-        <translation type="vanished">Hitro odklapljanje odstranljivih medijev</translation>
-    </message>
-    <message>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Avtorska zaščita (c) MX Linux</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Prekini</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Licenca</translation>
+        <translation>&amp;Zapri</translation>
     </message>
 </context>
 </TS>

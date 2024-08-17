@@ -4,108 +4,147 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.ui" line="27"/>
-        <location filename="../mainwindow.cpp" line="213"/>
+        <location filename="../mainwindow.ui" line="26"/>
+        <location filename="../mainwindow.cpp" line="186"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <location filename="../mainwindow.cpp" line="362"/>
-        <location filename="../mainwindow.cpp" line="413"/>
         <source>MX USB Unmounter</source>
-        <translation type="unfinished">MX Desmontar dispositivos USB</translation>
+        <translation>MX-Desmontar dispositivos USB</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="54"/>
+        <location filename="../mainwindow.ui" line="52"/>
         <source>Double-Click to Unmount</source>
-        <translation type="unfinished">Duplo clique para desmontar</translation>
+        <translation>Duplo clique para desmontar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="146"/>
+        <location filename="../mainwindow.ui" line="72"/>
+        <source>Cancel</source>
+        <translation>Cancelar</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="118"/>
         <source>Volume</source>
-        <translation type="unfinished">Volume</translation>
+        <translation>Volume</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="153"/>
+        <source>No Removable Device</source>
+        <translation>Nenhum dispositivo removível</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="190"/>
+        <source>Other partitions still mounted on device</source>
+        <translation>Ainda estão montadas outras partições no dispositivo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="188"/>
-        <source>No Removable Device</source>
-        <translation type="unfinished">Nenhum dispositivo amovível</translation>
+        <source>Unmounting %1</source>
+        <translation>A desmontar %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="210"/>
-        <source>Unmounting </source>
-        <translation type="unfinished">A desmontar</translation>
+        <location filename="../mainwindow.cpp" line="189"/>
+        <source>%1 is Safe to Remove</source>
+        <translation>É seguro remover %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="212"/>
-        <source>Other partitions still mounted on device</source>
-        <translation type="unfinished">Ainda estão montadas outras partições no dispositivo</translation>
+        <location filename="../mainwindow.cpp" line="234"/>
+        <source>Unable to unmount, device in use</source>
+        <translation>Não foi possível desmontar. O dispositivo está em utilização</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
-        <source>Unable to  Unmount, Device in Use</source>
-        <translation type="unfinished">Não foi possível desmontar. O dispositivo está em uso.</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Acerca</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajuda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>List Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Listar dispositivos</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="254"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Sair</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="331"/>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <source>Enable Autostart?</source>
-        <translation type="unfinished"></translation>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <source>Autostart has been disabled.</source>
+        <translation>O arranque automático foi desactivado.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <source>Failed to disable autostart.</source>
+        <translation>Ocorreu uma falha ao activar o arranque automático.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="318"/>
+        <source>Autostart Disabled</source>
+        <translation>Arranque automático desactivado</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="319"/>
+        <source>Enable Autostart</source>
+        <translation>Activar o arranque automático</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <source>Autostart has been enabled.</source>
+        <translation>O arranque automático foi activado.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <source>Failed to enable autostart.</source>
+        <translation>Ocorreu uma falha ao activar o arranque automático.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="323"/>
+        <source>Autostart Enabled</source>
+        <translation>Arranque automático activado</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="324"/>
+        <source>Disable Autostart</source>
+        <translation>Desactivar o arranque automático</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Unmount</source>
-        <translation type="unfinished"></translation>
+        <translation>Desmontar</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="290"/>
+        <source>%1 Help</source>
+        <translation>Ajuda do %1</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="365"/>
+        <source>About MX USB Unmounter</source>
+        <translation>Acerca do MX Desmontar dispositivos USB</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="362"/>
-        <source>%1 Help</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <source>Autostart Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="412"/>
-        <source>About MX USB Unmounter</source>
-        <translation type="unfinished">Sobre o MX Desmontar dispositivos USB</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="414"/>
-        <source>Version: </source>
-        <translation type="unfinished">Versão:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="415"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="unfinished">Desmontar o dispositivo amovível rapidamente</translation>
+        <translation>Desmontar rapidamente o dispositivos removíveis</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <source>Version</source>
+        <translation>Versão</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="363"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"> Direitos de autor (c) MX Linux</translation>
+        <translation>Direitos de autor (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="367"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licença do %1</translation>
     </message>
 </context>
 <context>
@@ -113,78 +152,23 @@
     <message>
         <location filename="../about.cpp" line="40"/>
         <source>License</source>
-        <translation type="unfinished">Licença</translation>
+        <translation>Licença</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Registo de alterações</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <source>Cancel</source>
-        <translation type="unfinished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="64"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>usbunmounter</name>
-    <message>
-        <source>MX USB Unmounter</source>
-        <translation type="vanished">MX Desmontar dispositivos USB</translation>
-    </message>
-    <message>
-        <source>Double-Click to Unmount</source>
-        <translation type="vanished">Duplo clique para desmontar</translation>
-    </message>
-    <message>
-        <source>Volume</source>
-        <translation type="vanished">Volume</translation>
-    </message>
-    <message>
-        <source>No Removable Device</source>
-        <translation type="vanished">Nenhum dispositivo amovível</translation>
-    </message>
-    <message>
-        <source>Unmounting </source>
-        <translation type="vanished">A desmontar</translation>
-    </message>
-    <message>
-        <source>Other partitions still mounted on device</source>
-        <translation type="vanished">Ainda estão montadas outras partições no dispositivo</translation>
-    </message>
-    <message>
-        <source>Unable to  Unmount, Device in Use</source>
-        <translation type="vanished">Não foi possível desmontar. O dispositivo está em uso.</translation>
-    </message>
-    <message>
-        <source>About MX USB Unmounter</source>
-        <translation type="vanished">Sobre o MX Desmontar dispositivos USB</translation>
-    </message>
-    <message>
-        <source>Version: </source>
-        <translation type="vanished">Versão:</translation>
-    </message>
-    <message>
-        <source>Quickly Unmount Removable Media</source>
-        <translation type="vanished">Desmontar o dispositivo amovível rapidamente</translation>
-    </message>
-    <message>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="vanished"> Direitos de autor (c) MX Linux</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Licença</translation>
+        <translation>&amp;Fechar</translation>
     </message>
 </context>
 </TS>

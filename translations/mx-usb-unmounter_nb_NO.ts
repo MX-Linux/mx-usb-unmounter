@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fa">
+<TS version="2.1" language="nb_NO">
 <context>
     <name>MainWindow</name>
     <message>
@@ -19,7 +19,7 @@
     <message>
         <location filename="../mainwindow.ui" line="72"/>
         <source>Cancel</source>
-        <translation>لغو</translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="118"/>
@@ -54,22 +54,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="251"/>
         <source>About</source>
-        <translation>درباره</translation>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>Help</source>
-        <translation>راهنما </translation>
+        <translation>Hjelp</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
         <source>List Devices</source>
-        <translation>لیست دستگاه ها</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="254"/>
         <source>Quit</source>
-        <translation>خروج </translation>
+        <translation>Avslutt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="317"/>
@@ -119,7 +119,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="290"/>
         <source>%1 Help</source>
-        <translation>راهنمای 1%</translation>
+        <translation>%1 Hjelp</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -134,17 +134,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="362"/>
         <source>Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Versjon</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="363"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="367"/>
         <source>%1 License</source>
-        <translation>مجوز 1%</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -152,23 +152,23 @@
     <message>
         <location filename="../about.cpp" line="40"/>
         <source>License</source>
-        <translation>لایسنس</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation>لیست موارد بهبود یافته</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <source>Cancel</source>
-        <translation>لغو</translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="64"/>
         <source>&amp;Close</source>
-        <translation>و بستن</translation>
+        <translation>&amp;Lukk</translation>
     </message>
 </context>
 </TS>

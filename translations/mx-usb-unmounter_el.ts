@@ -4,108 +4,147 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.ui" line="27"/>
-        <location filename="../mainwindow.cpp" line="213"/>
+        <location filename="../mainwindow.ui" line="26"/>
+        <location filename="../mainwindow.cpp" line="186"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <location filename="../mainwindow.cpp" line="362"/>
-        <location filename="../mainwindow.cpp" line="413"/>
         <source>MX USB Unmounter</source>
-        <translation type="unfinished">MX Αποπροσάρτηση USB</translation>
+        <translation>MX Αποπροσάρτηση USB</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="54"/>
+        <location filename="../mainwindow.ui" line="52"/>
         <source>Double-Click to Unmount</source>
-        <translation type="unfinished">Διπλό κλικ για αποπροσάρτηση</translation>
+        <translation>Διπλό κλικ για αποπροσάρτηση</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="146"/>
+        <location filename="../mainwindow.ui" line="72"/>
+        <source>Cancel</source>
+        <translation>Άκυρο</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="118"/>
         <source>Volume</source>
-        <translation type="unfinished">Τόμος</translation>
+        <translation>Τόμος</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="153"/>
+        <source>No Removable Device</source>
+        <translation>Δεν υπάρχει αφαιρούμενη συσκευή</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="190"/>
+        <source>Other partitions still mounted on device</source>
+        <translation>Παραμένουν και άλλες προσαρτημένες κατατμήσεις στη συσκευή</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="188"/>
-        <source>No Removable Device</source>
-        <translation type="unfinished">Δεν υπάρχει αφαιρούμενη συσκευή</translation>
+        <source>Unmounting %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="210"/>
-        <source>Unmounting </source>
-        <translation type="unfinished">Αποπροσάρτηση </translation>
+        <location filename="../mainwindow.cpp" line="189"/>
+        <source>%1 is Safe to Remove</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="212"/>
-        <source>Other partitions still mounted on device</source>
-        <translation type="unfinished">Παραμένουν και άλλες προσαρτημένες κατατμήσεις στη συσκευή</translation>
+        <location filename="../mainwindow.cpp" line="234"/>
+        <source>Unable to unmount, device in use</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
-        <source>Unable to  Unmount, Device in Use</source>
-        <translation type="unfinished">Δεν είναι δυνατή η  αποπροσάρτηση, Η συσκευή είναι σε χρήση</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Σχετικά με</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>List Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Λίστα συσκευών</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="254"/>
         <source>Quit</source>
+        <translation>Έξοδος</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <source>Autostart has been disabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="331"/>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <source>Enable Autostart?</source>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <source>Failed to disable autostart.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="318"/>
+        <source>Autostart Disabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="319"/>
+        <source>Enable Autostart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <source>Autostart has been enabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <source>Failed to enable autostart.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="323"/>
+        <source>Autostart Enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="324"/>
+        <source>Disable Autostart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Unmount</source>
-        <translation type="unfinished"></translation>
+        <translation>Αποπροσάρτηση</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="290"/>
+        <source>%1 Help</source>
+        <translation>Βοήθεια %1</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="365"/>
+        <source>About MX USB Unmounter</source>
+        <translation>Περί του MX Αποπροσάρτηση USB</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="362"/>
-        <source>%1 Help</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <source>Autostart Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="412"/>
-        <source>About MX USB Unmounter</source>
-        <translation type="unfinished">Περί του MX Αποπροσάρτηση USB</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="414"/>
-        <source>Version: </source>
-        <translation type="unfinished">Έκδοση: </translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="415"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="unfinished">Γρήγορη αποπροσάρτηση αφαιρούμενων μέσων</translation>
+        <translation>Γρήγορη αποπροσάρτηση αφαιρούμενων μέσων</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <source>Version</source>
+        <translation>Έκδοση</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="363"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Πνευματικά δικαιώματα (c) MX Linux</translation>
+        <translation>Πνευματικά δικαιώματα (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="367"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>Άδεια %1</translation>
     </message>
 </context>
 <context>
@@ -113,78 +152,23 @@
     <message>
         <location filename="../about.cpp" line="40"/>
         <source>License</source>
-        <translation type="unfinished">Άδεια</translation>
+        <translation>Άδεια</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Αρχείο αλλαγών</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <source>Cancel</source>
-        <translation type="unfinished">Άκυρο</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="64"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>usbunmounter</name>
-    <message>
-        <source>MX USB Unmounter</source>
-        <translation type="vanished">MX Αποπροσάρτηση USB</translation>
-    </message>
-    <message>
-        <source>Double-Click to Unmount</source>
-        <translation type="vanished">Διπλό κλικ για αποπροσάρτηση</translation>
-    </message>
-    <message>
-        <source>Volume</source>
-        <translation type="vanished">Τόμος</translation>
-    </message>
-    <message>
-        <source>No Removable Device</source>
-        <translation type="vanished">Δεν υπάρχει αφαιρούμενη συσκευή</translation>
-    </message>
-    <message>
-        <source>Unmounting </source>
-        <translation type="vanished">Αποπροσάρτηση </translation>
-    </message>
-    <message>
-        <source>Other partitions still mounted on device</source>
-        <translation type="vanished">Παραμένουν και άλλες προσαρτημένες κατατμήσεις στη συσκευή</translation>
-    </message>
-    <message>
-        <source>Unable to  Unmount, Device in Use</source>
-        <translation type="vanished">Δεν είναι δυνατή η  αποπροσάρτηση, Η συσκευή είναι σε χρήση</translation>
-    </message>
-    <message>
-        <source>About MX USB Unmounter</source>
-        <translation type="vanished">Περί του MX Αποπροσάρτηση USB</translation>
-    </message>
-    <message>
-        <source>Version: </source>
-        <translation type="vanished">Έκδοση: </translation>
-    </message>
-    <message>
-        <source>Quickly Unmount Removable Media</source>
-        <translation type="vanished">Γρήγορη αποπροσάρτηση αφαιρούμενων μέσων</translation>
-    </message>
-    <message>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Πνευματικά δικαιώματα (c) MX Linux</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Άκυρο</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Άδεια</translation>
+        <translation>&amp;Κλείσιμο</translation>
     </message>
 </context>
 </TS>

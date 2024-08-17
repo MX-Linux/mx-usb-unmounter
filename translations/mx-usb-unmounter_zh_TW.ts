@@ -4,108 +4,147 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.ui" line="27"/>
-        <location filename="../mainwindow.cpp" line="213"/>
+        <location filename="../mainwindow.ui" line="26"/>
+        <location filename="../mainwindow.cpp" line="186"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <location filename="../mainwindow.cpp" line="362"/>
-        <location filename="../mainwindow.cpp" line="413"/>
         <source>MX USB Unmounter</source>
-        <translation type="unfinished">MX USB 卸載工具</translation>
+        <translation>MX 卸載 USB</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="54"/>
+        <location filename="../mainwindow.ui" line="52"/>
         <source>Double-Click to Unmount</source>
-        <translation type="unfinished">游標按兩下即可卸載</translation>
+        <translation>游標按兩下即可卸載</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="146"/>
+        <location filename="../mainwindow.ui" line="72"/>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="118"/>
         <source>Volume</source>
-        <translation type="unfinished">儲存設備</translation>
+        <translation>儲存設備</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="153"/>
+        <source>No Removable Device</source>
+        <translation>沒有任何可移除式設備</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="190"/>
+        <source>Other partitions still mounted on device</source>
+        <translation>該設備的其他磁碟區仍然掛載在本系統上</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="188"/>
-        <source>No Removable Device</source>
-        <translation type="unfinished">沒有任何可移除式設備</translation>
+        <source>Unmounting %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="210"/>
-        <source>Unmounting </source>
-        <translation type="unfinished">正在卸載</translation>
+        <location filename="../mainwindow.cpp" line="189"/>
+        <source>%1 is Safe to Remove</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="212"/>
-        <source>Other partitions still mounted on device</source>
-        <translation type="unfinished">該設備的其他磁碟區仍然掛載在本系統上</translation>
+        <location filename="../mainwindow.cpp" line="234"/>
+        <source>Unable to unmount, device in use</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
-        <source>Unable to  Unmount, Device in Use</source>
-        <translation type="unfinished">該設備正在使用中，無法卸載</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>關於</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>說明</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>List Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>列出設備</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="254"/>
         <source>Quit</source>
+        <translation>退出</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <source>Autostart has been disabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="331"/>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <source>Enable Autostart?</source>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <source>Failed to disable autostart.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="318"/>
+        <source>Autostart Disabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="319"/>
+        <source>Enable Autostart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <source>Autostart has been enabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <source>Failed to enable autostart.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="323"/>
+        <source>Autostart Enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="324"/>
+        <source>Disable Autostart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Unmount</source>
-        <translation type="unfinished"></translation>
+        <translation>卸載</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="290"/>
+        <source>%1 Help</source>
+        <translation>%1 幫助</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="365"/>
+        <source>About MX USB Unmounter</source>
+        <translation>關於 MX USB 卸載工具</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="362"/>
-        <source>%1 Help</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <source>Autostart Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="412"/>
-        <source>About MX USB Unmounter</source>
-        <translation type="unfinished">關於 MX USB 卸載工具</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="414"/>
-        <source>Version: </source>
-        <translation type="unfinished">版本：</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="415"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="unfinished">快速卸載可移除式媒體</translation>
+        <translation>快速卸載可移除式媒體</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <source>Version</source>
+        <translation>版本</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="363"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">版權所有 (c) MX Linux</translation>
+        <translation>MX Linux 版權所有 (c)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="367"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 許可</translation>
     </message>
 </context>
 <context>
@@ -113,78 +152,23 @@
     <message>
         <location filename="../about.cpp" line="40"/>
         <source>License</source>
-        <translation type="unfinished">授權條款</translation>
+        <translation>授權條款</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>變更紀錄</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="64"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>usbunmounter</name>
-    <message>
-        <source>MX USB Unmounter</source>
-        <translation type="vanished">MX USB 卸載工具</translation>
-    </message>
-    <message>
-        <source>Double-Click to Unmount</source>
-        <translation type="vanished">游標按兩下即可卸載</translation>
-    </message>
-    <message>
-        <source>Volume</source>
-        <translation type="vanished">儲存設備</translation>
-    </message>
-    <message>
-        <source>No Removable Device</source>
-        <translation type="vanished">沒有任何可移除式設備</translation>
-    </message>
-    <message>
-        <source>Unmounting </source>
-        <translation type="vanished">正在卸載</translation>
-    </message>
-    <message>
-        <source>Other partitions still mounted on device</source>
-        <translation type="vanished">該設備的其他磁碟區仍然掛載在本系統上</translation>
-    </message>
-    <message>
-        <source>Unable to  Unmount, Device in Use</source>
-        <translation type="vanished">該設備正在使用中，無法卸載</translation>
-    </message>
-    <message>
-        <source>About MX USB Unmounter</source>
-        <translation type="vanished">關於 MX USB 卸載工具</translation>
-    </message>
-    <message>
-        <source>Version: </source>
-        <translation type="vanished">版本：</translation>
-    </message>
-    <message>
-        <source>Quickly Unmount Removable Media</source>
-        <translation type="vanished">快速卸載可移除式媒體</translation>
-    </message>
-    <message>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">版權所有 (c) MX Linux</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">取消</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">授權條款</translation>
+        <translation>關閉（&amp;C）</translation>
     </message>
 </context>
 </TS>

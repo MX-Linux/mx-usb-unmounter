@@ -4,106 +4,145 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.ui" line="27"/>
-        <location filename="../mainwindow.cpp" line="213"/>
+        <location filename="../mainwindow.ui" line="26"/>
+        <location filename="../mainwindow.cpp" line="186"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <location filename="../mainwindow.cpp" line="362"/>
-        <location filename="../mainwindow.cpp" line="413"/>
         <source>MX USB Unmounter</source>
-        <translation type="unfinished">MX USB Unmounter</translation>
+        <translation>MX USB Unmounter</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="54"/>
+        <location filename="../mainwindow.ui" line="52"/>
         <source>Double-Click to Unmount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="146"/>
+        <location filename="../mainwindow.ui" line="72"/>
+        <source>Cancel</source>
+        <translation>ยกเลิก</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="118"/>
         <source>Volume</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="188"/>
+        <location filename="../mainwindow.cpp" line="153"/>
         <source>No Removable Device</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="210"/>
-        <source>Unmounting </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="212"/>
+        <location filename="../mainwindow.cpp" line="190"/>
         <source>Other partitions still mounted on device</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
-        <source>Unable to  Unmount, Device in Use</source>
+        <location filename="../mainwindow.cpp" line="188"/>
+        <source>Unmounting %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="189"/>
+        <source>%1 is Safe to Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="234"/>
+        <source>Unable to unmount, device in use</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>เกี่ยวกับ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>ช่วยเหลือ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>List Devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="254"/>
         <source>Quit</source>
+        <translation>ออก</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <source>Autostart has been disabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="331"/>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <source>Enable Autostart?</source>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <source>Failed to disable autostart.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="318"/>
+        <source>Autostart Disabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="319"/>
+        <source>Enable Autostart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <source>Autostart has been enabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <source>Failed to enable autostart.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="323"/>
+        <source>Autostart Enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="324"/>
+        <source>Disable Autostart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Unmount</source>
-        <translation type="unfinished"></translation>
+        <translation>Unmount</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <source>%1 Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <source>Autostart Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>About MX USB Unmounter</source>
-        <translation type="unfinished">เกี่ยวกับ MX USB Unmounter</translation>
+        <translation>เกี่ยวกับ MX USB Unmounter</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
-        <source>Version: </source>
-        <translation type="unfinished">เวอร์ชัน:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="415"/>
+        <location filename="../mainwindow.cpp" line="362"/>
         <source>Quickly Unmount Removable Media</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">สงวนลิขสิทธิ์ (c) MX Linux</translation>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <source>Version</source>
+        <translation>เวอร์ชัน</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="363"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation>สงวนลิขสิทธิ์ (c) MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="367"/>
         <source>%1 License</source>
         <translation type="unfinished"></translation>
     </message>
@@ -113,50 +152,23 @@
     <message>
         <location filename="../about.cpp" line="40"/>
         <source>License</source>
-        <translation type="unfinished">สัญญาอนุญาต</translation>
+        <translation>สัญญาอนุญาต</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Changelog</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <source>Cancel</source>
-        <translation type="unfinished">ยกเลิก</translation>
+        <translation>ยกเลิก</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="64"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>usbunmounter</name>
-    <message>
-        <source>MX USB Unmounter</source>
-        <translation type="vanished">MX USB Unmounter</translation>
-    </message>
-    <message>
-        <source>About MX USB Unmounter</source>
-        <translation type="vanished">เกี่ยวกับ MX USB Unmounter</translation>
-    </message>
-    <message>
-        <source>Version: </source>
-        <translation type="vanished">เวอร์ชัน:</translation>
-    </message>
-    <message>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">สงวนลิขสิทธิ์ (c) MX Linux</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">ยกเลิก</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">สัญญาอนุญาต</translation>
+        <translation>&amp;ปิด</translation>
     </message>
 </context>
 </TS>

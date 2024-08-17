@@ -4,108 +4,147 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.ui" line="27"/>
-        <location filename="../mainwindow.cpp" line="213"/>
+        <location filename="../mainwindow.ui" line="26"/>
+        <location filename="../mainwindow.cpp" line="186"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <location filename="../mainwindow.cpp" line="362"/>
-        <location filename="../mainwindow.cpp" line="413"/>
         <source>MX USB Unmounter</source>
-        <translation type="unfinished">MX USB Ayırıcı</translation>
+        <translation>MX USB Ayırıcı</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="54"/>
+        <location filename="../mainwindow.ui" line="52"/>
         <source>Double-Click to Unmount</source>
-        <translation type="unfinished">Ayırmak için çift tıklayın</translation>
+        <translation>Ayırmak için çift tıklayın</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="146"/>
+        <location filename="../mainwindow.ui" line="72"/>
+        <source>Cancel</source>
+        <translation>İptal</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="118"/>
         <source>Volume</source>
-        <translation type="unfinished">Hacim</translation>
+        <translation>Hacim</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="153"/>
+        <source>No Removable Device</source>
+        <translation>Kaldırılabilir Aygıt Yok</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="190"/>
+        <source>Other partitions still mounted on device</source>
+        <translation>Diğer bölümler hala cihaza bağlı</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="188"/>
-        <source>No Removable Device</source>
-        <translation type="unfinished">Kaldırılabilir Aygıt Yok</translation>
+        <source>Unmounting %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="210"/>
-        <source>Unmounting </source>
-        <translation type="unfinished">Ayrılıyor</translation>
+        <location filename="../mainwindow.cpp" line="189"/>
+        <source>%1 is Safe to Remove</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="212"/>
-        <source>Other partitions still mounted on device</source>
-        <translation type="unfinished">Diğer bölümler hala cihaza bağlı</translation>
+        <location filename="../mainwindow.cpp" line="234"/>
+        <source>Unable to unmount, device in use</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
-        <source>Unable to  Unmount, Device in Use</source>
-        <translation type="unfinished">Aygıt kullanımda olduğu için kaldırılamadı</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Hakkında</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Yardım</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>List Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Cihazları Listele</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="254"/>
         <source>Quit</source>
+        <translation>Vazgeç</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <source>Autostart has been disabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="331"/>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <source>Enable Autostart?</source>
+        <location filename="../mainwindow.cpp" line="317"/>
+        <source>Failed to disable autostart.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="318"/>
+        <source>Autostart Disabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="319"/>
+        <source>Enable Autostart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <source>Autostart has been enabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
+        <source>Failed to enable autostart.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="323"/>
+        <source>Autostart Enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="324"/>
+        <source>Disable Autostart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Unmount</source>
-        <translation type="unfinished"></translation>
+        <translation>Bağı kaldır</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="290"/>
+        <source>%1 Help</source>
+        <translation>%1 Yardım</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="365"/>
+        <source>About MX USB Unmounter</source>
+        <translation>MX USB Ayırıcı Hakkında</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="362"/>
-        <source>%1 Help</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="379"/>
-        <source>Autostart Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="412"/>
-        <source>About MX USB Unmounter</source>
-        <translation type="unfinished">MX USB Ayırıcı Hakkında</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="414"/>
-        <source>Version: </source>
-        <translation type="unfinished">Sürüm:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="415"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation type="unfinished">Kaldırılabilir Ortamı Çabuk Ayır</translation>
+        <translation>Kaldırılabilir Ortamı Çabuk Ayır</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <source>Version</source>
+        <translation>Sürüm</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="363"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Copyright (c) MX Linux</translation>
+        <translation>Telif Hakkı (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="367"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Lisans</translation>
     </message>
 </context>
 <context>
@@ -113,78 +152,23 @@
     <message>
         <location filename="../about.cpp" line="40"/>
         <source>License</source>
-        <translation type="unfinished">Lisans</translation>
+        <translation>Lisans</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Değişim günlüğü</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <source>Cancel</source>
-        <translation type="unfinished">İptal</translation>
+        <translation>İptal</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="64"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>usbunmounter</name>
-    <message>
-        <source>MX USB Unmounter</source>
-        <translation type="vanished">MX USB Ayırıcı</translation>
-    </message>
-    <message>
-        <source>Double-Click to Unmount</source>
-        <translation type="vanished">Ayırmak için çift tıklayın</translation>
-    </message>
-    <message>
-        <source>Volume</source>
-        <translation type="vanished">Hacim</translation>
-    </message>
-    <message>
-        <source>No Removable Device</source>
-        <translation type="vanished">Kaldırılabilir Aygıt Yok</translation>
-    </message>
-    <message>
-        <source>Unmounting </source>
-        <translation type="vanished">Ayrılıyor</translation>
-    </message>
-    <message>
-        <source>Other partitions still mounted on device</source>
-        <translation type="vanished">Diğer bölümler hala cihaza bağlı</translation>
-    </message>
-    <message>
-        <source>Unable to  Unmount, Device in Use</source>
-        <translation type="vanished">Aygıt kullanımda olduğu için kaldırılamadı</translation>
-    </message>
-    <message>
-        <source>About MX USB Unmounter</source>
-        <translation type="vanished">MX USB Ayırıcı Hakkında</translation>
-    </message>
-    <message>
-        <source>Version: </source>
-        <translation type="vanished">Sürüm:</translation>
-    </message>
-    <message>
-        <source>Quickly Unmount Removable Media</source>
-        <translation type="vanished">Kaldırılabilir Ortamı Çabuk Ayır</translation>
-    </message>
-    <message>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Copyright (c) MX Linux</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">İptal</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Lisans</translation>
+        <translation>&amp;Kapat</translation>
     </message>
 </context>
 </TS>
