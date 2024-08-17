@@ -1,8 +1,9 @@
-mx-usb-unmounter (24.08) mx; urgency=medium
+mx-usb-unmounter (24.09) mx; urgency=medium
 
   * Change Enable/Disable Autostart action according to situation 
   * Minor optimizations
   * Update translations
+  * Fix: translations go to "/usr/share/mx-usb-unmounter/locale"
 
  -- Adrian <adrian@mxlinux.org>  Sat, 17 Aug 2024 09:07:42 -0400
 
