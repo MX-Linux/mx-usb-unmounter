@@ -5,9 +5,9 @@
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="26"/>
-        <location filename="../mainwindow.cpp" line="186"/>
-        <location filename="../mainwindow.cpp" line="290"/>
-        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="94"/>
+        <location filename="../mainwindow.cpp" line="203"/>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>MX USB Unmounter</source>
         <translation>MX USB odklopnik</translation>
     </message>
@@ -22,127 +22,161 @@
         <translation>Prekliči</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="118"/>
+        <location filename="../mainwindow.cpp" line="419"/>
         <source>Volume</source>
         <translation>Nosilec</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="153"/>
+        <location filename="../mainwindow.cpp" line="270"/>
+        <location filename="../mainwindow.cpp" line="454"/>
         <source>No Removable Device</source>
         <translation>Ni izmenljivega pogona</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="190"/>
+        <location filename="../mainwindow.cpp" line="98"/>
         <source>Other partitions still mounted on device</source>
         <translation>Druge particije so še vedno priklopljene na napravo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="188"/>
+        <location filename="../mainwindow.cpp" line="96"/>
         <source>Unmounting %1</source>
         <translation>Odklapljanje %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="189"/>
+        <location filename="../mainwindow.cpp" line="97"/>
         <source>%1 is Safe to Remove</source>
         <translation>%1 lahko varno odstranite</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="234"/>
+        <location filename="../mainwindow.cpp" line="142"/>
         <source>Unable to unmount, device in use</source>
         <translation>Naprave ni mogoče odklopiti, ker je v rabi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="159"/>
         <source>About</source>
         <translation>O programu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="252"/>
+        <location filename="../mainwindow.cpp" line="160"/>
         <source>Help</source>
         <translation>Pomoč</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="253"/>
+        <location filename="../mainwindow.cpp" line="161"/>
         <source>List Devices</source>
         <translation>Seznam naprav</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="162"/>
         <source>Quit</source>
         <translation>Končaj</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="317"/>
+        <location filename="../mainwindow.cpp" line="169"/>
+        <location filename="../mainwindow.cpp" line="246"/>
+        <location filename="../mainwindow.cpp" line="252"/>
+        <source>Always show icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="169"/>
+        <location filename="../mainwindow.cpp" line="249"/>
+        <source>Hide icon when not in use</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="230"/>
         <source>Autostart has been disabled.</source>
         <translation>Samodejni zagon je onemogočen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="317"/>
+        <location filename="../mainwindow.cpp" line="230"/>
         <source>Failed to disable autostart.</source>
         <translation>Samodejnega zagona ni bilo mogoče onemogočiti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="318"/>
+        <location filename="../mainwindow.cpp" line="231"/>
         <source>Autostart Disabled</source>
         <translation>Samodejni zagon je onemogočen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="319"/>
+        <location filename="../mainwindow.cpp" line="232"/>
         <source>Enable Autostart</source>
         <translation>Vklopi samodejni zagon</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="322"/>
+        <location filename="../mainwindow.cpp" line="235"/>
         <source>Autostart has been enabled.</source>
         <translation>Samodejni zagon je vklopljen.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="322"/>
+        <location filename="../mainwindow.cpp" line="235"/>
         <source>Failed to enable autostart.</source>
         <translation>Samodejnega zagona ni bilo mogoče vklopiti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="323"/>
+        <location filename="../mainwindow.cpp" line="236"/>
         <source>Autostart Enabled</source>
         <translation>Samodejni zagon je omogočen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="324"/>
+        <location filename="../mainwindow.cpp" line="237"/>
         <source>Disable Autostart</source>
         <translation>Izklopi samodejni zagon</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="192"/>
         <source>Unmount</source>
         <translation>Odklop</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="290"/>
+        <location filename="../mainwindow.cpp" line="203"/>
         <source>%1 Help</source>
         <translation>%1 pomoč</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="342"/>
         <source>About MX USB Unmounter</source>
         <translation>O MX USB odklopniku</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>Quickly Unmount Removable Media</source>
         <translation>Hitro odklapljanje odstranljivih medijev</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="247"/>
+        <source>Application icon will stay visible all the time.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="255"/>
+        <source>Application icon is now hidden and will reappear when a new device is connected.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="258"/>
+        <source>Application icon will be hidden when there are no devices plugged in.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="263"/>
+        <source>Icon Visibility</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>Version</source>
         <translation>Različica</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Avtorska zaščita (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="367"/>
+        <location filename="../mainwindow.cpp" line="344"/>
         <source>%1 License</source>
         <translation>%1 licenca</translation>
     </message>

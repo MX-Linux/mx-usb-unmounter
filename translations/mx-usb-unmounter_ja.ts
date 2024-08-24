@@ -5,9 +5,9 @@
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="26"/>
-        <location filename="../mainwindow.cpp" line="186"/>
-        <location filename="../mainwindow.cpp" line="290"/>
-        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="94"/>
+        <location filename="../mainwindow.cpp" line="203"/>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>MX USB Unmounter</source>
         <translation>MX USB アンマウンタ</translation>
     </message>
@@ -22,127 +22,161 @@
         <translation>キャンセル</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="118"/>
+        <location filename="../mainwindow.cpp" line="419"/>
         <source>Volume</source>
         <translation>ボリューム名</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="153"/>
+        <location filename="../mainwindow.cpp" line="270"/>
+        <location filename="../mainwindow.cpp" line="454"/>
         <source>No Removable Device</source>
         <translation>リムーバブルデバイスなし</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="190"/>
+        <location filename="../mainwindow.cpp" line="98"/>
         <source>Other partitions still mounted on device</source>
         <translation>他のパーティションがまだデバイスマウントしています</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="188"/>
+        <location filename="../mainwindow.cpp" line="96"/>
         <source>Unmounting %1</source>
         <translation>%1 をアンマウント</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="189"/>
+        <location filename="../mainwindow.cpp" line="97"/>
         <source>%1 is Safe to Remove</source>
         <translation>%1 は安全に取り外せます</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="234"/>
+        <location filename="../mainwindow.cpp" line="142"/>
         <source>Unable to unmount, device in use</source>
         <translation>使用中なので取り外せません</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="159"/>
         <source>About</source>
         <translation>情報</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="252"/>
+        <location filename="../mainwindow.cpp" line="160"/>
         <source>Help</source>
         <translation>ヘルプ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="253"/>
+        <location filename="../mainwindow.cpp" line="161"/>
         <source>List Devices</source>
         <translation>デバイス一覧</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="162"/>
         <source>Quit</source>
         <translation>中止</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="317"/>
+        <location filename="../mainwindow.cpp" line="169"/>
+        <location filename="../mainwindow.cpp" line="246"/>
+        <location filename="../mainwindow.cpp" line="252"/>
+        <source>Always show icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="169"/>
+        <location filename="../mainwindow.cpp" line="249"/>
+        <source>Hide icon when not in use</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="230"/>
         <source>Autostart has been disabled.</source>
         <translation>自動起動が無効になっています。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="317"/>
+        <location filename="../mainwindow.cpp" line="230"/>
         <source>Failed to disable autostart.</source>
         <translation>自動起動の無効化に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="318"/>
+        <location filename="../mainwindow.cpp" line="231"/>
         <source>Autostart Disabled</source>
         <translation>自動起動が無効中</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="319"/>
+        <location filename="../mainwindow.cpp" line="232"/>
         <source>Enable Autostart</source>
         <translation>自動起動を有効にする</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="322"/>
+        <location filename="../mainwindow.cpp" line="235"/>
         <source>Autostart has been enabled.</source>
         <translation>自動起動が有効になりました。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="322"/>
+        <location filename="../mainwindow.cpp" line="235"/>
         <source>Failed to enable autostart.</source>
         <translation>自動起動の有効化に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="323"/>
+        <location filename="../mainwindow.cpp" line="236"/>
         <source>Autostart Enabled</source>
         <translation>自動起動が有効中</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="324"/>
+        <location filename="../mainwindow.cpp" line="237"/>
         <source>Disable Autostart</source>
         <translation>自動起動を無効にする</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="192"/>
         <source>Unmount</source>
         <translation>アンマウント</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="290"/>
+        <location filename="../mainwindow.cpp" line="203"/>
         <source>%1 Help</source>
         <translation>%1 ヘルプ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="342"/>
         <source>About MX USB Unmounter</source>
         <translation>MX USB アンマウンタについて</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>Quickly Unmount Removable Media</source>
         <translation>リムーバブルメディアを素早くアンマウントします</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="247"/>
+        <source>Application icon will stay visible all the time.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="255"/>
+        <source>Application icon is now hidden and will reappear when a new device is connected.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="258"/>
+        <source>Application icon will be hidden when there are no devices plugged in.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="263"/>
+        <source>Icon Visibility</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>Version</source>
         <translation>バージョン</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="367"/>
+        <location filename="../mainwindow.cpp" line="344"/>
         <source>%1 License</source>
         <translation>%1 ライセンス</translation>
     </message>
