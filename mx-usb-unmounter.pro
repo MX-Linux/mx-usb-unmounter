@@ -19,7 +19,7 @@
 # * along with this package. If not, see <http://www.gnu.org/licenses/>.
 # **********************************************************************/
 
-QT       += core gui widgets
+QT       += core gui widgets dbus
 CONFIG   += release warn_on c++17
 
 TARGET = mx-usb-unmounter

@@ -1,3 +1,9 @@
+mx-usb-unmounter (24.09.01) mx; urgency=medium
+
+  * Add option to hide icon if there are no mounted drives
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 24 Aug 2024 09:12:23 -0400
+
 mx-usb-unmounter (24.09) mx; urgency=medium
 
   * Change Enable/Disable Autostart action according to situation 

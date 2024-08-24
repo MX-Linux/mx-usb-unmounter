@@ -1,8 +1,10 @@
-#include "mainwindow.h"
 #include <QApplication>
 #include <QLocale>
 #include <QLockFile>
 #include <QTranslator>
+
+#include "mainwindow.h"
+#include "version.h"
 
 int main(int argc, char *argv[])
 {
@@ -14,6 +16,10 @@ int main(int argc, char *argv[])
         qWarning("Another instance is already running.");
         return EXIT_FAILURE;
     }
+
+    QApplication::setWindowIcon(QIcon::fromTheme(QApplication::applicationName()));
+    QApplication::setOrganizationName("MX-Linux");
+    QApplication::setApplicationVersion(VERSION);
 
     QTranslator qtTran;
     qtTran.load(QString("qt_") + QLocale::system().name());
