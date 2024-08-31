@@ -30,7 +30,7 @@
         <location filename="../mainwindow.cpp" line="270"/>
         <location filename="../mainwindow.cpp" line="454"/>
         <source>No Removable Device</source>
-        <translation>Não é possível remover nenhum dispositivo</translation>
+        <translation>Não foi possível remover nenhum dispositivo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="98"/>
@@ -77,13 +77,13 @@
         <location filename="../mainwindow.cpp" line="246"/>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>Always show icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Sempre exibir o ícone</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="169"/>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>Hide icon when not in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Ocultar o ícone quando não estiver sendo utilizado</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
@@ -123,7 +123,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="237"/>
         <source>Disable Autostart</source>
-        <translation>Desativar a Inicialização Automática</translation>
+        <translation>A inicialização automática está desativada</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -148,22 +148,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>Application icon will stay visible all the time.</source>
-        <translation type="unfinished"></translation>
+        <translation>O ícone do programa ficará visível o tempo todo.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="255"/>
         <source>Application icon is now hidden and will reappear when a new device is connected.</source>
-        <translation type="unfinished"></translation>
+        <translation>O ícone do programa agora está oculto e será exibido quando um novo dispositivo for conectado no computador.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="258"/>
         <source>Application icon will be hidden when there are no devices plugged in.</source>
-        <translation type="unfinished"></translation>
+        <translation>O ícone do programa ficará oculto quando não houver dispositivos conectados no computador.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="263"/>
         <source>Icon Visibility</source>
-        <translation type="unfinished"></translation>
+        <translation>Visibilidade do Ícone</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>

@@ -1,6 +1,7 @@
-mx-usb-unmounter (24.09.01) mx; urgency=medium
+mx-usb-unmounter (24.09.02) mx; urgency=medium
 
   * Add option to hide icon if there are no mounted drives
+  * Update translations
 
  -- Adrian <adrian@mxlinux.org>  Sat, 24 Aug 2024 09:12:23 -0400
 
