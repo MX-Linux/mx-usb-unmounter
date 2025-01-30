@@ -40,17 +40,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="96"/>
         <source>Unmounting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Desconectando %s</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="97"/>
         <source>%1 is Safe to Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>% 1 é seguro para eliminar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
         <source>Unable to unmount, device in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Non se puido desmontar, dispositivo en uso</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="159"/>
@@ -77,53 +77,53 @@
         <location filename="../mainwindow.cpp" line="246"/>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>Always show icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar sempre a icona</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="169"/>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>Hide icon when not in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Ocultar a icona cando non estea en uso</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
         <source>Autostart has been disabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Desactivouse o inicio automático.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
         <source>Failed to disable autostart.</source>
-        <translation type="unfinished"></translation>
+        <translation>Produciuse un erro ao desactivar o inicio automático.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
         <source>Autostart Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Inicio automático desactivado</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>Enable Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Activar o inicio automático</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Autostart has been enabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Activouse o inicio automático.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Failed to enable autostart.</source>
-        <translation type="unfinished"></translation>
+        <translation>Produciuse un erro ao activar o inicio automático.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="236"/>
         <source>Autostart Enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Inicio automático activado</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="237"/>
         <source>Disable Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Desactivar o inicio automático</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -148,22 +148,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>Application icon will stay visible all the time.</source>
-        <translation type="unfinished"></translation>
+        <translation>A icona da aplicación permanecerá visible todo o tempo.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="255"/>
         <source>Application icon is now hidden and will reappear when a new device is connected.</source>
-        <translation type="unfinished"></translation>
+        <translation>A icona da aplicación agora está oculta e volverá aparecer cando se conecte un dispositivo novo.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="258"/>
         <source>Application icon will be hidden when there are no devices plugged in.</source>
-        <translation type="unfinished"></translation>
+        <translation>A icona da aplicación ocultarase cando non haxa ningún dispositivo conectado.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="263"/>
         <source>Icon Visibility</source>
-        <translation type="unfinished"></translation>
+        <translation>Visibilidade da icona</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>

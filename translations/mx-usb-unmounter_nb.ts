@@ -77,13 +77,13 @@
         <location filename="../mainwindow.cpp" line="246"/>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>Always show icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis alltid ikon</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="169"/>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>Hide icon when not in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Skjul ikon når ikke i bruk</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
@@ -148,22 +148,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>Application icon will stay visible all the time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Programikonet vil alltid være synlig.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="255"/>
         <source>Application icon is now hidden and will reappear when a new device is connected.</source>
-        <translation type="unfinished"></translation>
+        <translation>Programikonet er nå skjult og vil vises når en ny enhet kobles til.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="258"/>
         <source>Application icon will be hidden when there are no devices plugged in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Programikonet vil skjules når ingen enheter er koblet til.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="263"/>
         <source>Icon Visibility</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis eller skjul ikon</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>

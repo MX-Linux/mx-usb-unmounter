@@ -77,13 +77,13 @@
         <location filename="../mainwindow.cpp" line="246"/>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>Always show icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar siempre el icono</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="169"/>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>Hide icon when not in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Ocultar el icono cuando no se utiliza</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
@@ -148,22 +148,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>Application icon will stay visible all the time.</source>
-        <translation type="unfinished"></translation>
+        <translation>El icono de la aplicación permanecerá visible todo el tiempo.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="255"/>
         <source>Application icon is now hidden and will reappear when a new device is connected.</source>
-        <translation type="unfinished"></translation>
+        <translation>El icono de la aplicación ahora está oculto y volverá a aparecer cuando se conecte un nuevo dispositivo.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="258"/>
         <source>Application icon will be hidden when there are no devices plugged in.</source>
-        <translation type="unfinished"></translation>
+        <translation>El icono de la aplicación se ocultará cuando no haya dispositivos conectados.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="263"/>
         <source>Icon Visibility</source>
-        <translation type="unfinished"></translation>
+        <translation>Visibilidad de iconos</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>

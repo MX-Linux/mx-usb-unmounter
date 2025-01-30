@@ -1,3 +1,10 @@
+mx-usb-unmounter (25.1) mx; urgency=medium
+
+  * Remove duplicate Type from .desktop file
+  * Update translations
+ 
+ -- Adrian <adrian@mxlinux.org>  Thu, 30 Jan 2025 12:11:08 -0500
+
 mx-usb-unmounter (24.09.02) mx; urgency=medium
 
   * Add option to hide icon if there are no mounted drives

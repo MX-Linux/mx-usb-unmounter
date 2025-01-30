@@ -40,17 +40,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="96"/>
         <source>Unmounting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 leválasztása</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="97"/>
         <source>%1 is Safe to Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 biztonságosan eltávolítható</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
         <source>Unable to unmount, device in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Nem választható le, az eszköz használatban van</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="159"/>
@@ -77,53 +77,53 @@
         <location filename="../mainwindow.cpp" line="246"/>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>Always show icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Mindig jelenjen meg az ikon</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="169"/>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>Hide icon when not in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikon elrejtése, ha nincs használatban</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
         <source>Autostart has been disabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatikus indítás letiltva.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
         <source>Failed to disable autostart.</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatikus indítás letiltása nem sikerült.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
         <source>Autostart Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatikus indítás letiltva</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>Enable Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatikus indítás engedélyezése</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Autostart has been enabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatikus indítás engedélyezve.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Failed to enable autostart.</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatikus indítás engedélyezése nem sikerült.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="236"/>
         <source>Autostart Enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatikus indítás engedélyezve</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="237"/>
         <source>Disable Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatikus indítás letiltása</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -148,22 +148,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>Application icon will stay visible all the time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Az alkalmazás ikonja mindig látható lesz.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="255"/>
         <source>Application icon is now hidden and will reappear when a new device is connected.</source>
-        <translation type="unfinished"></translation>
+        <translation>Az alkalmazás ikonja el van rejtve és új eszköz csatlakoztatásakor fog megjelenni.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="258"/>
         <source>Application icon will be hidden when there are no devices plugged in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Az alkalmazás ikonja nem lesz látható, ha nincs eszköz csatlakoztatva.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="263"/>
         <source>Icon Visibility</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikon láthatósága</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>
