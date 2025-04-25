@@ -40,17 +40,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="96"/>
         <source>Unmounting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Odpojování %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="97"/>
         <source>%1 is Safe to Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 lze bezpečně odebrat</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
         <source>Unable to unmount, device in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Nelze odpojit, zařízení se používá</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="159"/>
@@ -77,53 +77,53 @@
         <location filename="../mainwindow.cpp" line="246"/>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>Always show icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Vždy zobrazit ikonu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="169"/>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>Hide icon when not in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrýt ikonu, když se nepoužívá</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
         <source>Autostart has been disabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Funkce automatického spuštění byla zakázána.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
         <source>Failed to disable autostart.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodařilo se zakázat automatické spouštění.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
         <source>Autostart Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatické spuštění zakázáno</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>Enable Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Povolit automatické spuštění</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Autostart has been enabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatické spuštění bylo povoleno.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Failed to enable autostart.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nepodařilo se povolit automatické spuštění.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="236"/>
         <source>Autostart Enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Povoleno automatické spuštění</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="237"/>
         <source>Disable Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Zakázat automatické spouštění</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -148,22 +148,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>Application icon will stay visible all the time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikona aplikace zůstane stále viditelná.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="255"/>
         <source>Application icon is now hidden and will reappear when a new device is connected.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikona aplikace je nyní skrytá a znovu se objeví po připojení nového zařízení.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="258"/>
         <source>Application icon will be hidden when there are no devices plugged in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikona aplikace se skryje, pokud není připojeno žádné zařízení.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="263"/>
         <source>Icon Visibility</source>
-        <translation type="unfinished"></translation>
+        <translation>Viditelnost ikony</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>

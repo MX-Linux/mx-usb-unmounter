@@ -35,22 +35,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="98"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Παραμένουν και άλλες προσαρτημένες κατατμήσεις στη συσκευή</translation>
+        <translation>Παραμένουν άλλες κατατμήσεις προσαρτημένες στη συσκευή</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="96"/>
         <source>Unmounting %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Αποπροσάρτηση του %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="97"/>
         <source>%1 is Safe to Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Το %1 μπορεί να αφαιρεθεί με ασφάλεια</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
         <source>Unable to unmount, device in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν είναι δυνατή η  αποπροσάρτηση, Η συσκευή είναι σε χρήση</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="159"/>
@@ -77,53 +77,53 @@
         <location filename="../mainwindow.cpp" line="246"/>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>Always show icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Να εμφανίζει πάντα το εικονίδιο</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="169"/>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>Hide icon when not in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Απόκρυψη εικονιδίου όταν δεν είναι σε χρήση</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
         <source>Autostart has been disabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η αυτόματη εκκίνηση έχει απενεργοποιηθεί.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
         <source>Failed to disable autostart.</source>
-        <translation type="unfinished"></translation>
+        <translation>Απέτυχε η απενεργοποίηση της αυτόματης εκκίνησης.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
         <source>Autostart Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Απενεργοποιημένη αυτόματη εκκίνηση</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>Enable Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργοποίηση αυτόματης εκκίνησης</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Autostart has been enabled.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργοποιήθηκε η αυτόματη εκκίνηση.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Failed to enable autostart.</source>
-        <translation type="unfinished"></translation>
+        <translation>Απέτυχε η ενεργοποίηση της αυτόματης εκκίνησης.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="236"/>
         <source>Autostart Enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργοποιημένη αυτόματη εκκίνηση</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="237"/>
         <source>Disable Autostart</source>
-        <translation type="unfinished"></translation>
+        <translation>Απενεργοποίηση αυτόματης εκκίνησης</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -148,22 +148,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>Application icon will stay visible all the time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το εικονίδιο της εφαρμογής θα παραμένει συνεχώς ορατό.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="255"/>
         <source>Application icon is now hidden and will reappear when a new device is connected.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το εικονίδιο της εφαρμογής είναι κρυμμένο και θα επανεμφανιστεί όταν συνδεθεί νέα συσκευή.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="258"/>
         <source>Application icon will be hidden when there are no devices plugged in.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το εικονίδιο της εφαρμογής θα είναι κρυμμένο όταν δεν υπάρχουν συνδεδεμένες συσκευές.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="263"/>
         <source>Icon Visibility</source>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή εικονιδίου</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>
