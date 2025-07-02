@@ -20,7 +20,7 @@
 # **********************************************************************/
 
 QT       += core gui widgets dbus
-CONFIG   += release warn_on c++17
+CONFIG   += release warn_on c++20
 
 TARGET = mx-usb-unmounter
 TEMPLATE = app
