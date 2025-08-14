@@ -97,8 +97,8 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
     const QString safeToRemoveMsg = tr("%1 is Safe to Remove").arg(point);
     const QString otherPartitionsMountedMsg = tr("Other partitions still mounted on device");
 
-    const QRegularExpression re("compact_flash|CF|sd|sdhc|MMC|ms|sdxc|xD", QRegularExpression::CaseInsensitiveOption);
-    const QString powerTestCmd = QString("udevadm info --query=property /dev/%1 | grep DEVLINKS").arg(mountDevice);
+    const QRegularExpression re("compact_flash|CF|(?<!s)sd|sdhc|MMC|ms|sdxc|xD", QRegularExpression::CaseInsensitiveOption);
+    const QString powerTestCmd = QString("udevadm info --query=property /dev/%1 | grep '^ID_PATH='").arg(mountDevice);
     const bool powerOff = !re.match(runCmd(powerTestCmd).str).hasMatch();
 
     int exitCode = 0;

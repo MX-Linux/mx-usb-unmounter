@@ -1,3 +1,11 @@
+mx-usb-unmounter (25.6) mx; urgency=medium
+
+  * change QRegularExpression to not match ssd in place of sd
+  * use ID_PATH information for matching rather than DEVLINKS
+  * should allow power off of ssd devices that are externally mounted.
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 13 Aug 2025 21:25:22 -0400
+
 mx-usb-unmounter (25.4) mx; urgency=medium
 
   * Update to Qt6
