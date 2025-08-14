@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 13 Aug 2025 21:25:22 -0400
+Source: mx-usb-unmounter
+Architecture: source
+Version: 25.6
+Distribution: mx
+Urgency: medium
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Changes:
+ mx-usb-unmounter (25.6) mx; urgency=medium
+ .
+   * change QRegularExpression to not match ssd in place of sd
+   * use ID_PATH information for matching rather than DEVLINKS
+   * should allow power off of ssd devices that are externally mounted.
+Checksums-Sha1:
+ 8aeebb10af087c1ff1dd58935ff62f0f91fc5557 1643 mx-usb-unmounter_25.6.dsc
+ 84c3a744f4cbc5fb1d385fef6aa14360477a555f 88608 mx-usb-unmounter_25.6.tar.xz
+ dae9088de6b30dc1e308f7c232229df34f6b64bd 10953 mx-usb-unmounter_25.6_source.buildinfo
+Checksums-Sha256:
+ 2056c2789a4ea10ef03e700d652dfc21534703587c1f2aa9df706f63eba836db 1643 mx-usb-unmounter_25.6.dsc
+ 1e7d41d291f39353992bc3759ab6105bbaa0d9937616fa5d3287d5aa705f8d6a 88608 mx-usb-unmounter_25.6.tar.xz
+ b41c1dd53fb8333401e7bdee275ad91a3b6be72a0b7a9b3eb38daf3b95383eed 10953 mx-usb-unmounter_25.6_source.buildinfo
+Files:
+ b1b4fcd3aa0b2c5022291b918a39fc37 1643 admin optional mx-usb-unmounter_25.6.dsc
+ b0e9b0430042acd59654174922dd43ed 88608 admin optional mx-usb-unmounter_25.6.tar.xz
+ b30745d75760ffd70d76b4934f492299 10953 admin optional mx-usb-unmounter_25.6_source.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE9i7eqjrnCpyZ2sQYm2ih6Lm2N1wFAmidO6gACgkQm2ih6Lm2
+N1x8XhAAmFHKGnrupi9IHzBlufVp0325riTvUeQNYMDA/qhGB5lB76Ljjl3kp7sg
+rew1Q9j3hJ/a/oF/05pCtpUmXgDVjunrFt8PCzV2Tx47iW9pN4IR4aoiWUj+IQT6
+4TU83ENAB9A9kGRcvPpzJ+QhNiVTiTBEfwjWDD80zTTfHDHYSFlDIlLrtO1bWw84
+CIkdIVtndwIvstSiMLvb0Cl/7Uijc4CPModve4ZbmddhnBxmIgE5wEIJsRSyA9GP
+Mj3sjHe+Jt0K4gVcpGfouUvnAXJTSmX90KptafOYpghRt9YfN38BIO6oiyNEa0ii
+4NrEjs+2NZOn9x9nqeLjLX76l0mIEvgywkMWgd9ByfXOdRQqc9thexn+Q8vCsNF1
+6vUKb+yV/Lwf+1FPWwO2ZyCVerB947q1JsYoATst/25tll3B2pVkP2DsACQakiB0
+FDG/a8tXDKSRrgea2/JhNa4yE/U//AEUZCg5SCdS4LXw7z59SfjwOBUQm5YDC/Ug
+XG3nkdz0wgqYvxkPTe55keSkkmQhpLf9Qhsv5C5+fU+H5fUKo3YKy/yB59tVcAAm
+oZB4mnVGLl9oaLmpjhFXUvzy0j7I9tTe2ceueVJ2m9kxSis2gcFvbrwkOPJ67X7s
+6i0UYiGTy9p72Nl+vLffC4WDCTY845Y7y7bp1gRs9NBJl1QMUbw=
+=UJGz
+-----END PGP SIGNATURE-----
