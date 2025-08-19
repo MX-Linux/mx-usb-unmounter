@@ -3,11 +3,7 @@ Section: admin
 Priority: optional
 Maintainer: dolphinoracle <dolphinoracle@gmail.com>
 Uploaders: adrian <adrian@mxlinux.org>
-Build-Depends: debhelper-compat (= 13),
-               qt6-base-dev,
-               qt6-base-dev-tools,
-               qt6-tools-dev,
-               qt6-tools-dev-tools
+Build-Depends: debhelper-compat (= 12), cmake (>= 3.16), ninja-build, qt6-base-dev, qt6-base-dev-tools, qt6-tools-dev, qt6-tools-dev-tools
 Standards-Version: 3.9.8
 Vcs-Git: https://github.com/mx-linux/mx-usb-unmounter
 Homepage: https://mxlinux.org

@@ -29,12 +29,14 @@ int main(int argc, char *argv[])
     QApplication::setApplicationVersion(VERSION);
 
     QTranslator qtTran;
-    qtTran.load(QString("qt_") + QLocale::system().name());
-    QApplication::installTranslator(&qtTran);
+    if (qtTran.load(QString("qt_") + QLocale::system().name())) {
+        QApplication::installTranslator(&qtTran);
+    }
 
     QTranslator appTran;
-    appTran.load(QString("mx-usb-unmounter_") + QLocale::system().name(), "/usr/share/mx-usb-unmounter/locale");
-    QApplication::installTranslator(&appTran);
+    if (appTran.load(QString("mx-usb-unmounter_") + QLocale::system().name(), "/usr/share/mx-usb-unmounter/locale")) {
+        QApplication::installTranslator(&appTran);
+    }
 
     MainWindow w(argv[1]);
     w.hide();
