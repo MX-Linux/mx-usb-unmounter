@@ -8,7 +8,6 @@
 #include "about.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "version.h"
 
 MainWindow::MainWindow(const QString &arg1, QWidget *parent)
     : QDialog(parent),
@@ -336,7 +335,7 @@ void MainWindow::about()
                   "<p align=\"center\"><h3>%4</h3></p>"
                   "<p align=\"center\"><a href=\"%5\">%5</a><br /></p>"
                   "<p align=\"center\">%6<br /><br /></p>")
-              .arg(tr("MX USB Unmounter"), tr("Version"), VERSION, tr("Quickly Unmount Removable Media"),
+              .arg(tr("MX USB Unmounter"), tr("Version"), QApplication::applicationVersion(), tr("Quickly Unmount Removable Media"),
                    "http://mxlinux.org", tr("Copyright (c) MX Linux"));
 
     displayAboutMsgBox(tr("About MX USB Unmounter"), aboutMessage,
