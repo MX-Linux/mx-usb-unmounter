@@ -57,10 +57,14 @@ Output MainWindow::runCmd(const QString &cmd)
     }
     QEventLoop loop;
     connect(&proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
-    QTimer::singleShot(30000, this, [this]() { proc.kill(); }); // timeout after 30 s
+    QTimer timeout;
+    timeout.setSingleShot(true);
+    connect(&timeout, &QTimer::timeout, &proc, &QProcess::kill); // kill if it hangs for 30 s
+    timeout.start(30000);
     proc.setProcessChannelMode(QProcess::MergedChannels);
     proc.start("/bin/bash", {"-c", cmd});
     loop.exec();
+    timeout.stop(); // cancel so a stale timer can't kill a later command
     return {proc.exitCode(), proc.readAll().trimmed()};
 }
 
@@ -73,10 +77,14 @@ Output MainWindow::runCmd(const QString &program, const QStringList &args)
     }
     QEventLoop loop;
     connect(&proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
-    QTimer::singleShot(30000, this, [this]() { proc.kill(); }); // timeout after 30 s
+    QTimer timeout;
+    timeout.setSingleShot(true);
+    connect(&timeout, &QTimer::timeout, &proc, &QProcess::kill); // kill if it hangs for 30 s
+    timeout.start(30000);
     proc.setProcessChannelMode(QProcess::MergedChannels);
     proc.start(program, args);
     loop.exec();
+    timeout.stop(); // cancel so a stale timer can't kill a later command
     return {proc.exitCode(), proc.readAll().trimmed()};
 }
 
@@ -139,17 +147,21 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
     if (type == "mmc") {
         unmountDevice(partitionDevice);
     } else if (type == "usb") {
-        // Unmount device partitions using QDir instead of shell glob
-        {
-            const QDir devDir("/dev");
-            const QStringList partitions = devDir.entryList({mountDevice + "[0-9]*"}, QDir::System | QDir::Files);
-            if (!partitions.isEmpty()) {
-                for (const QString &part : partitions) {
-                    unmountDevice("/dev/" + part);
-                }
+        // Unmount each partition; "?*" mirrors the old shell glob so partitions with a
+        // 'p' separator (nvme0n1p1, mmcblk0p1) are matched too, not just digit-suffixed ones.
+        const QDir devDir("/dev");
+        const QStringList partitions = devDir.entryList({mountDevice + "?*"}, QDir::System | QDir::Files);
+        int aggregateExit = 0;
+        for (const QString &part : partitions) {
+            unmountDevice("/dev/" + part);
+            if (exitCode != 0) {
+                aggregateExit = exitCode; // keep the failure; don't let a later success mask it
             }
         }
-        if (exitCode != 0) {
+        exitCode = aggregateExit;
+        // Partitionless disks (some usb sticks, ereaders) have no matching partitions; also
+        // retry the whole device if any partition failed to unmount.
+        if (partitions.isEmpty() || exitCode != 0) {
             unmountDevice("/dev/" + mountDevice);
             if (exitCode != 0 && QProcess::execute("grep", {"-q", mountDevice, "/etc/mtab"}) != 0) {
                 exitCode = 0; // Reset exitCode if device is not in mtab
@@ -158,7 +170,9 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
     } else if (type == "cd") {
         exitCode = QProcess::execute("eject", {partitionDevice});
     } else if (type == "mtp" || type == "gphoto2") {
-        exitCode = QProcess::execute("gio", {"mount", "-u", "/run/user/$UID/gvfs/" + mountDevice});
+        // QProcess does not run a shell, so $UID would be passed literally — resolve it here.
+        exitCode = QProcess::execute(
+            "gio", {"mount", "-u", "/run/user/" + QString::number(getuid()) + "/gvfs/" + mountDevice});
     }
 
     // qDebug() << "Exit code is " << exitCode;
