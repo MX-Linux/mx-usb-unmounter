@@ -4,8 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Henri Koivuneva <henri.koivuneva@gmail.com>, 2022
-# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2023
+# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-08 23:24-0500\n"
 "PO-Revision-Date: 2022-12-09 04:25+0000\n"
-"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>, 2023\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>, 2025\n"
 "Language-Team: Finnish (https://app.transifex.com/anticapitalista/teams/10162/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,9 +24,9 @@ msgstr ""
 #. The desktop entry name will be displayed within the menu.
 #: desktop-in/mx-usb-unmounter.desktop.in:6
 msgid "MX USB Unmounter"
-msgstr "MX USB:n irrotus"
+msgstr "MX Poista USB"
 
 #. # The desktop entry comment will be shown within the menu.
 #: desktop-in/mx-usb-unmounter.desktop.in:8
 msgid "Unmount USB and Optical removable media"
-msgstr "Poista optinen media tai usb-tikku"
+msgstr "Poista optinen media tai usb-muistitikku"

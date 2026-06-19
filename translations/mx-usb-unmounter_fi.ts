@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fi">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="fi">
 <context>
     <name>MainWindow</name>
     <message>
@@ -9,7 +7,7 @@
         <location filename="../mainwindow.cpp" line="203"/>
         <location filename="../mainwindow.cpp" line="339"/>
         <source>MX USB Unmounter</source>
-        <translation>MX USB Unmounter</translation>
+        <translation>MX USB-irrotin</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="52"/>
@@ -138,7 +136,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="342"/>
         <source>About MX USB Unmounter</source>
-        <translation>Tietoja MX USB Unmounter</translation>
+        <translation>Tietoja MX USB-irrotin</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>

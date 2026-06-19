@@ -1,3 +1,12 @@
+mx-usb-unmounter (26.06) mx; urgency=medium
+
+  * Fixed removing phones, cameras and similar devices, which previously
+    failed to disconnect.
+  * The program no longer becomes unresponsive if a drive or the system
+    is slow to respond while unmounting.
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 19 Jun 2026 12:00:00 -0400
+
 mx-usb-unmounter (25.6) mx; urgency=medium
 
   * change QRegularExpression to not match ssd in place of sd
@@ -16,7 +25,7 @@ mx-usb-unmounter (25.1) mx; urgency=medium
 
   * Remove duplicate Type from .desktop file
   * Update translations
- 
+
  -- Adrian <adrian@mxlinux.org>  Thu, 30 Jan 2025 12:11:08 -0500
 
 mx-usb-unmounter (24.09.02) mx; urgency=medium
@@ -28,7 +37,7 @@ mx-usb-unmounter (24.09.02) mx; urgency=medium
 
 mx-usb-unmounter (24.09) mx; urgency=medium
 
-  * Change Enable/Disable Autostart action according to situation 
+  * Change Enable/Disable Autostart action according to situation
   * Minor optimizations
   * Update translations
   * Fix: translations go to "/usr/share/mx-usb-unmounter/locale"
@@ -37,7 +46,7 @@ mx-usb-unmounter (24.09) mx; urgency=medium
 
 mx-usb-unmounter (24.03.01) mx; urgency=medium
 
-  * update translations 
+  * update translations
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 23 Mar 2024 13:38:53 -0400
 
@@ -56,14 +65,14 @@ mx-usb-unmounter (23.12) mx; urgency=medium
 mx-usb-unmounter (23.02) mx; urgency=medium
 
   * remove gvfs-bin depend
-  * add gio depend 
+  * add gio depend
   * update translations
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 08 Feb 2023 22:33:05 -0500
 
 mx-usb-unmounter (22.10) mx; urgency=medium
 
-  * update translations 
+  * update translations
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 26 Oct 2022 20:09:12 -0400
 
@@ -75,19 +84,19 @@ mx-usb-unmounter (22.08) mx; urgency=medium
 
 mx-usb-unmounter (22.07.01) mx; urgency=medium
 
-  * translation refresh 
+  * translation refresh
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 23 Jul 2022 12:34:06 -0400
 
 mx-usb-unmounter (21.10.02) mx; urgency=medium
 
-  * update icon 
+  * update icon
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 26 Oct 2021 18:25:32 -0400
 
 mx-usb-unmounter (21.10.01) mx; urgency=medium
 
-  * reverse autostart toggle actions 
+  * reverse autostart toggle actions
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 02 Oct 2021 17:45:20 -0400
 
@@ -99,13 +108,13 @@ mx-usb-unmounter (21.09.07) mx; urgency=medium
 
 mx-usb-unmounter (21.09.06) mx; urgency=medium
 
-  * ensure only once instance runs per user 
+  * ensure only once instance runs per user
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 26 Sep 2021 20:42:42 -0400
 
 mx-usb-unmounter (21.09.05) mx; urgency=medium
 
-  * Fix: pop window on the current screen 
+  * Fix: pop window on the current screen
 
  -- Adrian <adrian@mxlinux.org>  Sat, 25 Sep 2021 14:20:49 -0400
 
@@ -137,13 +146,13 @@ mx-usb-unmounter (21.09.01mx21) mx; urgency=medium
 
 mx-usb-unmounter (21.08.01) mx; urgency=medium
 
-  * try to not power down internal card readers 
+  * try to not power down internal card readers
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 22 Aug 2021 15:49:05 -0400
 
 mx-usb-unmounter (21.05.01) mx; urgency=medium
 
-  * change usb device detection 
+  * change usb device detection
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 23 May 2021 08:52:56 -0400
 
@@ -156,7 +165,7 @@ mx-usb-unmounter (20.03.01) mx; urgency=medium
 mx-usb-unmounter (20.01.01) mx; urgency=medium
 
   * update for modern listing of mtp/gphoto2 devices
-  * update to unmount partitionless disks (certain embedded devices) 
+  * update to unmount partitionless disks (certain embedded devices)
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 20 Jan 2020 19:54:17 -0500
 
@@ -174,7 +183,7 @@ mx-usb-unmounter (19.08.01) mx; urgency=medium
 
 mx-usb-unmounter (19.08) mx; urgency=medium
 
-  * local help files 
+  * local help files
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 21 Aug 2019 20:55:12 -0400
 
@@ -186,37 +195,37 @@ mx-usb-unmounter (19.04) mx; urgency=medium
 
 mx-usb-unmounter (19.03) mx; urgency=medium
 
-  * updated for future Qt compliance 
+  * updated for future Qt compliance
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 10 Mar 2019 12:01:56 -0400
 
 mx-usb-unmounter (19.01) mx; urgency=medium
 
-  * translation refresh 
+  * translation refresh
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 23 Jan 2019 18:36:51 -0500
 
 mx-usb-unmounter (18.11) mx; urgency=medium
 
-  * translation refresh 
+  * translation refresh
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 30 Nov 2018 19:41:17 -0500
 
 mx-usb-unmounter (18.10) mx; urgency=medium
 
-  * update translations 
+  * update translations
 
  -- dolphin <dolphinoracle@gmail.com>  Sun, 14 Oct 2018 19:48:44 -0400
 
 mx-usb-unmounter (18.6mx17) mx; urgency=medium
 
-  * updated locales 
+  * updated locales
 
  -- dolphinoracle <dolphin@mx>  Mon, 25 Jun 2018 21:24:54 -0400
 
 mx-usb-unmounter (18.3mx17) mx; urgency=medium
 
-  * uupdated translations 
+  * uupdated translations
 
  -- dolphinoracle <dolphinoracle@gmail.com>  Sat, 03 Mar 2018 08:33:59 -0500
 
@@ -234,7 +243,7 @@ mx-usb-unmounter (17.11.01) mx; urgency=medium
 
 mx-usb-unmounter (17.11) mx; urgency=medium
 
-  * add FR help 
+  * add FR help
 
  -- Adrian <adrian@mxlinux.org>  Fri, 10 Nov 2017 10:10:13 -0500
 
@@ -301,7 +310,7 @@ mx-usb-unmounter (16.10mx16) mx; urgency=medium
 
 mx-usb-unmounter (16.8mx15) mx; urgency=medium
 
-  * fixed .desktop 
+  * fixed .desktop
 
  -- Adrian <adrian@mxlinux.org>  Tue, 09 Aug 2016 22:06:41 -0400
 

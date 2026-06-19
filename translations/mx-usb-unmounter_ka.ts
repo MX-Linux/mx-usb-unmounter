@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="es">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ka">
 <context>
     <name>MainWindow</name>
     <message>
@@ -7,176 +7,176 @@
         <location filename="../mainwindow.cpp" line="203"/>
         <location filename="../mainwindow.cpp" line="339"/>
         <source>MX USB Unmounter</source>
-        <translation>MX Desmontador USB</translation>
+        <translation>MX USB დისკების მომხსნელი</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="52"/>
         <source>Double-Click to Unmount</source>
-        <translation>Doble clic para desmontar</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="72"/>
         <source>Cancel</source>
-        <translation>Cancelar</translation>
+        <translation>გაუქმება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="419"/>
         <source>Volume</source>
-        <translation>Volúmen</translation>
+        <translation>ტომი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="270"/>
         <location filename="../mainwindow.cpp" line="454"/>
         <source>No Removable Device</source>
-        <translation>No es un dispositivo removible</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="98"/>
         <source>Other partitions still mounted on device</source>
-        <translation>Otras particiones aún están montadas en el dispositivo</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="96"/>
         <source>Unmounting %1</source>
-        <translation>Desmontando %1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="97"/>
         <source>%1 is Safe to Remove</source>
-        <translation>Es seguro extraer %1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="142"/>
         <source>Unable to unmount, device in use</source>
-        <translation>No se puede desmontar, dispositivo en uso</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="159"/>
         <source>About</source>
-        <translation>Acerca de</translation>
+        <translation>შესახებ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="160"/>
         <source>Help</source>
-        <translation>Ayuda</translation>
+        <translation>დახმარება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="161"/>
         <source>List Devices</source>
-        <translation>Listar dispositivos</translation>
+        <translation>მოწყობილობების სია</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="162"/>
         <source>Quit</source>
-        <translation>Salir</translation>
+        <translation>გასვლა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="169"/>
         <location filename="../mainwindow.cpp" line="246"/>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>Always show icon</source>
-        <translation>Mostrar siempre el icono</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="169"/>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>Hide icon when not in use</source>
-        <translation>Ocultar el icono cuando no se utiliza</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
         <source>Autostart has been disabled.</source>
-        <translation>Se ha deshabilitado el inicio automático</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
         <source>Failed to disable autostart.</source>
-        <translation>No se ha podido deshabilitar el inicio automático</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
         <source>Autostart Disabled</source>
-        <translation>Deshabilitar Inicio Automático</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>Enable Autostart</source>
-        <translation>Habilitar Inicio Automático</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Autostart has been enabled.</source>
-        <translation>Se ha habilitado el inicio automático</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Failed to enable autostart.</source>
-        <translation>No se ha podido habilitar el inicio automático</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="236"/>
         <source>Autostart Enabled</source>
-        <translation>Inicio Automático Habilitado</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="237"/>
         <source>Disable Autostart</source>
-        <translation>Deshabilitar Inicio Automático</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
         <source>Unmount</source>
-        <translation>Desmontar</translation>
+        <translation>მოხსნა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="203"/>
         <source>%1 Help</source>
-        <translation>%1 Ayuda</translation>
+        <translation>%1-ის დახმარება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="342"/>
         <source>About MX USB Unmounter</source>
-        <translation>Acerca de MX Desmontador USB</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>
         <source>Quickly Unmount Removable Media</source>
-        <translation>Desmontar rápidamente medios removibles</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>Application icon will stay visible all the time.</source>
-        <translation>El icono de la aplicación permanecerá visible todo el tiempo.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="255"/>
         <source>Application icon is now hidden and will reappear when a new device is connected.</source>
-        <translation>El icono de la aplicación ahora está oculto y volverá a aparecer cuando se conecte un nuevo dispositivo.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="258"/>
         <source>Application icon will be hidden when there are no devices plugged in.</source>
-        <translation>El icono de la aplicación se ocultará cuando no haya dispositivos conectados.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="263"/>
         <source>Icon Visibility</source>
-        <translation>Visibilidad de iconos</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>
         <source>Version</source>
-        <translation>Versión</translation>
+        <translation>ვერსია</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Derechos de autor (c) MX Linux</translation>
+        <translation>(c) MX Linux საავტორო ფულებები დაცულია</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="344"/>
         <source>%1 License</source>
-        <translation>%1 Licencia</translation>
+        <translation>ლიცენზია %1</translation>
     </message>
 </context>
 <context>
@@ -184,23 +184,23 @@
     <message>
         <location filename="../about.cpp" line="40"/>
         <source>License</source>
-        <translation>Licencia</translation>
+        <translation>ლიცენზია</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="41"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation>Registro de cambios</translation>
+        <translation>ცვლილებების ჟურნალი</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <source>Cancel</source>
-        <translation>Cancelar</translation>
+        <translation>გაუქმება</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="64"/>
         <source>&amp;Close</source>
-        <translation>&amp;Cerrar</translation>
+        <translation>&amp;დახურვა</translation>
     </message>
 </context>
 </TS>
