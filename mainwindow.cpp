@@ -6,6 +6,8 @@
 #include <QScreen>
 
 #include "about.h"
+#include <unistd.h>
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -101,7 +103,16 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
     const bool powerOff = !re.match(runCmd(powerTestCmd).str).hasMatch();
 
     int exitCode = 0;
-    auto unmountDevice = [&](const QString &device) { exitCode = runCmd("umount " + device).exitCode; };
+    auto unmountDevice = [&](const QString &device) {
+        const Output res = runCmd("umount " + device);
+        exitCode = res.exitCode;
+        if (exitCode != 0
+            && (res.str.contains("must be superuser", Qt::CaseInsensitive)
+                || res.str.contains("permission denied", Qt::CaseInsensitive))) {
+            const Output elev = runCmd("pkexec /bin/umount " + device);
+            exitCode = elev.exitCode;
+        }
+    };
     const QStringList notifyArgs = {"-i", "drive-removable-media", title};
     QProcess::execute("notify-send", notifyArgs + QStringList() << unmountingMsg);
 
@@ -350,7 +361,7 @@ void MainWindow::listDevices()
     }
 
     ui->mountlistview->clear();
-    UID = runCmd("echo $UID").str;
+    UID = QString::number(getuid());
     // qDebug() << "UID is" << UID;
 
     // Get list of mounted devices
