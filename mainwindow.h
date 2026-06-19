@@ -32,7 +32,6 @@ public:
     void start();
     Output runCmd(const QString &cmd);
     Output runCmd(const QString &program, const QStringList &args);
-    QString UID;
 
 private slots:
     void cancelPressed();

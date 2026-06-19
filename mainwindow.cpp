@@ -389,7 +389,7 @@ void MainWindow::listDevices()
     }
 
     ui->mountlistview->clear();
-    UID = QString::number(getuid());
+    const QString UID = QString::number(getuid());
     // qDebug() << "UID is" << UID;
 
     // Get list of mounted devices
