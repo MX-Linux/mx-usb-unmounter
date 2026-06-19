@@ -10,6 +10,7 @@
 #include "about.h"
 #include <unistd.h>
 
+#include "deviceutils.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -48,43 +49,39 @@ MainWindow::MainWindow(const QString &arg1, QWidget *parent)
     }
 }
 
-// Util function for getting bash command output and error code
-Output MainWindow::runCmd(const QString &cmd)
+// Run a command via an argument array (no shell interpretation) and return its
+// exit code and output. stderr is merged into the output by default because
+// umount/mount report failures there; pass mergeStderr = false to capture stdout
+// only (e.g. to drop df's permission-denied noise).
+Output MainWindow::runCmd(const QString &program, const QStringList &args, bool mergeStderr)
 {
     if (proc.state() != QProcess::NotRunning) {
         qDebug() << "Process already running:" << proc.program() << proc.arguments();
         return {};
     }
     QEventLoop loop;
+    bool failedToStart = false;
     connect(&proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
+    // QProcess does not emit finished() when a program fails to start, so quit
+    // the loop on that error too — otherwise it would block until the timeout.
+    connect(&proc, &QProcess::errorOccurred, &loop, [&](QProcess::ProcessError error) {
+        if (error == QProcess::FailedToStart) {
+            failedToStart = true;
+            loop.quit();
+        }
+    });
     QTimer timeout;
     timeout.setSingleShot(true);
     connect(&timeout, &QTimer::timeout, &proc, &QProcess::kill); // kill if it hangs for 30 s
     timeout.start(30000);
-    proc.setProcessChannelMode(QProcess::MergedChannels);
-    proc.start("/bin/bash", {"-c", cmd});
-    loop.exec();
-    timeout.stop(); // cancel so a stale timer can't kill a later command
-    return {proc.exitCode(), proc.readAll().trimmed()};
-}
-
-// Safe overload — uses argument array, no shell interpretation
-Output MainWindow::runCmd(const QString &program, const QStringList &args)
-{
-    if (proc.state() != QProcess::NotRunning) {
-        qDebug() << "Process already running:" << proc.program() << proc.arguments();
-        return {};
-    }
-    QEventLoop loop;
-    connect(&proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
-    QTimer timeout;
-    timeout.setSingleShot(true);
-    connect(&timeout, &QTimer::timeout, &proc, &QProcess::kill); // kill if it hangs for 30 s
-    timeout.start(30000);
-    proc.setProcessChannelMode(QProcess::MergedChannels);
+    proc.setProcessChannelMode(mergeStderr ? QProcess::MergedChannels : QProcess::SeparateChannels);
     proc.start(program, args);
     loop.exec();
     timeout.stop(); // cancel so a stale timer can't kill a later command
+    if (failedToStart) {
+        qWarning() << "Failed to start:" << program << args;
+        return {-1, QString()};
+    }
     return {proc.exitCode(), proc.readAll().trimmed()};
 }
 
@@ -108,16 +105,16 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
         return;
     }
 
-    const QStringList itemDataParts = itemData.split(';');
-    if (itemDataParts.size() < 4) {
+    const devutils::DeviceData device = devutils::parseDeviceData(itemData);
+    if (!device.valid) {
         qWarning() << "Invalid item data format:" << itemData;
         return;
     }
 
-    const QString type = itemDataParts.at(0);
-    const QString partitionDevice = itemDataParts.at(1);
-    const QString mountDevice = itemDataParts.at(2);
-    const QString model = itemDataParts.at(3);
+    const QString type = device.type;
+    const QString partitionDevice = device.partitionDevice;
+    const QString mountDevice = device.mountDevice;
+    const QString model = device.model;
     const QString point = item->text();
     const QString title = tr("MX USB Unmounter");
 
@@ -125,10 +122,8 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
     const QString safeToRemoveMsg = tr("%1 is Safe to Remove").arg(point);
     const QString otherPartitionsMountedMsg = tr("Other partitions still mounted on device");
 
-    const QRegularExpression re("compact_flash|CF|(?<!s)sd|sdhc|MMC|ms|sdxc|xD", QRegularExpression::CaseInsensitiveOption);
     const QString udevOutput = runCmd("udevadm", {"info", "--query=property", "/dev/" + mountDevice}).str;
-    const QString idPathLine = udevOutput.split('\n', Qt::SkipEmptyParts).filter(QRegularExpression("^ID_PATH=")).value(0);
-    const bool powerOff = !re.match(idPathLine).hasMatch();
+    const bool powerOff = devutils::shouldPowerOff(devutils::idPathLine(udevOutput));
 
     int exitCode = 0;
     auto unmountDevice = [&](const QString &device) {
@@ -182,7 +177,7 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
         }
         QString notificationMessage = safeToRemoveMsg;
         if (type == "mmc") {
-            const QString dfOutput = runCmd("df", {"--local", "--output=source,target,size", "-H"}).str;
+            const QString dfOutput = runCmd("df", {"--local", "--output=source,target,size", "-H"}, false).str;
             const QStringList dfLines = dfOutput.split('\n', Qt::SkipEmptyParts);
             const bool hasOtherPartitions = std::any_of(dfLines.begin(), dfLines.end(),
                 [&](const QString &line) { return line.startsWith("/dev/" + mountDevice); });
@@ -409,7 +404,8 @@ void MainWindow::listDevices()
     // Get list of mounted devices
     QStringList partitionList;
     {
-        const QString dfOutput = runCmd("df", {"--local", "--output=source,target,size", "-H"}).str;
+        // mergeStderr = false: capture stdout only, dropping df's permission-denied noise.
+        const QString dfOutput = runCmd("df", {"--local", "--output=source,target,size", "-H"}, false).str;
         const QStringList dfLines = dfOutput.split('\n', Qt::SkipEmptyParts);
         for (const QString &line : dfLines) {
             if (line.contains("/dev/")) {
