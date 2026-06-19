@@ -179,6 +179,13 @@ qt6_add_translations(mx-usb-unmounter
     QM_FILES_OUTPUT_VARIABLE qm_files
 )
 
+# Tests (optional, OFF by default)
+option(BUILD_TESTS "Build test targets" OFF)
+if(BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(tests)
+endif()
+
 # Set target properties
 set_target_properties(mx-usb-unmounter PROPERTIES
     OUTPUT_NAME "mx-usb-unmounter"
