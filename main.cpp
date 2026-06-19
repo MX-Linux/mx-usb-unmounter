@@ -1,6 +1,8 @@
 #include <QApplication>
+#include <QDir>
 #include <QLocale>
 #include <QLockFile>
+#include <QStandardPaths>
 #include <QTranslator>
 
 #include "mainwindow.h"
@@ -21,9 +23,24 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     const QString user = QProcessEnvironment::systemEnvironment().value("USER");
-    QLockFile lockfile(QString("/var/lock/mx-usb-unmounter_%1.lock").arg(user));
+    const QString runtimeDir = qEnvironmentVariableIsEmpty("XDG_RUNTIME_DIR")
+                                   ? QStandardPaths::writableLocation(QStandardPaths::CacheLocation)
+                                   : qEnvironmentVariable("XDG_RUNTIME_DIR");
+    QDir().mkpath(runtimeDir);
+    const QString lockPath = QString("%1/mx-usb-unmounter_%2.lock").arg(runtimeDir, user);
+    QLockFile lockfile(lockPath);
     if (!lockfile.tryLock()) {
-        qWarning("Another instance is already running.");
+        qint64 pid = -1;
+        QString host;
+        QString appName;
+        const bool hasInfo = lockfile.getLockInfo(&pid, &host, &appName);
+        qWarning() << "Another instance is already running. Lock file:" << lockPath
+                   << (hasInfo ? QStringLiteral("Owner PID: %1").arg(pid)
+                               : QStringLiteral("Owner PID: unknown"))
+                   << (hasInfo ? QStringLiteral("Host: %1").arg(host)
+                               : QStringLiteral("Host: unknown"))
+                   << (hasInfo ? QStringLiteral("App: %1").arg(appName)
+                               : QStringLiteral("App: unknown"));
         return EXIT_FAILURE;
     }
 
