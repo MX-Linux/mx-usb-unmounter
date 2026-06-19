@@ -44,8 +44,7 @@ package() {
     if [ -d autostart ]; then
         install -dm755 "${pkgdir}/etc/xdg/autostart"
         install -Dm644 autostart/mx-usb-unmounter.desktop "${pkgdir}/etc/xdg/autostart/mx-usb-unmounter.desktop"
-        install -dm755 "${pkgdir}/usr/share/mx-usb-unmounter/autostart"
-        cp -r autostart/* "${pkgdir}/usr/share/mx-usb-unmounter/autostart/"
+        install -Dm644 autostart/mx-usb-unmounter.desktop "${pkgdir}/usr/share/mx-usb-unmounter/mx-usb-unmounter.desktop"
     fi
 
     # Install icons
