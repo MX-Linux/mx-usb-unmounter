@@ -4,6 +4,7 @@
 #include <QKeyEvent>
 #include <QMessageBox>
 #include <QScreen>
+#include <algorithm>
 
 #include "about.h"
 #include <unistd.h>
@@ -61,6 +62,21 @@ Output MainWindow::runCmd(const QString &cmd)
     return {proc.exitCode(), proc.readAll().trimmed()};
 }
 
+// Safe overload — uses argument array, no shell interpretation
+Output MainWindow::runCmd(const QString &program, const QStringList &args)
+{
+    if (proc.state() != QProcess::NotRunning) {
+        qDebug() << "Process already running:" << proc.program() << proc.arguments();
+        return {};
+    }
+    QEventLoop loop;
+    connect(&proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
+    proc.setProcessChannelMode(QProcess::MergedChannels);
+    proc.start(program, args);
+    loop.exec();
+    return {proc.exitCode(), proc.readAll().trimmed()};
+}
+
 void MainWindow::start()
 {
     listDevices();
@@ -99,17 +115,18 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
     const QString otherPartitionsMountedMsg = tr("Other partitions still mounted on device");
 
     const QRegularExpression re("compact_flash|CF|(?<!s)sd|sdhc|MMC|ms|sdxc|xD", QRegularExpression::CaseInsensitiveOption);
-    const QString powerTestCmd = QString("udevadm info --query=property /dev/%1 | grep '^ID_PATH='").arg(mountDevice);
-    const bool powerOff = !re.match(runCmd(powerTestCmd).str).hasMatch();
+    const QString udevOutput = runCmd("udevadm", {"info", "--query=property", "/dev/" + mountDevice}).str;
+    const QString idPathLine = udevOutput.split('\n', Qt::SkipEmptyParts).filter(QRegularExpression("^ID_PATH=")).value(0);
+    const bool powerOff = !re.match(idPathLine).hasMatch();
 
     int exitCode = 0;
     auto unmountDevice = [&](const QString &device) {
-        const Output res = runCmd("umount " + device);
+        const Output res = runCmd("umount", {device});
         exitCode = res.exitCode;
         if (exitCode != 0
             && (res.str.contains("must be superuser", Qt::CaseInsensitive)
                 || res.str.contains("permission denied", Qt::CaseInsensitive))) {
-            const Output elev = runCmd("pkexec /bin/umount " + device);
+            const Output elev = runCmd("pkexec", {"/bin/umount", device});
             exitCode = elev.exitCode;
         }
     };
@@ -119,7 +136,16 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
     if (type == "mmc") {
         unmountDevice(partitionDevice);
     } else if (type == "usb") {
-        unmountDevice("/dev/" + mountDevice + "?*");
+        // Unmount device partitions using QDir instead of shell glob
+        {
+            const QDir devDir("/dev");
+            const QStringList partitions = devDir.entryList({mountDevice + "[0-9]*"}, QDir::System | QDir::Files);
+            if (!partitions.isEmpty()) {
+                for (const QString &part : partitions) {
+                    unmountDevice("/dev/" + part);
+                }
+            }
+        }
         if (exitCode != 0) {
             unmountDevice("/dev/" + mountDevice);
             if (exitCode != 0 && QProcess::execute("grep", {"-q", mountDevice, "/etc/mtab"}) != 0) {
@@ -139,11 +165,10 @@ void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
         }
         QString notificationMessage = safeToRemoveMsg;
         if (type == "mmc") {
-            const QString mmcCheckOutput
-                = runCmd(QString("df --local --output=source,target,size -H 2>/dev/null | grep -E '^/dev/%1'")
-                             .arg(mountDevice))
-                      .str;
-            const bool hasOtherPartitions = !mmcCheckOutput.isEmpty();
+            const QString dfOutput = runCmd("df", {"--local", "--output=source,target,size", "-H"}).str;
+            const QStringList dfLines = dfOutput.split('\n', Qt::SkipEmptyParts);
+            const bool hasOtherPartitions = std::any_of(dfLines.begin(), dfLines.end(),
+                [&](const QString &line) { return line.startsWith("/dev/" + mountDevice); });
             notificationMessage
                 = hasOtherPartitions ? QString("%1 %2").arg(otherPartitionsMountedMsg, model) : safeToRemoveMsg;
         }
@@ -365,11 +390,28 @@ void MainWindow::listDevices()
     // qDebug() << "UID is" << UID;
 
     // Get list of mounted devices
-    QStringList partitionList = runCmd("df --local --output=source,target,size -H 2>/dev/null | grep /dev/")
-                                    .str.split('\n', Qt::SkipEmptyParts);
-    QStringList gvfslist
-        = runCmd(QString("ls -1 --color=never /run/user/%1/gvfs 2>/dev/null | grep -E 'mtp|gphoto'").arg(UID))
-              .str.split('\n', Qt::SkipEmptyParts);
+    QStringList partitionList;
+    {
+        const QString dfOutput = runCmd("df", {"--local", "--output=source,target,size", "-H"}).str;
+        const QStringList dfLines = dfOutput.split('\n', Qt::SkipEmptyParts);
+        for (const QString &line : dfLines) {
+            if (line.contains("/dev/")) {
+                partitionList << line;
+            }
+        }
+    }
+    QStringList gvfslist;
+    {
+        const QDir gvfsDir(QString("/run/user/%1/gvfs").arg(UID));
+        if (gvfsDir.exists()) {
+            const QStringList entries = gvfsDir.entryList(QDir::Files | QDir::Dirs | QDir::NoDotAndDotDot);
+            for (const QString &entry : entries) {
+                if (entry.contains("mtp") || entry.contains("gphoto")) {
+                    gvfslist << entry;
+                }
+            }
+        }
+    }
 
     // Append gvfs devices to partition list
     for (const QString &item : gvfslist) {
@@ -393,7 +435,7 @@ void MainWindow::listDevices()
         QString point = itemParts.at(1);
         QString size = itemParts.at(2);
 
-        const QString udevInfo = runCmd("udevadm info --query=property " + partition).str;
+        const QString udevInfo = runCmd("udevadm", {"info", "--query=property", partition}).str;
         QString label = udevInfo.section("ID_FS_LABEL=", 1, 1).section('\n', 0, 0);
         QString model = udevInfo.section("ID_MODEL=", 1, 1).section('\n', 0, 0);
         QString devType = udevInfo.section("DEVTYPE=", 1, 1).section('\n', 0, 0);
