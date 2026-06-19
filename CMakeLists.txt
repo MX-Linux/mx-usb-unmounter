@@ -137,7 +137,6 @@ target_link_libraries(mx-usb-unmounter
 # Set compiler flags
 target_compile_options(mx-usb-unmounter PRIVATE
     -Wpedantic
-    -pedantic
     -Werror=return-type
     -Werror=switch
     -Werror=uninitialized
