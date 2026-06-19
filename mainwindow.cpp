@@ -5,6 +5,7 @@
 #include <QMessageBox>
 #include <QScreen>
 #include <algorithm>
+#include <QTimer>
 
 #include "about.h"
 #include <unistd.h>
@@ -56,6 +57,7 @@ Output MainWindow::runCmd(const QString &cmd)
     }
     QEventLoop loop;
     connect(&proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
+    QTimer::singleShot(30000, this, [this]() { proc.kill(); }); // timeout after 30 s
     proc.setProcessChannelMode(QProcess::MergedChannels);
     proc.start("/bin/bash", {"-c", cmd});
     loop.exec();
@@ -71,6 +73,7 @@ Output MainWindow::runCmd(const QString &program, const QStringList &args)
     }
     QEventLoop loop;
     connect(&proc, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
+    QTimer::singleShot(30000, this, [this]() { proc.kill(); }); // timeout after 30 s
     proc.setProcessChannelMode(QProcess::MergedChannels);
     proc.start(program, args);
     loop.exec();
