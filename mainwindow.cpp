@@ -3,6 +3,7 @@
 #include <QDir>
 #include <QKeyEvent>
 #include <QMessageBox>
+#include <QScopedValueRollback>
 #include <QScreen>
 #include <algorithm>
 #include <QTimer>
@@ -57,7 +58,7 @@ Output MainWindow::runCmd(const QString &program, const QStringList &args, bool 
 {
     if (proc.state() != QProcess::NotRunning) {
         qDebug() << "Process already running:" << proc.program() << proc.arguments();
-        return {};
+        return {-1, QString()};
     }
     QEventLoop loop;
     bool failedToStart = false;
@@ -99,6 +100,12 @@ MainWindow::~MainWindow()
 
 void MainWindow::mountlistviewItemActivated(QListWidgetItem *item)
 {
+    if (unmountInProgress) {
+        qWarning() << "Ignoring device activation while an unmount is in progress";
+        return;
+    }
+    QScopedValueRollback guard(unmountInProgress, true);
+
     const QString itemData = item->data(Qt::UserRole).toString();
     if (itemData.isEmpty()) {
         hide();

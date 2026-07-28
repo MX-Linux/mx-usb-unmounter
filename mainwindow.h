@@ -55,6 +55,7 @@ private:
     QProcess proc;
     QSettings settings;
     QSystemTrayIcon *trayIcon {};
+    bool unmountInProgress {};
     const QString serviceName = "org.freedesktop.UDisks2";
     const QString objectPath = "/org/freedesktop/UDisks2";
     const QString interfaceName = "org.freedesktop.DBus.ObjectManager";
