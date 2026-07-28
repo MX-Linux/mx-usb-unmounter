@@ -8,6 +8,7 @@
 #include <QProcess>
 #include <QSettings>
 #include <QSystemTrayIcon>
+#include <optional>
 
 namespace Ui
 {
@@ -50,7 +51,7 @@ private:
     QAction *quitAction {};
     QAction *toggleAutostartAction {};
     QAction *toggleHideAction {};
-    QDBusConnection *systemBus {};
+    std::optional<QDBusConnection> systemBus;
     QMenu *menu {};
     QProcess proc;
     QSettings settings;

@@ -335,7 +335,7 @@ void MainWindow::disconnectFromDBus()
 
 void MainWindow::deviceMonitor()
 {
-    systemBus = new QDBusConnection(QDBusConnection::systemBus());
+    systemBus = QDBusConnection::systemBus();
 
     if (!systemBus->isConnected()) {
         qWarning() << "Cannot connect to the D-Bus system bus";
