@@ -1,3 +1,15 @@
+mx-usb-unmounter (26.07) mx; urgency=medium
+
+  * Prevent a second device unmount request from starting while another is
+    still in progress.
+  * Add a manual with instructions for using the system-tray menu and
+    unmounting removable devices.
+  * Display the help information correctly when started with --help or -h.
+  * Avoid failing to open the device window when screen information is
+    unavailable.
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 28 Jul 2026 10:54:33 -0400
+
 mx-usb-unmounter (26.06) mx; urgency=medium
 
   * Fixed removing phones, cameras and similar devices, which previously
