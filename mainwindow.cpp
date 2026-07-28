@@ -263,6 +263,12 @@ void MainWindow::setPosition()
 {
     QPoint pos = QCursor::pos();
     QScreen *screen = QGuiApplication::screenAt(pos);
+    if (!screen) {
+        screen = QGuiApplication::primaryScreen();
+    }
+    if (!screen) {
+        return;
+    }
     if (pos.y() + size().height() > screen->availableVirtualGeometry().height()) {
         pos.setY(screen->availableVirtualGeometry().height() - size().height());
     }
