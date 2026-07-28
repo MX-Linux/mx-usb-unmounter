@@ -21,14 +21,16 @@ MainWindow::MainWindow(const QString &arg1, QWidget *parent)
 {
     QApplication::setQuitOnLastWindowClosed(false);
 
-    // Handle command line arguments for help
+    // Setup UI and window properties
+    ui->setupUi(this);
+
+    // Handle command line arguments for help after setupUi() has populated the
+    // window title used by the About dialog's License button.
     if (arg1 == "--help" || arg1 == "-h") {
         about();
         exit(0);
     }
 
-    // Setup UI and window properties
-    ui->setupUi(this);
     setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);
 
     // Create actions and menu
