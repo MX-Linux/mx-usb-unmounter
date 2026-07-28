@@ -1,4 +1,4 @@
-mx-usb-unmounter (26.07) mx; urgency=medium
+mx-usb-unmounter (26.07.1) mx; urgency=medium
 
   * Prevent a second device unmount request from starting while another is
     still in progress.
