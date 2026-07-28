@@ -1,5 +1,9 @@
 autostart/*			usr/share/mx-usb-unmounter
-help/*				usr/share/doc/mx-usb-unmounter
+help/*.html			usr/share/doc/mx-usb-unmounter
+help/*.jpg			usr/share/doc/mx-usb-unmounter
+help/*.png			usr/share/doc/mx-usb-unmounter
+
+help/*.1			usr/share/man/man1
 images/*			usr/share/pixmaps
 # obj-* is the autodetected build directory used by debuild/dh_auto_configure
 # Note: manual builds via build.sh use the build/ directory instead

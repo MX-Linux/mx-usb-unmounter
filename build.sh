@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # **********************************************************************
-# * Copyright (C) 2024 MX Authors
+# * Copyright (C) 2024-2026 MX Authors
 # *
 # * Authors: Adrian <adrian@mxlinux.org>
 # *          Dolphin_Oracle
