@@ -1,6 +1,6 @@
 # Maintainer: Adrian <adrian@mxlinux.org>
 pkgname=mx-usb-unmounter
-pkgver=${PKGVER:-25.6}
+pkgver=${PKGVER:-26.07.1}
 pkgrel=1
 pkgdesc="MX USB Unmounter - Tray application for unmounting removable media"
 arch=('x86_64' 'i686')
