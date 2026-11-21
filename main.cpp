@@ -1,5 +1,7 @@
 #include <QApplication>
+#include <QCommandLineParser>
 #include <QDir>
+#include <QLibraryInfo>
 #include <QLocale>
 #include <QLockFile>
 #include <QStandardPaths>
@@ -11,10 +13,37 @@
     #define VERSION "?.?.?.?"
 #endif
 
+static void installTranslations(QTranslator &qtTran, QTranslator &appTran)
+{
+    const QString qtDir = QLibraryInfo::path(QLibraryInfo::TranslationsPath);
+    if (qtTran.load(QStringLiteral("qt_") + QLocale::system().name(), qtDir)
+        || qtTran.load(QStringLiteral("qtbase_") + QLocale::system().name(), qtDir)) {
+        QCoreApplication::installTranslator(&qtTran);
+    }
+
+    if (appTran.load(QString("mx-usb-unmounter_") + QLocale::system().name(), "/usr/share/mx-usb-unmounter/locale")) {
+        QCoreApplication::installTranslator(&appTran);
+    }
+}
+
 int main(int argc, char *argv[])
 {
-    if (qEnvironmentVariableIsEmpty("DISPLAY") && qEnvironmentVariableIsEmpty("WAYLAND_DISPLAY")
-        && qEnvironmentVariableIsEmpty("QT_QPA_PLATFORM")) {
+    const QByteArray option = argc == 2 ? QByteArray(argv[1]) : QByteArray();
+    const bool headless = qEnvironmentVariableIsEmpty("DISPLAY") && qEnvironmentVariableIsEmpty("WAYLAND_DISPLAY")
+                          && qEnvironmentVariableIsEmpty("QT_QPA_PLATFORM");
+    if (option == "--help-all" || (headless && (option == "-h" || option == "--help"))) {
+        QCoreApplication app(argc, argv);
+        QTranslator qtTran;
+        QTranslator appTran;
+        installTranslations(qtTran, appTran);
+        QCommandLineParser parser;
+        parser.setApplicationDescription(MainWindow::tr("Quickly Unmount Removable Media"));
+        parser.addHelpOption();
+        parser.process(app);
+        return EXIT_SUCCESS;
+    }
+
+    if (headless) {
         qWarning("mx-usb-unmounter: no display available (DISPLAY and WAYLAND_DISPLAY are both unset); "
                 "a graphical session is required to run this program.");
         return EXIT_FAILURE;
@@ -56,14 +85,8 @@ int main(int argc, char *argv[])
     QApplication::setApplicationVersion(VERSION);
 
     QTranslator qtTran;
-    if (qtTran.load(QString("qt_") + QLocale::system().name())) {
-        QApplication::installTranslator(&qtTran);
-    }
-
     QTranslator appTran;
-    if (appTran.load(QString("mx-usb-unmounter_") + QLocale::system().name(), "/usr/share/mx-usb-unmounter/locale")) {
-        QApplication::installTranslator(&appTran);
-    }
+    installTranslations(qtTran, appTran);
 
     MainWindow w(argv[1]);
     w.hide();
